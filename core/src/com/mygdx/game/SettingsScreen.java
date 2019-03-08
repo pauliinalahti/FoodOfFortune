@@ -42,6 +42,7 @@ public class SettingsScreen implements Screen {
 
         Button menuBtn = new TextButton("MENU", mySkin, "small");
         menuBtn.pad(20);
+        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
         menuBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {

@@ -43,6 +43,8 @@ public class MainMenu implements Screen {
 
         Button startBtn = new TextButton("START GAME", mySkin, "small");
         startBtn.pad(20);
+        startBtn.right().pad(20);
+        ((TextButton) startBtn).getLabel().setFontScale(game.buttonSize);
         startBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -52,6 +54,7 @@ public class MainMenu implements Screen {
 
         Button settingsBtn = new TextButton("SETTINGS", mySkin, "small");
         settingsBtn.pad(20);
+        ((TextButton) settingsBtn).getLabel().setFontScale(game.buttonSize);
         settingsBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {

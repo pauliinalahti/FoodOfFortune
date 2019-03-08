@@ -10,6 +10,7 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 
 public class MainGame extends Game {
     public static SpriteBatch batch;
+    public static int buttonSize = 4;
     //public static float WORLDWIDTH = 10;
     //public static float WORLDHEIGHT = 5;
     //OrthographicCamera camera;

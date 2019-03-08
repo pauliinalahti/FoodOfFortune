@@ -42,10 +42,22 @@ public class SlotMachine implements Screen {
 
         Button menuBtn = new TextButton("MENU", mySkin, "small");
         menuBtn.pad(20);
+        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
         menuBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 game.goMainMenu();
+            }
+        });
+
+        Button playBtn = new TextButton("PLAY", mySkin, "small");
+        playBtn.pad(20);
+        //playBtn.rotateBy(90);
+        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
+        playBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                game.goDrawnIngredients();
             }
         });
 
@@ -56,8 +68,16 @@ public class SlotMachine implements Screen {
         table.left();
         //table.setDebug(true);
 
+        Table table2 = new Table();
+        table2.defaults().uniform().pad(30);
+        table2.add(playBtn);
+        table2.left().pad(10);
+        table2.bottom().pad(30);
+
         table.setFillParent(true);
         stage.addActor(table);
+        table2.setFillParent(true);
+        stage.addActor(table2);
     }
     @Override
     public void show() {

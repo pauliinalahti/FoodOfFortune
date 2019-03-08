@@ -38,6 +38,7 @@ public class DrawnIngredients implements Screen {
 
         Button recipesBtn = new TextButton("RECIPES", mySkin, "small");
         recipesBtn.pad(20);
+        ((TextButton) recipesBtn).getLabel().setFontScale(game.buttonSize);
         recipesBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -47,6 +48,7 @@ public class DrawnIngredients implements Screen {
 
         Button backBtn = new TextButton("BACK", mySkin, "small");
         backBtn.pad(20);
+        ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -56,6 +58,7 @@ public class DrawnIngredients implements Screen {
 
         Button menuBtn = new TextButton("MENU", mySkin, "small");
         menuBtn.pad(20);
+        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
         menuBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -75,7 +78,6 @@ public class DrawnIngredients implements Screen {
         table2.add(recipesBtn);
         table2.add(backBtn);
         table2.bottom().pad(20);
-        //table2.left().pad(100);
         //table.setDebug(true);
 
         table.setFillParent(true);
