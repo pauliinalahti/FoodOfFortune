@@ -83,6 +83,9 @@ public class MainMenu implements Screen {
         stage.act();
         stage.draw();
 
+        batch.begin();
+        batch.end();
+
     }
 
     @Override

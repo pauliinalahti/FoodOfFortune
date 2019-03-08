@@ -36,9 +36,9 @@ public class MainGame extends Game {
 
     @Override
     public void create() {
-        /*font = new BitmapFont();
+        //font = new BitmapFont();
         batch = new SpriteBatch();
-        generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
+        /*generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 40;
         parameter.borderColor = Color.BLACK;
@@ -65,6 +65,16 @@ public class MainGame extends Game {
     public void goSettingsScreen() {
         SettingsScreen settingsScreen = new SettingsScreen(this);
         setScreen(settingsScreen);
+    }
+
+    public void goDrawnIngredients(){
+        DrawnIngredients drawnIngredients = new DrawnIngredients(this);
+        setScreen(drawnIngredients);
+    }
+
+    public void goRecipes(){
+        Recipes recipes = new Recipes(this);
+        setScreen(recipes);
     }
 
     @Override

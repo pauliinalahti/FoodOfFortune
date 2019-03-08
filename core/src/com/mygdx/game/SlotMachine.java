@@ -71,6 +71,14 @@ public class SlotMachine implements Screen {
         stage.act();
         stage.draw();
 
+        batch.begin();
+        batch.end();
+
+        //Spacella avautuu arvotut ainekset screen
+        if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)){
+            game.goDrawnIngredients();
+        }
+
     }
 
     @Override
@@ -95,6 +103,7 @@ public class SlotMachine implements Screen {
 
     @Override
     public void dispose() {
-
+        background.dispose();
+        stage.dispose();
     }
 }

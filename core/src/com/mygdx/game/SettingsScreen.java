@@ -19,7 +19,7 @@ import com.badlogic.gdx.utils.Scaling;
 public class SettingsScreen implements Screen {
 
     MainGame game;
-    SpriteBatch batch;
+    //SpriteBatch batch;
     Texture background;
 
     private Skin mySkin;
@@ -28,7 +28,7 @@ public class SettingsScreen implements Screen {
 
     public SettingsScreen(MainGame g) {
         game = g;
-        batch = game.getBatch();
+        //batch = game.getBatch();
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("settings.jpg"));
         back = new Image(background);
@@ -91,11 +91,12 @@ public class SettingsScreen implements Screen {
 
     @Override
     public void hide() {
-
+        Gdx.input.setInputProcessor(null);
     }
 
     @Override
     public void dispose() {
-
+        background.dispose();
+        stage.dispose();
     }
 }
