@@ -210,16 +210,18 @@ public class SlotMachine implements Screen {
                 } catch (Exception e) {
                 }
 
-                game.goDrawnIngredients();
+                game.goDrawnIngredients(drawnNumberFirstReel,drawnNumberSecondReel,
+                        drawnNumberThirdReeL);
+
             }
 
         }
 
 
         //Spacella avautuu arvotut ainekset screen
-        if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)){
+        /*if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)){
             game.goDrawnIngredients();
-        }
+        }*/
 
     }
 
