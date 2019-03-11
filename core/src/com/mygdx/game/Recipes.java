@@ -4,6 +4,9 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
@@ -17,6 +20,9 @@ import com.badlogic.gdx.utils.Scaling;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static com.mygdx.game.MainGame.WORLDHEIGHT;
+import static com.mygdx.game.MainGame.WORLDWIDTH;
+
 public class Recipes implements Screen {
 
     MainGame game;
@@ -25,25 +31,33 @@ public class Recipes implements Screen {
     private Skin mySkin;
     private Stage stage;
     Image back;
+    SpriteBatch batch;
     int firstDrawn, secondDrawn, thirdDrawn;
     ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     FirstReel firstReel = new FirstReel();
     SecondReel secondReel = new SecondReel();
     String firstFood, secondFood;
+    GlyphLayout recipestext;
+    String recipesTxt = "RESEPTIT";
 
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
+        batch = game.getBatch();
         firstFood = firstReel.firstReelFoodNames.get(first);
         secondFood = secondReel.secondReelFoodNames.get(second);
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_reseptit.png"));
+        background = new Texture(Gdx.files.internal("foodbackground2.jpg"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
+
+        recipestext = new GlyphLayout();
+        recipestext.setText(game.font2, recipesTxt);
+
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -102,6 +116,14 @@ public class Recipes implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
+        batch.begin();
+
+        batch.setProjectionMatrix(game.cameraFont.combined);
+        game.font2.draw(batch, recipesTxt, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.5f)*100);
+        batch.setProjectionMatrix((game.camera.combined));
+
+        batch.end();
     }
 
     @Override

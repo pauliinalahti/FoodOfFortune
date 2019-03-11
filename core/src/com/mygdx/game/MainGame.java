@@ -23,6 +23,7 @@ public class MainGame extends Game {
     OrthographicCamera cameraFont;
 
     public BitmapFont font;
+    public BitmapFont font2;
     FreeTypeFontGenerator generator;
 
     public Viewport screenPort;
@@ -44,13 +45,21 @@ public class MainGame extends Game {
     @Override
     public void create() {
         font = new BitmapFont();
+        font2 = new BitmapFont();
         batch = new SpriteBatch();
         generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
         parameter.borderColor = Color.BLACK;
-        parameter.borderWidth = 3;
+        parameter.borderWidth = 2;
         font = generator.generateFont(parameter);
+
+        FreeTypeFontGenerator.FreeTypeFontParameter parameter2 = new FreeTypeFontGenerator.FreeTypeFontParameter();
+        parameter2.size = 45;
+        parameter2.borderColor = Color.BLACK;
+        parameter2.color.add(Color.BLACK);
+        parameter2.borderWidth = 2;
+        font2 = generator.generateFont(parameter2);
 
         camera = new OrthographicCamera();
         cameraFont = new OrthographicCamera();

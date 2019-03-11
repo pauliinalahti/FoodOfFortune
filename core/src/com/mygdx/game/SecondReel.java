@@ -20,6 +20,7 @@ public class SecondReel {
         image2 = new Texture(Gdx.files.internal("peruna.png"));
         image3 = new Texture(Gdx.files.internal("riisi.png"));
         image4 = new Texture(Gdx.files.internal("spagetti.png"));
+
         secondReelImages.add(image1);
         secondReelImages.add(image2);
         secondReelImages.add(image3);

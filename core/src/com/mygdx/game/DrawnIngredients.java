@@ -18,6 +18,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
+import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
 public class DrawnIngredients implements Screen {
@@ -34,15 +35,9 @@ public class DrawnIngredients implements Screen {
     ThirdReel thirdReel = new ThirdReel();
     int firstDrawn, secondDrawn, thirdDrawn;
     Rectangle reelsRectangle;
-    GlyphLayout layout;
-    float widthFirst;
-    float heightFirst;
-    float widthSecond;
-    float heightSecond;
-    float widthThird;
-    float heightThird;
+    GlyphLayout layoutFirst, layoutSecond, layoutThird, drawnIngrediends;
+    String ingrediends = "ARVOTUT AINEKSET";
 
-    BitmapFont font;
 
     public DrawnIngredients(MainGame g, int first, int second, int third){
         game = g;
@@ -50,25 +45,25 @@ public class DrawnIngredients implements Screen {
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
-        font = new BitmapFont();
         reelsRectangle = new Rectangle(1.26f,1.7f,2.1f,2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_arvotutainekset.png"));
+        background = new Texture(Gdx.files.internal("foodbackground2.jpg"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
 
-        layout = new GlyphLayout();
-        layout.setText(game.font, "");
-        widthFirst = layout.width;
-        heightFirst = layout.height;
+        drawnIngrediends = new GlyphLayout();
+        drawnIngrediends.setText(game.font2, ingrediends);
 
-        widthSecond = layout.width;
-        heightSecond = layout.height;
+        layoutFirst = new GlyphLayout();
+        layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
 
-        widthThird = layout.width;
-        heightThird = layout.height;
+        layoutSecond = new GlyphLayout();
+        layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
+
+        layoutThird = new GlyphLayout();
+        layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -135,9 +130,10 @@ public class DrawnIngredients implements Screen {
                 5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
 
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font.draw(batch, firstReel.firstReelFoodNames.get(firstDrawn), (reelsRectangle.x*100), reelsRectangle.y*100- 30);
-        game.font.draw(batch, secondReel.secondReelFoodNames.get(secondDrawn), 3.6f, reelsRectangle.y*100- 30);
-        //game.font.draw(batch, secondReel.thirdReelFoodNames.get(thirdDrawn), 3.6f, reelsRectangle.y*100- 30);
+        game.font2.draw(batch, ingrediends, WORLDWIDTH*100/2-drawnIngrediends.width/2, (WORLDHEIGHT-0.5f)*100);
+        game.font.draw(batch, firstReel.firstReelFoodNames.get(firstDrawn), (reelsRectangle.x*100)+(reelsRectangle.width/2*100)-layoutFirst.width/2, reelsRectangle.y*100- 20);
+        game.font.draw(batch, secondReel.secondReelFoodNames.get(secondDrawn), (3.6f*100)+(reelsRectangle.width/2*100)-layoutSecond.width/2, reelsRectangle.y*100- 20);
+        game.font.draw(batch, thirdReel.thirdReelFoodNames.get(thirdDrawn), (5.94f*100)+(reelsRectangle.width/2*100)-layoutThird.width/2, reelsRectangle.y*100- 20);
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();

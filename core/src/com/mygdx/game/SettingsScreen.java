@@ -5,6 +5,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -16,21 +17,26 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
+import static com.mygdx.game.MainGame.WORLDHEIGHT;
+import static com.mygdx.game.MainGame.WORLDWIDTH;
+
 public class SettingsScreen implements Screen {
 
     MainGame game;
-    //SpriteBatch batch;
+    SpriteBatch batch;
     Texture background;
 
     private Skin mySkin;
     private Stage stage;
     Image back;
+    GlyphLayout layoutSettings;
+    String settingsTxt = "ASETUKSET";
 
     public SettingsScreen(MainGame g) {
         game = g;
-        //batch = game.getBatch();
+        batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("settings.jpg"));
+        background = new Texture(Gdx.files.internal("foodbackground2.jpg"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -39,6 +45,9 @@ public class SettingsScreen implements Screen {
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
+
+        layoutSettings = new GlyphLayout();
+        layoutSettings.setText(game.font2, settingsTxt);
 
         Button backBtn = new TextButton("BACK", mySkin, "small");
         backBtn.pad(20);
@@ -72,6 +81,13 @@ public class SettingsScreen implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
+        batch.begin();
+        batch.setProjectionMatrix(game.cameraFont.combined);
+        game.font2.draw(batch, settingsTxt, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
+        batch.setProjectionMatrix((game.camera.combined));
+
+        batch.end();
 
     }
 

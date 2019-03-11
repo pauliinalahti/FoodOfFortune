@@ -1,7 +1,6 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -30,7 +29,7 @@ public class MainMenu implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_main.png"));
+        background = new Texture(Gdx.files.internal("mainMenu.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
