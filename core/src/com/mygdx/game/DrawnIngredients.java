@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
@@ -28,6 +29,7 @@ public class DrawnIngredients implements Screen {
     SecondReel secondReel = new SecondReel();
     ThirdReel thirdReel = new ThirdReel();
     int firstDrawn, secondDrawn, thirdDrawn;
+    Rectangle reelsRectangle;
 
     public DrawnIngredients(MainGame g, int first, int second, int third){
         game = g;
@@ -35,6 +37,7 @@ public class DrawnIngredients implements Screen {
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
+        reelsRectangle = new Rectangle(1.26f,1.7f,2.1f,2.25f);
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_arvotutainekset.png"));
         back = new Image(background);
@@ -107,7 +110,14 @@ public class DrawnIngredients implements Screen {
         stage.act();
         stage.draw();
         batch.begin();
-        batch.begin();
+        batch.draw(firstReel.firstReelImages.get(firstDrawn),
+                reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
+                reelsRectangle.height);
+        batch.draw(secondReel.secondReelImages.get(secondDrawn),
+                3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+        batch.draw(thirdReel.thirdReelImages.get(thirdDrawn),
+                5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+        batch.end();
 
 
 
