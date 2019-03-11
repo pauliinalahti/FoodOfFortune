@@ -1,10 +1,14 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.SkinLoader;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
@@ -15,10 +19,12 @@ public class MainGame extends Game {
     public static float WORLDHEIGHT = 5;
     OrthographicCamera camera;
     public static int buttonSize = 4;
-    //OrthographicCamera cameraFont;
 
-    //public BitmapFont font;
-    //FreeTypeFontGenerator generator;
+    //OrthographicCamera camera;
+    OrthographicCamera cameraFont;
+
+    public BitmapFont font;
+    FreeTypeFontGenerator generator;
 
     public Viewport screenPort;
     public MyAssetsManager myAssetsManager = new MyAssetsManager();
@@ -38,14 +44,14 @@ public class MainGame extends Game {
 
     @Override
     public void create() {
-        //font = new BitmapFont();
+        font = new BitmapFont();
         batch = new SpriteBatch();
-        /*generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
+        generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 40;
         parameter.borderColor = Color.BLACK;
         parameter.borderWidth = 3;
-        font = generator.generateFont(parameter);*/
+        font = generator.generateFont(parameter);
 
         camera = new OrthographicCamera();
         camera.setToOrtho(false,WORLDWIDTH,WORLDHEIGHT);
