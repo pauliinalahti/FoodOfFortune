@@ -72,8 +72,8 @@ public class MainGame extends Game {
         setScreen(settingsScreen);
     }
 
-    public void goDrawnIngredients(){
-        DrawnIngredients drawnIngredients = new DrawnIngredients(this);
+    public void goDrawnIngredients(int first, int second, int third){
+        DrawnIngredients drawnIngredients = new DrawnIngredients(this, first, second, third);
         setScreen(drawnIngredients);
     }
 

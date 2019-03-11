@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
@@ -22,9 +23,18 @@ public class DrawnIngredients implements Screen {
     private Skin mySkin;
     private Stage stage;
     Image back;
+    SpriteBatch batch;
+    FirstReel firstReel = new FirstReel();
+    SecondReel secondReel = new SecondReel();
+    ThirdReel thirdReel = new ThirdReel();
+    int firstDrawn, secondDrawn, thirdDrawn;
 
-    public DrawnIngredients(MainGame g){
+    public DrawnIngredients(MainGame g, int first, int second, int third){
         game = g;
+        batch = game.getBatch();
+        firstDrawn = first;
+        secondDrawn = second;
+        thirdDrawn = third;
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_arvotutainekset.png"));
         back = new Image(background);
@@ -96,6 +106,11 @@ public class DrawnIngredients implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+        batch.begin();
+        batch.begin();
+
+
+
     }
 
     @Override
