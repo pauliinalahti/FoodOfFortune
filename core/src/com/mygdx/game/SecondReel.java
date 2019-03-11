@@ -7,17 +7,19 @@ import java.util.ArrayList;
 
 public class SecondReel {
 
-    Texture image1,image2,image3;
+    Texture image1,image2,image3,image4;
     ArrayList<Texture> secondReelImages;
 
     public SecondReel() {
-        image1 = new Texture(Gdx.files.internal("banaani.png"));
-        image2 = new Texture(Gdx.files.internal("apple.png"));
-        //image3 = new Texture(Gdx.files.internal("pear.png"));
+        image1 = new Texture(Gdx.files.internal("makaroni.png"));
+        image2 = new Texture(Gdx.files.internal("peruna.png"));
+        image3 = new Texture(Gdx.files.internal("riisi.png"));
+        image4 = new Texture(Gdx.files.internal("spagetti.png"));
         secondReelImages = new ArrayList<Texture>();
         secondReelImages.add(image1);
         secondReelImages.add(image2);
-       // secondReelImages.add(image3);
+        secondReelImages.add(image3);
+        secondReelImages.add(image4);
     }
 }
 

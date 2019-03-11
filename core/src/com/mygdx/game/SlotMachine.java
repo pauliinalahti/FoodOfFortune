@@ -40,6 +40,7 @@ public class SlotMachine implements Screen {
     private int firstReelTime, secondReelTime, thirdReelTime, i;
     private int drawnNumberFirstReel, drawnNumberSecondReel, drawnNumberThirdReeL;
     boolean play = false;
+    boolean startImages = true;
 
     public SlotMachine(MainGame g){
         game = g;
@@ -51,15 +52,15 @@ public class SlotMachine implements Screen {
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
-        reelsRectangle = new Rectangle(4/5f,6/5,2,2.3f);
+        reelsRectangle = new Rectangle(1.26f,1.155f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
 
         firstReel = new FirstReel();
         secondReel = new SecondReel();
         thirdReel = new ThirdReel();
-        firstReelTime = 7;
-        secondReelTime = 11;
+        firstReelTime = 9;
+        secondReelTime = 15;
         thirdReelTime = 22;
         drawnNumberFirstReel = random(firstReel.firstReelImages.size());
         drawnNumberSecondReel = random(secondReel.secondReelImages.size());
@@ -92,7 +93,10 @@ public class SlotMachine implements Screen {
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                startImages = false;
                 play = true;
+                i = 0;
+
                 //game.goDrawnIngredients();
             }
         });
@@ -116,7 +120,6 @@ public class SlotMachine implements Screen {
         stage.addActor(table2);
     }
 
-
     public int random(int numberOfImages){
         Random rand = new Random();
         int n = rand.nextInt(numberOfImages);
@@ -133,55 +136,83 @@ public class SlotMachine implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-
+        if(startImages) {
+            batch.begin();
+            batch.draw(firstReel.firstReelImages.get(1),
+                    reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
+                    reelsRectangle.height);
+            batch.draw(secondReel.secondReelImages.get(1),
+                    3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+            batch.draw(thirdReel.thirdReelImages.get(1),
+                    5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+            batch.end();
+        }
         if(play) {
             if (i < firstReelTime) {
                 batch.begin();
-                batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelImages.size())), reelsRectangle.x, reelsRectangle.y,
-                        reelsRectangle.width, reelsRectangle.height);
-            /*batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())),3,reelsRectangle.y,
-                    reelsRectangle.width,reelsRectangle.height);
-            batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())),5,reelsRectangle.y,
-                    reelsRectangle.width,reelsRectangle.height);*/
+                batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelImages.size())),
+                        reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
+                        reelsRectangle.height);
                 batch.end();
             } else {
                 batch.begin();
-                batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel), reelsRectangle.x, reelsRectangle.y,
-                        reelsRectangle.width, reelsRectangle.height);
+                batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel), reelsRectangle.x,
+                        reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             }
             if (i < secondReelTime) {
                 batch.begin();
-                batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())), 3, reelsRectangle.y,
-                        reelsRectangle.width, reelsRectangle.height);
+                batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())),
+                        3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             } else {
                 batch.begin();
-                batch.draw(secondReel.secondReelImages.get(drawnNumberSecondReel), 3, reelsRectangle.y,
-                        reelsRectangle.width, reelsRectangle.height);
+                batch.draw(secondReel.secondReelImages.get(drawnNumberSecondReel), 3.6f,
+                        reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             }
 
             if (i < secondReelTime) {
                 batch.begin();
-                batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())), 5, reelsRectangle.y,
-                        reelsRectangle.width, reelsRectangle.height);
+                batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())),
+                        5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             } else {
                 batch.begin();
-                batch.draw(thirdReel.thirdReelImages.get(drawnNumberThirdReeL), 5, reelsRectangle.y,
-                        reelsRectangle.width, reelsRectangle.height);
+                batch.draw(thirdReel.thirdReelImages.get(drawnNumberThirdReeL), 5.94f,
+                        reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             }
             i++;
+
             try {
-                Thread.sleep(150);
+                Thread.sleep(160);
             } catch (Exception e) {
             }
-            if(i==thirdReelTime) {
+            if (i == thirdReelTime) {
                 play = false;
 
             }
+        } else {
+            batch.begin();
+            batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel),
+                    reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
+                    reelsRectangle.height);
+            batch.draw(secondReel.secondReelImages.get(drawnNumberSecondReel),
+                    3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+            batch.draw(thirdReel.thirdReelImages.get(drawnNumberThirdReeL),
+                    5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+            batch.end();
+
+            if(i == thirdReelTime) {
+                try {
+                    Thread.sleep(700);
+                } catch (Exception e) {
+                }
+
+                game.goDrawnIngredients();
+            }
+
         }
 
 
