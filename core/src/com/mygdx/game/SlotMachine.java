@@ -5,6 +5,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -36,6 +37,7 @@ public class SlotMachine implements Screen {
     SecondReel secondReel;
     ThirdReel thirdReel;
     Rectangle reelsRectangle;
+
     public ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     private int firstReelTime, secondReelTime, thirdReelTime, i;
     private int drawnNumberFirstReel, drawnNumberSecondReel, drawnNumberThirdReeL;

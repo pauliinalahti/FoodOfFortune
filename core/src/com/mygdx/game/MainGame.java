@@ -17,10 +17,9 @@ public class MainGame extends Game {
     public static SpriteBatch batch;
     public static float WORLDWIDTH = 10;
     public static float WORLDHEIGHT = 5;
-    OrthographicCamera camera;
     public static int buttonSize = 4;
 
-    //OrthographicCamera camera;
+    OrthographicCamera camera;
     OrthographicCamera cameraFont;
 
     public BitmapFont font;
@@ -48,13 +47,15 @@ public class MainGame extends Game {
         batch = new SpriteBatch();
         generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
-        parameter.size = 40;
+        parameter.size = 30;
         parameter.borderColor = Color.BLACK;
         parameter.borderWidth = 3;
         font = generator.generateFont(parameter);
 
         camera = new OrthographicCamera();
+        cameraFont = new OrthographicCamera();
         camera.setToOrtho(false,WORLDWIDTH,WORLDHEIGHT);
+        cameraFont.setToOrtho(false, WORLDWIDTH*100, WORLDHEIGHT*100);
 
         screenPort = new ScreenViewport();
         this.setScreen(new MainMenu(this));

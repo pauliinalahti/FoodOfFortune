@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -16,6 +17,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
+
+import static com.mygdx.game.MainGame.WORLDWIDTH;
 
 public class DrawnIngredients implements Screen {
 
@@ -31,6 +34,13 @@ public class DrawnIngredients implements Screen {
     ThirdReel thirdReel = new ThirdReel();
     int firstDrawn, secondDrawn, thirdDrawn;
     Rectangle reelsRectangle;
+    GlyphLayout layout;
+    float widthFirst;
+    float heightFirst;
+    float widthSecond;
+    float heightSecond;
+    float widthThird;
+    float heightThird;
 
     BitmapFont font;
 
@@ -49,6 +59,17 @@ public class DrawnIngredients implements Screen {
         back.setFillParent(true);
         stage.addActor(back);
 
+        layout = new GlyphLayout();
+        layout.setText(game.font, "");
+        widthFirst = layout.width;
+        heightFirst = layout.height;
+
+        widthSecond = layout.width;
+        heightSecond = layout.height;
+
+        widthThird = layout.width;
+        heightThird = layout.height;
+
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
@@ -62,16 +83,6 @@ public class DrawnIngredients implements Screen {
                 game.goRecipes(firstDrawn,secondDrawn,thirdDrawn);
             }
         });
-
-        /*Button backBtn = new TextButton("BACK", mySkin, "small");
-        backBtn.pad(20);
-        ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
-        backBtn.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                game.goSlotMachine();
-            }
-        });*/
 
         Button backBtn = new TextButton("BACK", mySkin, "small");
         backBtn.pad(20);
@@ -93,7 +104,6 @@ public class DrawnIngredients implements Screen {
         Table table2 = new Table();
         table2.defaults().uniform().pad(30);
         table2.add(recipesBtn);
-        //table2.add(backBtn);
         table2.bottom().pad(20);
         //table.setDebug(true);
 
@@ -113,20 +123,24 @@ public class DrawnIngredients implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
         batch.begin();
+
         batch.draw(firstReel.firstReelImages.get(firstDrawn),
                 reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
                 reelsRectangle.height);
-        batch.setProjectionMatrix(game.cameraFont.combined);
-
         batch.draw(secondReel.secondReelImages.get(secondDrawn),
                 3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
         batch.draw(thirdReel.thirdReelImages.get(thirdDrawn),
                 5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+
+        batch.setProjectionMatrix(game.cameraFont.combined);
+        game.font.draw(batch, firstReel.firstReelFoodNames.get(firstDrawn), (reelsRectangle.x*100), reelsRectangle.y*100- 30);
+        //game.font.draw(batch, secondReel.secondReelFoodNames.get(secondDrawn), 3.6f, reelsRectangle.y*100- 30);
+        //game.font.draw(batch, secondReel.thirdReelFoodNames.get(thirdDrawn), 3.6f, reelsRectangle.y*100- 30);
+        batch.setProjectionMatrix((game.camera.combined));
+
         batch.end();
-
-
-
     }
 
     @Override
