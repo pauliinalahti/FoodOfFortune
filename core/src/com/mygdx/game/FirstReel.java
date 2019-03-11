@@ -38,8 +38,11 @@ public class FirstReel {
         name6 = "Sieni";
 
         firstReelFoodNames.add(name1);
-
-
+        firstReelFoodNames.add(name2);
+        firstReelFoodNames.add(name3);
+        firstReelFoodNames.add(name4);
+        firstReelFoodNames.add(name5);
+        firstReelFoodNames.add(name6);
 
 
     }
