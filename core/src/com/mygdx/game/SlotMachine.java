@@ -17,6 +17,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class SlotMachine implements Screen {
@@ -34,6 +36,7 @@ public class SlotMachine implements Screen {
     SecondReel secondReel;
     ThirdReel thirdReel;
     Rectangle reelsRectangle;
+    public ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     private int firstReelTime, secondReelTime, thirdReelTime, i;
     private int drawnNumberFirstReel, drawnNumberSecondReel, drawnNumberThirdReeL;
     boolean play = false;
@@ -49,6 +52,8 @@ public class SlotMachine implements Screen {
         back.setFillParent(true);
         stage.addActor(back);
         reelsRectangle = new Rectangle(4/5f,6/5,2,2.3f);
+        AddRecipes recipeControl = new AddRecipes();
+
 
         firstReel = new FirstReel();
         secondReel = new SecondReel();
@@ -60,6 +65,12 @@ public class SlotMachine implements Screen {
         drawnNumberSecondReel = random(secondReel.secondReelImages.size());
         drawnNumberThirdReeL = random(thirdReel.thirdReelImages.size());
         i = 0;
+
+        recipes = recipeControl.AddAllRecipes(recipes);
+
+        /*for (Recipe r: recipes){
+            System.out.println(r.name);
+        }*/
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -105,6 +116,7 @@ public class SlotMachine implements Screen {
         stage.addActor(table2);
     }
 
+
     public int random(int numberOfImages){
         Random rand = new Random();
         int n = rand.nextInt(numberOfImages);
@@ -121,6 +133,7 @@ public class SlotMachine implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
         if(play) {
             if (i < firstReelTime) {
                 batch.begin();
@@ -167,7 +180,7 @@ public class SlotMachine implements Screen {
             }
             if(i==thirdReelTime) {
                 play = false;
-                
+
             }
         }
 
