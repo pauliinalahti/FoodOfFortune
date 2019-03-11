@@ -48,7 +48,7 @@ public class SlotMachine implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_slotmachine.png"));
+        background = new Texture(Gdx.files.internal("background2.png"));
         image = new Texture(Gdx.files.internal("banaani.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
