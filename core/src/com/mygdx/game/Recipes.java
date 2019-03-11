@@ -38,13 +38,13 @@ public class Recipes implements Screen {
 
 
 
-        Button menuBtn = new TextButton("MENU", mySkin, "small");
+        Button menuBtn = new TextButton("BACK", mySkin, "small");
         menuBtn.pad(20);
         ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
         menuBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goMainMenu();
+                game.goDrawnIngredients();
             }
         });
 

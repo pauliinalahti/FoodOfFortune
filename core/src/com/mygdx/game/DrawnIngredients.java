@@ -59,6 +59,16 @@ public class DrawnIngredients implements Screen {
             }
         });
 
+        /*Button backBtn = new TextButton("BACK", mySkin, "small");
+        backBtn.pad(20);
+        ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
+        backBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                game.goSlotMachine();
+            }
+        });*/
+
         Button backBtn = new TextButton("BACK", mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
@@ -69,19 +79,9 @@ public class DrawnIngredients implements Screen {
             }
         });
 
-        Button menuBtn = new TextButton("MENU", mySkin, "small");
-        menuBtn.pad(20);
-        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
-        menuBtn.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                game.goMainMenu();
-            }
-        });
-
         Table table = new Table();
         table.defaults().uniform().pad(30);
-        table.add(menuBtn);
+        table.add(backBtn);
         table.add(recipesBtn);
         table.top();
         table.left();
@@ -89,7 +89,7 @@ public class DrawnIngredients implements Screen {
         Table table2 = new Table();
         table2.defaults().uniform().pad(30);
         table2.add(recipesBtn);
-        table2.add(backBtn);
+        //table2.add(backBtn);
         table2.bottom().pad(20);
         //table.setDebug(true);
 

@@ -15,9 +15,6 @@ public class MainGame extends Game {
     public static float WORLDHEIGHT = 5;
     OrthographicCamera camera;
     public static int buttonSize = 4;
-    //public static float WORLDWIDTH = 10;
-    //public static float WORLDHEIGHT = 5;
-    //OrthographicCamera camera;
     //OrthographicCamera cameraFont;
 
     //public BitmapFont font;
@@ -84,13 +81,13 @@ public class MainGame extends Game {
 
     @Override
     public void render() {
-        //batch.setProjectionMatrix(camera.combined);
+        batch.setProjectionMatrix(camera.combined);
         super.render();
     }
 
     @Override
     public void dispose() {
-        //batch.dispose();
+        batch.dispose();
         super.dispose();
     }
 }
