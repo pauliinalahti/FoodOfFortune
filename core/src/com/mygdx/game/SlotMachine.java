@@ -36,6 +36,7 @@ public class SlotMachine implements Screen {
     Rectangle reelsRectangle;
     private int firstReelTime, secondReelTime, thirdReelTime, i;
     private int drawnNumberFirstReel, drawnNumberSecondReel, drawnNumberThirdReeL;
+    boolean play = false;
 
     public SlotMachine(MainGame g){
         game = g;
@@ -64,10 +65,10 @@ public class SlotMachine implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        Button menuBtn = new TextButton("MENU", mySkin, "small");
-        menuBtn.pad(20);
-        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
-        menuBtn.addListener(new ChangeListener() {
+        Button backBtn = new TextButton("BACK", mySkin, "small");
+        backBtn.pad(20);
+        ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
+        backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 game.goMainMenu();
@@ -76,18 +77,18 @@ public class SlotMachine implements Screen {
 
         Button playBtn = new TextButton("PLAY", mySkin, "small");
         playBtn.pad(20);
-        //playBtn.rotateBy(90);
-        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
+        ((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goDrawnIngredients();
+                play = true;
+                //game.goDrawnIngredients();
             }
         });
 
         Table table = new Table();
         table.defaults().uniform().pad(30);
-        table.add(menuBtn);
+        table.add(backBtn);
         table.top();
         table.left();
         //table.setDebug(true);
@@ -95,7 +96,7 @@ public class SlotMachine implements Screen {
         Table table2 = new Table();
         table2.defaults().uniform().pad(30);
         table2.add(playBtn);
-        table2.left().pad(10);
+        table2.right().pad(10);
         table2.bottom().pad(30);
 
         table.setFillParent(true);
@@ -120,48 +121,55 @@ public class SlotMachine implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-        if (i < firstReelTime) {
-            batch.begin();
-            batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelImages.size())), reelsRectangle.x, reelsRectangle.y,
-                    reelsRectangle.width, reelsRectangle.height);
+        if(play) {
+            if (i < firstReelTime) {
+                batch.begin();
+                batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelImages.size())), reelsRectangle.x, reelsRectangle.y,
+                        reelsRectangle.width, reelsRectangle.height);
             /*batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())),3,reelsRectangle.y,
                     reelsRectangle.width,reelsRectangle.height);
             batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())),5,reelsRectangle.y,
                     reelsRectangle.width,reelsRectangle.height);*/
-            batch.end();
-        } else {
-            batch.begin();
-            batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel), reelsRectangle.x, reelsRectangle.y,
-                    reelsRectangle.width, reelsRectangle.height);
-            batch.end();
-        }
-        if (i < secondReelTime) {
-            batch.begin();
-            batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())), 3, reelsRectangle.y,
-                    reelsRectangle.width, reelsRectangle.height);
-            batch.end();
-        } else {
-            batch.begin();
-            batch.draw(secondReel.secondReelImages.get(drawnNumberSecondReel), 3, reelsRectangle.y,
-                    reelsRectangle.width, reelsRectangle.height);
-            batch.end();
-        }
+                batch.end();
+            } else {
+                batch.begin();
+                batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel), reelsRectangle.x, reelsRectangle.y,
+                        reelsRectangle.width, reelsRectangle.height);
+                batch.end();
+            }
+            if (i < secondReelTime) {
+                batch.begin();
+                batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())), 3, reelsRectangle.y,
+                        reelsRectangle.width, reelsRectangle.height);
+                batch.end();
+            } else {
+                batch.begin();
+                batch.draw(secondReel.secondReelImages.get(drawnNumberSecondReel), 3, reelsRectangle.y,
+                        reelsRectangle.width, reelsRectangle.height);
+                batch.end();
+            }
 
-        if (i < secondReelTime) {
-            batch.begin();
-            batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())), 5, reelsRectangle.y,
-                    reelsRectangle.width, reelsRectangle.height);
-            batch.end();
-        } else {
-            batch.begin();
-            batch.draw(thirdReel.thirdReelImages.get(drawnNumberThirdReeL), 5, reelsRectangle.y,
-                    reelsRectangle.width, reelsRectangle.height);
-            batch.end();
+            if (i < secondReelTime) {
+                batch.begin();
+                batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())), 5, reelsRectangle.y,
+                        reelsRectangle.width, reelsRectangle.height);
+                batch.end();
+            } else {
+                batch.begin();
+                batch.draw(thirdReel.thirdReelImages.get(drawnNumberThirdReeL), 5, reelsRectangle.y,
+                        reelsRectangle.width, reelsRectangle.height);
+                batch.end();
+            }
+            i++;
+            try {
+                Thread.sleep(150);
+            } catch (Exception e) {
+            }
+            if(i==thirdReelTime) {
+                play = false;
+                
+            }
         }
-        i++;
-        try {
-            Thread.sleep(150);
-        } catch (Exception e) {}
 
 
         //Spacella avautuu arvotut ainekset screen
