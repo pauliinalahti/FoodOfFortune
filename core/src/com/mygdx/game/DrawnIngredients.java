@@ -117,8 +117,10 @@ public class DrawnIngredients implements Screen {
         batch.draw(firstReel.firstReelImages.get(firstDrawn),
                 reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
                 reelsRectangle.height);
-        batch.setProjectionMatrix(game.cameraFont.combined);
-
+        /*batch.setProjectionMatrix(game.cameraFont.combined);
+        game.font.draw(batch, "moro",2f,2f);
+        batch.setProjectionMatrix(game.camera.combined);*/
+        //System.out.println(firstReel.firstReelFoodNames.get(firstDrawn));
         batch.draw(secondReel.secondReelImages.get(secondDrawn),
                 3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
         batch.draw(thirdReel.thirdReelImages.get(thirdDrawn),
