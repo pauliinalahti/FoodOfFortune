@@ -80,8 +80,8 @@ public class MainGame extends Game {
         setScreen(drawnIngredients);
     }
 
-    public void goRecipes(){
-        Recipes recipes = new Recipes(this);
+    public void goRecipes(int first, int second, int third){
+        Recipes recipes = new Recipes(this, first, second, third);
         setScreen(recipes);
     }
 

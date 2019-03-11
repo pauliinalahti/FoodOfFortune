@@ -22,9 +22,13 @@ public class Recipes implements Screen {
     private Skin mySkin;
     private Stage stage;
     Image back;
+    int firstDrawn, secondDrawn, thirdDrawn;
 
-    public Recipes(MainGame g){
+    public Recipes(MainGame g, int first, int second, int third){
         game = g;
+        firstDrawn = first;
+        secondDrawn = second;
+        thirdDrawn = third;
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_reseptit.png"));
         back = new Image(background);
@@ -44,7 +48,7 @@ public class Recipes implements Screen {
         menuBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goDrawnIngredients();
+                game.goDrawnIngredients(firstDrawn,secondDrawn,thirdDrawn);
             }
         });
 

@@ -59,7 +59,7 @@ public class DrawnIngredients implements Screen {
         recipesBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goRecipes();
+                game.goRecipes(firstDrawn,secondDrawn,thirdDrawn);
             }
         });
 
@@ -117,7 +117,8 @@ public class DrawnIngredients implements Screen {
         batch.draw(firstReel.firstReelImages.get(firstDrawn),
                 reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
                 reelsRectangle.height);
-        font.draw(batch,firstReel.firstReelFoodNames.get(firstDrawn),2f,2f);
+        batch.setProjectionMatrix(game.cameraFont.combined);
+
         batch.draw(secondReel.secondReelImages.get(secondDrawn),
                 3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
         batch.draw(thirdReel.thirdReelImages.get(thirdDrawn),
