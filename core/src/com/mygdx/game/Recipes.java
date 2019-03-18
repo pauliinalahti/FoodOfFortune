@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -16,6 +15,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
+import com.badlogic.gdx.math.Rectangle;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,11 +34,14 @@ public class Recipes implements Screen {
     SpriteBatch batch;
     int firstDrawn, secondDrawn, thirdDrawn;
     ArrayList<Recipe> recipes = new ArrayList<Recipe>();
+    ArrayList<Rectangle> recipeRect = new ArrayList<Rectangle>();
     FirstReel firstReel = new FirstReel();
     SecondReel secondReel = new SecondReel();
     String firstFood, secondFood;
     GlyphLayout recipestext;
     String recipesTxt = "RESEPTIT";
+    GlyphLayout layout;
+    Rectangle rect;
 
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
@@ -68,6 +71,20 @@ public class Recipes implements Screen {
         recipes.add(new Recipe("nakit ja muussi",  new ArrayList<String>( Arrays.asList("nakkeja", "peruna")),"kyl sä osaat"));
         recipes.add(new Recipe("kalakeitto",  new ArrayList<String>( Arrays.asList("peruna", "lohi", "maito")),"kyl sä osaat"));
         recipes.add(new Recipe("pasta bolognese",  new ArrayList<String>( Arrays.asList("spagetti", "tomaatti", "jauheliha")),"kyl sä osaat"));
+
+        float rectY = (WORLDHEIGHT-1f)*100;
+        for(Recipe r: recipes){
+            layout = new GlyphLayout();
+            layout.setText(game.font, r.name);
+            Rectangle rectangle = new Rectangle(0.3f, layout.width, 1, rectY);
+            rectY -= 0.5f;
+            recipeRect.add(rectangle);
+
+
+        }
+        rect = new Rectangle(0.3f, layout.width, 1, rectY);
+
+
 
         Button menuBtn = new TextButton("BACK", mySkin, "small");
         menuBtn.pad(20);
@@ -117,13 +134,13 @@ public class Recipes implements Screen {
         stage.act();
         stage.draw();
 
-        batch.begin();
-
+        /*batch.begin();
+        batch.draw(rect, rect.x, rect.y, rect.width, rect.height);
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch, recipesTxt, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.5f)*100);
         batch.setProjectionMatrix((game.camera.combined));
 
-        batch.end();
+        batch.end();*/
     }
 
     @Override
