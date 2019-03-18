@@ -24,6 +24,7 @@ public class MainGame extends Game {
 
     public BitmapFont font;
     public BitmapFont font2;
+    public BitmapFont recipeFont;
     FreeTypeFontGenerator generator;
 
     public Viewport screenPort;
@@ -46,6 +47,7 @@ public class MainGame extends Game {
     public void create() {
         font = new BitmapFont();
         font2 = new BitmapFont();
+        recipeFont = new BitmapFont();
         batch = new SpriteBatch();
         generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
@@ -60,6 +62,13 @@ public class MainGame extends Game {
         parameter2.color.add(Color.BLACK);
         parameter2.borderWidth = 2;
         font2 = generator.generateFont(parameter2);
+
+        FreeTypeFontGenerator.FreeTypeFontParameter parameter3 = new FreeTypeFontGenerator.FreeTypeFontParameter();
+        parameter3.size = 20;
+        parameter3.borderColor = Color.BLACK;
+        parameter3.color.add(Color.BLACK);
+        parameter3.borderWidth = 2;
+        recipeFont = generator.generateFont(parameter3);
 
         camera = new OrthographicCamera();
         cameraFont = new OrthographicCamera();

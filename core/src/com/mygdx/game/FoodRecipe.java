@@ -16,6 +16,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
+import java.util.ArrayList;
+
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
@@ -35,12 +37,14 @@ public class FoodRecipe implements Screen {
     Recipe r;
     String recipeNameTxt;
     String methodTxt;
+    ArrayList<String> ingredientsTxt;
 
     public FoodRecipe(MainGame g, int first, int second, int third, Recipe r) {
         game = g;
         this.r = r;
         recipeNameTxt = r.name;
         methodTxt = r.method;
+        ingredientsTxt = r.ingredients;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("foodbackground2.jpg"));
@@ -60,7 +64,7 @@ public class FoodRecipe implements Screen {
         layoutRecipeName.setText(game.font2, recipeNameTxt);
 
         layoutMethod = new GlyphLayout();
-        layoutMethod.setText(game.font2, methodTxt);
+        layoutMethod.setText(game.recipeFont, methodTxt);
 
         Button backBtn = new TextButton("BACK", mySkin, "small");
         backBtn.pad(20);
@@ -98,7 +102,12 @@ public class FoodRecipe implements Screen {
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch, recipeNameTxt, WORLDWIDTH*100/2-layoutRecipeName.width/2, (WORLDHEIGHT-0.5f)*100);
-        game.font2.draw(batch, methodTxt, WORLDWIDTH*100/2-layoutMethod.width/2, (WORLDHEIGHT-1.5f)*100);
+        float j = 1f;
+        /*for(String i: ingredientsTxt) {
+            game.recipeFont.draw(batch, i, 100, (WORLDHEIGHT-j)*100);
+            j += 0.5f;
+        }*/
+        game.recipeFont.draw(batch, methodTxt, 100, (WORLDHEIGHT-j-0.5f)*100);
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();
