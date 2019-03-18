@@ -1,9 +1,11 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -17,6 +19,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class SlotMachine implements Screen {
@@ -76,6 +79,17 @@ public class SlotMachine implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
+        //testbutton
+        Button testBtn = new TextButton("TEST", mySkin, "small");
+        testBtn.pad(20);
+        ((TextButton) testBtn).getLabel().setFontScale(game.buttonSize);
+        testBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                game.goDrawnIngredients(0,0,0);
+            }
+        });
+
         Button backBtn = new TextButton("BACK", mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
@@ -103,6 +117,7 @@ public class SlotMachine implements Screen {
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
+        table.add(testBtn);
         table.top();
         table.left();
         //table.setDebug(true);

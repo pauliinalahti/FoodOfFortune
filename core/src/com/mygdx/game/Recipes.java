@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -15,10 +16,15 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
-import com.badlogic.gdx.math.Rectangle;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
@@ -34,14 +40,13 @@ public class Recipes implements Screen {
     SpriteBatch batch;
     int firstDrawn, secondDrawn, thirdDrawn;
     ArrayList<Recipe> recipes = new ArrayList<Recipe>();
-    ArrayList<Rectangle> recipeRect = new ArrayList<Rectangle>();
     FirstReel firstReel = new FirstReel();
     SecondReel secondReel = new SecondReel();
     String firstFood, secondFood;
     GlyphLayout recipestext;
     String recipesTxt = "RESEPTIT";
-    GlyphLayout layout;
-    Rectangle rect;
+    ArrayList<String> recipesVertical;
+    ArrayList<Recipe> recipeMatches;
 
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
@@ -57,6 +62,7 @@ public class Recipes implements Screen {
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
+        recipesVertical = new ArrayList<String>();
 
         recipestext = new GlyphLayout();
         recipestext.setText(game.font2, recipesTxt);
@@ -65,26 +71,6 @@ public class Recipes implements Screen {
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
-
-        recipes.add(new Recipe("pasta carbonara",  new ArrayList<String>( Arrays.asList("spagetti","pekoni","sipuli")),"kyl sä osaat"));
-        recipes.add(new Recipe("makaronilaatikko",  new ArrayList<String>( Arrays.asList("makaroni", "jauheliha", "sipuli")),"kyl sä osaat"));
-        recipes.add(new Recipe("nakit ja muussi",  new ArrayList<String>( Arrays.asList("nakkeja", "peruna")),"kyl sä osaat"));
-        recipes.add(new Recipe("kalakeitto",  new ArrayList<String>( Arrays.asList("peruna", "lohi", "maito")),"kyl sä osaat"));
-        recipes.add(new Recipe("pasta bolognese",  new ArrayList<String>( Arrays.asList("spagetti", "tomaatti", "jauheliha")),"kyl sä osaat"));
-
-        float rectY = (WORLDHEIGHT-1f)*100;
-        for(Recipe r: recipes){
-            layout = new GlyphLayout();
-            layout.setText(game.font, r.name);
-            Rectangle rectangle = new Rectangle(0.3f, layout.width, 1, rectY);
-            rectY -= 0.5f;
-            recipeRect.add(rectangle);
-
-
-        }
-        rect = new Rectangle(0.3f, layout.width, 1, rectY);
-
-
 
         Button menuBtn = new TextButton("BACK", mySkin, "small");
         menuBtn.pad(20);
@@ -101,25 +87,56 @@ public class Recipes implements Screen {
         table.add(menuBtn);
         table.top();
         table.left();
-
-        //table.setDebug(true);
-
+        // table.setDebug(true);
         table.setFillParent(true);
         stage.addActor(table);
 
-        Recipe temp;
-        ArrayList<Recipe> recipeMatches = new ArrayList<Recipe>();
-        for (Recipe r:recipes) {
-            if(r.ingredients.contains(firstFood.toLowerCase()) && r.ingredients.contains(secondFood.toLowerCase())) {
-                recipeMatches.add(r);
-            }
-        }
+
+        /*
         // Tulostetaan sopivat reseptit
         System.out.println("Ehdotetut reseptit:");
         for(Recipe r:recipeMatches) {
             System.out.println(r.name);
         }
-        System.out.println("///////////////");
+        System.out.println("///////////////");*/
+
+        File file = new File("recipefile.txt");
+        try {
+            Locale loc = new Locale("fi", "FI");
+            Scanner sc = new Scanner(new FileInputStream(file), "UTF-8");
+            sc.useLocale(loc);
+            int pad = 20;
+            while (sc.hasNextLine()) {
+                if(sc.findInLine("nimi:")!=null) {
+                    String recName = sc.nextLine();
+                    sc.findInLine("ainekset:");
+                    String str = sc.nextLine();
+                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                    sc.findInLine("ohje:");
+                    String recMethod = sc.nextLine();
+                    Recipe newRec = new Recipe(recName.replaceAll(" ",""), (ArrayList<String>) items,recMethod.replaceAll(" ",""));
+                    recipes.add(newRec);
+                    // System.out.println(recName+":"+items.toString()+":"+recMethod);
+                }
+                else {
+                    sc.nextLine();
+                }
+            }
+            sc.close();
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        recipeMatches = new ArrayList<Recipe>();
+        for (Recipe r:recipes) {
+            if(r.ingredients.contains(secondFood.toLowerCase()) && r.ingredients.contains(firstFood.toLowerCase())) {
+                recipeMatches.add(r);
+                System.out.println("Lisätty:");
+                System.out.println(r.name+":"+r.ingredients.toString()+":"+r.method);
+            }
+        }
+
     }
 
     @Override
@@ -133,14 +150,17 @@ public class Recipes implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+        batch.begin();
 
-        /*batch.begin();
-        batch.draw(rect, rect.x, rect.y, rect.width, rect.height);
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font2.draw(batch, recipesTxt, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.5f)*100);
+        game.font2.draw(batch, recipestext, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.5f)*100);
+        float foodY = 1.5f;
+        for (Recipe r: recipeMatches) {
+            game.font2.draw(batch, r.name, (WORLDWIDTH*100/3)-recipestext.width/2, (WORLDHEIGHT-foodY)*100);
+            foodY += 0.5f;
+        }
         batch.setProjectionMatrix((game.camera.combined));
-
-        batch.end();*/
+        batch.end();
     }
 
     @Override
