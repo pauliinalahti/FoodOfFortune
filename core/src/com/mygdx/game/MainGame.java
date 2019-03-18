@@ -95,6 +95,11 @@ public class MainGame extends Game {
         setScreen(recipes);
     }
 
+    public void goFoodRecipe(int first, int second, int third, Recipe r){
+        FoodRecipe foodRecipe = new FoodRecipe(this, first, second, third, r);
+        setScreen(foodRecipe);
+    }
+
     @Override
     public void render() {
         batch.setProjectionMatrix(camera.combined);

@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -16,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
+import com.badlogic.gdx.math.Rectangle;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -47,6 +49,7 @@ public class Recipes implements Screen {
     String recipesTxt = "RESEPTIT";
     ArrayList<String> recipesVertical;
     ArrayList<Recipe> recipeMatches;
+    int pad = 30;
 
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
@@ -82,6 +85,7 @@ public class Recipes implements Screen {
             }
         });
 
+
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(menuBtn);
@@ -112,9 +116,11 @@ public class Recipes implements Screen {
                     sc.findInLine("ainekset:");
                     String str = sc.nextLine();
                     ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                    //sc.findInLine("ainemaarat:");
+                    //String amount = sc.nextLine();
                     sc.findInLine("ohje:");
                     String recMethod = sc.nextLine();
-                    Recipe newRec = new Recipe(recName.replaceAll(" ",""), (ArrayList<String>) items,recMethod.replaceAll(" ",""));
+                    Recipe newRec = new Recipe(recName.replaceAll(" ",""), (ArrayList<String>) items, recMethod.replaceAll(" ",""));
                     recipes.add(newRec);
                     // System.out.println(recName+":"+items.toString()+":"+recMethod);
                 }
@@ -127,11 +133,35 @@ public class Recipes implements Screen {
         catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
+        Table table2 = new Table();
         recipeMatches = new ArrayList<Recipe>();
-        for (Recipe r:recipes) {
+        for (final Recipe r:recipes) {
             if(r.ingredients.contains(secondFood.toLowerCase()) && r.ingredients.contains(firstFood.toLowerCase())) {
                 recipeMatches.add(r);
+
+                Button recipeBtn = new TextButton(r.name, mySkin, "small");
+                recipeBtn.pad(20);
+                ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
+                recipeBtn.addListener(new ChangeListener() {
+                    @Override
+                    public void changed(ChangeEvent event, Actor actor) {
+                        game.goFoodRecipe(firstDrawn,secondDrawn,thirdDrawn, r);
+                    }
+                });
+
+
+
+                //table2.defaults().uniform().pad(30);
+                table2.add(recipeBtn);
+                //table2.top().pad(pad);
+                table2.left().pad(100);
+                table2.row().row();
+                pad += 5;
+                table2.setDebug(true);
+
+                table2.setFillParent(true);
+                stage.addActor(table2);
+
                 System.out.println("Lisätty:");
                 System.out.println(r.name+":"+r.ingredients.toString()+":"+r.method);
             }
@@ -150,16 +180,23 @@ public class Recipes implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-        batch.begin();
 
+        /*if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)){
+            FoodRecipe foodRecipe = new FoodRecipe(game, firstDrawn,secondDrawn,thirdDrawn, r);
+            game.setScreen(foodRecipe);
+        }*/
+
+        batch.begin();
+        //batch.draw(rect, rect.x, rect.y, rect.width, rect.height);
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch, recipestext, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.5f)*100);
         float foodY = 1.5f;
-        for (Recipe r: recipeMatches) {
+        /*for (Recipe r: recipeMatches) {
             game.font2.draw(batch, r.name, (WORLDWIDTH*100/3)-recipestext.width/2, (WORLDHEIGHT-foodY)*100);
             foodY += 0.5f;
-        }
+        }*/
         batch.setProjectionMatrix((game.camera.combined));
+
         batch.end();
     }
 
