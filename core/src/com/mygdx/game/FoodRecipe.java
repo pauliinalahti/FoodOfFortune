@@ -17,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
@@ -34,14 +35,14 @@ public class FoodRecipe implements Screen {
     Image back;
     GlyphLayout layoutRecipeName;
     GlyphLayout layoutMethod;
-    Recipe r;
+    Recipe recipe;
     String recipeNameTxt;
     String methodTxt;
     ArrayList<String> ingredientsTxt;
 
     public FoodRecipe(MainGame g, int first, int second, int third, Recipe r) {
         game = g;
-        this.r = r;
+        recipe = r;
         recipeNameTxt = r.name;
         methodTxt = r.method;
         ingredientsTxt = r.ingredients;
@@ -102,12 +103,39 @@ public class FoodRecipe implements Screen {
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch, recipeNameTxt, WORLDWIDTH*100/2-layoutRecipeName.width/2, (WORLDHEIGHT-0.5f)*100);
+        //game.recipeFont.draw(batch, "Hello World!", WORLDWIDTH*100/2-layoutRecipeName.width/2, (WORLDHEIGHT-0.5f)*100, 100, 100, true);
+
         float j = 1f;
         /*for(String i: ingredientsTxt) {
             game.recipeFont.draw(batch, i, 100, (WORLDHEIGHT-j)*100);
             j += 0.5f;
         }*/
-        game.recipeFont.draw(batch, methodTxt, 100, (WORLDHEIGHT-j-0.5f)*100);
+        ArrayList<String> amList = new  ArrayList<String>(Arrays.asList(recipe.amount.split("[,]+")));
+        for(String a: amList) {
+            int len = a.length();
+            int k = (int) Math.ceil(len/12);
+            //System.out.println("k: "+k);
+            game.recipeFont.draw(batch, a+'\n', 50, (WORLDHEIGHT-j-0.5f)*100, 300, -1, true);
+            if(k==0) {
+                j += 0.25;
+            } else {
+                j += (0.25*k);
+            }
+            //System.out.println("len: "+len+", k: "+k+", j: "+j);
+        }
+        j=1f;
+        //game.recipeFont.draw(batch, recipe.amount, 50, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
+        game.recipeFont.draw(batch, methodTxt, 370, (WORLDHEIGHT-j-0.5f)*100, 600, -1, true);
+        /*j = 1f;
+        ArrayList<String> methodList = new  ArrayList<String>(Arrays.asList(methodTxt.split("\\&")));
+        for(String m: methodList) {
+            game.recipeFont.draw(batch, m, 350, (WORLDHEIGHT-j-0.5f)*100, 600, 1, true);
+            j += 0.5f;
+        }*/
+
+
+
+
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();
@@ -140,3 +168,4 @@ public class FoodRecipe implements Screen {
         stage.dispose();
     }
 }
+

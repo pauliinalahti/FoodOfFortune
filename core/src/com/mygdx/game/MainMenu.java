@@ -2,6 +2,7 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -24,6 +25,7 @@ public class MainMenu implements Screen {
     private Skin mySkin;
     private Stage stage;
     Image back;
+
 
     public MainMenu(MainGame g) {
         game = g;
@@ -114,5 +116,6 @@ public class MainMenu implements Screen {
     public void dispose() {
         background.dispose();
         stage.dispose();
+
     }
 }

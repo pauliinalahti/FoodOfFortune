@@ -104,7 +104,7 @@ public class Recipes implements Screen {
         }
         System.out.println("///////////////");*/
 
-        File file = new File("recipefile.txt");
+        File file = new File("recipefile2.txt");
         try {
             Locale loc = new Locale("fi", "FI");
             Scanner sc = new Scanner(new FileInputStream(file), "UTF-8");
@@ -116,13 +116,14 @@ public class Recipes implements Screen {
                     sc.findInLine("ainekset:");
                     String str = sc.nextLine();
                     ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
-                    //sc.findInLine("ainemaarat:");
-                    //String amount = sc.nextLine();
+                    sc.findInLine("ainemaarat:");
+                    String amount = sc.nextLine();
                     sc.findInLine("ohje:");
                     String recMethod = sc.nextLine();
-                    Recipe newRec = new Recipe(recName.replaceAll(" ",""), (ArrayList<String>) items, recMethod.replaceAll(" ",""));
+                    //System.out.println(recName+":"+items.toString()+":"+amount+":"+recMethod);
+                    Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
+                    newRec.addAmount(amount);
                     recipes.add(newRec);
-                    // System.out.println(recName+":"+items.toString()+":"+recMethod);
                 }
                 else {
                     sc.nextLine();
@@ -148,9 +149,6 @@ public class Recipes implements Screen {
                         game.goFoodRecipe(firstDrawn,secondDrawn,thirdDrawn, r);
                     }
                 });
-
-
-
                 //table2.defaults().uniform().pad(30);
                 table2.add(recipeBtn);
                 //table2.top().pad(pad);
@@ -226,3 +224,4 @@ public class Recipes implements Screen {
         stage.dispose();
     }
 }
+

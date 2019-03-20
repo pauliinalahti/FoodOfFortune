@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.SkinLoader;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -29,6 +30,7 @@ public class MainGame extends Game {
 
     public Viewport screenPort;
     public MyAssetsManager myAssetsManager = new MyAssetsManager();
+    Music backgroundMusic;
 
     public SpriteBatch getBatch() {
         return batch;
@@ -49,6 +51,7 @@ public class MainGame extends Game {
         font2 = new BitmapFont();
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
+        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
         generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
@@ -112,6 +115,9 @@ public class MainGame extends Game {
     @Override
     public void render() {
         batch.setProjectionMatrix(camera.combined);
+        batch.begin();
+        backgroundMusic.play();
+        batch.end();
         super.render();
     }
 
@@ -119,5 +125,6 @@ public class MainGame extends Game {
     public void dispose() {
         batch.dispose();
         super.dispose();
+        backgroundMusic.dispose();
     }
 }
