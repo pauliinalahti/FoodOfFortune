@@ -1,0 +1,31 @@
+nimi: Pasta carbonara
+ainekset: spagetti, pekoni, kerma
+ohje: 1. Tee ohjeen mukaannnnn
+
+nimi: Kanaa riisipedillä 
+ainekset: 4 dl riisiä, 4-6 dl vettä (osa vedestä voidaan korvata paseeratulla tomaatilla), 3-4 kpl kanafilettä (jos on maustamattomia fileitä, muista maustaa ne), 2 dl paseerattua tomaattia, 2 tl aromisuolaa, 2 tl currya, 1 tl mustapippuria ja suolaa 
+ohje: Voitele vuoka, laita pohjalle riisi, mausteet ja vesi. Seuraavaksi laita kanat vuokaan ja kaada paseerattu tomaatti koko höskän päälle. Paista uunissa 200 asteessa noin tunti. \nJos tomaatti ei maistu voit korvata paseeratun tomaatin tuorejuustolla, ja täyteläisemmäksi ruoan saat kun lisäät riisin joukkoon vihanneksia! 
+
+nimi: Pasta bolognese
+ainekset: tomaatti, spagetti, jauheliha
+ohje: kyl sä osaat
+
+nimi: Makaronilaatikko
+ainekset: makaroni, jauheliha, kananmuna
+ohje: kyl sä osaat
+
+nimi: Kalakeitto
+ainekset: peruna, lohi, maito
+ohje: kyl sä osaat
+
+nimi: Makaronipata
+ainekset: makaroni, jauheliha, juusto, pippuri
+ohje: kyl sä osaat
+
+nimi: Soijabolognaise
+ainekset: soija, spagetti, tomaatti, porkkana
+ohje: kyl sä osaat
+
+nimi: Jauheliharisotto
+ainekset: jauheliha, riisi, porkkana, parsakaali
+ohje: kyl sä osaat
