@@ -1,31 +1,449 @@
-nimi: Pasta carbonara
-ainekset: spagetti, pekoni, kerma
-ohje: 1. Tee ohjeen mukaannnnn
-
 nimi: Kanaa riisipedillä 
-ainekset: 4 dl riisiä, 4-6 dl vettä (osa vedestä voidaan korvata paseeratulla tomaatilla), 3-4 kpl kanafilettä (jos on maustamattomia fileitä, muista maustaa ne), 2 dl paseerattua tomaattia, 2 tl aromisuolaa, 2 tl currya, 1 tl mustapippuria ja suolaa 
+ainekset: riisi, kana, tomaatti
+ainemaarat: 4 dl riisiä, 4-6 dl vettä (osa vedestä voidaan korvata paseeratulla tomaatilla), 3-4 kpl kanafilettä (jos on maustamattomia fileitä, muista maustaa ne), 2 dl paseerattua tomaattia, 2 tl aromisuolaa, 2 tl currya, 1 tl mustapippuria ja suolaa
 ohje: Voitele vuoka, laita pohjalle riisi, mausteet ja vesi. Seuraavaksi laita kanat vuokaan ja kaada paseerattu tomaatti koko höskän päälle. Paista uunissa 200 asteessa noin tunti. \nJos tomaatti ei maistu voit korvata paseeratun tomaatin tuorejuustolla, ja täyteläisemmäksi ruoan saat kun lisäät riisin joukkoon vihanneksia! 
 
-nimi: Pasta bolognese
-ainekset: tomaatti, spagetti, jauheliha
-ohje: kyl sä osaat
-
-nimi: Makaronilaatikko
-ainekset: makaroni, jauheliha, kananmuna
-ohje: kyl sä osaat
-
-nimi: Kalakeitto
-ainekset: peruna, lohi, maito
-ohje: kyl sä osaat
-
-nimi: Makaronipata
-ainekset: makaroni, jauheliha, juusto, pippuri
-ohje: kyl sä osaat
-
-nimi: Soijabolognaise
-ainekset: soija, spagetti, tomaatti, porkkana
-ohje: kyl sä osaat
+nimi: Jauhelihapihvit  
+ainekset: jauheliha, spagetti, sipuli
+ainemaarat: 400g jauhelihaa, 1 sipuli, spagettia, 2 rkl voita, paprikaa, tomaattia, salaattia
+ohje: Hienonna sipuli ja kuullota se pannulla. Lisää sipuli jauhelihan sekaan ja muotoile neljä isoa pihviä.\nKuumenna voi paistinpannulla ja paista pihvit (2-3 minuuttia/puoli). Mausta paistuneet pihvit jauhelihamausteella tai yrttisuolalla. Tarjoile pihvit spagetin ja salaatin kera.
 
 nimi: Jauheliharisotto
-ainekset: jauheliha, riisi, porkkana, parsakaali
-ohje: kyl sä osaat
+ainekset: jauheliha, riisi, tomaatti
+ainemaarat: 400 g jauhelihaa, 400g riisivihannessekoitusta, 1 purjo, 1 rkl öljyä, 2 tomaattia, 2 rkl lihafondia, 1 tl currya, 1 tl chilimaustetta
+ohje: Ruskista jauheliha pannulla ja siirrä se kulhoon. Hienonna purjo ja kiehauta se öljyssä.\nLisää joukkoon riisivihannessekoitus ja sekoittele pannulla purjon kanssa. Lopuksi lisää ruskistettu jauheliha ja lihafondie mukaan ja anna seoksen hautua 5-10 minuuttia. Tarjoile salaatin kanssa.
+
+nimi: Kanarisotto
+ainekset: kana, riisi, sipuli
+ainemaarat: 300 g broilerinfileesuikaleita, 1 sipuli, 2 dl riisiä, 1 rkl öljyä, 1 tl suolaa, 1 tl currya, 5 dl vettä, 1 kanaliemikuutio, 200 g herne-maissi-paprikaa
+ohje: Ruskista broileri ja mausta se suolalla ja currylla. Hienonna sipuli ja kuullota kattilassa, lisää riisit kuullottumaan.\nKaada kiehuva vesi kattilaan ja murenna mukaan kanaliemikuutio. Anna seoksen kiehua 10 minuuttia. Lisää vihannekset ja broileri ja jatka keittämistä 10 minuuttia.
+
+nimi: Marinoitu tofu
+ainekset: tofu, spagetti, paprika
+ainemaarat: 250 g maustamatonta tofua, spagettia, 1 iso paprika, 1 valkosipulinkynsi, 2 rkl öljyä, 1 rkl soijakastiketta, 1 rkl balsamiviinietikkaa, suolaa, sokeria, mustapippuria
+ohje: Viipaloi ja kuutio tofu sekä hienonna valkosipuli. Sekoita öljy, soijakastike, balsamiviinietikka, \n suola, sokeri ja maustepippuri. Anna tofupalojen marinoitua marinadissa kaksi tuntia.\nValuta tofupalat paperin päällä kuiviksi ja grillaa kuumalla pannulla.\nTarjoile paistetut tofut paistetuiden paprikoiden ja keitetyn spagetin kanssa. 
+
+nimi: Värikäs lohisalaatti
+ainekset: lohi, makaroni, paprika
+ainemaarat: 400 g lohifileetä, makaronia, 1 paprika, 2 tomaattia, 2 appelsiinia, 3 kanamunaa, 1 tl suolaa, mustapippuria, salaattia, 1 rkl oliiviöljyä
+ohje: Poista lohesta ruodot ja nahka. Leikkaa lohi ohuiksi viipaleiksi. Levitä viipaleet pellille ja mausta ne suolalla ja pippurilla. Paista lohi 225 asteessa 5 minuuttia. \nLeikkaa toisesta appelsiinista puolet pois ja purista siitä mehu lohiviipaleiden päälle. Kuori ja viipaloi loput appelsiinit sekä tomaatti ja paprika. \nKeitä kanamunat ja viipaloi ne. Keitä makaroni. Revi salaatti kulhoon ja sekoita muut ainekset mukaan. Pirskottele päälle oliiviöljyä.
+
+nimi: Lohiwokki
+ainekset: lohi, riisi, paprika
+ainemaarat: 300 g kirjolohisuikaleita, riisiä, 450 g wokwihanneksia, 1 purkki ananasviipaleita, 1 paprika, 2 rkl öljyä, 2 rkl soijakastiketta, mustapippuria, tilliä
+ohje: Ruskista lohisuikaleet wokpannulla ja siirrä kalat lautaselle. \nKuullota vihannekset ja hienonnettu paprika öljyssä. Mausta vihannekset soijalla sekä pippurilla ja anna hautua kypsäksi 5 minuuttia. \nSekoita vihanneksien sekaan ananakset. Ripottele kalojen pinnalle hienonnettua tilliä. Tarjoile riisin kanssa.
+
+nimi: Tomaatti-salvialohi
+ainekset: lohi, peruna, tomaatti
+ainemaarat: 500 g kirjolohifilee, 2 rkl salviaa, 3 tomaattia, perunaa, paketti mozzarellaa, kevätsipulia
+ohje: Nosta kala uunivuokaan nahkapuoli alaspäin. Levitä salvia fileen pintaan. \nViipaloi tomaatit ja mozzarella. Levitä viipaleet limittäin kalan päälle. Kypsennä seosta puoli tuntia 200 asteessa. \nRipottele pinnalle hienonnettu kevätsipuli. Tarjoile kala perunoiden ja salaatin kera.
+
+nimi: Thailohi
+ainekset: lohi, riisi, sipuli
+ainemaarat: 500 kirjolohifilee, jasminriisiä, 1 sipuli, 1 punainen chili, 1/2 dl korianteria, 1 rkl öljyä, kurkkua, 1/2 rkl hunajaa
+ohje: Nosta kala uunivuokaan nahkapuoli alaspäin. \nHienonna sipuli ja chili. Sekoita sipuli, chili, korianteri, öljy ja hunaja. Levitä seos kalan päälle ja peitä vuoka kelmulla ja anna marinoitua jääkaapissa tunnin ajan. \nPaista kala 200 asteessa noin 20 minuuttia.Tarjoile hienonnetun kurkun ja jasminriisin kera.
+
+nimi: Mango-lohipasta
+ainekset: lohi, spagetti, parsakaali
+ainemaarat: 300 g lohikuutioita, 300 g tagliatellepastaa, 200 g parsakaalia, 1 sipuli, 1 rkl öljyä, 1 mango, 2 dl ruokakermaa, suolaa, mustapippuria
+ohje: Sulata lohikuutiot mikrossa. Kuulota hienonnettu sipuli pannulla öljyn kanssa. Lisää lohipalat pannulle ja paista ne. Mausta lohi suolalla. \nHalkaise mango ja hienonna se pieniksi kuutioksi. Pilko parsakaali pieneksi ja tyhjällä pannulla öljyn kanssa noin 4 minuuttia. Lisää sekaan kerma ja mango. Anna kiehua noin 5 minuuttia. Lisää päälle lopuksi lohisipuliseos ja anna kuumentua. Tarjoile pastan kera.
+
+nimi: Savulohipasta
+ainekset: lohi, spagetti, tomaatti
+ainemaarat: 200 g lämminsavukirjolohta, 1 sipuli, 1 valkosipulinkynsi, 1 rkl öljyä, 2 dl ruokakermaa, 1 rkl sitruunamehua, 1/2 tl suolaa, 1/2 tl mustapippuria, 250 g tuorepastaa
+ohje: Kuumenna tilavassa kattilassa 1,5 litraa vettä ja lisää suola. \nKuori ja hienonna sipuli ja valkosipulinkynsi. Kuullota sipuleita öljyssä pari minuttia. Lisää ruokakerma ja anna kiehua muutama minuutti. Mausta sitruunamehulla, suolalla ja pippurilla. \nLisää tuorepasta veteen ja anna kiehua 10 minuuttia. Siivilöi pasta ja kaada takaisin kattilaan. \nLisää lohipalat kastikkeseen ja kuumenna kiehuvaksi. Lisää tilliä kastikkeeseen. Tarjoile kastike tuorepastan kanssa.
+
+nimi: Sieni-kinkkupasta
+ainekset: sieni, spagetti, tomaatti
+ainemaarat: 300 g palvikassleria, 200 g tuoreherkkusieniä, 1 sipuli, 1 rkl öljyä, 500 g tomaattimurskaa, suolaa, mustapippuria, timjamia, 50 g parmesaania, 200 g nauhapastaa
+ohje: Hienonna sipuli ja timjami sekä paloittele sienet. Leikkaa kasleri suikaleiksi. Kiehauta sipuli ja kassleri paistokasarissa öljyn kanssa. Sekoita joukkoon tomaattimurska. Mausta seos pippurilla, suolalla ja timjamilla. Anna hautua muutama minuutti. \nKeitä pasta ja sekoita kastikkeen joukkoon. Ripottele pinnalle parmesaanijuusto. 
+
+nimi: Lämmin sienisalaatti
+ainekset: sieni, makaroni, sipuli
+ainemaarat: 200 g tuoreherkkusieniä, 1 sipuli, 2 valkosipulinkynttä, 1 rkl oliiviöljyä, 1 tl oreganoa, 1 tl minttua, 1/2 tl suolaa, jääsalaattia, makaronia, 2 tomaattia
+ohje: Puhdista ja paloittele sienet. Hienonna sipuli ja valkosipuli, kuullota ne öljyssä. Lisää sekaan sienet ja jatka paistamista muutama minuutti. Mausta oreganolla, mintulla ja suolalla. \nTarjoile seos keitetyn makaronin ja salaatinlehtien kanssa. Koristele annos tomaattilohkoilla.
+
+nimi: Carbonara sienipasta
+ainekset: sieni, spagetti, tomaatti
+ainemaarat: 200 g tuoreherkkusieniä, 250 g tagliatellepastaa, vettä, suolaa, 140 g pekonia, 2 valkosipulinkynttä, 2 kanamunaa, 2 dl kasvisrasvasekoitetta, pippuria, 2 tomaattia
+ohje: Suikaloi pekonit ja levitä ne paistokasariin. Viipaloi sienet ja valkosipulinkynnet. \nRuskista pekoni ja lisää pannulle sienet ja valkosipuli. Kypsennä seosta kunnes sienet ovat pehmenneet. \nSekoita munat ja rasvasekoite keskenään. Mausta seos pippurilla. \nSekoita keitetty pasta pekoni-sieniseoksen joukkoon. Lisää munaseos ja sekoita.
+
+nimi: Peruna-kikherne-tofusalaatti
+ainekset: tofu, peruna, sipuli
+ainemaarat: 5 perunaa, 1 sipuli, 2 valkosipulinkynttä, 1 paprika, 1 omena, 2 dl maustekurkkua, 300 g kikherneitä, 300 g tofua, 1 rkl öljyä, suolaa, pippuria, persiljaa, 1 dl sitruuna-vinaigrette-salaattikastike
+ohje: Kuori, lohko ja keitä perunat vedessä, joka on maustettu suolalla. Hienonna sipuli ja valkosipuli. Sekoita perunat, sipuli, valkosipuli ja salaatinkastike keskenään. Anna marinoitua 10 minuuttia huoneenlämmössä. \nKuutio paprikat, omena ja maustekurkut. Valuta kikherneet ja sekoita ainekset perunaseoksen kanssa. \nKuivaa tofu ja ruskista öljyn kanssa. Mausta suolalla ja pippurilla. Lisää tofut salaatin päälle. Ripottele päälle persiljaa. 
+
+nimi: Nopea kanapasta
+ainekset: kana, makaroni, tomaatti
+ainemaarat: 300 g hunajamarinoitua broilerinfileesuikaleita, 250 g tagliatellepastaa, 1 rkl öljyä, 200 g sipulikuutioita, 200 g maissia, 2 dl ruokakermaa, 100 g mustapippurituorejuustoa, persiljaa
+ohje: Ruskista broilerinsuikaleet ja lisää joukkoon sipulikuutiot ja öljy. Anna hetken aikaa kuullottua. \nLisää seokseen maissi, ruokakerma ja pippurijuusto. Keitä seosta 5 minuuttia. Tarjoile keitetyn makaronin kanssa. Lisää persiljaa annoksien päälle.
+
+nimi: Currykana
+ainekset: kana, riisi, paprika
+ainemaarat: 450 g hunajamarinoitua broilerinfileesuikaleita, 1 paprika, 1 rkl öljyä, 3 tl currya, 1 banaani, 200 g maissia, 2 dl ruokakermaa, 1 rkl limetinmehua, mustapippuria, jasminriisiä
+ohje: Ruskista broileri öljyssä ja sekoita joukkoon curry. \nViipaloi banaani ja paprika. Lisää banaani, paprika ja maissi broilerin sekaan. Mausta limetinmehulla ja mustapippurilla. Lisää tarvittaessa vettä. \nHauduta miedolla lämmöllä noin 10 minuuttia. Tarjoile keitetyn jasminriisin kera. 
+
+nimi: Kotkot-kanakeitto
+ainekset: kana, peruna, porkkana
+ainemaarat: 300 g maustamatonta broilerinfileesuikaleita, 6 perunaa, vettä, 1 tl suolaa, 1 tl mustapippuria, 3 porkkanaa, 200 g maissia, 1/2 purjo, 1 tl basilikaa, 1 rkl öljyä, 1 tl paprikajauhetta
+ohje: Pese ja kuori vihannekset. Viipaloi porkkanat ja lohko perunat. Suikaloi halkaistu ja huuhdeltu purjo. \nPane kiehuvaan veteen porkkanat ja perunat. Lisää joukkoon suolaa ja pippuria. Keitä 15-20 minuuttia. Ruskista samalla broileri öljyssä ja mausta paprikajauheella. \nLisää keittoon maissit, purjo ja broilerisuikaleet. Anna kiehua vielä 5 minuuttia. 
+
+nimi: Porkkanapasta
+ainekset: kana, spagetti, porkkana
+ainemaarat: 300 g hunajamarinoitua broilerinfileesuikaleita, 4 porkkanaa, 1 rkl öljyä, 60 g kuivattuja tomaatteja, 1 dl cashewpähkinöitä, 1 rkl omenaviinietikkaa, vettä, 10 basilikanlehteä, 1/2 dl hienonnettua basilikaa
+ohje: Kuori porkkanat ja leikkaa niistä ohuita suikaleita. Ruskista broileri öljyssä. \nSekoita kulhossa kuivatut tomaatit, cashewpähkinät, omenaviinietikka, 2 rkl vettä sekä basilikanlehdet. Soseuta seos seuvasekoittimella tai monitoimikoneella. \nLämmitä porkkanasuikaleet pannulla öljyssä. Sekoita joukkoon kastike ja broilerit. Ripoittele annoksien päälle tuorebasilikaa.
+
+nimi: Broileri-parsakaalisalaatti
+ainekset: kana, makaroni, parsakaali
+ainemaarat: 300 g maustamatonta broilerinfileesuikaleita, 1 tl öljyä, 2 dl salaatinkastiketta, 2 tomaattia, 1 kurkku, rucolaa, jääsalaattia, 400 g parsakaalia
+ohje: Paista broilerifileet öljyn kanssa. Viipaloi valmiit fileet ja mausta salaatinkastikkeella. \nKuutio tomaatit ja suikaloi kurkku. Revi salaatinlehtiä tarjoiluastian pohjalle. Valuta päälle salaatinkastiketta. Nostele päälle tomaattikuutiot ja kurkkusuikaleet. \nHuuhdo ja pilko parsakaali. Keitä parsakaalia noin kolme minuuttia. \nNosta parsakaali salaattipohjan keskelle ja asettele reunoille viipaloitu broileri.
+
+nimi: Paistettu jauheliha-riisi
+ainekset: jauheliha, riisi, sipuli
+ainemaarat: 400 g sikanautajauhelihaa, 450 g riisi-vihannessekoitusta, 2 rkl öljyä, 1/2 tl suolaa, 2 kanamunaa, 1 rkl soijakastiketta, 2 kevätsipulia
+ohje: Paista jauheliha kuumassa wokpannussa öljyllä. Mausta jauheliha suolalla ja lisää riisivihannesekoitus pannulle. Paista kunnes riisi-vihannessekoitus on kypsää. \nRiko kanamunat kulhoon, lisää soijakastike ja vatkaa munien rakenne rikki. \nSekoita kanamunat riisi-jauhelihaseokseen. Paista kuumalla lämmöllä kunnes kanamuna on kypsynyt. \nSuikaloi kevätsipulit ja lisää ne paistetun seoksen joukkoon. 
+
+nimi: Tomaattiset lihapyörykät
+ainekset: jauheliha, peruna, sipuli
+ainemaarat: 450 g jauhelihaa, 100 g tomaattikeittoaineksia, 1/2 dl korppujauhoja, 1,5 dl maitoa, 1 kanamuna, 1 tl oreganoa, 1 tl basilikaa, 1 sipuli, perunoita
+ohje: Kuullota sipuli. Sekoita tomaattikeittoainekset, korppujauhot, maito, muna, sipuli ja mausteet. Anna turvota 5 minuuttia. Lisää seokseen jauheliha. \nMuotoile taikinasta pyöryköitä ja paista ne 225 asteessa noin 15 minuuttia. Tarjoile pyörykät keitetyiden perunoiden kera. 
+
+nimi: Porkkana-jauhelihapihvit
+ainekset: jauheliha, peruna, porkkana
+ainemaarat: 400 g naudan jauhelihaa, 2 porkkanaa, perunoita, 1 dl maitoa, 1/2 dl korppujauhoja, 1 kanamuna, 1 tl raakunaa, 1 tl suolaa, mustapippuria
+ohje: Raasta porkkanat hienoksi raasteeksi. Sekoita maito ja korppujauhot. Anna seoksen turvota hetken. \nSekoita joukkoon jauheliha, porkkanaraaste, muna, raakuna, suola ja pippuri. \nTaputtele takinasta käsin 10 ohutta pihviä. Paista pihvit 225 asteessa noin 8 minuuttia. Tarjoile pihvit perunasoseen kera.
+
+nimi: Porkkainainen broilerikastike
+ainekset: kana, makaroni, porkkana
+ainemaarat: 450 g maustamatonta broilerinfileesuikaleita, 3 porkkanaa,  1 sipuli, 3 rkl punaista pestoa, 1 tlk kasvisrasvaa, 1 rkl öljyä, 1 tl timjamia, 1 tl suolaa, 1 tl mustapippuria, 2 tomaattia, 1/2 dl hienonnettua tuorebasilikaa
+ohje: Kuori ja leikkaa porkkanat ohuiksi viipaleiksi. Suikaloi sipuli ja kuullota pestokastikkeessa. Lisää seokseen porkkanat ja anna hautua kannen alla 5 minuuttia. \nLisää kasvisrasva ha keitä miedolla lämmöllä noin 5 minuuttia. \nPaista broilerit kypsiksi. Mausta timjamilla, suolalla ja pippurilla. Nosta broilerit kastikkeen joukkoon. Kuutioi tomaatit ja lisää ne joukkoon. Tarjoile annokste keitetyn makaronin kanssa.
+
+nimi: Porkkana-soijarouhepihvit
+ainekset: soija, peruna, porkkana
+ainemaarat: 3 dl soijarouhetta, 500 g porkkasosetta, 1/2 dl korppujauhoja, 1 sipuli, 1/2 dl timjamia, 2 kanamunaa, 1 tl suolaa, 1 tl mustapippuria
+ohje: Sekoita porkkanasose, soijarouhe ja korppujauhot. Anna seoksen turvota noin 10 minuuttia. \nHienonna sipuli ja timjami. Lisää se porkkaseokseen. Sekoita joukkoon munat ja mausteet. \nMuotoile taikinasta 20 pihviä pellille. Paista 200 asteetta noin 15 minuuttia. Tarjoile pihvit perunasoseen kera.
+
+nimi: Soijamakaronilaatikko
+ainekset: soija, makaroni, porkkana
+ainemaarat: 2 dl soijarouhetta, 400 g tummaa makaronia, 1 rkl öljyä, 1 sipuli, 2 valkosipulinkynttä, 1/2 dl rypsiöljyä, 1 dl vettä, 3 rkl tomaattisosetta, 1 tl basilikaa, 1 tl oreganoa, 1 tl suolaa, 1 tl mustapippuria, 750 ml kaurajuomaa, 2 kanamunaa, 1 tl basilikaa
+ohje: Keitä makaroneja 8 minuuttia suolavedessä. Valuta vesi pois ja lisää öljy makaroneihin. \nKuori ja hienonna sipulit ja kuullota ne öljyssä. Lisää soijarouhe ja sekoita hetki. Lisää 1 dl vettä, tomaattisose ja mausteet. \nSekoita laakeassa vuoassa makaronit ja soijarouheseos. Sekoita kaurajuoman joukkoon kanamunat ja mausteet. Kaada seos vuokaan. \nLisää seoksen päälle juustoraastetta. Paista 175 asteessa noin 30 minuuttia. 
+
+nimi: Riisi-lohisalaatti
+ainekset: lohi, riisi, tomaatti
+ainemaarat: 150 g kylmäsavustettua lohta, 450 g riisi-vihannessekoitusta, 1 dl rankalaista salaatinkastiketta, 2 valkosipulinkynttä, 2 dl maustekurkkuviipaleita, 1 dl tilliä, 4 kanamunaa, jääsalaattia, 3 tomaattia, 1 rkl kapriksia
+ohje: Kuumenna riisi-vihanneskoitusta pannulla noin 5 minuuttia tilkassa salaattikastiketta. \nMausta seos lopulla salaatinkastikkeella ja hienonnetulla valkosipulilla. Anna seoksen jäähtyä. \nSuikaloi maustekurkut ja hienonna tilli. Sekoita riisiseoksen joukkoon. Anna seoksen marinoitua jääkaapissa tarjoituhetkeen saakka. \nKeitä kanamunat ja lohko ne. Revi salaatinlehdet ja kaada riisiseos salaatin päälle. Leikkaa lohiviipaleet puoliksi ja lisää ne seokseen. Lisää lopuksi lohkotut tomaatit, kanamunat ja kaprikset seokseen.
+
+nimi: Kirjolohikastike pastalla
+ainekset: lohi, spagetti, sipuli
+ainemaarat: 300 g marinoitua kirjolohisuikaleita, 1/2 purjo, 2 dl ruokakermaa, 1 rkl sinappia, 1 tl soijakastiketta, 1 dl tilliä, 1 sipuli, tagliatellepastaa
+ohje: Paista kalasuikaleet paistokasarissa. Kuullota sipuli. Hienonna halkaistu purjo ja lisää sipulin kanssa paistokasariin. \nLisää kerma ja mausteet. Hauduta miedolla lämmöllä 5 minuuttia. Sekoita joukkoon silputtu tilli. Tarjoile pastan kera. 
+
+nimi: Sieni-soijarouhekiusaus
+ainekset: peruna, soija, porkkana
+ainemaarat: 200 g herkkusieniä, 10 kpl aurinkokuivattuja tomaatteja, 2 valkosipulinkynttä, 1-2 rkl öljyä, 1 dl tummaa soijarouhetta, 1/2 dl vettä, 1/2 tl suolaa, 1 tl savupaprikajauhetta, 1 tl kuivattuja timjamia, mustapippuria myllystä, 500 g peruna-sipuliseosta, 2dl kaurakermaa
+ohje: Paloittele herkkusienet. Hienonna aurinkokuivatut tomaatit ja silppua valkosipulinkynnet. \nKuumenna öljy pannulla ja lisää siihen valkosipuli ja sienet. Kääntele hetki ja lisää sitten pannulle aurinkokuivatut tomaatit ja kuiva soijarouhe. Paista hetken aikaa ja lisää pannulle sitten vesi ja mausteet. Jatka paistamista, kunnes sienet ovat saaneet kauniin värin pintaansa eikä niistä enää irtoa nestettä. \nSekoita uunivuoassa yhteen sieni-soijarouhepaistos ja jäinen peruna-sipulisekoitus. Kaada päälle kaurakerma ja paista 200-asteisen uunin keskitasolla noin 45 minuuttia. \nSyö ketsupin kanssa.
+
+nimi: Välimeren tofu-perunasalaatti
+ainekset: peruna, tofu, tomaatti
+ainemaarat: 4-5 perunaa, 150 g kirsikkatomaatteja, pieni punasipuli, 50 g isoja kapriksia, 4 aurinkokuivattua tomaattia, ruukku basilikaa, 1 pkt maustamatonta tofua, oliiviöljyä, 2 valkosipulinkynttä, 1/4 tl paprikajauhetta, suolaa, mustapippuria, 1 rkl sitruunamehua, 1 tl balsamicoa, 1/4 tl sokeria
+ohje: Pese ja keitä perunat. Anna jäähtyä, kuori ja pilko kuutioiksi. \nHalkaise kirsikkatomaatit, silppua sipuli ja leikkaa aurinkokuivatut tomaatit pienemmäksi. Yhdistä perunat, tomaatit, sipuli ja kaprikset. \nKuutio tofu ja hienonna valkosipuli. Kuumenna paistinpannu ja lisää siihen oliiviöjyä. Kuullota pannulla hetki valkosipulia ja paprikajauhetta, lisää sitten tofu, suola ja mustapippuri. Paista, kunnes tofussa on kaunis pinta. \nLisää tofu muiden ainesten joukkoon. Sekoita kastike ja kaada se salaatin sekaan. Lisää basilikanlehdet salaattiin vasta juuri ennen tarjoilua.
+
+nimi: Sieni-herne-parsakaali-pasta
+ainekset: peruna, sieni, parsakaali
+ainemaarat: 1 parsakaali pilkottuna, 200 g pakasteherneitä, 200 g herkkusieniä, kourallinen pinjansiemeniä, 3 dl kaurakermaa, 1/2 sitruunan mehu, rouhittua mustapippuria, 1/2 kasvisliemikuutio, 50 g raastettua parmesaania, oliiviöljyä
+ohje: Keitä pasta al denteksi. \nPilko parsakaali ja sienet. Paista sieniä kuumalla paistinpannulla ilman öljyä niin että ne alkavat ruskistua, lisää lopuksi öjyä ja ruskista hetki. Siirrä sivuun. \nPaahda kuumalla pannulla hetki pinjansiemeniä ja siirrä ne myös sivuun. \nKaada kerma pannuun ja sekoita siihen puolikkaan sitruunan mehu, runsaasti mustapippuria ja vajaa puolikas kasvisliemikuutio. Lisää parsakaalin palat ja anna keittyä miedolla lämmöllä pari minuuttia. Parsakaali on hyvä jättää vähän rapeaksi, joten varo keittämästä liikaa. \nLisää muut ainekset, sekoita ja hauduta hetki niin että herneet sulavat. Tarjoile lehtipersiljan kera.
+
+nimi: Mehevä tofupasta
+ainekset: makaroni, tofu, paprika
+ainemaarat: 270 g maustamatonta tofua, 1 paprika, 1 sipuli, 1 rkl öljyä, 2 tl paprikajauhetta, 1 tl valkosipulijauhetta, 1/4 tl valkopippuria, 3/4 tl suolaa, 2 dl ruokakermaa, 250 g makaronia
+ohje: Pane vettä kiehumaan pastan keittämistä varten. \nValuta tofu ja paloittele se kuutioiksi. Pese ja kuutioi paprika ja hienonna sipuli. \nSekoita öljy, paprikajauhe, valkosipulijauhe, valkopippuri ja suola pannulla. Kiehauta mausteseos ja paista siinä tofukuutiot, paprika ja sipuli kevyesti. Lisää ruokakerma tai kookosmaito ja anna hautua viitisen minuuttia. \nKeitä tuorepasta pakkauksen ohjeen mukaan ja valuta hyvin. Sekoita joukkoon kastike ja kaada tarjoiluastiaan.
+
+nimi: Soija-kasvisrisotto
+ainekset: Soija, riisi, tomaatti
+ainemaarat: 150 g soijarouhetta, 3 dl riisiä, 7 dl vettä, 2 tl currya, 1,5 liemikuutio, 1 sipuli, 1/2 purjo, 1 paprika, 150 g wokvihanneksia, 2 rkl soijakastiketta
+ohje: Keitä riisi currylla ja 1/2 liemikuutioll maustetussa vedessä. Keitä soija 10 minuuttia vedessä jossa on yksi liemikuuto. Lisää joukkoon paprikasuikaleet ja wokvihannekset. \nSekoita riisi ja soija joukkoon ja mausta. 
+
+nimi: Sienirisotto kukkakaaliriisistä
+ainekset: Sieni, riisi, sipuli
+ainemaarat: 200 g tuoreherkkusientä, 500 g kukkakaalia, 1 sipuli, 4 valkosipulinkynttä, 1 rkl öljyä, 5 dl vettä, 2 kanaliemikuutiota, 2 dl kuohukermaa, 2 dl parmesaania, 1/2 tl mustapippuria, jasminriisiä, persiljaa
+ohje: Leikkaa kukkakaali pieneksi rouheeksi. Viipaloi herkkusienet. Kuori ja hienonna sipulit. Paista herkkusienet ja nosta sivuun. Kuullota öljyssä sipulit. \nLisää seokseen kukkakaali, vesi ja hienonneut kanaliemikuutiot. Keitä muutama minuutti ja lisää kerma ja parmesaaniraaste. Mausta mustapippurilla. Keitä kunnen seos on paksua ja valuvan oloista. \nLisää seokseen herkkusienet. Koristele annos persijalla ja tarjoile riisin kera.
+
+nimi: Pasta bolognese
+ainekset: jauheliha, spagetti, tomaatti
+ainemaarat: 400 g sika-nauta jauhelihaa, 1 kpl sipulia hienonnettuna, 3 kpl valkosipulinkynttä, 3 rkl öljyä, 1 tl suolaa, 400 g tomaattimurskaa, 2 rkl tomaattipyreetä, 1 kpl porkkanaa raastettuna, 0,25 tl chilijauhetta 
+ohje: Kuumenna pannu ja ruskista jauheliha ja hienonnettu sipuli. Lisää valkosipulimurska. Mausta seos suolalla ja pippurilla. \nLisää tomaattimurska ja -pyree sekä raastettu porkkana. Halutessasi kastikkeeseen hieman potkua voit lisätä ripauksen chilijauhetta tai hienoksi silputtua tuoretta chiliä. \nHauduta pienellä lämmöllä vähintään 15-20 minuuttia. Tarjoile bolognesekastike pkeitetyn spagetin kera.
+
+nimi: Jauhelihaspesiaali
+ainekset: makaroni, jauheliha, porkkana
+ainemaarat: 3 dl makaronia, 1 l vettä, 1 lihaliemikuutio, 1 sipuli, 1/2 juuriselleriä, 2 porkkanaa, 1 rkl öljyä, 400 g nauta-sikajauhelihaa, 1 tl paprikajauhetta, 6 rkl tomaattipyreetä, suolaa, mustapippuria rouhittuna
+ohje: Keitä makaronit liemikuutiolla maustetussa vedessä. \nKuori ja kuutioi sipuli, juuriselleri ja porkkana pieniksi kuutioiksi. \nKuumenna öljy pannulla. Ruskista jauhelihaa kuumalla pannulla viitisen minuuttia. Lisää sipuli, selleri ja porkkana. Paista toiset viisi minuuttia. Sekoita joukkoon paprikajauhe ja tomaattipyree. \nSiivilöi makaronit ja kaada ne takaisin kattilaan. Sekoita joukkoon jauhelihapaistos. Mausta suolalla ja pippurilla.
+
+nimi: Lohikeitto maitoliemellä
+ainekset: lohi, peruna, porkkana
+ainemaarat: 6 kpl perunaa, 2 kpl porkkanaa, 1-2 kpl sipulia, 1 1/2 tl suolaa, 8 dl vettä, 10 kpl maustepippuria, 1 kpl laakerinlehti, 400 g lohifileetä, 2 dl maitoa tai kermaa, 1/2 - 1 dl tilliä
+ohje: Pese, kuori ja paloittele perunat, porkkanat ja sipuli. Keitä kasvikset maustepippureiden ja laakerinlehden kanssa vedessä lähes kypsiksi. \nPoista lohifileestä nahka ja ruodot. Leikkaa lohi reiluiksi kuutioiksi.\nLisää maito tai kerma, suola ja paloiteltu lohi. Keitä miedolla lämmöllä, kunnes kala on kypsää, noin 5 minuuttia. Lisää tilli ja tarjoile keitto ruisleivän kanssa. Paahda leipäviipaleet halutessasi.
+
+nimi: Makaronilaatikko
+ainekset: makaroni, jauheliha, sipuli
+ainemaarat: 400 g makaroneja, 400 g naudan jauhelihaa, 1 sipuli, 3/4 tl suolaa, 3/4 tl mustapippuria, 1/4 tl maustepippuria, 2 tl basilikaa, 2 tl timjamia, 2-3 kananmunaa, 7 dl kevytmaitoa, 1 tl suolaa, 2 dl juustoraastetta
+ohje: Keitä makaronit pakkauksen ohjeen mukaan, noin 8 minuuttia. Valuta makaronit. \nHienonna sipuli. Ruskista jauheliha omassa rasvassaan ja lisää sipulit jauhelihan joukkoon. Mausta seos suolalla, musta- ja maustepippurilla, basilikalla sekä timjamilla. Kaada jauhelihaseos ja makaronit isoon voideltuun vuokaan (tilavuus noin 3 l). \nSekoita munamaidon ainekset keskenään ja kaada seos vuokaan. Kypsennä 175-asteisessa uunissa noin 45 minuuttia. Ripottele juustoraaste vuoan pinnalle kypsymisen loppuvaiheessa.
+
+nimi: Soijabolognaise
+ainekset: soija, spagetti, paprika
+ainemaarat: 2 dl tummaa soijarouhetta, 1/2 dl öljyä, 1 dl vettä, 2 rkl soijakastiketta, 1 sipuli, 2 valkosipulinkynttä, 5 dl paprikaa pilkottuna, 2 rkl rypsiöljyä, 2 rkl tomaattipyreetä, 2 tl paprikajauhetta, 1 tl timjamia, 2 tl sokeria, 2 tl mustapippuria, 1 tl suolaa, 400 g tomaattimurskaa
+ohje: Kuumenna öljy paistinpan­nulla ja lisää soijarouhe. Paista sitä hetki. \nLisää vesi muutamassa erässä välillä sekoittaen. Vesi imeytyy soijarouheeseen ja rouhe tur­poaa. Lisää lopuksi soijakastike. Siirrä rouhe toiseen astiaan ja valmista tomaattikastike. \nKuori ja hienonna sipuli ja valkosipulit. Kuori ja pilko tai raasta valitsemasi kasvikset. Kuumenna öljy paistinpannussa ja lisää sipulit, valkosipulit ja kasvikset. Kuullota sekoittaen. Lisää tomaattipyree ja mausteet. Sekoittele hetki kuumalla pannulla. \nLisää lopuksi tomaattimurska. Huuhdo purkki vedellä ja kaada myös vesi pannulle. Anna hautua miedolla lämmöllä 3–5 minuuttia. Sekoita soijarouhe valmiiseen kastikkeeseen. Tarjoa soijabolognese esimerkiksi spagetin tai muun pastan kanssa.
+
+nimi: Riisi-broileripannu
+ainekset: riisi, kana, porkkana
+ainemaarat: 400 g marinoituja broilerin fileitä, 3 dl pitkäjyväistä riisiä, 2 rkl öljyä, 1-1/2 tl currya, 5 dl vettä, 1-2 porkkanaa, 100 g pakasteherneitä, 1 prk ranskankermaa, 1-2 dl ruokakermaa, 1 dl hienonnettua persiljaa, mustapippuria
+ohje: Leikkaa tai saksi fileet paloiksi. \nSekoita riisi, Oivariini ja curry isossa pannussa tai paistokasarissa. Kuumenna samalla sekoitellen. Lisää broileripalat ja paista, kunnes lihan pinta on kevyesti ruskistunut. \nLisää vesi ja kuumenna kiehuvaksi. Peitä kannella, alenna lämpöä ja anna kiehua hiljalleen 10 - 15 min. Raasta tällä välin kuorittu porkkana karkeaksi raasteeksi. \nLisää pakasteherneet ja porkkanaraaste. Jatka kypsentämistä vielä 5 min.\nSekoita joukkoon crème fraîche. Lisää tarvittaessa ruokakermaa tai vaihtoehtoisesti vettä. Kuumenna, tarkista suola (lisää tarvittaessa ripaus suolaa tai esim. 1 - 2 tl kasvis- tai kanafondia). \nLisää persilja, kouhaise päälle pippuria ja nosta pannu tarjolle.
+
+nimi: Paistettu riisi tofulla
+ainekset: riisi, tofu, porkkana
+ainemaarat: 6 dl keitettyä riisiä, 2 dl pitkäjyväistä riisiä, 270 g maustamatonta tofua, 1 rkl öljyä, 1 sipuli, 2 valkosipulinkynttä, 1 porkkana, 1 kevätsipulinvarsi, 1 1/2 dl herneitä, 3 rkl soijakastiketta, 1 rkl maapähkinävoita, 1 1/2 rkl inkivääriä hienonnettuna, 1 valkosipulinkynsi hienonnettuna, 2 tl ruokosokeria, seesaminsiemeniä, sriracha-kastiketta
+ohje: Keitä riisi pakkauksen ohjeen mukaan, ellei sinulla ole valmiiksi keitettyä riisiä. Anna jäähtyä kylmäksi, mielellään jääkaappikylmäksi. \nPoista tofu pakkauksesta ja kääri se hetkeksi talouspaperiin. Sekoita marinadin ainekset keskenään. Kuutioi tofu ja sekoita marinadin joukkoon. \nKuori ja hienonna sipuli sekä valkosipulinkynnet. Kuori ja leikkaa porkkana pieniksi kuutioiksi. Suikaloi kevätsipuli. \nOta tofu pois marinadista, säästä marinadi. Paista tofukuutiot kuumalla pannulla öljyssä. Siirrä ruskistuneet tofukuutiot sivuun. \nLisää öljyä kuumalle pannulle ja kuullota siinä sipulit, valkosipulit, porkkanat sekä herneet. Anna paistua pari minuuttia. Lisää riisi ja paista, kunnes se on kuumaa. Sekoita riisin joukkoon tofukuutiot ja marinadi. Ripottele pinnalle seesaminsiemeniä ja hienonnettu kevätsipuli. Tarjoa lisäksi srirachaa.
+
+nimi: Sieni-tomaattirisotto
+ainekset: riisi, sieni, tomaatti
+ainemaarat: 200 g herkkusieniä, 1 pieni sipuli, 1 valkosipulinkynsi, 1 rkl voita ja oliiviöljyä, 1 1/2 dl risottoriisiä, 3 1/2 dl kasvislientä, 2 rkl aurinkokuivattuja tomaatteja, kourallinen rucolasalaattia, 1 rkl sitruunamehua, parmesaaniraastetta
+ohje: Harjaa ja paloittele sienet. Kuori ja hienonna sipuli ja valkosipulinkynsi. Paahda sieniä kattilassa, kunnes niistä haihtuu neste. Siirrä sienet syrjään. Kuullota sipulit rasvassa. Lisää riisi ja sekoita, kunnes riisi on läpikuultavaa. Lisää hieman kasvislientä ja sekoita, kunnes neste on imeytynyt riisiin. Lisää lientä vähissä erissä. Jatka hauduttamista ja liemen lisäämistä noin 20 minuuttia, kunnes risotto on lähes kypsää. Lisää loppuvaiheessa joukkoon sienet, aurinkokuivatut tomaatit ja rucolasalaatti. Mausta risotto sitruunamehulla ja ripottele päälle parmesaaniraastetta.
+
+nimi: Jauheliha-perunakiusaus
+ainekset: peruna, jauheliha, tomaatti
+ainemaarat: 400 g vähärasvaista naudan jauhelihaa, 1 rkl öljyä, 1 - 2 (175 g) porkkanaa, 1 tl suolaa, 1 tl pippurisekoitusta, 2 tl sokeria, 1 tlk (400 g) tomaattimurskaa, 1 ½ dl vettä, 2 pussia (à 500 g) peruna-sipulisekoitusta (pakaste), 1 prk (2,5 dl) ruokakermaa
+ohje: Ruskista jauheliha pannulla rasvassa. Lisää porkkana raastettuna, kuumenna sekoitellen. Lisää mausteet (jos käytät Mustapekka-kermaa, jätä pippurisekoitus pois), tomaattimurska ja vesi. Anna kiehua 1 - 2 min. Lisää ruokakerma. n/Kaada peruna-sipulisekoitus tilavaan, laakeaan (sisämitta n. 23 x 30 cm) uunivuokaan. Sekoita joukkoon jauhelihaseos ja valutetut salaattijuustokuutiot. \nKypsennä uunin ala- / keskiosassa 225 asteessa n. 1 t tai kunnes perunat ovat kypsiä (tarkista aika perunapussista). Peitä vuoka leivinpaperilla, jos pinta tummuu liikaa. \nTarjoa raikkaan salaatin kanssa.
+
+nimi: Jauheliha-paprikakiusaus
+ainekset: peruna, jauheliha, paprika
+ainemaarat: 1rs (400 g) naudan jauhelihaa (17 %), 2ps (à 500 peruna-sipulisekoitusta (pakaste), 2 paprikaa, ölyä, 2tl pizzamaustetta, n. 1 1/2tl suolaa, 1/2tl mustapippuria, 2tlk (à 2 dl) ruokakermaa
+ohje: Paloittele paprika. Kuumenna tilkka öljyä pannussa ja ruskista siinä jauheliha. Lisää paprika ja paista vielä, kunnes paprika hieman pehmenee. Lisää mausteet. (Jätä n. 1/2 tl suolaa myös perunoille.) \nKaada pussillinen peruna-sipulisekoitusta laakeaan uunivuokaan. Mausta suolalla. Levitä päälle jauheliha-paprikaseos. Kaada vuokaan toinen pussillinen peruna-sipulisekoitusta ja mausta suolalla. Kaada päälle ruokakerma. \nKypsennä 200 asteessa, uunin alatasolla noin 50 minuuttia.
+
+nimi: Purjolohi
+ainekset: peruna, lohi, paprika
+ainemaarat: 700 - 800 g lohi- tai kirjolohifileetä, ¼ tl suolaa, 1 pieni (200 g) paprika, pala (100 g)  purjoa, 1 prk (200 g) ranskankermaa, 1 ½ tl pippurisekoitusta, ½ tl sokeria, 1 tl sinappia
+ohje: Poista fileestä ruodot. Pyyhi pinta talouspaperilla. Laita filee kokonaisena tai annospaloiksi leikattuna uunivuokaan nahkapuoli alaspäin. \nRipota kalan pintaan kevyesti suolaa.\nSuikaloi paprika. Levitä ne kalan pinnalle. \nLeikkaa puhdistettu purjo viipaleiksi. Mausta ranskankerma pippurisekoituksella, sokerilla ja sinapilla. n/Yhdistä purjo ja ranskankerma. Lusikoi seos kalan päälle. \nKypsennä uunin alatasolla 200 asteessa 35 min tai kunnes kypsä. Paistoaika riippuu fileen paksuudesta. \nPaahda pinjansiemenet kevyesti kuivalla, pinnoitetulla pannulla. Ripottele paistetun kalan pinnalle. \nTarjoa keitettyjen perunoiden tai perunamuusin sekä salaatin kanssa.
+
+nimi: Uunikirjolohi
+ainekset: peruna, lohi, sipuli
+ainemaarat: 1 (580 g) kirjolohifilee (ruodoton (sis. suolaa 1 %)), 2rkl sitruunanmehua, 1/4tl mustapippuria, 1ps (500 g) peruna-sipulisekoitusta (pakaste), 1dl kermaa tai kalalientä, 1/2tl suolaa, 1 nippu tilliä, Koristeeksi sitruunalohkoja, tilliä
+ohje: Mausta kirjolohifilee sitruunanmehulla ja pippurilla. \nKaada voideltuun laakeaan uunivuokaan peruna-sipuliseos ja kerma tai kalaliemi. Mausta suolalla ja ripottele päälle hienonnettua tilliä. \nNosta kalafilee perunapedille nahkapuoli ylöspäin. Peitä vuoka foliolla. Kypsennä 200 asteessa noin 60 minuuttia, kunnes perunat ovat pehmeitä. \nPoista kalasta nahka. Koristele sitruunanlohkoilla ja tillillä.
+
+nimi: Yhden uunivuuan lohiateria
+ainekset: peruna, soija, parsakaali
+ainemaarat: 2 rkl paahdettua seesamiöljyä, 1 tl chili-valkosipulikastiketta, 1 tl soijakastiketta, ¼ tl suolaa, 500 g perunoita kuutioiksi pilkottuna, 2 rkl fariinisokeria, 2 rkl soijakastiketta, 2 rkl sulatettua voita, 1 rkl riisiviinietikkaa, ¼ tl suolaa, 4 kpl lohifilettä, n. 200-250 g parsakaalin kukintoja, 2 kevätsipulia pilkottuna
+ohje: Esilämmitä uuni 225-asteiseksi. Voitele iso uunivuoka. \nSekoita kulhossa perunoiden kastike: seesamiöljy, chili-valkosipulikastike, soijakastike ja suola. Kuori ja pilko perunat ja sekoita kastikkeen joukkoon. Levitä perunat voideltuun uunivuokaan ja paahda uunissa 20 minuuttia. Ota vuoka uunista, sekoita perunoita ja siirrä ne vuoan toiseen laitaan. \nSekoita kulhossa fariinisokeri, soijakastike, voi, riisiviinietikka ja suola.  Ota seosta 2 rkl toiseen kulhoon ja lisää sinne lohifileet. Pyörittele lohifileitä seoksessa. Asettele ne sitten uunivuokaan nahkapuoli vuokaa vasten. Lisää ensimmäiseen kulhoon parsakaalin kukinnot ja sekoita. Lisää myös parsakaalit uunivuokaan. Kaada sekä lohen että parsakaalin kulhoista mahdollisesti pohjalle jääneet kastikkeet uunivuokaan ainesten päälle. \nPaista perunoita, lohta ja parsakaalia uunissa 12-15 minuuttia, kunnes lohi on haluamasi kypsyistä. Viimeistele ruoka pilkotulla kevytsipulilla.
+
+nimi: Tofu-kasvispyttipannu
+ainekset: peruna, soija, paprika
+ainemaarat: 200 g tofua, 1 rkl yrteillä maustettua rypsiöljyä, 2 tl soijakastiketta, 1 pieni lanttu, 2 naurista, paprika,  200 g vihreitä papuja, 6 pientä keitettyä perunaa, 200 g sieniä (tatteja, suppilovahveroita tai herkkusieniä); jos sienet eivät sovi, lisää tofun määrää, 1 rkl rypsiöljyä, ¼ tl suolaa, ¼–½ tl vastarouhittua mustapippuria, 1 rkl ruohosipulia tai pilkottua sipulinvartta, 1 rkl tuoretta timjamia
+ohje: Kuutioi tofu ja marinoi yrtti-öljyllä ja soijakastikkeella. \nKuori ja pilko juurekset, puhdista ja pilko paprika, pavut ja sienet. \nKuullota öljyssä isohkolla pannulla sienet, juurekset ja muut kasvikset.n/Anna kypsyä melkein valmiiksi, lisää pilkotut perunat, tofu ja mausteet. \nKuumenna sekoitellen ja tarjoa vihreän salaatin kanssa.
+
+nimi: Riisi-jauheliharatatouille
+ainekset: jauheliha, riisi, paprika
+ainemaarat: 400 g naudan jauhelihaa, 1 sipuli, 1 kesäkurpitsa, 2 paprikaa, 1 tl suolaa, 1/2 tl mustapippuria, 4 dl vettä, 3 dl riisiä, 400 g tomaattimurskaa, 1 tl sokeria, 2 tl yrttiseosta
+ohje: Hienonna sipuli, halkaise kesäkurpitsa pitkittäin ja viipaloi. Viipaloi paprikat. \nRuskista jauheliha ja lisää sipuli kuullottumaan. Mausta suolalla ja pippurilla. Lisää vesi ja riisi. Keitä noin 7 minuuttia. \nSekoita joukkoon kesäkurpitsat, tomaattimurska, yrttiseos ja sokeri. Keitä vielä 10 minuuttia ja lisää paprikat. 
+
+nimi: Parsakaali-broileripannu
+ainekset: kana, riisi, parsakaali
+ainemaarat: 300 g pippurimaustettua broilerin fileesuikaleita, 1 rkl öljyä, 400 g parsakaalia, 2 valkosipulinkynttä, 1 rkl inkivääriä, 1 rkl voita, 1 dl vettä, 2 rkl soijakastiketta, riisiä
+ohje: Ruskista broileri rasvan kanssa. Siirrä broilerit sivuun. \nPaloittele parsakaali ja hienonna valkosipuli. \nKuumenna rasva pannulla. Lisää valkosipuli, parsakaali ja inkivääri. Kaada joukkoon vesi. Kypsennä kunnes vesi on haihtunut. \nSekoita joukkoon soija ja broilerit. Tarjoile jasminriisin kera.
+
+nimi: Kana-parsakaalipasta
+ainekset: kana, spagetti, parsakaali
+ainemaarat: 300 g broilerin fileesuikaleita, 1 parsakaali, 1 dl cashewpähkinöitä, 2 valkosipulinkynttä, 1 tl öljyä, 1 tl suolaa, 1 tl pippuria, 250 g spagettia, 1 tl oliiviöljyä, juustoraastetta
+ohje: Kypsennä broileri ja nosta broileri sivuun. Paahda pähkinät kuumalla ja kuivalla pannulla, kunnes ne ruskistuvat hieman. Huuhtele parsakaali ja leikkaa nuput kahtia. \nHienonna valkosipuli. Levitä parsakaalit ja valkosipuli leivinpaperin päälle pellille ja pirskota oliiviöljyä ja mausta suolalla ja pippurilla. \nKypsennä parsakaaleja 200 asteessa niin kauan että ne ovat pehmenneet. keitä pasta tässä välissä. \nLisää pastan joukkoon parsakaalit, broilerit ja pähkinät. Sekoita ja mausta suolalla ja mustapippurilla. Lisää joukkoon hieman oliiviöljyä. Tarjoile juustoraasteen kera. 
+
+nimi: Kuorrutettu lohi
+ainekset: lohi, peruna, parsakaali
+ainemaarat: 500 g kirjolohifileetä, 1 tl mustapippuria, perunoita, 1/2 kalaliemikuutio, 1 dl vettä, 200 g katkarapuja, 3 keltuaista, 1 dl kevyt majoneesia, 1 dl tilliä, 3 valkuaista
+ohje: Ripottele fileen päälle mustapippuria. Voitele kalan kokoinen uunivuoka ja laita filee uunivuokaan nahkapuoli ylöspäin. \nLiuota kalaliemikuutio kuumaan veteen. Kaada kuuma liemi vuokaan. Peitä vuoka foliolla ja kypsennä 200 asteessa 20 minuuttia. \nSulata katkaravut ja valuta vesi pois. Sekoita keltuaisten joukkoon majoneesi, tilli ja mustapippuri. \nVatkaa valkuaiset vaahdoksi. Sekoita vaahto keltuaisseoksen joukkoon. Poista kalasta nahka. Ripottele katkaravut kalan päälle ja peitä pinta munaseoksella. Kypsennä vielä 15 minuuttia. Tarjoile perunoiden ja parsakaalin kera. 
+
+nimi: Tofuwokki
+ainekset: tofu, riisi, paprika
+ainemaarat: 250 g maustamatonta tofua, 2 rkl öljyä, 1 pussi wokvihanneksia, 1/2 dl makeaa chilikastiketta, 1 rkl marinadia, 1/4 tl mustapippuria, vettä, 3/4 dl soijakastiketta, 3 valkosipulinkynttä, 3 rkl öljyä, 2 rkl hunajaa
+ohje: Huuhdo tofu ja kuivaa. leikkaa tofu pieniksi kuutioksi ja laita palat astian pohjalle. Sekoita soijakastike, valkosipuli, öljy ja hunaja. Lisää kastike tofun sekaan ja anna seoksen marinoitua tunnin ajan jääkaapissa. \nSiivilöi tofut marinadista ja säästä marinadia 2 rkl. Paista kuutiot kuumassa öljyssä. \nWokkaa vihannekset. Kaada tofut joukkoon. Mausta wokki chilikastikkeella, marinadilla ja pippurilla. Lisää wokkiin hiukan vettä, jos se tuntuu kuivalta. Tarjoile riisin kera. 
+
+nimi: Juures-soijarouhepata
+ainekset: soija, peruna, sipuli
+ainemaarat: 60 g soijarouhetta, 300 g porkkanoita, 1 palsternakka, 70 g juuriselleriä, 3 perunaa, 2 sipulia, 2 valkosipulinkynttä, 2 rkl rypsiöljyä, 3 dl vettä, 1 tl suolaa, 1 tl mustapippuria, 3 tl currytahnaa, 500 g tomaattimurskaa
+ohje: Kuori juurekset. Leikkaa porkkanat ja palsternakat viipaleiksi. Kuutio selleri. Leikkaa perunat siivuiksi ja hienonna sipulit. \nKuullota sipulit tilkassa öljyä. Lisää joukkoon juurekset ja kuullota hetki. \nKaada pataan vesi. Mausta suolalla ja pippurilla. Anna kiehua miedolla lämmöllä 10 minuuttia. \nLisää soijarouhe, currytahna ja tomaattimurska. Hauduta noin 5 minuuttia. 
+
+nimi: Soijarouhekastike
+ainekset: Soija, spagetti, tomaatti
+ainemaarat: 300 g soijarouhetta, 1 sipuli, 2 valkosipulinkynttä, 1 rkl öljyä, 1 porkkana, 1/2 dl tomaattisosetta, 500 g tomaattimurskaa,  2 dl vettä, 1 tl suolaa, 1 tl mustapippuria, 1 rkl pizzamaustetta, 2 dl kasvisrasvasekoitetta
+ohje: Hienonna sipulit ja raasta porkka. Kuullota sipulit öljyssä. Lisää joukkoon porkkanaraaste ja tomaattisose. \nLisää pannulle tomaattimurska ja soijarouhe. Lisää mausteet ja hauhduta noin 10 minuuttia. \nLisää lopuksi joukkoon rasva ja kuumenna sekoittain, älä anna kiehua. Tarjoile spagetin kera. 
+
+nimi: Jauhelihakääryleet
+ainekset: jauheliha, peruna, parsakaali
+ainemaarat: 400 g jauhelihaa, 1.5 dl vettä, 1 dl korppujauhoja, 1 kanamuna, 1.5 dl sipulikuutioita, 1 tl suolaa, 1 tl mustapippuria, 2 dl ruokakermaa, 250 g kuivattuja luumuja, 1 parsakaali
+ohje: Sekoita vesi ja korppujauhot kulhossa. Anna turvota 10 minuuttia. Lisää joukkoon muna, sipulikuutiot, mausteet ja jauheliha. Sekoita taikina. \nMuotoile noin sentin paksuisia suorakaiteita. Asettele kaksi luumua suorakaiteen alkupäähän ja pyörittele taikina rullalle. \nPaista rullat paistokasarissa niin kauan, että kaikki puolet on ruskeita. Lisää kerma rullien päälle ja anna hautoa miedolla lämmöllä kannen alla noin 10 minuuttia. Tarjoile perunoiden ja parsakaalin kera. 
+
+nimi: Lämmin jauhelihasalaatti
+ainekset: jauheliha, makaroni, paprika
+ainemaarat: 400 g jauhelihaa, 2 rkl öljyä, makaronia, 1 paprika, 2 rkl salaatinkastiketta, 1/2 dl salaattisiemensekoitusta, 300 g vihreitä papuja, 2 kanamunaa, 200 g tomaatteja, 1 tlk kapriksia, salaattia
+ohje: Ruskista jauheliha ja mausta kypsä jauheliha salaatinkastikkeella ja suolalla. Siirrä jauheliha sivuun. \nPaahda siemenet pannulla ja sekoita mukaan jauheliha ja pilkottu paprika. \nKeitä kanamunia noin 7 minuuttia ja halkaiset ne pituussuunnassa. Huuhdo tomaatit ja paloittele ne. \nKokoa salaatti kerroksittain kulhoon. Ensin salaatti, sitten jauhelihaseos,sitten pavut, sitten tomaatti ja viimeisen kaprikset. Tarjoile makaronin kera.
+
+nimi: Värikäs pasta carbonara
+ainekset: jauheliha, spagetti, porkkana
+ainemaarat: 200 g tagliatellepastaa, 400 g jauhelihaa, vettä, suolaa, 1 kesäkurpitsa, 2 porkkanaa, 2 dl ruokakermaa, suolaa, 1 paketti pekonia, mustapippuria, persiljaa, parmesaania
+ohje: Keitä pasta pakkauksen mukaan. \nHalkaise kesäkurpitsa ja kaapaise sisukset kurpitsasta. Leikkaa porkkanat ja kurpitsa lastuiksi kuorimaveitsellä. Ruskista jauheliha. \nLisää kasvislastut pastan keitinveteen noin minuutiksi. \nSilppua pekoni ja paista rapeaksi. Kaada kerma pannulle, lisää mausteet ja keitä 3 minuuttia. Lisää pekoni, jauheliha ja pasta joukkoon. Tarjoile parmesaanin kera. 
+
+nimi: Quorn-bolognesekastike
+ainekset: soija, spagetti, porkkana
+ainemaarat: 300 g soijarouhetta, 1 sipuli, 1 porkkana, 100 g juuriselleriä, 2 valkosipulinkynttä, 1 rkl öljyä, 500 g tomaattimurskaa, 2 dl vettä, 1 laakerinlehti, 1 tl suolaa, mustapippuria, 2 tl pizzamaustetta, spagettia
+ohje: Hienonna sipuli, leikkaa porkkana ja selleri pieniksi kuutioksi. Hienonna valkosipuli ja kuullota kasvikset rasvassa. \nLisää soijarouhe, tomaattimurska, vesi ja mausteet paistokasariin. Anna kiehua hiljalleen kannen alla 15 minuuttia. Tarjoile spagetin kera. 
+
+nimi: Broileri-kasvispasta
+ainekset: kana, spagetti, sipuli
+ainemaarat: 250 g tagliatellepastaa, 1 sipuli, 2 porkkanaa, 300 g varhaiskaalia, 1 valkosipulinkynsi, 2 rkl rypsiöljyä, 300 g maustamatonta broilerinfileesuikaleita, 1 tl suolaa, 2 dl pippurikermaa, tuoretta basilikaa
+ohje: Keitä pasta. Hienonna sipulit, raasta porkkanat ja suikaloi kaali. \nKuullota kasviksia rasvassa muutama minuutti. Ruskista broileri ja mausta suolalla ja lisää ruokakerma. \nSekoita broilereiden joukkoon kasvikset ja pasta. Koristele annos basilikalla. 
+
+nimi: Mausteinen kanawokki
+ainekset: kana, spagetti, tomaatti
+ainemaarat: 450 g broilerin fileesuikaleita, 200 g tuoreherkkusieniä, 2 rkl öljyä, 1 valkosipulinkynsi, 1 tl inkivääritahnaa, 500 g tomaattimurskaa, 4 dl kookosmaitoa, 1/2 dl chilikastiketta, 3 tl soijakastiketta, 1 tl suolaa, 2 rkl ruskeaa suurustetta
+ohje: Paloittele herkkusienet. Ruskista broilerin fileesuikaleet kuumassa öljyssä. Lisää herkkusienet ja kuullota. Lisää mukaan paloiteltu valkosipuli ja inkivääritahna. \nKaada joukkoon tomaattimurska ja kookosmaito. Keitä muutama minuutti. Lisää chili- ja soijakastike sekä suola. \nSuurusta kastike suuruksella ja anna kiehahtaa, että kastike saostuu. Tarjoile nuudeleiden kera. 
+
+nimi: Kana-nuudeliwokki
+ainekset: kana, spagetti, paprika
+ainemaarat: 300 g broilerin fileesuikaleita, 6 dl vettä, 1 paprika, nuudeleita, 1 sipuli, 1 rkl öljyä, 450 g wokvihanneksia, 2 valkosipulinkynttä, 3 rkl soijakastiketta, 1 rkl sitruunamehua, 1,5 rkl sokeria
+ohje: Sekoita hienonnettu sipuli, soijakastike, 1 dl vettä, sitruunamehu ja sokeri keskenään. Keitä ja mausta nuudelit. \nSuikaloi paprika ja hienonna sipuli. Ruskista broilerisuikaleet öljyssä. Kuullota paprika ja sipuli. \nPaista wokvihannkset öljyssä. Kun vihannekset on lämmenneet, lisää broilerit, paprikat ja sipulit. Sekoita joukkoon nuudelit ja valmistettu kastike.
+
+nimi: Sienitäytteiset paprikat
+ainekset: peruna, sieni, paprika, sipuli
+ainemaarat: 2 isoa paprikaa, 200 g kanttarelleja/herkkusieniä, 1 sipuli, 1 rkl voita, 2 rkl korppujauhoja, 2 dl kermaa, 1/2 tl suolaa, 1/4 tl pippuria, 2 rkl kirveliä, emmentaljuustoa
+ohje: Hienonna sipuli ja paloittele sienet. Kiehauta sienet pannulla. Lisää pannulle rasva ja sipuli. Ripottele joukkoon jauhot. Lisää kermaa vähitellen koko ajan sekoittaen. \nMausta muhennos suolalla, pippurilla ja kirvelillä. Anna hautua 5 minuuttia. \nHalkaiset paprikat pitkittäin ja poista siemenet. Nosta puolikkaat paprikat lakeaan vuokaan ja kypsennä mikrossa 5 minuuttia. \nJaa sienimuhennos paprikoihin ja ripottele pinnalle emmentaljuusto ja anna olla mikrolla vielä 4 minuuttia. Tarjoile perunoiden kera.
+
+nimi: Sieni-kasviswokki
+ainekset: Sieni, makaroni, porkkana, sipuli
+ainemaarat: 200 g tuoreherkkusieniä, 1 sipuli,  2 porkkanaa, makaronia, 1/2 purjo, 2 valkosipulinkynttä, 300 g kiinankaalia, 3 rkl öljyä, 1 tl suolaa, 200 g maissia, 1.5 dl vettä, 1 rkl soijakastiketta, 1 tl perunajauhoa, 1/2 dl meiramia, mustapippuria
+ohje: Viipaloi sienet. Halkaise ja viipaloi sipuli. Kuori porkkanat ja leikkaa ne ohuiksi viipaleiksi. Viipaloi purjo. Hienonna valkosipilut ja suikaloi kiinankaali. \nKuumenna sienet pannulla kunnes neste irtoaa. Lisää rasva ja sipuli. Paista kunnen sipulip pehmenee. Mausta suolalla ja pippurilla. \nKuumenna rasva paistokasarissa ja lisää porkkanaviipaleet. Lisää maissi, purjo, valkosipuli ja kiinankaali. \nYhdistä sipulit ja sienet kasvisten joukkoon. Lisää pannulle kylmä vesi, soijakastike ja perunajauhot. Kuumenna kastike sekoittaen, kunnes se sakenee. \nMausta lopuksi meiramilla, suolalla ja pippurilla. Tarjoile makaronin kera. 
+
+nimi: Karri kanan perunalaatikko
+ainekset: kana, peruna, tomaatti, sipuli
+ainemaarat: 300 g broilerin fileesuikaleita, 2 rkl öljyä, 2 tl currya, 500 g peruna-sipulisekoitusta, 1 tl oreganoa, 1 tl mustapippuria, 1 tl suolaa, 2 dl ruokakermaa, 1 dl maitoa, 2 kanamunaa, 2 tomaattia
+ohje: Kuumenna öljy paistokasarissa. Lisää curry. Sekoita ja lisää broilerit. Siirrä valmiit broilerit sivuun. \nKaada voideltuun vuokaan puolet peruna-sipulisekoituksesta ja kaikki broilerit. Ripottele pinnalle oregano, mustapippuri ja suola. Lisää loput peruna-sipulisekoituksesta. \nSekoita keskenään ruokakerma, maito ja munat. Kaada seos vuokaan. Ripottele päälle hienonnettu tomaatti. Kypsennä vuokaa 200 asteessa noin 50 minuuttia. 
+
+nimi: Lohi-makaronilaatikko
+ainekset: lohi, makaroni, sipuli
+ainemaarat: 300 g tummaa makaronia, 300 g kirjolohisuikaleita, 1 sipuli, 1/2 rkl öljyä, 2 rkl kapriksia, 1 dl tilliä, 1 tl suolaa, 1 tl timjamia, 1 tl mustapippuria, 6 dl kevytmaitoa, 2 kanamunaa, emmentaljuustoa
+ohje: Keitä makaronit ja kaada ne uunivuokaan. Kuullota hienonnettu sipuli rasvassa. Lisää sipuli ja kaprikset vuokaan. Mausta tillillä, suolalla, timjamilla ja mustapippurilla. \nPaloittele kalasuikaleita ja lisää ne makaronien joukkoon. \nSekoita maito ja kanamunat. Lisää munamaitoseos vuokaan. Paista vuokaa 175 asteessa 45 minuuttia. Ripottele halutessasi juustoraastessa kypsymisen puolessa välissä.
+
+nimi: Jauhelihapihvit salsalla
+ainekset: jauheliha, riisi, parsakaali, tomaatti, sipuli
+ainemaarat: 500 g parsakaalia, 500 g jauhelihaa, riisiä, 2 paprikaa, 2 punasipulia, 6 tomaattia, 1/2 dl korppujauhoja, 1 dl maitoa, 1 tl suolaa, 2 tl mustapippuria, 4 rkl öljyä, 2 rkl balsamiviinietikkaa, 2 dl vettä, 4 rkl tomaattipyrettä
+ohje: Keitä riisit. Hienonna punasipuli, paprika ja tomaatti. Freesaa kasvikset pannulla. \nLisää tomaattipyre, öljy ja vesi. Mausta suolalla ja mustapippurilla. Anna kiehua muutama minuutti. Kaada salsa kulhoon. \nSekoita jauheliha, korppujauho, maito, suola ja mustapippuri. Muotoile noin 8 pihviä ja paista ne öljyssä. \nJaa parsakaali pieniin paloihin ja keitä ne pehmeiksi. 
+
+nimi: Broileri-makaronilaatikko
+ainekset: kana, makaroni, paprika, sipuli
+ainemaarat: 400 g tummaa makaronia, 6 dl vettä, 2 tl suolaa, 450 g broilerin fileesuikaleita, 2 rkl öljyä, 1 sipuli, 1 paprika, 3 dl maitojauhetta, 1 tl suolaa, 2 tl pizzamaustetta, 1 tl mustapippuria, juustoraastetta
+ohje: Keitä makaronit. Ruskista broileri. Hienonna sipuli ja paprika. Kuullota sipuli rasvassa. Kaada puolet makaroneista voideltuun uunivuokaan ja lisää päälle broilerit, sipuli, paprikat ja loput makaronit. \nSekoita maitojauhe, vesi, suola, pizzamauste ja mustapippuri. Lisää seos vuokaan. Paista vuokaan 175 asteessa 55 minuuttia. Lisää puolessa välin paistoa juustoraastetta annoksen päälle.
+
+nimi: Lohi nuudeliwokki
+ainekset: lohi, makaroni, tomaatti, sipuli
+ainemaarat: 400 g lohisuikaleita, nuudeleita, 1 rkl öljyä, 1 sipuli, 1 valkosipulinkynsi, 250 g kasvissuikaleita, 3 tl tuoretta inkivääriä, 1 rkl soijakastiketta, 1 dl suolapähkinöitä, 2 dl juustoraastetta, limemehua
+ohje: Kypsennä nuudelit. Kuumenna öljy wokkipannussa ja lisää kalasuikaleet ja anna niiden ruskistua kevyesti. Ripottele suola. \nLisää hienonnettu sipuli, kasvissuikaleet, inkivääri ja pippuri. Paista 3 minuuttia. Lisää ruokakerma ja soijakastike. Anna hautua hetkisen ajan. \nSekoita joukkoon nuudelit ja pähkinät. Ripottele annoksen pinnalle juustoraastetta ja limemehua. 
+
+nimi: Soija-kaalilaatikko
+ainekset: soija, riisi, sipuli, paprika
+ainemaarat: 3 dl soijarouhettam 1000 g kaalia, 1 dl puuroriisiä, 2 sipulia, 1 paprika, 2 kpl kasvisliemikuutioita, 3 rkl öljyä, 2 dl ruokakermaa, 2 rkl siirappia, 1 rkl meiramia
+ohje: Suikaloi kaali. Laita kaali ja riisit suureen kattilaan ja lisää vettä niin paljon, että kaali peittyy. Lisää kasvisliemikuutio ja keitä 20 minuuttia. \nHienonna sipuli ja paprika ja kuullota ne rasvassa. Lisää soijarouhe sekaan ja paista hetki. Kauho pannulle 5 dl riisikaalilientä koko ajan sekoittaen. Soija on valmista, kun se on turvonnut. \nSekoita kaaliriisiseokseen soijarouhe, kerma ja mausteet. Kaada seos voideltuun vuokaan. Paista 175 asteessa 1.5 tuntia.
+
+nimi: Arkinen soijarouherisotto
+ainekset: soija, riisi, porkkana, paprika, sipuli
+ainemaarat: 3 dl soijarouhetta, 3 dl basmatiriisiä, 400 g vihanneksia, (porkkana paprika sipuli) 
+ohje: Keitä riisiä 6 dl vettä ohjeen mukaan, samoin soijarouhe 6 dl vettä ja 5 min. Lisää soijarouheen keitinveteen reilusti mausteita: pippuria, jauhelihamausteseosta, kasvisliemikuuto, basilikaa, valkosipulia sekä loraus soijakastiketta ja/tai suolaa. Pakastevihannekset voit lisätä joukkoon keittämisen lopuksi. \nRiisin kanssa voi samalla keittää esim pilkotut porkkanat. Sipuli ja kesäkurpitsa kannattaa paistaa ensin öljyssä. Sitten vain sekoitetaan kaikki yhteen ja sörsseli on valmista!
+
+nimi: Valkosipuli-seesami-chililinssit
+ainekset: riisi, soija, parsakaali, porkkana
+ainemaarat: 1 pkt esiketettyjä linssejä, 3 kpl valkosipulinkynttä, 1 kpl porkkana, 2 nippua parsakaalta, 1 tl chilihiutaleita, 1 tl inkivääriä, öljyä, 1 tl seesamiöljyä, 1.5 rkl soijaa, 1/2 sitruunan mehu, ituja, tuoreita yrttejä, riisiä/nuudeleita
+ohje: Silppua valkosipuli, porkkana, inkivääri ja parsakaali. Laita riisi tai nuudelit keittymään. \nLisää hieman ruokaöljyä pannulle ja lämmitä se keskilämmölle. Lisää valkosipuli, porkkana, parsakaali, chilihiutaleet ja inkivääri. Valuta linssit ja lisää ne pannulle. \nLisää pannulle seesamiöljy, soija, sitruunamehu ja mustapippuri. Sekoita ja paista miedolla lämmöllä noin 10 minuuttia. \nAnnostele valmis riisi kulhoon, lisää linssi-kasvissekoitus. Koristele iduilla ja tuoreilla yrteillä. Voit halutessasi lisätä annokseen vielä maun mukaan soijaa ja sitruunamehua.
+
+nimi: Broilerigratiini
+ainekset: peruna, kana, parsakaali
+ainemaarat: 300 g kukkakaalia, 300 g parsakaalia, 400 g broilerinsuikaleita, 1 prk sipulituorejuustoa, 2 dl kuohukermaa, voita, suolaa, currya, mustapippuria, 1-2 dl juustoraastetta
+ohje: Paista pannulla broilerinsuikaleet. Mausta. Laita kaalit ja broilerinsuikaleet vuokaan. \nSekoita kerma ja greme ja kaada vuokaan kaalijen ja broilerin päälle. Tarkista maku. \nJuustoraastetta päälle ja uuniin 200 astetta noin 40 min.
+
+nimi: Broileripyttipannu
+ainekset: peruna, kana, paprika, porkkana, sipuli
+ainemaarat: 3 kpl kypsää broilerinleikettä, 7 kpl keitettyä perunaa, 2 kpl porkkanaa, 1 kpl sipuli, 1 kpl paprika, 2 rkl öljyä, suolaa, rouhittua mustapippuria, 2 rkl hienonnettua ruohosipulia
+ohje: Paloittele broilerinleikkeet ja perunat. Kuori ja paloittele porkkanat. Kuori ja hienonna sipuli. Halkaise paprika ja poista kanta ja siemenet. Paloittele paprika. Kuullota sipulia ja porkkanoita öljyssä pannulla noin 3 minuuttia kunnes porkkanat pehmenevät. \nLisää pannulle perunat, broilerit ja paprikat ja lisää lämpöä. Kääntele aineksia 5 minuuttia kunnes perunat saavat väriä. Mausta suolalla, pippurilla ja ruohosipulilla.
+
+nimi: Kanaa, fenkolia ja perunoita uunissa
+ainekset: peruna, kana, sipuli
+ainemaarat: 8 broilerinkoipea, 10-15 perunaa, 1 iso fenkoli, 1 iso sipuli, 5 rosmariinin oksaa, oliiviöljyä, suolaa, mustapippuria
+ohje: Lämmitä uuni 200 asteeseen. Pese perunat ja puolita ne, älä kuori. Jos perunat ovat isoja, voit lohkoa ne useampaankin osaan. Kuori sipuli, puolita ja lohko pitkittäin reiluhkoiksi viipaleiksi. Pilko samalla tavalla myös fenkoli. Riivi kolme rosmariinin oksaa ja hienonna lehdet, kaksi oksaa voit laittaa sekaan kokonaisina. \nLado isoon uunivuokaan sekaisin koivet, perunat, fenkoli, sipuli ja rosmariini. Pirskota päälle anteliaasti oliiviöljyä ja rouhi päälle suolaa ja mustapippuria. Sekoita kunnolla, jotta kaikki ainekset maustuvat kauttaaltaan. Paista uunissa tunti - puolitoista, kääntele kerran tai kaksi välillä.
+
+nimi: Paahdettu tofu-tomaattipasta
+ainekset: makaroni, tofu, tomaatti
+ainemaarat: 300 g tofua, 500 g kirsikkatomaatteja, merisuolahiutaleita, valkosipulia, chilimaustetta, mustapippuria, oliiviöljyä, pastaa
+ohje: Laita uuni kuumenemaan 200C. Huuhtele kirsikkatomaatit ja laita ne leivinpaperin päälle uuninpellille. Valuta päälle oliiviöljyä ja mausteita maun mukaan (laita valkosipulia useampi rouhaisu). \nKuutioi kuivattu (marinoitu) tofu ja laita tomaattien sekaan uuninpellille. Sekoittele niin, että öljy sekä mausteet tarttuvat tomaatteihin ja tofukuutioihin. Laita uuniin paahtumaan noin 15-20 minuutiksi. Voit halutessasi paahtoajan puolessa välissä käännellä tofuja, jotta ne saavat kauniin värin pintaan joka puolelle. Kun tomaatit ovat uunissa, keitä haluamasi pasta. \nKokoa annokset: pastaa alle, päälle kirsikkatomaatteja ja tofua, sekä tuoretta silputtua basilikaa, oliiveja ja purista vielä sitruunan mehua. Kruunaa annos (vegaanisella) parmesaanilla. \nTarjoiluun lisäksi tuoretta silputtua basilikaa, mustia oliiveja, sitruunan mehua ja vegaanista parmesaania.
+
+nimi: Tofumakaronilaatikko
+ainekset: makaroni, tofu, porkkana, sipuli, paprika
+ainemaarat: 400 g makaronia, 1 dl härkäpapurouhetta, 1 kasvisliemikuutio, 1 iso sipuli, 1 rkl öljyä, 200 g kylmäsavutofua, 1 iso porkkana, 200 g vihreitä papuja, 1/2 punainen paprika, Liemi:, 5 dl kauramaitoa, 3/4 dl kikhernejauhoja, 2 tl paprikajauhetta, 2 tl valkosipuijauhetta, 1 tl mustapippuria, suolaa
+ohje: Jos käytät kylmäsavutofua, laita se ensiksi paperiin ja painon esim paistinpannun alle että neste imeytyy pois. Kuutioi tofu tämän jälkeen. \nLaita makaroni ja härkäpapurouhe keittymään kasvisliemikuution kanssa paketin ohjeen mukaan. \nPilko sipuli pieneksi ja kuullota öljyssä. Lisää sekaan tofukuutiot ja paista kunnes tofu saa pintaa. Kuori ja kuutioi porkkana. Lisää pannulle kuutioiti porkkana, vihreät pavut ja kuutioit paprika ja paista hetki. \nSekoita liemen ainekset keskenään. \nSekoita kypsiin makaroneihin ja härkäpapurouheeseen tofukasvissekoitus. Kaada liemi päälle. Paista 200 asteisessa uunissa noin 40-50 minuuttia.
+
+nimi: Tofu-kasvispasta
+ainekset: makaroni, tofu, parsakaali, sipuli, valkosipuli, chili
+ainemaarat: 400 g kiinteää tofua, 1 kpl sipulia, 1 kpl valkosipulinkynttä, 500 g parsakaalia, 1 kpl chiliä, 50 g auringonkukansiemeniä, 250 g täysjyväpastaa, 1 rkl rypsiöljyä
+ohje: Valmista pasta pakkauksen ohjeen mukaan. Silppua sillä välin sipulit ja paista niitä öljyssä muutama minuutti. \nLisää pieneksi kuutioitu tofu ja jatka paistamista kunnes tofu saa rapean pinnan. Lisää pannulle pieneksi leikattu parsakaali ja jatka paistamista vielä 5 minuutin ajan. \nSekoita tofu-parsakaaliseos valmiiseen pastaan ja mausta suolalla ja pippurilla. Tarjoile raikkaan salaatin kanssa.
+
+nimi: Helppo kermainen pasta
+ainekset: spagetti, tofu, sipuli, tomaatti, paprika, kukkakaali, parsakaali
+ainemaarat: 300 g marinoitua tofua, 2 dl kaurakermaa, 1 iso sipuli, 1-2 tl sambal oelekia, 1-2 tl inkivääritahnaa, 1-2 tl valkosipulitahnaa, 1 tl soijakastiketta, mustapippuria, 3-6 tomaattia, 2 kourallista pinaattia, 2 lehtikaalin lehteä, 1 paprika, kukkakaalia, parsakaalia, 1 avocado, täysjyväspagettia
+ohje: Laita vettä kiehumaan riisin tai pastan keittoa varten. Pilko veden kiehumista odotellessa sipuli, avocado ja kaikki vihannekset. \nKeitä pastaa tai riisiä ohjeen mukaisesti (itse suosittelen vähentämään pastan ohjeen mukaisesta keittoajasta 2-3 min, koska al dente). Murusta tofu ja lisää se sipulin kanssa pannulle. Kuumenna (lieden 3-4 riittää). \nLisää mausteet tai maustetahnat sekä kaurakerma tofun ja sipulin sekaan. Kuumenna (lieden 3-4 riittää). Lisää pilkotut vihannekset ja avocado tofukastikkeen sekaan. (Itse jätän vihannekset raaoiksi ja annan niiden vain vähän lämmetä, että ruuan suutuntuma on normaalin lämmin. Tämä siksi, että niiden ravintoaineet eivät kuumentaessa karkaisi.) \n Jos valitsit riisin lisukkeeksi, yhdistä kaikki ainekset risotoksi. Pastan voi annostella valmiiksi lautasille ja kaataa kastiketta päälle tai yhdistää kaikki ainekset kattilassa. Annoksen päälle voi lorauttaa vielä 1 tl oliiviöljyä.
+
+nimi: Tomaatti-soijakastike
+ainekset: makaroni, soija, tomaatti, sipuli, valkosipuli, porkkana
+ainemaarat: 1 1/2 dl soijarouhetta, 2 dl vettä, 1 sipuli, 3 valkosipulinkynttä, 1 porkkana, 2 rkl öljyä, 400 g tomaattimurskaa, 2 rkl soijakastiketta, 1 rkl balsamiviinietikkaa, 1 tl oreganoa, 1 tl timjamia, 1 rkl sokeria, 1 tl suolaa, 1/2 tl rouhittua mustapippuria
+ohje: Mittaa kulhoon soijarouhe ja kaada päälle kuuma vesi. Sekoita. \nKuori ja silppua sipuli ja valkosipulinkynnet. Kuori ja raasta porkkana. \nKuumenna kattilassa öljy ja kuullota kasviksia, kunnes sipuli on pehmeää. Lisää soijarouhe ja kääntele hetki. \nLisää tomaattimurska, soijakastike, viinietikka, oregano, timjami, sokeri, suola ja pippuri. Anna poreilla hiljakseen kannen alla puolen tunnin ajan. Tarkista maku. \nNauti kastiketta täysjyväpastan tai vaihteeksi vaikka keitettyjen perunoiden kanssa.
+
+nimi: Soija-kikhernepasta
+ainekset: makaroni, soija, porkkana, sipuli
+ainemaarat: 1 dl tummaa soijarouhetta, 3 porkkanaa, 1 keltasipuli, 50 g selleriä, 2 rkl tomaattipyreetä, 6 valkosipulinkynttä, 1 dl oliiviöljyä, 1 tlk kikherneitä, 3 dl vettä, 1 kuivattu chili, nippu rosmariinia, nippu lehtipersiljaa, 500 g pastaa
+ohje: Kuutioi porkkanat, sipuli ja selleri aivan pieneksi. Siivuta valkosipulinkynnet. Kuullota kasviksia ja silputtua rosmariinia sekä chiliä öljyssä (n. 0,5 dl ) padassa tai kattilassa 8-10 minuuttia. \nSurvaise kasviksia rouheasti sauvasekoittimella niin että tekstuuri säilyy – emme halua vauvanmössöä. Lisää soijarouhe sekä tomaattipyree ja anna makujen imeytyä hetki. Lisää vettä pikkuhiljaa antaen nesteen hieman haihtua, yhteensä n. 3 dl. Hauduta 10 minuuttia. Lisää lopuksi lehtipersiljasilppu. \nKeitä pasta, ja säästä tilkka keitinvettä. Sekoita keitinvesi ja soija-kikhernekastike joukkoon. Lisää oliiviöljyä tarvittaessa. Tarjoile parmesanjuuston kera.
+
+nimi: Kaurakermainen parsakaali-sienipasta
+ainekset: spagetti, sieni, parsakaali, valkosipuli
+ainemaarat: 1 sipuli, 1 valkosipulinkynsi, 200 g ruskeita herkkusieniä, 150 g parsakaalia, 1 prk sipuli-kauraruokakermaa, 1 rkl maissitärkkelystä, 2 rkl tuoretta basilikaa, 1 tl mustapippuria, ripaus yrttisuolaa, 80 g täysjyväspagettia, öljyä, rucolaa tarjoiluun
+ohje: Kuori ja pilko sipulit pieneksi. Kuullota sipuleja kasarissa öljyssä. Paloittele sienet ja parsakaali. Lisää parsakaalin palat sipulien sekaan ja laita sekaan hieman vettä, että parsakaalit hyörystyvät. Kun vesi on haihtunut, lisää sekaan sienet ja kypsennä. Keitä spagetti toisessa kattilassa kypsäksi ja siivilöi. \nKun sienet ovat paistuneet tarpeeksi, lisää sekaan ruokakerma ja maissitärkkelys ja sekoita hyvin. Lämmitä kunnes seos sakenee hieman. Revi tuore basilika kastikkeen sekaan ja lisää loput mausteet. Lisää keitetty spagetti kastikkeen sekaan ja sekoita. Tarjoile spagetti esimerkiksi rucolan kanssa ja jauha päälle vielä hieman mustapippuria myllystä.
+
+nimi: Sienipyttipannu
+ainekset: peruna, sieni, sipuli
+ainemaarat: 10 dl keitettyä keskikokoista perunaa, 200 g kantarelleja tai suppilovahveroita, 2 sipulia varsineen, 1 palsternakka, 1 fenkoli, 2 rkl rypsiöljyä, ripaus suolaa ja rouhittua mustapippuria
+ohje: Kuori ja lohko perunat. Puhdista ja paloittele sienet. Nosta sienet kuivalle ja kuumalle pannulle ja anna hautua, kunnes suurin osa nesteestä on haihtunut. \nKuori ja hienonna sipulit. Kuori ja paloittele palsternakka ja leikkaa fenkoli ohuiksi viipaleiksi. Lisää sienten joukkoon öljy ja kasvikset. Anna paistua, kunnes palsternakka kypsyy hieman. Lisää peruna, mausta suolalla ja mustapippurilla. Tarjoile lämmin sieni-perunapannu raikkaan salaatin kanssa.
+
+nimi: Jauhelihaspagetti
+ainekset: spagetti, jauheliha, paprika, sipuli, soija
+ainemaarat: 1 kpl Sipuli, 1 kpl Valkosipulinkynsi, 1 kpl Paprika, 2 rkl Öljyä, 400 g Jauhelihaa, 1 kpl (400 g) tomaattimurskaa, 1 tl Sokeria, 1 rkl Soijakastiketta, 1 tl Kuivattua oreganoa, 400g spagettia
+ohje: Kuori ja silppua sipuli ja valkosipulinkynsi. Huuhtele ja halkaise paprika, poista siemenet ja kuutioi paprika.Kuumenna öljy pannussa. Kuullota siinä sipulit ja paprika. Lisää jauheliha ja ruskista se. Lisää tomaattimurska ja mausteet. Hauduta kastiketta kannen alla noin 15 minuuttia.Keitä pasta pakkauksen ohjeen mukaan. Tarjoa jauhelihakastikkeen kanssa.
+
+nimi: Hanna-Marian lohipasta
+ainekset: spagetti, lohi, paprika, sipuli, porkkana
+ainemaarat: 1 salottisipuli, 1 pieni porkkana, 1 pieni maustekurkku, 1 rkl kapriksia, 2 rkl persiljaa, 100 g kermaviiliä, 1 dl majoneesia, ½ tl sinappia, mustapippuria, 1 paprika, 150 g täysjyväspagettia, 400 g lämminsavulohta 
+ohje: Valmista remouladekastike. Kuori ja hienonna salottisipuli. Raasta porkkana, kuutioi maustekurkku ja silppua kaprikset ja persilja. Sekoita ainekset keskenään ja laita valmis kastike jääkaappiin maustumaan. \nLaita spagetti kiehuvaan veteen ja keitä pakkauksen ohjeen mukaan. \nPilko paprika. Kokoa annos pastasta, paprikasta ja lohesta. Tarjoa remouladekastiketta lisukkeena. Voit ostaa kastikkeen myös valmiina. Silloin sitä tarvitaan 3 dl.
+
+nimi: Spagetti ja soijakastike
+ainekset: spagetti, soija, sipuli, tomaatti, paprika
+ainemaarat: 1 kg spagettia, 3 l vettä, 2 kpl sipulia, 3 valkosipulikynttä, 1 kpl kasvisliemikuutio, 1,5 dl soijarouhetta (tummaa), 3 dl vettä, 2 rkl soijakastiketta, 2 prk tomaattimurskaa (800 g), nippu tuoretta basilikaa, suolaa, pippuria, paprikajauhetta, chilirouhetta, sinappia 
+ohje: Spagetit \nKiehauta n. 3 litraa vettä isossa kattilassa. \nLisää ripaus suolaa keitinveteen. \nKun vesi kiehuu, laita spagetit kattilaan ja anna kiehua keskilämmöllä noin 10 min. \nKun spagetit ovat tarpeeksi pehmeitä makuusi, kaada koko kattilan sisältö siivilään ja huuhtele spagetit haalealla vedellä. Kaada spagetit takaisin kattilaan. \n \nKastike \nHienonna sipulit, valkosipulin kynnet ja basilika. \nLaita isolle paistinpannulle rasvaa ja kuullota sipulit ja valkosipulit sekä freesaa basilika. \nSekoita joukkoon soijarouhe ja anna paahtua hetki. \nLisää vesi ja kasvisliemikuutio. Sekoittele tasaisesti kunnes soijarouhe on imenyt suurimman osan nesteestä ja turvonnut. \nLisää soijakastike ja mausteet makusi mukaan ja sekoittele.\nLisää tomaattimurska, sekoita ja anna kiehahtaa.
+
+nimi: Tomaattinen tofukastike
+ainekset: spagetti, tofu, tomaatti, soija, sipuli
+ainemaarat: 1 kpl (270 g) kiinteää tofua, 1 rkl Öljyä, 2 rkl Soijakastiketta, 1 kpl Sipuli, 2 kpl Valkosipulinkynttä, 1 kpl Tomaattimurskaa, 2 rkl Tomaattisosetta, 2 tl Basilikaa ja oreganoa, 1/2 tl Rouhittua mustapippuria, Tarvittaessa suolaa
+ohje: Leikkaa valutettu tofu reiluiksi kuutioiksi. Paista tofukuutiot öljyssä pannulla. Kaada soijakastike pannulle ja sekoita muutaman kerran. Nosta ne hetkeksi syrjään. Kuullota samalla pannulla hienonnettua sipulia ja murskattuja valkosipulinkynsiä. Lisää tomaattimurska ja –sose sekä mausteet. Anna hetken aikaa kiehua, kunnes kastike hieman sakenee ja tummuu. Lisää tofukuutiot ja anna niiden hetken aikaa lämmetä. Tarjoile kastike keitetyn spagetin kanssa.
+
+nimi: Jauheliha-pastapaistos
+ainekset: spagetti, jauheliha, parsakaali,sipuli, porkkana, paprika
+ainemaarat: n. 1 l kypsäksi keitettyä kokojyväpastaa, 400 g jauhelihaa, 1 iso sipuli, 3 valkosipulin kynttä, suolaa, pippuria, 3 tl yrttisekoitusta, 2 porkkanaa, 1 parsakaali, 1 paprika, 1 ps pakastemaissia, 200 g kevytsulatejuustoa, 4 dl kasvislientä
+ohje: Paahda jauheliha pannussa. Kuori ja pilko sipuli ja valkosipulit, lisää ne pannuun ja kuullota muutama minuutti. Mausta jauheliha-sipuliseos suolalla, pippurilla ja yrttisekoituksella. Kuori ja leikkaa porkkanat suikaleiksi. Paloittele parsakaali ja paprika. \nVoitele uunivuoka. Levitä vuoan pohjalle kypsä pasta, jauheliha-sipuliseos, maissit, porkkanat, parsakaali ja paprikat. Kuumenna kattilassa kasvisliemi ja sekoita siihen sulatejuusto. Sekoittele, kunnes juusto on liuennut liemeen. \nKaada seos vuokaan. Kypsennä jauheliha-pastapaistosta 200-asteisessa uunissa noin 30 minuuttia.
+
+nimi: Sieni-perunavuoka
+ainekset: peruna, sieni, porkkana, sipuli
+ainemaarat:  perunoita, porkkanoita, (kuivattua) rosmariinia, öljyä, sipulia, valkosipulinkynsiä, sieniä, pakastepinaattia, kuivattua persiljaa ja basilikaa, mustapippuria, suolaa, ruokakermaa, emmentalia raastettuna
+ohje: Laita uuni kuumenemaan 200 asteeseen ja voitele uunivuoka. Siivuta kuoritut perunat ja porkkanat ohuiksi siivuiksi ja sekoita niihin kuivattua rosmariinia. Silppua sipulit, valkosipulit ja sienet. Sulata pinaatti. Kuullota sipulit ja valkosipulit öljyssä, lisää sitten sienet ja paista. Lisää lopuksi pakastepinaatti ja mausteet. Suolaa tarvitsee olla tavallista enemmän, sillä sienet ja pinaatti tarvitsevat suolaa maistuakseen. \nLado puolet perunoista ja porkkanoista vuokaan. Kaada päälle sieni-pinaattiseos ja peittele lopuilla perunoilla ja porkkanoilla. Kaada päälle ruokakermaa. Ripottele pinnalle emmentalia ja tyrkkää vuoka uuniin. Anna ruoan muhia 30-60 minuuttia vuuan koosta riippuen. Suojaa vuoka leivinpaperilla, kun juusto on kullanruskeaa.
+
+nimi: Lämmin sieni-perunasalaatti
+ainekset: peruna, sieni, tomaatti
+ainemaarat: 80 g parmankinkkua, 4 kpl keitettyä perunaa, 200 g tuoreita herkkusieniä, 12 kpl, kirsikkatomaattia, 1 kpl, rooman- eli sidesalaattia ruukussa, 50 g rucolaa, 1 rkl oliiviöljyä, 1/4 tl suolaa, 1/4 tl mustapippuria \n \nKastike \n2 rkl oliiviöljyä, 2 rkl, tuoretta oreganoa (hienonnettuna), 1 rkl valkoviinietikkaa, 1 rkl siirappia, 1/4 tl suolaa, 1/4 tl mustapippuria 
+

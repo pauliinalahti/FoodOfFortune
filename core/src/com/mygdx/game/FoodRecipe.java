@@ -110,8 +110,9 @@ public class FoodRecipe implements Screen {
             game.recipeFont.draw(batch, i, 100, (WORLDHEIGHT-j)*100);
             j += 0.5f;
         }*/
-        ArrayList<String> amList = new  ArrayList<String>(Arrays.asList(recipe.amount.split("[,]+")));
-        for(String a: amList) {
+        game.recipeFont.draw(batch, recipe.amount.replace(",", "\n"), 50, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
+        //ArrayList<String> amList = new  ArrayList<String>(Arrays.asList(recipe.amount.split("[,]+")));
+        /*for(String a: amList) {
             int len = a.length();
             int k = (int) Math.ceil(len/12);
             //System.out.println("k: "+k);
@@ -122,10 +123,10 @@ public class FoodRecipe implements Screen {
                 j += (0.25*k);
             }
             //System.out.println("len: "+len+", k: "+k+", j: "+j);
-        }
+        }*/
         j=1f;
         //game.recipeFont.draw(batch, recipe.amount, 50, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
-        game.recipeFont.draw(batch, methodTxt, 370, (WORLDHEIGHT-j-0.5f)*100, 600, -1, true);
+        game.recipeFont.draw(batch, methodTxt.replace("\\n", "\n"), 400, (WORLDHEIGHT-j-0.5f)*100, 600, -1, true);
         /*j = 1f;
         ArrayList<String> methodList = new  ArrayList<String>(Arrays.asList(methodTxt.split("\\&")));
         for(String m: methodList) {

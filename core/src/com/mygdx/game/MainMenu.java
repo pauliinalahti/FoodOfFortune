@@ -16,6 +16,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
+import static com.mygdx.game.MainGame.WORLDHEIGHT;
+import static com.mygdx.game.MainGame.WORLDWIDTH;
+
 public class MainMenu implements Screen {
 
     MainGame game;
@@ -42,9 +45,11 @@ public class MainMenu implements Screen {
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
 
-        Button startBtn = new TextButton("START GAME", mySkin, "small");
-        startBtn.pad(20);
+        Button startBtn = new TextButton("START GAME", mySkin, "small");startBtn.pad(20);
         startBtn.right().pad(20);
+        //startBtn.setScale(WORLDWIDTH, WORLDHEIGHT);
+        //startBtn.pad(-10f);
+        //startBtn.setSize(WORLDWIDTH/7, WORLDHEIGHT/7);
         ((TextButton) startBtn).getLabel().setFontScale(game.buttonSize);
         startBtn.addListener(new ChangeListener() {
             @Override
@@ -54,7 +59,7 @@ public class MainMenu implements Screen {
         });
 
         Button settingsBtn = new TextButton("SETTINGS", mySkin, "small");
-        settingsBtn.pad(20);
+        //settingsBtn.pad(20);
         ((TextButton) settingsBtn).getLabel().setFontScale(game.buttonSize);
         settingsBtn.addListener(new ChangeListener() {
             @Override

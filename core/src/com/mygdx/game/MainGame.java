@@ -18,7 +18,7 @@ public class MainGame extends Game {
     public static SpriteBatch batch;
     public static float WORLDWIDTH = 10;
     public static float WORLDHEIGHT = 5;
-    public static int buttonSize = 4;
+    public static int buttonSize = 2;
 
     OrthographicCamera camera;
     OrthographicCamera cameraFont;

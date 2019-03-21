@@ -3,6 +3,7 @@ package com.mygdx.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -104,36 +105,33 @@ public class Recipes implements Screen {
         }
         System.out.println("///////////////");*/
 
-        File file = new File("recipefile2.txt");
-        try {
-            Locale loc = new Locale("fi", "FI");
-            Scanner sc = new Scanner(new FileInputStream(file), "UTF-8");
-            sc.useLocale(loc);
-            int pad = 20;
-            while (sc.hasNextLine()) {
-                if(sc.findInLine("nimi:")!=null) {
-                    String recName = sc.nextLine();
-                    sc.findInLine("ainekset:");
-                    String str = sc.nextLine();
-                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
-                    sc.findInLine("ainemaarat:");
-                    String amount = sc.nextLine();
-                    sc.findInLine("ohje:");
-                    String recMethod = sc.nextLine();
-                    //System.out.println(recName+":"+items.toString()+":"+amount+":"+recMethod);
-                    Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
-                    newRec.addAmount(amount);
-                    recipes.add(newRec);
-                }
-                else {
-                    sc.nextLine();
-                }
+        //File file = new File("recipefile2.txt");
+        FileHandle file2 = Gdx.files.internal("recipefile.txt");
+        String text = file2.readString();
+        Scanner sc = new Scanner(text);
+        Locale loc = new Locale("fi", "FI");
+        sc.useLocale(loc);
+        int pad = 20;
+        while (sc.hasNextLine()) {
+            if(sc.findInLine("nimi:")!=null) {
+                String recName = sc.nextLine();
+                sc.findInLine("ainekset:");
+                String str = sc.nextLine();
+                ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                sc.findInLine("ainemaarat:");
+                String amount = sc.nextLine();
+                sc.findInLine("ohje:");
+                String recMethod = sc.nextLine();
+                //System.out.println(recName+":"+items.toString()+":"+amount+":"+recMethod);
+                Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
+                newRec.addAmount(amount);
+                recipes.add(newRec);
             }
-            sc.close();
+            else {
+                sc.nextLine();
+            }
         }
-        catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        sc.close();
         Table table2 = new Table();
         recipeMatches = new ArrayList<Recipe>();
         for (final Recipe r:recipes) {
@@ -155,7 +153,7 @@ public class Recipes implements Screen {
                 table2.left().pad(100);
                 table2.row().row();
                 pad += 5;
-                table2.setDebug(true);
+                //table2.setDebug(true);
 
                 table2.setFillParent(true);
                 stage.addActor(table2);
