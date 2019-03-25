@@ -49,7 +49,7 @@ public class DrawnIngredients implements Screen {
         thirdDrawn = third;
         reelsRectangle = new Rectangle(1.26f,1.7f,2.1f,2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("foodbackground2.jpg"));
+        background = new Texture(Gdx.files.internal("bg2.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);

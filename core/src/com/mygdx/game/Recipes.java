@@ -64,7 +64,7 @@ public class Recipes implements Screen {
         secondDrawn = second;
         thirdDrawn = third;
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("foodbackground2.jpg"));
+        background = new Texture(Gdx.files.internal("bg2.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
