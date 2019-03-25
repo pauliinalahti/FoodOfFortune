@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
@@ -28,6 +29,8 @@ public class MainMenu implements Screen {
     private Skin mySkin;
     private Stage stage;
     Image back;
+    String playText;
+    String settingsText;
 
 
     public MainMenu(MainGame g) {
@@ -44,8 +47,17 @@ public class MainMenu implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
+        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        if(pref.getBoolean("english")){
+            settingsText = "SETTINGS";
+            playText = "PLAY";
+        } else {
+            settingsText = "ASETUKSET";
+            playText = "PELAA";
+        }
 
-        Button startBtn = new TextButton("START GAME", mySkin, "small");startBtn.pad(20);
+
+        Button startBtn = new TextButton(playText, mySkin, "small");startBtn.pad(20);
         startBtn.right().pad(20);
         //startBtn.setScale(WORLDWIDTH, WORLDHEIGHT);
         //startBtn.pad(-10f);
@@ -58,8 +70,8 @@ public class MainMenu implements Screen {
             }
         });
 
-        Button settingsBtn = new TextButton("SETTINGS", mySkin, "small");
-        //settingsBtn.pad(20);
+        Button settingsBtn = new TextButton(settingsText, mySkin, "small");
+        settingsBtn.pad(20);
         ((TextButton) settingsBtn).getLabel().setFontScale(game.buttonSize);
         settingsBtn.addListener(new ChangeListener() {
             @Override

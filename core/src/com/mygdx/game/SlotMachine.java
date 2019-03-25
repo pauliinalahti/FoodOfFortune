@@ -2,6 +2,7 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -44,6 +45,9 @@ public class SlotMachine implements Screen {
     boolean play = false;
     boolean startImages = true;
 
+    String backText;
+    String playText;
+
     public SlotMachine(MainGame g){
         game = g;
         batch = game.getBatch();
@@ -57,6 +61,14 @@ public class SlotMachine implements Screen {
         reelsRectangle = new Rectangle(1.26f,1.155f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
+        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        if(pref.getBoolean("english")){
+            backText = "BACK";
+            playText = "PLAY";
+        } else {
+            backText = "TAKAISIN";
+            playText = "PELAA";
+        }
 
         firstReel = new FirstReel();
         secondReel = new SecondReel();
@@ -90,7 +102,7 @@ public class SlotMachine implements Screen {
             }
         });
 
-        Button backBtn = new TextButton("BACK", mySkin, "small");
+        Button backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
@@ -100,7 +112,7 @@ public class SlotMachine implements Screen {
             }
         });
 
-        Button playBtn = new TextButton("PLAY", mySkin, "small");
+        Button playBtn = new TextButton(playText, mySkin, "small");
         playBtn.pad(20);
         ((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
         playBtn.addListener(new ChangeListener() {

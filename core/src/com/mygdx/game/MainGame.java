@@ -18,7 +18,8 @@ public class MainGame extends Game {
     public static SpriteBatch batch;
     public static float WORLDWIDTH = 10;
     public static float WORLDHEIGHT = 5;
-    public static int buttonSize = 2;
+    public static int buttonSize = 3;
+    public static int buttonSizeSmall = 2;
 
     OrthographicCamera camera;
     OrthographicCamera cameraFont;
@@ -52,10 +53,11 @@ public class MainGame extends Game {
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
-        generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
+        generator = new FreeTypeFontGenerator(Gdx.files.internal("RobotoCondensed-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
         parameter.borderColor = Color.BLACK;
+        parameter.color.add(Color.BLACK);
         parameter.borderWidth = 2;
         font = generator.generateFont(parameter);
 
@@ -67,9 +69,9 @@ public class MainGame extends Game {
         font2 = generator.generateFont(parameter2);
 
         FreeTypeFontGenerator.FreeTypeFontParameter parameter3 = new FreeTypeFontGenerator.FreeTypeFontParameter();
-        parameter3.size = 20;
+        parameter3.size = 25;
         parameter3.borderColor = Color.BLACK;
-        parameter3.color.add(Color.BLACK);
+        parameter3.color.add(Color.WHITE);
         parameter3.borderWidth = 2;
         recipeFont = generator.generateFont(parameter3);
 
@@ -116,7 +118,7 @@ public class MainGame extends Game {
     public void render() {
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
-        backgroundMusic.play();
+        //backgroundMusic.play();
         batch.end();
         super.render();
     }

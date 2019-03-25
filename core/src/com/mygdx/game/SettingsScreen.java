@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -29,7 +30,13 @@ public class SettingsScreen implements Screen {
     private Stage stage;
     Image back;
     GlyphLayout layoutSettings;
-    String settingsTxt = "ASETUKSET";
+    String settingsText;
+    String backText;
+    String languageText;
+    String onOffText;
+    String changeText;
+    Preferences pref;
+    Button backBtn;
 
     public SettingsScreen(MainGame g) {
         game = g;
@@ -41,20 +48,54 @@ public class SettingsScreen implements Screen {
         back.setFillParent(true);
         stage.addActor(back);
 
+        //System.out.println(pref.getBoolean("english"));
+        //pref.flush();
+
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        layoutSettings = new GlyphLayout();
-        layoutSettings.setText(game.font2, settingsTxt);
+        pref = Gdx.app.getPreferences("My Preferences");
+        if(pref.getBoolean("english")){
+            backText = "BACK";
+            settingsText = "SETTINGS";
+            languageText = "Language: ";
+            onOffText = "ON";
+            changeText = "Change";
+        } else {
+            backText = "TAKAISIN";
+            settingsText = "ASETUKSET";
+            languageText = "Kieli: ";
+            onOffText = "OFF";
+            changeText = "Vaihda";
+        }
 
-        Button backBtn = new TextButton("BACK", mySkin, "small");
+        layoutSettings = new GlyphLayout();
+        layoutSettings.setText(game.font2, settingsText);
+
+        backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 game.goMainMenu();
+            }
+        });
+
+
+        Button testBtn = new TextButton(changeText, mySkin, "small");
+        testBtn.pad(10);
+        ((TextButton) testBtn).getLabel().setFontScale(game.buttonSizeSmall);
+        testBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                if(Gdx.app.getPreferences("My Preferences").getBoolean("english")) {
+                    Gdx.app.getPreferences("My Preferences").putBoolean("english", false);
+                } else {
+                    Gdx.app.getPreferences("My Preferences").putBoolean("english", true);
+                }
+                game.goSettingsScreen();
             }
         });
 
@@ -65,8 +106,20 @@ public class SettingsScreen implements Screen {
         table.left();
         //table.setDebug(true);
 
+        Table table2 = new Table();
+        table2.defaults().uniform().pad(30);
+        table2.add(testBtn);
+        table2.setPosition(1f, (WORLDHEIGHT-1f-3f)*100);
+        //table2.center();
+        table2.left().pad(5);
+        //table2.top().pad(20);
+
         table.setFillParent(true);
+        table2.setFillParent(true);
+        stage.addActor(table2);
         stage.addActor(table);
+
+
     }
 
     @Override
@@ -83,7 +136,17 @@ public class SettingsScreen implements Screen {
 
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font2.draw(batch, settingsTxt, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
+
+        game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
+
+        game.recipeFont.draw(batch, languageText, 280, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+        if(Gdx.app.getPreferences("My Preferences").getBoolean("english")) {
+            game.recipeFont.draw(batch, "English", 450, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+            pref.flush();
+        } else {
+            game.recipeFont.draw(batch, "Suomi", 450, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+            pref.flush();
+        }
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();

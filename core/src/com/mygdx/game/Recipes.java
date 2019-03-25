@@ -2,6 +2,7 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
@@ -51,6 +52,8 @@ public class Recipes implements Screen {
     ArrayList<String> recipesVertical;
     ArrayList<Recipe> recipeMatches;
     int pad = 30;
+    String backText;
+    FileHandle file;
 
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
@@ -68,6 +71,13 @@ public class Recipes implements Screen {
         stage.addActor(back);
         recipesVertical = new ArrayList<String>();
 
+        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        if(pref.getBoolean("english")) {
+            backText = "BACK";
+        } else {
+            backText = "BACK";
+        }
+
         recipestext = new GlyphLayout();
         recipestext.setText(game.font2, recipesTxt);
 
@@ -76,7 +86,7 @@ public class Recipes implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        Button menuBtn = new TextButton("BACK", mySkin, "small");
+        Button menuBtn = new TextButton(backText, mySkin, "small");
         menuBtn.pad(20);
         ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
         menuBtn.addListener(new ChangeListener() {
@@ -96,18 +106,13 @@ public class Recipes implements Screen {
         table.setFillParent(true);
         stage.addActor(table);
 
-
-        /*
-        // Tulostetaan sopivat reseptit
-        System.out.println("Ehdotetut reseptit:");
-        for(Recipe r:recipeMatches) {
-            System.out.println(r.name);
+        if(!pref.getBoolean("english")) {
+            file = Gdx.files.internal("recipefile.txt");
+        } else {
+            file = Gdx.files.internal("recipefileEN.txt");
         }
-        System.out.println("///////////////");*/
-
         //File file = new File("recipefile2.txt");
-        FileHandle file2 = Gdx.files.internal("recipefile.txt");
-        String text = file2.readString();
+        String text = file.readString();
         Scanner sc = new Scanner(text);
         Locale loc = new Locale("fi", "FI");
         sc.useLocale(loc);
@@ -139,8 +144,8 @@ public class Recipes implements Screen {
                 recipeMatches.add(r);
 
                 Button recipeBtn = new TextButton(r.name, mySkin, "small");
-                recipeBtn.pad(20);
-                ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
+                recipeBtn.pad(5);
+                ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSizeSmall);
                 recipeBtn.addListener(new ChangeListener() {
                     @Override
                     public void changed(ChangeEvent event, Actor actor) {
@@ -150,7 +155,7 @@ public class Recipes implements Screen {
                 //table2.defaults().uniform().pad(30);
                 table2.add(recipeBtn);
                 //table2.top().pad(pad);
-                table2.left().pad(100);
+                //table2.left().pad(300);
                 table2.row().row();
                 pad += 5;
                 //table2.setDebug(true);

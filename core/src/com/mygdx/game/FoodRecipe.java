@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -19,6 +20,7 @@ import com.badlogic.gdx.utils.Scaling;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static com.mygdx.game.GameConstants.skin;
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
@@ -59,7 +61,9 @@ public class FoodRecipe implements Screen {
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
-        mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
+        mySkin = game.myAssetsManager.manager.get(skin);
+
+        //ScrollPane scrollPane=new ScrollPane(recipe.method, mySkin);
 
         layoutRecipeName = new GlyphLayout();
         layoutRecipeName.setText(game.font2, recipeNameTxt);
@@ -76,6 +80,8 @@ public class FoodRecipe implements Screen {
                 game.goRecipes(firstDrawn,secondDrawn,thirdDrawn);
             }
         });
+
+        //Button sp = new ScrollPane(mySkin);
 
         Table table = new Table();
         table.defaults().uniform().pad(30);
@@ -110,7 +116,7 @@ public class FoodRecipe implements Screen {
             game.recipeFont.draw(batch, i, 100, (WORLDHEIGHT-j)*100);
             j += 0.5f;
         }*/
-        game.recipeFont.draw(batch, recipe.amount.replace(",", "\n"), 50, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
+        game.recipeFont.draw(batch, recipe.amount.replace(",", "\n"), 30, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
         //ArrayList<String> amList = new  ArrayList<String>(Arrays.asList(recipe.amount.split("[,]+")));
         /*for(String a: amList) {
             int len = a.length();

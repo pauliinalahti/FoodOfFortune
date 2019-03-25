@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -35,7 +36,9 @@ public class DrawnIngredients implements Screen {
     int firstDrawn, secondDrawn, thirdDrawn;
     Rectangle reelsRectangle;
     GlyphLayout layoutFirst, layoutSecond, layoutThird, drawnIngrediends;
-    String ingrediends = "ARVOTUT AINEKSET";
+    String ingrediends;
+    String backText;
+    String recipesText;
 
 
     public DrawnIngredients(MainGame g, int first, int second, int third){
@@ -51,6 +54,17 @@ public class DrawnIngredients implements Screen {
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
+
+        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        if(pref.getBoolean("english")){
+            backText = "BACK";
+            recipesText = "RECIPES";
+            ingrediends = "INGREDIENTS";
+        } else {
+            backText = "TAKAISIN";
+            recipesText = "RESEPTEJÄ";
+            ingrediends = "ARVOTUT AINEKSET";
+        }
 
         drawnIngrediends = new GlyphLayout();
         drawnIngrediends.setText(game.font2, ingrediends);
@@ -68,7 +82,7 @@ public class DrawnIngredients implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        Button recipesBtn = new TextButton("RECIPES", mySkin, "small");
+        Button recipesBtn = new TextButton(recipesText, mySkin, "small");
         recipesBtn.pad(20);
         ((TextButton) recipesBtn).getLabel().setFontScale(game.buttonSize);
         recipesBtn.addListener(new ChangeListener() {
@@ -78,7 +92,7 @@ public class DrawnIngredients implements Screen {
             }
         });
 
-        Button backBtn = new TextButton("BACK", mySkin, "small");
+        Button backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
