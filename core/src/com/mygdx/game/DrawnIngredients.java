@@ -63,7 +63,7 @@ public class DrawnIngredients implements Screen {
             ingrediends = "INGREDIENTS";
         } else {
             backText = "TAKAISIN";
-            recipesText = "RESEPTEJÄ";
+            recipesText = "RESEPTIT";
             ingrediends = "ARVOTUT AINEKSET";
         }
 

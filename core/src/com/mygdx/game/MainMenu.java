@@ -31,6 +31,7 @@ public class MainMenu implements Screen {
     Image back;
     String playText;
     String settingsText;
+    String quitText;
 
 
     public MainMenu(MainGame g) {
@@ -47,13 +48,15 @@ public class MainMenu implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        Preferences pref = game.getPrefs();
         if(pref.getBoolean("english")){
             settingsText = "SETTINGS";
             playText = "PLAY";
+            quitText = "QUIT";
         } else {
             settingsText = "ASETUKSET";
             playText = "PELAA";
+            quitText = "LOPETA";
         }
 
 
@@ -80,10 +83,22 @@ public class MainMenu implements Screen {
             }
         });
 
+        Button quitBtn = new TextButton(quitText, mySkin, "small");
+        quitBtn.pad(20);
+        ((TextButton) quitBtn).getLabel().setFontScale(game.buttonSize);
+        quitBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                Gdx.app.exit();
+                System.exit(-1);
+            }
+        });
+
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(startBtn);
         table.add(settingsBtn);
+        table.add(quitBtn);
         table.bottom().pad(30);
         //table.setDebug(true);
 

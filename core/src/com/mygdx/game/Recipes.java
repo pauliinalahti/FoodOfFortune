@@ -92,10 +92,10 @@ public class Recipes implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        Button menuBtn = new TextButton(backText, mySkin, "small");
-        menuBtn.pad(20);
-        ((TextButton) menuBtn).getLabel().setFontScale(game.buttonSize);
-        menuBtn.addListener(new ChangeListener() {
+        Button backBtn = new TextButton(backText, mySkin, "small");
+        backBtn.pad(20);
+        ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
+        backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 game.goDrawnIngredients(firstDrawn,secondDrawn,thirdDrawn);
@@ -105,7 +105,7 @@ public class Recipes implements Screen {
 
         Table table = new Table();
         table.defaults().uniform().pad(30);
-        table.add(menuBtn);
+        table.add(backBtn);
         table.top();
         table.left();
         // table.setDebug(true);

@@ -73,9 +73,9 @@ public class SlotMachine implements Screen {
         firstReel = new FirstReel();
         secondReel = new SecondReel();
         thirdReel = new ThirdReel();
-        firstReelTime = 9;
-        secondReelTime = 15;
-        thirdReelTime = 22;
+        firstReelTime = 5;
+        secondReelTime = 14;
+        thirdReelTime = 20;
         drawnNumberFirstReel = random(firstReel.firstReelImages.size());
         drawnNumberSecondReel = random(secondReel.secondReelImages.size());
         drawnNumberThirdReeL = random(thirdReel.thirdReelImages.size());
@@ -92,7 +92,7 @@ public class SlotMachine implements Screen {
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
         //testbutton
-        /*Button testBtn = new TextButton("TEST", mySkin, "small");
+        Button testBtn = new TextButton("TEST", mySkin, "small");
         testBtn.pad(20);
         ((TextButton) testBtn).getLabel().setFontScale(game.buttonSize);
         testBtn.addListener(new ChangeListener() {
@@ -100,7 +100,7 @@ public class SlotMachine implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 game.goDrawnIngredients(0,0,0);
             }
-        });*/
+        });
 
         Button backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
@@ -129,7 +129,7 @@ public class SlotMachine implements Screen {
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
-        //table.add(testBtn);
+        table.add(testBtn);
         table.top();
         table.left();
         //table.setDebug(true);
@@ -198,7 +198,7 @@ public class SlotMachine implements Screen {
                 batch.end();
             }
 
-            if (i < secondReelTime) {
+            if (i < thirdReelTime) {
                 batch.begin();
                 batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())),
                         5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);

@@ -11,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -52,7 +53,7 @@ public class FoodRecipe implements Screen {
         ingredientsTxt = r.ingredients;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
+        background = new Texture(Gdx.files.internal("reseptiTausta.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -90,11 +91,16 @@ public class FoodRecipe implements Screen {
             }
         });
 
-        //Button sp = new ScrollPane(mySkin);
-
+        Label label = new Label(methodTxt, mySkin);
+        label.setWrap(true);
+        label.pack();
+        ScrollPane sp = new ScrollPane(label);
         Table table = new Table();
-        table.defaults().uniform().pad(30);
-        table.add(backBtn);
+        //table.debug();
+        table.defaults().pad(30);
+        table.add(backBtn).left().row();
+        table.add();
+        //table.add(sp).grow();
         table.top();
         table.left();
         //table.setDebug(true);
@@ -151,17 +157,8 @@ public class FoodRecipe implements Screen {
             //System.out.println("len: "+len+", k: "+k+", j: "+j);
         }*/
         j=1f;
-        //game.recipeFont.draw(batch, recipe.amount, 50, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
+
         game.recipeFont.draw(batch, methodTxt.replace("\\n", "\n"), 400, (WORLDHEIGHT-j-0.5f)*100, 600, -1, true);
-        /*j = 1f;
-        ArrayList<String> methodList = new  ArrayList<String>(Arrays.asList(methodTxt.split("\\&")));
-        for(String m: methodList) {
-            game.recipeFont.draw(batch, m, 350, (WORLDHEIGHT-j-0.5f)*100, 600, 1, true);
-            j += 0.5f;
-        }*/
-
-
-
 
         batch.setProjectionMatrix((game.camera.combined));
 

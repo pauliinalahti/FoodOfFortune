@@ -10,12 +10,15 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
+
+import java.awt.Checkbox;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
@@ -43,11 +46,14 @@ public class SettingsScreen implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("bg2.png"));
+        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
+        pref = game.getPrefs();
+
+        //setCheckBoxes();
 
         //System.out.println(pref.getBoolean("english"));
         //pref.flush();
@@ -56,7 +62,6 @@ public class SettingsScreen implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        pref = game.getPrefs();
         if(pref.getBoolean("english")){
             backText = "BACK";
             settingsText = "SETTINGS";
@@ -87,10 +92,10 @@ public class SettingsScreen implements Screen {
         });
 
 
-        Button testBtn = new TextButton(changeText, mySkin, "small");
-        testBtn.pad(10);
-        ((TextButton) testBtn).getLabel().setFontScale(game.buttonSize);
-        testBtn.addListener(new ChangeListener() {
+        Button changeTextBtn = new TextButton(changeText, mySkin, "small");
+        changeTextBtn.pad(15);
+        ((TextButton) changeTextBtn).getLabel().setFontScale(game.buttonSize);
+        changeTextBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if(game.getPrefs().getBoolean("english")) {
@@ -106,6 +111,31 @@ public class SettingsScreen implements Screen {
             }
         });
 
+        final CheckBox cb = new CheckBox("jauheliha", mySkin);
+        ((CheckBox) cb).getLabel().setFontScale(game.buttonSizeSmall);
+        cb.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                Gdx.graphics.setContinuousRendering(cb.isChecked());
+                if(pref.getBoolean("jauheliha")){
+                    pref.putBoolean("jauheliha", false);
+                    pref.flush();
+                } else {
+                    pref.putBoolean("jauheliha", true);
+                    pref.flush();
+                }
+            }
+        });
+
+        final CheckBox cb2 = new CheckBox("peruna", mySkin);
+        ((CheckBox) cb2).getLabel().setFontScale(game.buttonSizeSmall);
+        cb2.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                Gdx.graphics.setContinuousRendering(cb2.isChecked());
+            }
+        });
+
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
@@ -115,18 +145,31 @@ public class SettingsScreen implements Screen {
 
         Table table2 = new Table();
         table2.defaults().uniform().pad(30);
-        table2.add(testBtn);
-        table2.setPosition(1f, (WORLDHEIGHT-1f-3f)*100);
+        table2.add(changeTextBtn);
+        table2.setPosition(1f, (WORLDHEIGHT-3.1f)*100);
         //table2.center();
-        table2.left().pad(5);
+        table2.left().pad(10);
         //table2.top().pad(20);
+
+        Table tableCheckBoxes = new Table();
+        tableCheckBoxes.defaults().uniform().pad(30);
+        tableCheckBoxes.add(cb);
+        tableCheckBoxes.row().row();
+        tableCheckBoxes.add(cb2);
+        tableCheckBoxes.setPosition(1f, (WORLDHEIGHT-6f)*100);
+        //tableCheckBoxes.left().pad(30);
 
         table.setFillParent(true);
         table2.setFillParent(true);
+        tableCheckBoxes.setFillParent(true);
         stage.addActor(table2);
         stage.addActor(table);
+        stage.addActor(tableCheckBoxes);
+    }
 
-
+    public void setCheckBoxes(){
+        pref.putBoolean("jauheliha", true);
+        pref.putBoolean("peruna", true);
     }
 
     @Override
@@ -144,15 +187,15 @@ public class SettingsScreen implements Screen {
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
 
-        game.recipeFont.draw(batch, chosenLanguage, 450, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
         game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
 
+        game.font.draw(batch, chosenLanguage, 400, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
 
         if(game.getPrefs().getBoolean("english")) {
-            game.recipeFont.draw(batch, languageText, 280, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+            game.font.draw(batch, languageText, 230, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
             pref.flush();
         } else {
-            game.recipeFont.draw(batch, languageText, 280, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+            game.font.draw(batch, languageText, 230, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
             pref.flush();
         }
         batch.setProjectionMatrix((game.camera.combined));

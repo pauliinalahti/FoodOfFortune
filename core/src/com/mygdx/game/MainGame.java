@@ -20,7 +20,7 @@ public class MainGame extends Game {
     public static float WORLDWIDTH = 10;
     public static float WORLDHEIGHT = 5;
     public static int buttonSize = 3;
-    public static int buttonSizeSmall = 2;
+    public static float buttonSizeSmall = 1.3f;
 
     OrthographicCamera camera;
     OrthographicCamera cameraFont;
@@ -126,7 +126,7 @@ public class MainGame extends Game {
     public void render() {
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
-        //backgroundMusic.play();
+        backgroundMusic.play();
         batch.end();
         super.render();
     }
