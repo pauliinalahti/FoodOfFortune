@@ -53,7 +53,7 @@ public class MainGame extends Game {
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
-        generator = new FreeTypeFontGenerator(Gdx.files.internal("RobotoCondensed-Regular.ttf"));
+        generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
         parameter.borderColor = Color.BLACK;

@@ -37,7 +37,7 @@ public class MainMenu implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("bg2b.png"));
+        background = new Texture(Gdx.files.internal("mainMenu2.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);

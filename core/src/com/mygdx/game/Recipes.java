@@ -48,11 +48,11 @@ public class Recipes implements Screen {
     SecondReel secondReel = new SecondReel();
     String firstFood, secondFood;
     GlyphLayout recipestext;
-    String recipesTxt = "RESEPTIT";
+    String recipesTxt;
+    String backText;
     ArrayList<String> recipesVertical;
     ArrayList<Recipe> recipeMatches;
     int pad = 30;
-    String backText;
     FileHandle file;
 
     public Recipes(MainGame g, int first, int second, int third){
@@ -64,7 +64,7 @@ public class Recipes implements Screen {
         secondDrawn = second;
         thirdDrawn = third;
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("bg2.png"));
+        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -74,8 +74,10 @@ public class Recipes implements Screen {
         Preferences pref = Gdx.app.getPreferences("My Preferences");
         if(pref.getBoolean("english")) {
             backText = "BACK";
+            recipesTxt = "RECIPES";
         } else {
-            backText = "BACK";
+            backText = "TAKAISIN";
+            recipesTxt = "RESEPTIT";
         }
 
         recipestext = new GlyphLayout();
@@ -108,35 +110,63 @@ public class Recipes implements Screen {
 
         if(!pref.getBoolean("english")) {
             file = Gdx.files.internal("recipefile.txt");
+
+            String text = file.readString();
+            Scanner sc = new Scanner(text);
+            Locale loc = new Locale("fi", "FI");
+            sc.useLocale(loc);
+            int pad = 20;
+            while (sc.hasNextLine()) {
+                if(sc.findInLine("nimi:")!=null) {
+                    String recName = sc.nextLine();
+                    sc.findInLine("ainekset:");
+                    String str = sc.nextLine();
+                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                    sc.findInLine("ainemaarat:");
+                    String amount = sc.nextLine();
+                    sc.findInLine("ohje:");
+                    String recMethod = sc.nextLine();
+                    //System.out.println(recName+":"+items.toString()+":"+amount+":"+recMethod);
+                    Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
+                    newRec.addAmount(amount);
+                    recipes.add(newRec);
+                }
+                else {
+                    sc.nextLine();
+                }
+            }
+            sc.close();
         } else {
             file = Gdx.files.internal("recipefileEN.txt");
-        }
-        //File file = new File("recipefile2.txt");
-        String text = file.readString();
-        Scanner sc = new Scanner(text);
-        Locale loc = new Locale("fi", "FI");
-        sc.useLocale(loc);
-        int pad = 20;
-        while (sc.hasNextLine()) {
-            if(sc.findInLine("nimi:")!=null) {
-                String recName = sc.nextLine();
-                sc.findInLine("ainekset:");
-                String str = sc.nextLine();
-                ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
-                sc.findInLine("ainemaarat:");
-                String amount = sc.nextLine();
-                sc.findInLine("ohje:");
-                String recMethod = sc.nextLine();
-                //System.out.println(recName+":"+items.toString()+":"+amount+":"+recMethod);
-                Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
-                newRec.addAmount(amount);
-                recipes.add(newRec);
+
+            String text = file.readString();
+            Scanner sc = new Scanner(text);
+            Locale loc = new Locale("fi", "FI");
+            sc.useLocale(loc);
+            int pad = 20;
+            while (sc.hasNextLine()) {
+                if(sc.findInLine("Name:")!=null) {
+                    String recName = sc.nextLine();
+                    sc.findInLine("Ingredients:");
+                    String str = sc.nextLine();
+                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                    sc.findInLine("ingredients:");
+                    String amount = sc.nextLine();
+                    sc.findInLine("Help:");
+                    String recMethod = sc.nextLine();
+                    //System.out.println(recName+":"+items.toString()+":"+amount+":"+recMethod);
+                    Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
+                    newRec.addAmount(amount);
+                    recipes.add(newRec);
+                }
+                else {
+                    sc.nextLine();
+                }
             }
-            else {
-                sc.nextLine();
-            }
+            sc.close();
         }
-        sc.close();
+
+
         Table table2 = new Table();
         recipeMatches = new ArrayList<Recipe>();
         for (final Recipe r:recipes) {

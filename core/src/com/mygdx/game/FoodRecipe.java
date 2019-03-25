@@ -50,7 +50,7 @@ public class FoodRecipe implements Screen {
         ingredientsTxt = r.ingredients;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("recipeBg1.png"));
+        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -108,7 +108,11 @@ public class FoodRecipe implements Screen {
 
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font2.draw(batch, recipeNameTxt, WORLDWIDTH*100/2-layoutRecipeName.width/2, (WORLDHEIGHT-0.5f)*100);
+        game.font2.draw(batch,
+                recipeNameTxt,
+                WORLDWIDTH*100/2-layoutRecipeName.width/2,
+                (WORLDHEIGHT-0.5f)*100);
+
         //game.recipeFont.draw(batch, "Hello World!", WORLDWIDTH*100/2-layoutRecipeName.width/2, (WORLDHEIGHT-0.5f)*100, 100, 100, true);
 
         float j = 1f;
@@ -116,7 +120,14 @@ public class FoodRecipe implements Screen {
             game.recipeFont.draw(batch, i, 100, (WORLDHEIGHT-j)*100);
             j += 0.5f;
         }*/
-        game.recipeFont.draw(batch, recipe.amount.replace(",", "\n"), 30, (WORLDHEIGHT-j-0.5f)*100, 350, -1, true);
+        game.recipeFont.draw(batch,
+                recipe.amount.replace(",", "\n"),
+                30,
+                (WORLDHEIGHT-j-0.5f)*100,
+                350,
+                -1,
+                true);
+
         //ArrayList<String> amList = new  ArrayList<String>(Arrays.asList(recipe.amount.split("[,]+")));
         /*for(String a: amList) {
             int len = a.length();

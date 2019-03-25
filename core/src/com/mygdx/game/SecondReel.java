@@ -9,12 +9,15 @@ public class SecondReel {
 
     Texture image1,image2,image3,image4;
     String name1, name2, name3, name4;
+    String name1EN, name2EN, name3EN, name4EN;
     ArrayList<Texture> secondReelImages;
     ArrayList<String> secondReelFoodNames;
+    ArrayList<String> secondReelFoodNamesEN;
 
     public SecondReel() {
         secondReelImages = new ArrayList<Texture>();
         secondReelFoodNames = new ArrayList<String>();
+        secondReelFoodNamesEN = new ArrayList<String>();
 
         image1 = new Texture(Gdx.files.internal("makaroni.png"));
         image2 = new Texture(Gdx.files.internal("peruna.png"));
@@ -35,6 +38,16 @@ public class SecondReel {
         secondReelFoodNames.add(name2);
         secondReelFoodNames.add(name3);
         secondReelFoodNames.add(name4);
+
+        name1EN ="Macaroni";
+        name2EN ="Potato";
+        name3EN = "Rice";
+        name4EN = "Spaghetti";
+
+        secondReelFoodNamesEN.add(name1EN);
+        secondReelFoodNamesEN.add(name2EN);
+        secondReelFoodNamesEN.add(name3EN);
+        secondReelFoodNamesEN.add(name4EN);
     }
 }
 
