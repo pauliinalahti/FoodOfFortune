@@ -37,12 +37,13 @@ public class SettingsScreen implements Screen {
     String changeText;
     Preferences pref;
     Button backBtn;
+    String chosenLanguage;
 
     public SettingsScreen(MainGame g) {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
+        background = new Texture(Gdx.files.internal("bg2.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -55,19 +56,21 @@ public class SettingsScreen implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        pref = Gdx.app.getPreferences("My Preferences");
+        pref = game.getPrefs();
         if(pref.getBoolean("english")){
             backText = "BACK";
             settingsText = "SETTINGS";
             languageText = "Language: ";
             onOffText = "ON";
             changeText = "Change";
+            chosenLanguage = "English";
         } else {
             backText = "TAKAISIN";
             settingsText = "ASETUKSET";
             languageText = "Kieli: ";
             onOffText = "OFF";
             changeText = "Vaihda";
+            chosenLanguage = "Suomi";
         }
 
         layoutSettings = new GlyphLayout();
@@ -86,14 +89,18 @@ public class SettingsScreen implements Screen {
 
         Button testBtn = new TextButton(changeText, mySkin, "small");
         testBtn.pad(10);
-        ((TextButton) testBtn).getLabel().setFontScale(game.buttonSizeSmall);
+        ((TextButton) testBtn).getLabel().setFontScale(game.buttonSize);
         testBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                if(Gdx.app.getPreferences("My Preferences").getBoolean("english")) {
-                    Gdx.app.getPreferences("My Preferences").putBoolean("english", false);
+                if(game.getPrefs().getBoolean("english")) {
+                    game.getPrefs().putBoolean("english", false);
+                    pref.flush();
+                    System.out.println("en");
                 } else {
-                    Gdx.app.getPreferences("My Preferences").putBoolean("english", true);
+                    game.getPrefs().putBoolean("english", true);
+                    pref.flush();
+                    System.out.println("fi");
                 }
                 game.goSettingsScreen();
             }
@@ -137,14 +144,15 @@ public class SettingsScreen implements Screen {
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
 
+        game.recipeFont.draw(batch, chosenLanguage, 450, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
         game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
 
-        game.recipeFont.draw(batch, languageText, 280, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
-        if(Gdx.app.getPreferences("My Preferences").getBoolean("english")) {
-            game.recipeFont.draw(batch, "English", 450, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+
+        if(game.getPrefs().getBoolean("english")) {
+            game.recipeFont.draw(batch, languageText, 280, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
             pref.flush();
         } else {
-            game.recipeFont.draw(batch, "Suomi", 450, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+            game.recipeFont.draw(batch, languageText, 280, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
             pref.flush();
         }
         batch.setProjectionMatrix((game.camera.combined));

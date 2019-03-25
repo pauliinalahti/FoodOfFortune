@@ -55,7 +55,7 @@ public class DrawnIngredients implements Screen {
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
-        pref = Gdx.app.getPreferences("My Preferences");
+        pref = game.getPrefs();
 
         if(pref.getBoolean("english")){
             backText = "BACK";

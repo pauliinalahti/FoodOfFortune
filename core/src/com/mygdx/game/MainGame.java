@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.badlogic.gdx.Preferences;
 
 public class MainGame extends Game {
     public static SpriteBatch batch;
@@ -32,6 +33,7 @@ public class MainGame extends Game {
     public Viewport screenPort;
     public MyAssetsManager myAssetsManager = new MyAssetsManager();
     Music backgroundMusic;
+    private Preferences preferences;
 
     public SpriteBatch getBatch() {
         return batch;
@@ -46,6 +48,12 @@ public class MainGame extends Game {
         }
     }
 
+    public Preferences getPrefs() {
+        if (preferences == null)
+            preferences = Gdx.app.getPreferences("My Preferences");
+        return preferences;
+    }
+
     @Override
     public void create() {
         font = new BitmapFont();
@@ -53,7 +61,7 @@ public class MainGame extends Game {
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
-        generator = new FreeTypeFontGenerator(Gdx.files.internal("Raleway-Black.ttf"));
+        generator = new FreeTypeFontGenerator(Gdx.files.internal("RobotoCondensed-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
         parameter.borderColor = Color.BLACK;

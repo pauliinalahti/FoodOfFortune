@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
@@ -58,8 +59,7 @@ public class Recipes implements Screen {
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
         batch = game.getBatch();
-        firstFood = firstReel.firstReelFoodNames.get(first);
-        secondFood = secondReel.secondReelFoodNames.get(second);
+
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
@@ -71,13 +71,17 @@ public class Recipes implements Screen {
         stage.addActor(back);
         recipesVertical = new ArrayList<String>();
 
-        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        Preferences pref = game.getPrefs();
         if(pref.getBoolean("english")) {
             backText = "BACK";
             recipesTxt = "RECIPES";
+            firstFood = firstReel.firstReelFoodNamesEN.get(first);
+            secondFood = secondReel.secondReelFoodNamesEN.get(second);
         } else {
             backText = "TAKAISIN";
             recipesTxt = "RESEPTIT";
+            firstFood = firstReel.firstReelFoodNames.get(first);
+            secondFood = secondReel.secondReelFoodNames.get(second);
         }
 
         recipestext = new GlyphLayout();
@@ -137,7 +141,8 @@ public class Recipes implements Screen {
             }
             sc.close();
         } else {
-            file = Gdx.files.internal("recipefileEN.txt");
+            file = Gdx.files.internal("recipefileENtest.txt");
+            System.out.println(firstFood + secondFood);
 
             String text = file.readString();
             Scanner sc = new Scanner(text);
@@ -158,6 +163,7 @@ public class Recipes implements Screen {
                     Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
                     newRec.addAmount(amount);
                     recipes.add(newRec);
+                    System.out.println(newRec.name + newRec.ingredients + newRec.method + newRec.amount);
                 }
                 else {
                     sc.nextLine();
@@ -175,7 +181,7 @@ public class Recipes implements Screen {
 
                 Button recipeBtn = new TextButton(r.name, mySkin, "small");
                 recipeBtn.pad(5);
-                ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSizeSmall);
+                ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
                 recipeBtn.addListener(new ChangeListener() {
                     @Override
                     public void changed(ChangeEvent event, Actor actor) {

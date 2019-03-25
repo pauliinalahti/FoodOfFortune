@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -41,6 +42,7 @@ public class FoodRecipe implements Screen {
     String recipeNameTxt;
     String methodTxt;
     ArrayList<String> ingredientsTxt;
+    String backTxt;
 
     public FoodRecipe(MainGame g, int first, int second, int third, Recipe r) {
         game = g;
@@ -71,7 +73,14 @@ public class FoodRecipe implements Screen {
         layoutMethod = new GlyphLayout();
         layoutMethod.setText(game.recipeFont, methodTxt);
 
-        Button backBtn = new TextButton("BACK", mySkin, "small");
+        Preferences pref = game.getPrefs();
+        if(pref.getBoolean("english")){
+            backTxt = "BACK";
+        } else {
+            backTxt = "TAKAISIN";
+        }
+
+        Button backBtn = new TextButton(backTxt, mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {

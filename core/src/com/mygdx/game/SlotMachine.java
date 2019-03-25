@@ -61,7 +61,7 @@ public class SlotMachine implements Screen {
         reelsRectangle = new Rectangle(1.26f,1.155f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
-        Preferences pref = Gdx.app.getPreferences("My Preferences");
+        Preferences pref = game.getPrefs();
         if(pref.getBoolean("english")){
             backText = "BACK";
             playText = "PLAY";
@@ -92,7 +92,7 @@ public class SlotMachine implements Screen {
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
         //testbutton
-        Button testBtn = new TextButton("TEST", mySkin, "small");
+        /*Button testBtn = new TextButton("TEST", mySkin, "small");
         testBtn.pad(20);
         ((TextButton) testBtn).getLabel().setFontScale(game.buttonSize);
         testBtn.addListener(new ChangeListener() {
@@ -100,7 +100,7 @@ public class SlotMachine implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 game.goDrawnIngredients(0,0,0);
             }
-        });
+        });*/
 
         Button backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
@@ -129,7 +129,7 @@ public class SlotMachine implements Screen {
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
-        table.add(testBtn);
+        //table.add(testBtn);
         table.top();
         table.left();
         //table.setDebug(true);
