@@ -98,7 +98,7 @@ public class Recipes implements Screen {
         backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goDrawnIngredients(firstDrawn,secondDrawn,thirdDrawn);
+                game.goSlotMachine();
             }
         });
 

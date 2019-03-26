@@ -129,7 +129,7 @@ public class SlotMachine implements Screen {
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
-        table.add(testBtn);
+        //table.add(testBtn);
         table.top();
         table.left();
         //table.setDebug(true);
