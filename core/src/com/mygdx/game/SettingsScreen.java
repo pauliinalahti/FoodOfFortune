@@ -19,6 +19,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Scaling;
 
 import java.awt.Checkbox;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
@@ -41,6 +43,7 @@ public class SettingsScreen implements Screen {
     Preferences pref;
     Button backBtn;
     String chosenLanguage;
+    final ArrayList<String> options = new ArrayList<String>(Arrays.asList("jauheliha", "peruna", "paprika"));
 
     public SettingsScreen(MainGame g) {
         game = g;
@@ -53,10 +56,6 @@ public class SettingsScreen implements Screen {
         stage.addActor(back);
         pref = game.getPrefs();
 
-        //setCheckBoxes();
-
-        //System.out.println(pref.getBoolean("english"));
-        //pref.flush();
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -77,6 +76,15 @@ public class SettingsScreen implements Screen {
             changeText = "Vaihda";
             chosenLanguage = "Suomi";
         }
+        /*
+        if (pref.getBoolean("firstTime")) {
+            System.out.println("here");
+            game.getPrefs().putBoolean("firstTime", true);
+            game.getPrefs().putBoolean("jauheliha", true);
+            game.getPrefs().putBoolean("peruna", true);
+            game.getPrefs().flush();
+        }
+        */
 
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
@@ -100,41 +108,17 @@ public class SettingsScreen implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 if(game.getPrefs().getBoolean("english")) {
                     game.getPrefs().putBoolean("english", false);
-                    pref.flush();
+                    game.getPrefs().flush();
                     System.out.println("en");
                 } else {
                     game.getPrefs().putBoolean("english", true);
-                    pref.flush();
+                    game.getPrefs().flush();
                     System.out.println("fi");
                 }
                 game.goSettingsScreen();
             }
         });
 
-        final CheckBox cb = new CheckBox("jauheliha", mySkin);
-        ((CheckBox) cb).getLabel().setFontScale(game.buttonSizeSmall);
-        cb.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                Gdx.graphics.setContinuousRendering(cb.isChecked());
-                if(pref.getBoolean("jauheliha")){
-                    pref.putBoolean("jauheliha", false);
-                    pref.flush();
-                } else {
-                    pref.putBoolean("jauheliha", true);
-                    pref.flush();
-                }
-            }
-        });
-
-        final CheckBox cb2 = new CheckBox("peruna", mySkin);
-        ((CheckBox) cb2).getLabel().setFontScale(game.buttonSizeSmall);
-        cb2.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                Gdx.graphics.setContinuousRendering(cb2.isChecked());
-            }
-        });
 
         Table table = new Table();
         table.defaults().uniform().pad(30);
@@ -153,9 +137,30 @@ public class SettingsScreen implements Screen {
 
         Table tableCheckBoxes = new Table();
         tableCheckBoxes.defaults().uniform().pad(30);
-        tableCheckBoxes.add(cb);
-        tableCheckBoxes.row().row();
-        tableCheckBoxes.add(cb2);
+        for (final String opt : options) {
+            final CheckBox cb = new CheckBox(opt, mySkin);
+            cb.getLabel().setFontScale(game.buttonSizeSmall);
+            if(game.getPrefs().getBoolean(opt)){
+                System.out.println("here2");
+                Gdx.graphics.setContinuousRendering(true);
+            }
+            cb.addListener(new ChangeListener() {
+                @Override
+                public void changed(ChangeEvent event, Actor actor) {
+                    Gdx.graphics.setContinuousRendering(cb.isChecked());
+                    if(game.getPrefs().getBoolean(opt)){
+                        System.out.println("moro");
+                        game.getPrefs().putBoolean(opt, false);
+                    } else {
+                        game.getPrefs().putBoolean(opt, true);
+                    }
+                    game.getPrefs().flush();
+                    game.goSettingsScreen();
+                }
+            });
+            tableCheckBoxes.add(cb);
+            tableCheckBoxes.row();
+        }
         tableCheckBoxes.setPosition(1f, (WORLDHEIGHT-6f)*100);
         //tableCheckBoxes.left().pad(30);
 
@@ -165,11 +170,6 @@ public class SettingsScreen implements Screen {
         stage.addActor(table2);
         stage.addActor(table);
         stage.addActor(tableCheckBoxes);
-    }
-
-    public void setCheckBoxes(){
-        pref.putBoolean("jauheliha", true);
-        pref.putBoolean("peruna", true);
     }
 
     @Override

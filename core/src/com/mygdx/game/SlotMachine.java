@@ -8,15 +8,20 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
 
 import java.util.ArrayList;
@@ -30,6 +35,9 @@ public class SlotMachine implements Screen {
     Texture background;
 
     Texture image;
+    Texture myTexture;
+    TextureRegion myTextureRegion;
+    TextureRegionDrawable myTexRegionDrawable;
     private Skin mySkin;
     private Stage stage;
     Image back;
@@ -38,6 +46,9 @@ public class SlotMachine implements Screen {
     SecondReel secondReel;
     ThirdReel thirdReel;
     Rectangle reelsRectangle;
+    Button playBtn;
+    ImageButton buttonSound;
+    Table table2;
 
     public ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     private int firstReelTime, secondReelTime, thirdReelTime, i;
@@ -112,33 +123,60 @@ public class SlotMachine implements Screen {
             }
         });
 
-        Button playBtn = new TextButton(playText, mySkin, "small");
+        myTexture = new Texture(Gdx.files.internal("handleUp.png"));
+        myTextureRegion = new TextureRegion(myTexture);
+        myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
+        playBtn = new ImageButton(myTexRegionDrawable);
+        //playBtn.getImage().setFillParent(true);
+        playBtn.setSize(2000,2000);
+
+
+
+        //ImageButton playBtn = new ImageButton(mySkin);
+        //((ImageButton) playBtn).getImage().setFillParent(true);
+        //playBtn.getStyle().imageUp = new TextureRegionDrawable(new TextureRegion(new Texture(Gdx.files.internal("handleUp.png"))));
+        //playBtn.getStyle().imageDown = new TextureRegionDrawable(new TextureRegion(new Texture(Gdx.files.internal("handleDown.png"))));
+        //playBtn.setPosition(200,Gdx.graphics.getHeight()-100);
+
+
         playBtn.pad(20);
-        ((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
+        //((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                //playBtn.invalidate();
+                table2.removeActor(playBtn);
+                myTexture = new Texture(Gdx.files.internal("handleDown.png"));
+                myTextureRegion = new TextureRegion(myTexture);
+                myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
+                playBtn = new ImageButton(myTexRegionDrawable);
+                playBtn.setScale(200);
+                //playBtn.setFillParent(true);
+                //table2.setSize(1000,800);
+                //((ImageButton) playBtn).getImage().setFillParent(true);
+                table2.add(playBtn);
+                table2.setFillParent(true);
+                //table2.setFillParent(true);
+                //playBtn = new ImageButton(new TextureRegionDrawable(new TextureRegion(new Texture(Gdx.files.internal("handleDown.png")))));
                 startImages = false;
                 play = true;
                 i = 0;
-
-                //game.goDrawnIngredients();
             }
         });
 
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
-        //table.add(testBtn);
+        table.add(testBtn);
         table.top();
         table.left();
         //table.setDebug(true);
 
-        Table table2 = new Table();
-        table2.defaults().uniform().pad(30);
+        table2 = new Table();
+        //table2.defaults().uniform().pad(30);
         table2.add(playBtn);
-        table2.right().pad(10);
-        table2.bottom().pad(30);
+        table2.right().pad(15);
+        table2.bottom().pad(100);
 
         table.setFillParent(true);
         stage.addActor(table);
@@ -158,6 +196,9 @@ public class SlotMachine implements Screen {
 
     @Override
     public void render(float delta) {
+        if (playBtn.isPressed()) {
+
+        }
         batch.setProjectionMatrix(game.camera.combined);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
