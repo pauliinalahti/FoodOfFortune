@@ -55,6 +55,7 @@ public class SlotMachine implements Screen {
     private int drawnNumberFirstReel, drawnNumberSecondReel, drawnNumberThirdReeL;
     boolean play = false;
     boolean startImages = true;
+    Preferences pref;
 
     String backText;
     String playText;
@@ -72,7 +73,8 @@ public class SlotMachine implements Screen {
         reelsRectangle = new Rectangle(1.26f,1.155f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
-        Preferences pref = game.getPrefs();
+
+        pref = game.getPrefs();
         if(pref.getBoolean("english")){
             backText = "BACK";
             playText = "PLAY";
@@ -81,22 +83,23 @@ public class SlotMachine implements Screen {
             playText = "PELAA";
         }
 
-        firstReel = new FirstReel();
-        secondReel = new SecondReel();
-        thirdReel = new ThirdReel();
+        firstReel = new FirstReel(pref);
+        secondReel = new SecondReel(pref);
+        thirdReel = new ThirdReel(pref);
+        System.out.println("eka reel: " + firstReel.firstReelFoodNames.toString());
+        System.out.println("toka reel: " + secondReel.secondReelFoodNames.toString());
+        System.out.println("kolmas reel: " + thirdReel.thirdReelFoodNames.toString());
+
         firstReelTime = 5;
         secondReelTime = 14;
         thirdReelTime = 20;
-        drawnNumberFirstReel = random(firstReel.firstReelImages.size());
-        drawnNumberSecondReel = random(secondReel.secondReelImages.size());
-        drawnNumberThirdReeL = random(thirdReel.thirdReelImages.size());
+        //firstReel.updateReel(game.getPrefs());
+        drawnNumberFirstReel = random(firstReel.firstReelFoodNames.size());
+        drawnNumberSecondReel = random(secondReel.secondReelFoodNames.size());
+        drawnNumberThirdReeL = random(thirdReel.thirdReelFoodNames.size());
         i = 0;
 
         recipes = recipeControl.AddAllRecipes(recipes);
-
-        /*for (Recipe r: recipes){
-            System.out.println(r.name);
-        }*/
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -140,7 +143,6 @@ public class SlotMachine implements Screen {
 
 
         playBtn.pad(20);
-        //((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -151,13 +153,8 @@ public class SlotMachine implements Screen {
                 myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
                 playBtn = new ImageButton(myTexRegionDrawable);
                 playBtn.setScale(200);
-                //playBtn.setFillParent(true);
-                //table2.setSize(1000,800);
-                //((ImageButton) playBtn).getImage().setFillParent(true);
                 table2.add(playBtn);
                 table2.setFillParent(true);
-                //table2.setFillParent(true);
-                //playBtn = new ImageButton(new TextureRegionDrawable(new TextureRegion(new Texture(Gdx.files.internal("handleDown.png")))));
                 startImages = false;
                 play = true;
                 i = 0;
@@ -196,28 +193,25 @@ public class SlotMachine implements Screen {
 
     @Override
     public void render(float delta) {
-        if (playBtn.isPressed()) {
-
-        }
         batch.setProjectionMatrix(game.camera.combined);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
         if(startImages) {
             batch.begin();
-            batch.draw(firstReel.firstReelImages.get(1),
+            batch.draw(firstReel.firstReelImages.get(0),
                     reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
                     reelsRectangle.height);
-            batch.draw(secondReel.secondReelImages.get(1),
+            batch.draw(secondReel.secondReelImages.get(0),
                     3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
-            batch.draw(thirdReel.thirdReelImages.get(1),
+            batch.draw(thirdReel.thirdReelImages.get(0),
                     5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
             batch.end();
         }
         if(play) {
             if (i < firstReelTime) {
                 batch.begin();
-                batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelImages.size())),
+                batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelFoodNames.size())),
                         reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
                         reelsRectangle.height);
                 batch.end();
@@ -229,7 +223,7 @@ public class SlotMachine implements Screen {
             }
             if (i < secondReelTime) {
                 batch.begin();
-                batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelImages.size())),
+                batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelFoodNames.size())),
                         3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             } else {
@@ -241,7 +235,7 @@ public class SlotMachine implements Screen {
 
             if (i < thirdReelTime) {
                 batch.begin();
-                batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelImages.size())),
+                batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelFoodNames.size())),
                         5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             } else {
@@ -250,16 +244,17 @@ public class SlotMachine implements Screen {
                         reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             }
-            i++;
+
 
             try {
-                Thread.sleep(160);
+                Thread.sleep(60);
             } catch (Exception e) {
             }
             if (i == thirdReelTime) {
                 play = false;
 
             }
+            i++;
         } else {
             batch.begin();
             batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel),
@@ -271,17 +266,15 @@ public class SlotMachine implements Screen {
                     5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
             batch.end();
 
-            if(i == thirdReelTime) {
+            if(i >= thirdReelTime) {
                 try {
                     Thread.sleep(700);
                 } catch (Exception e) {
                 }
-
+                System.out.println("arvotut numerot: "+drawnNumberFirstReel + drawnNumberSecondReel + drawnNumberThirdReeL);
                 game.goDrawnIngredients(drawnNumberFirstReel,drawnNumberSecondReel,
                         drawnNumberThirdReeL);
-
             }
-
         }
     }
 

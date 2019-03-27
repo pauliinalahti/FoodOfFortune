@@ -1,9 +1,11 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Texture;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class FirstReel {
     Texture image1,image2,image3,image4,image5,image6;
@@ -12,6 +14,7 @@ public class FirstReel {
     ArrayList<Texture> firstReelImages;
     ArrayList<String> firstReelFoodNames;
     ArrayList<String> firstReelFoodNamesEN;
+    Preferences pref;
 
 
     public FirstReel() {
@@ -33,12 +36,12 @@ public class FirstReel {
         firstReelImages.add(image5);
         firstReelImages.add(image6);
 
-        name1 = "Jauheliha";
-        name2 = "Kana";
-        name3 = "Lohi";
-        name4 = "Soija";
-        name5 = "Tofu";
-        name6 = "Sieni";
+        name1 = "jauheliha";
+        name2 = "kana";
+        name3 = "lohi";
+        name4 = "soija";
+        name5 = "tofu";
+        name6 = "sieni";
 
         firstReelFoodNames.add(name1);
         firstReelFoodNames.add(name2);
@@ -62,4 +65,27 @@ public class FirstReel {
         firstReelFoodNamesEN.add(name6EN);
 
     }
+
+    public FirstReel(Preferences pref) {
+        firstReelFoodNames = new ArrayList<String>();
+        firstReelImages = new ArrayList<Texture>();
+        ArrayList<String> ings = new ArrayList<String>(Arrays.asList("jauheliha", "kana","lohi","soija","tofu","sieni"));
+        for(String s : ings) {
+            if(pref.getBoolean(s)) {
+                firstReelFoodNames.add(s);
+                firstReelImages.add(new Texture(s+".png"));
+            }
+        }
+        //System.out.println("new fr made: " + firstReelFoodNames.toString());
+    }
+
+
+    /*public int getIndexOf(String s) {
+        for(int i = 0; i<firstReelImages.size(); i++) {
+            if (firstReelImages.get(i).toString().equals(s+".png")) {
+                return i;
+            }
+        }
+        return 0;
+    }*/
 }

@@ -1,9 +1,11 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Texture;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ThirdReel {
     Texture image1,image2,image3,image4,image5;
@@ -53,5 +55,17 @@ public class ThirdReel {
         thirdReelFoodNamesEN.add(name3EN);
         thirdReelFoodNamesEN.add(name4EN);
         thirdReelFoodNamesEN.add(name5EN);
+    }
+
+    public ThirdReel(Preferences pref) {
+        thirdReelFoodNames = new ArrayList<String>();
+        thirdReelImages = new ArrayList<Texture>();
+        ArrayList<String> ings = new ArrayList<String>(Arrays.asList("tomaatti", "sipuli", "porkkana","parsakaali","paprika"));
+        for(String s : ings) {
+            if(pref.getBoolean(s)) {
+                thirdReelFoodNames.add(s);
+                thirdReelImages.add(new Texture(s+".png"));
+            }
+        }
     }
 }

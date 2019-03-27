@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import static com.mygdx.game.GameConstants.skin;
+import static com.mygdx.game.GameConstants.skin2;
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
@@ -35,13 +36,16 @@ public class FoodRecipe implements Screen {
     int firstDrawn, secondDrawn, thirdDrawn;
 
     private Skin mySkin;
+    private Skin mySkin2;
     private Stage stage;
     Image back;
     GlyphLayout layoutRecipeName;
     GlyphLayout layoutMethod;
+    GlyphLayout layoutAmount;
     Recipe recipe;
     String recipeNameTxt;
     String methodTxt;
+    String amountTxt;
     ArrayList<String> ingredientsTxt;
     String backTxt;
 
@@ -50,6 +54,7 @@ public class FoodRecipe implements Screen {
         recipe = r;
         recipeNameTxt = r.name;
         methodTxt = r.method;
+        amountTxt = r.amount;
         ingredientsTxt = r.ingredients;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
@@ -64,15 +69,18 @@ public class FoodRecipe implements Screen {
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
+        game.myAssetsManager.manager2.finishLoading();
         mySkin = game.myAssetsManager.manager.get(skin);
-
-        //ScrollPane scrollPane=new ScrollPane(recipe.method, mySkin);
+        mySkin2 = game.myAssetsManager.manager2.get(skin2);
 
         layoutRecipeName = new GlyphLayout();
-        layoutRecipeName.setText(game.font2, recipeNameTxt);
+        layoutRecipeName.setText(game.recipeFont, recipeNameTxt);
 
         layoutMethod = new GlyphLayout();
         layoutMethod.setText(game.recipeFont, methodTxt);
+
+        layoutAmount = new GlyphLayout();
+        layoutAmount.setText(game.recipeFont, amountTxt);
 
         Preferences pref = game.getPrefs();
         if(pref.getBoolean("english")){
@@ -91,7 +99,12 @@ public class FoodRecipe implements Screen {
             }
         });
 
-        Label label = new Label(methodTxt, mySkin);
+        Label label2 = new Label(amountTxt.replace(",", "\n"), mySkin2);
+        label2.setWrap(true);
+        label2.pack();
+
+
+        Label label = new Label(methodTxt.replace("\\n", "\n"), mySkin2);
         label.setWrap(true);
         label.pack();
         ScrollPane sp = new ScrollPane(label);
@@ -99,11 +112,11 @@ public class FoodRecipe implements Screen {
         //table.debug();
         table.defaults().pad(30);
         table.add(backBtn).left().row();
-        table.add();
-        //table.add(sp).grow();
+        table.add(label2).fill();
+        table.add(sp).grow();
         table.top();
         table.left();
-        //table.setDebug(true);
+        table.setDebug(true);
 
         table.setFillParent(true);
         stage.addActor(table);
@@ -123,10 +136,10 @@ public class FoodRecipe implements Screen {
 
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font2.draw(batch,
-                recipeNameTxt,
+        game.recipeFont.draw(batch,
+                recipeNameTxt.toUpperCase(),
                 WORLDWIDTH*100/2-layoutRecipeName.width/2,
-                (WORLDHEIGHT-0.5f)*100);
+                (WORLDHEIGHT-0.3f)*100);
 
         //game.recipeFont.draw(batch, "Hello World!", WORLDWIDTH*100/2-layoutRecipeName.width/2, (WORLDHEIGHT-0.5f)*100, 100, 100, true);
 
@@ -135,13 +148,13 @@ public class FoodRecipe implements Screen {
             game.recipeFont.draw(batch, i, 100, (WORLDHEIGHT-j)*100);
             j += 0.5f;
         }*/
-        game.recipeFont.draw(batch,
+        /*game.recipeFont.draw(batch,
                 recipe.amount.replace(",", "\n"),
                 30,
                 (WORLDHEIGHT-j-0.5f)*100,
                 350,
                 -1,
-                true);
+                true);*/
 
         //ArrayList<String> amList = new  ArrayList<String>(Arrays.asList(recipe.amount.split("[,]+")));
         /*for(String a: amList) {
@@ -158,7 +171,13 @@ public class FoodRecipe implements Screen {
         }*/
         j=1f;
 
-        game.recipeFont.draw(batch, methodTxt.replace("\\n", "\n"), 400, (WORLDHEIGHT-j-0.5f)*100, 600, -1, true);
+        /*game.recipeFont.draw(batch,
+                methodTxt.replace("\\n", "\n"),
+                400,
+                (WORLDHEIGHT-j-0.5f)*100,
+                600,
+                -1,
+                true);*/
 
         batch.setProjectionMatrix((game.camera.combined));
 

@@ -30,9 +30,9 @@ public class DrawnIngredients implements Screen {
     private Stage stage;
     Image back;
     SpriteBatch batch;
-    FirstReel firstReel = new FirstReel();
-    SecondReel secondReel = new SecondReel();
-    ThirdReel thirdReel = new ThirdReel();
+    FirstReel firstReel;
+    SecondReel secondReel;
+    ThirdReel thirdReel;
     int firstDrawn, secondDrawn, thirdDrawn;
     Rectangle reelsRectangle;
     GlyphLayout layoutFirst, layoutSecond, layoutThird, drawnIngrediends;
@@ -43,6 +43,7 @@ public class DrawnIngredients implements Screen {
 
 
     public DrawnIngredients(MainGame g, int first, int second, int third){
+
         game = g;
         batch = game.getBatch();
         firstDrawn = first;
@@ -56,6 +57,9 @@ public class DrawnIngredients implements Screen {
         back.setFillParent(true);
         stage.addActor(back);
         pref = game.getPrefs();
+        firstReel = new FirstReel(pref);
+        secondReel = new SecondReel(pref);
+        thirdReel = new ThirdReel(pref);
 
         if(pref.getBoolean("english")){
             backText = "BACK";
@@ -178,15 +182,15 @@ public class DrawnIngredients implements Screen {
                     reelsRectangle.y * 100 - 20);
         } else {
             game.font.draw(batch,
-                    firstReel.firstReelFoodNames.get(firstDrawn),
+                    firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase(),
                     (reelsRectangle.x * 100) + (reelsRectangle.width / 2 * 100) - layoutFirst.width / 2,
                     reelsRectangle.y * 100 - 20);
             game.font.draw(batch,
-                    secondReel.secondReelFoodNames.get(secondDrawn),
+                    secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase(),
                     (3.6f * 100) + (reelsRectangle.width / 2 * 100) - layoutSecond.width / 2,
                     reelsRectangle.y * 100 - 20);
             game.font.draw(batch,
-                    thirdReel.thirdReelFoodNames.get(thirdDrawn),
+                    thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase(),
                     (5.94f * 100) + (reelsRectangle.width / 2 * 100) - layoutThird.width / 2,
                     reelsRectangle.y * 100 - 20);
         }

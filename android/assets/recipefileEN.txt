@@ -1,102 +1,102 @@
-﻿nimi: Kanaa riisipedillä 
-ainekset: riisi, kana, tomaatti
-ainemaarat: 4 dl riisiä, 4-6 dl vettä (osa vedestä voidaan korvata paseeratulla tomaatilla), 3-4 kpl kanafilettä (jos on maustamattomia fileitä, muista maustaa ne), 2 dl paseerattua tomaattia, 2 tl aromisuolaa, 2 tl currya, 1 tl mustapippuria ja suolaa
-ohje: Voitele vuoka, laita pohjalle riisi, mausteet ja vesi. Seuraavaksi laita kanat vuokaan ja kaada paseerattu tomaatti koko höskän päälle. Paista uunissa 200 asteessa noin tunti. \nJos tomaatti ei maistu voit korvata paseeratun tomaatin tuorejuustolla, ja täyteläisemmäksi ruoan saat kun lisäät riisin joukkoon vihanneksia! 
+Name: Chicken on a bed of rice
+Ingredients: rice, chicken, tomato
+ingredients: 4 dl rice, 5 dl water, 4 chicken fillets, 2 dl tomato puree, 2 tsp aroma salt, 2 tsp curry, 1 tsp black pepper and salt
+Help: Butter the casserole, put the rice, spices and water on the bottom. Put the chickens in the casserole and pour the tomato puree on top. Bake in the oven at 200 degrees for about an hour. \nIf the tomato does not taste you can replace the peeled tomato with cream cheese. You can also have vegetables with the rice!
 
-nimi: Jauhelihapihvit  
-ainekset: jauheliha, spagetti, sipuli
-ainemaarat: 400g jauhelihaa, 1 sipuli, spagettia, 2 rkl voita, paprikaa, tomaattia, salaattia
-ohje: Hienonna sipuli ja kuullota se pannulla. Lisää sipuli jauhelihan sekaan ja muotoile neljä isoa pihviä.\nKuumenna voi paistinpannulla ja paista pihvit (2-3 minuuttia/puoli). Mausta paistuneet pihvit jauhelihamausteella tai yrttisuolalla. Tarjoile pihvit spagetin ja salaatin kera.
+Name: Minced meat beefs
+Ingredients: minced meat, spaghetti, onion, bell pepper, tomato
+ingredients: 400 g minced meat, 1 onion, spaghetti, 2 tbsp butter, 1 bell pepper, 2 tomatoes, lettuce
+Help: Cut the onion and sweat it in the pan. Add the onion to the minced meat and shape four big steaks out of it. Fry butter on a frying pan and then fry the steaks (2-3 minutes / half). Season the steaks with minced meat spice or herb salt. Serve the steaks with spaghetti and salad.
 
-nimi: Jauheliharisotto
-ainekset: jauheliha, riisi, tomaatti
-ainemaarat: 400 g jauhelihaa, 400g riisivihannessekoitusta, 1 purjo, 1 rkl öljyä, 2 tomaattia, 2 rkl lihafondia, 1 tl currya, 1 tl chilimaustetta
-ohje: Ruskista jauheliha pannulla ja siirrä se kulhoon. Hienonna purjo ja kiehauta se öljyssä.\nLisää joukkoon riisivihannessekoitus ja sekoittele pannulla purjon kanssa. Lopuksi lisää ruskistettu jauheliha ja lihafondie mukaan ja anna seoksen hautua 5-10 minuuttia. Tarjoile salaatin kanssa.
+Name: Minced meat risotto
+Ingredients: minced meat, rice, tomato
+ingredients: 400 g of minced meat, 400 g of rice-vegetable mix, 1 leek, 1 tbsp of oil, 2 tomatoes, 2 tbsp of meat stock, 1 tsp of curry, 1 tsp of chili spice.
+Help: Brown the minced meat in a pan and put it in to a bowl. Grind the leek and boil it in oil. \nFinally add the browned minced meat and meat fondie and let it brew for 5-10 minutes. Serve with salad.
 
-nimi: Kanarisotto
-ainekset: kana, riisi, sipuli
-ainemaarat: 300 g broilerinfileesuikaleita, 1 sipuli, 2 dl riisiä, 1 rkl öljyä, 1 tl suolaa, 1 tl currya, 5 dl vettä, 1 kanaliemikuutio, 200 g herne-maissi-paprikaa
-ohje: Ruskista broileri ja mausta se suolalla ja currylla. Hienonna sipuli ja kuullota kattilassa, lisää riisit kuullottumaan.\nKaada kiehuva vesi kattilaan ja murenna mukaan kanaliemikuutio. Anna seoksen kiehua 10 minuuttia. Lisää vihannekset ja broileri ja jatka keittämistä 10 minuuttia.
+Name: Chicken risotto
+ingredients: chicken, rice, onion, bell pepper
+ingredients: 300 g chicken fillet slices, 1 onion, 2 dl rice, 1 tbsp oil, 1 tsp salt, 1 tsp curry, 5 dl water, 1 chicken broth cube, 200 g pea-corn-bell pepper
+Help: Brown the chicken and season it with salt and curry. Grind the onion and sweat it in a pot, add the rice in to the pot. \nBoil the mixture for 10 minutes. Add the vegetables and chicken and continue cooking for 10 minutes.
 
-nimi: Marinoitu tofu
-ainekset: tofu, spagetti, paprika
-ainemaarat: 250 g maustamatonta tofua, spagettia, 1 iso paprika, 1 valkosipulinkynsi, 2 rkl öljyä, 1 rkl soijakastiketta, 1 rkl balsamiviinietikkaa, suolaa, sokeria, mustapippuria
-ohje: Viipaloi ja kuutio tofu sekä hienonna valkosipuli. Sekoita öljy, soijakastike, balsamiviinietikka, \n suola, sokeri ja maustepippuri. Anna tofupalojen marinoitua marinadissa kaksi tuntia.\nValuta tofupalat paperin päällä kuiviksi ja grillaa kuumalla pannulla.\nTarjoile paistetut tofut paistetuiden paprikoiden ja keitetyn spagetin kanssa. 
+Name: Marinated tofu
+Ingredients: tofu, spaghetti, bell pepper, onion
+ingredients: 250 g unflavoured tofu, spaghetti, 1 big bell pepper, 1 garlic clove, 2 tbsp oil, 1 tbsp soy sauce, 1 tbsp balsamic vinegar, salt, sugar, black pepper
+Help: Slice and cube the tofu and grind the garlic. Mix oil, soy sauce, balsamic vinegar, salt, sugar and allspice. Let the tofu marinate in the marinade for two hours. \nDry the tofu pieces on a paper and grill in a hot pan. \nServe fried tofu with fried bell peppers and cooked spaghetti.
 
-nimi: Värikäs lohisalaatti
-ainekset: lohi, makaroni, paprika
-ainemaarat: 400 g lohifileetä, makaronia, 1 paprika, 2 tomaattia, 2 appelsiinia, 3 kanamunaa, 1 tl suolaa, mustapippuria, salaattia, 1 rkl oliiviöljyä
-ohje: Poista lohesta ruodot ja nahka. Leikkaa lohi ohuiksi viipaleiksi. Levitä viipaleet pellille ja mausta ne suolalla ja pippurilla. Paista lohi 225 asteessa 5 minuuttia. \nLeikkaa toisesta appelsiinista puolet pois ja purista siitä mehu lohiviipaleiden päälle. Kuori ja viipaloi loput appelsiinit sekä tomaatti ja paprika. \nKeitä kanamunat ja viipaloi ne. Keitä makaroni. Revi salaatti kulhoon ja sekoita muut ainekset mukaan. Pirskottele päälle oliiviöljyä.
+Name: Colorful salmon salad
+Ingredients: salmon, macaroni, bell peppers, tomato
+ingredients: 400 g salmon fillet, macaroni, 1 bell pepper, 2 tomatoes, 2 oranges, 3 chicken eggs, 1 tsp of salt, 1 tsp of black pepper, salad, 1 tbsp olive oil
+Help: Remove the fishbones and skin from the salmon. Cut the salmon into thin slices. Spread the slices on a plate and season with salt and pepper. Bake the salmon at 225 degrees for 5 minutes. \nCut half of the other orange and squeeze the juice over the slices of salmon. Peel and slice the remaining oranges as well as tomato and bell pepper. \nBoil and slice the chicken eggs. Cook the pasta. Tear the salad in a bowl and mix in the other ingredients. Sprinkle with olive oil.
 
-nimi: Lohiwokki
-ainekset: lohi, riisi, paprika
-ainemaarat: 300 g kirjolohisuikaleita, riisiä, 450 g wokwihanneksia, 1 purkki ananasviipaleita, 1 paprika, 2 rkl öljyä, 2 rkl soijakastiketta, mustapippuria, tilliä
-ohje: Ruskista lohisuikaleet wokpannulla ja siirrä kalat lautaselle. \nKuullota vihannekset ja hienonnettu paprika öljyssä. Mausta vihannekset soijalla sekä pippurilla ja anna hautua kypsäksi 5 minuuttia. \nSekoita vihanneksien sekaan ananakset. Ripottele kalojen pinnalle hienonnettua tilliä. Tarjoile riisin kanssa.
+Name: Salmon wok
+Ingredients: salmon, rice, bell pepper
+ingredients: 300 g salmon trout fillets, rice, 450 g wok vegetables, 1 jar of pineapple slices, 1 bell pepper, 2 tbsp oil, 2 tbsp soy sauce, 1 tsp black pepper, dill
+Help: Brown the salmon fillets on a wok pan and put them on a plate. \nSweat the vegetables and chopped bell peppers in oil. Season the vegetables with soy and pepper and stew for 5 minutes. \nMix the pineapples with the vegetables. Sprinkle dill on the surface of the fish. Serve with rice.
 
-nimi: Tomaatti-salvialohi
-ainekset: lohi, peruna, tomaatti
-ainemaarat: 500 g kirjolohifilee, 2 rkl salviaa, 3 tomaattia, perunaa, paketti mozzarellaa, kevätsipulia
-ohje: Nosta kala uunivuokaan nahkapuoli alaspäin. Levitä salvia fileen pintaan. \nViipaloi tomaatit ja mozzarella. Levitä viipaleet limittäin kalan päälle. Kypsennä seosta puoli tuntia 200 asteessa. \nRipottele pinnalle hienonnettu kevätsipuli. Tarjoile kala perunoiden ja salaatin kera.
+Name: Tomato sage salmon
+Ingredients: salmon, potato, tomato, onion
+ingredients: 500 g salmon trout fillet, 2 tbsp sage, 3 tomatoes, potatoes, mozzarella package, spring onions
+Help: Put the fish in to a casserole with the skin side down. Spread the sage on the surface of the fillet. \nSlice the tomatoes and mozzarella. Spread the slices over the fish. Cook the mixture for half an hour at 200 degrees. \nSprinkle the chopped spring onion onto the surface. Serve fish with potatoes and salad.
 
-nimi: Thailohi
-ainekset: lohi, riisi, sipuli
-ainemaarat: 500 kirjolohifilee, jasminriisiä, 1 sipuli, 1 punainen chili, 1/2 dl korianteria, 1 rkl öljyä, kurkkua, 1/2 rkl hunajaa
-ohje: Nosta kala uunivuokaan nahkapuoli alaspäin. \nHienonna sipuli ja chili. Sekoita sipuli, chili, korianteri, öljy ja hunaja. Levitä seos kalan päälle ja peitä vuoka kelmulla ja anna marinoitua jääkaapissa tunnin ajan. \nPaista kala 200 asteessa noin 20 minuuttia.Tarjoile hienonnetun kurkun ja jasminriisin kera.
+Name: Thaisalmon
+Ingredients: salmon, rice, onion
+ingredients: 500 salmon trout fillets, jasmine rice, 1 onion, 1 red chili, 1/2 dl coriander, 1 tbsp oil, cucumber, 1/2 tbsp honey
+Help: Put the fish in to a casserole with the skin side down. \nGrind the onion and chili. Mix onion, chili, coriander, oil and honey. Spread the mixture over the fish and cover the casserole with a foil and let it marinate in the refrigerator for one hour. \nRoast the fish at 200 degrees for about 20 minutes. Serve with chopped cucumber and jasmine rice.
 
-nimi: Mango-lohipasta
-ainekset: lohi, spagetti, parsakaali
-ainemaarat: 300 g lohikuutioita, 300 g tagliatellepastaa, 200 g parsakaalia, 1 sipuli, 1 rkl öljyä, 1 mango, 2 dl ruokakermaa, suolaa, mustapippuria
-ohje: Sulata lohikuutiot mikrossa. Kuulota hienonnettu sipuli pannulla öljyn kanssa. Lisää lohipalat pannulle ja paista ne. Mausta lohi suolalla. \nHalkaise mango ja hienonna se pieniksi kuutioksi. Pilko parsakaali pieneksi ja tyhjällä pannulla öljyn kanssa noin 4 minuuttia. Lisää sekaan kerma ja mango. Anna kiehua noin 5 minuuttia. Lisää päälle lopuksi lohisipuliseos ja anna kuumentua. Tarjoile pastan kera.
+Name: Mango salmon pasta
+Ingredients: salmon, spaghetti, broccoli, onion
+ingredients: 300 g salmon cubes, 300 g tagliatelle paste, 200 g broccoli, 1 onion, 1 tbsp oil, 1 mango, 2 dl light cream, 1 tsp salt, 1 tsp black pepper
+Help: Defrost the salmon cubes in a microwave. Sweat the chopped onion in a pan with oil. Fry the salmon cubes on a pan. Season salmon with salt. \nChop the mango into small cubes. Chop the broccoli into small pieces and fry them on an empty pan with oil for about 4 minutes. Add the cream and mango. Let it boil for about 5 minutes. Finally, add the salmon mixture and let it heat. Serve with pasta.
 
-nimi: Savulohipasta
-ainekset: lohi, spagetti, tomaatti
-ainemaarat: 200 g lämminsavukirjolohta, 1 sipuli, 1 valkosipulinkynsi, 1 rkl öljyä, 2 dl ruokakermaa, 1 rkl sitruunamehua, 1/2 tl suolaa, 1/2 tl mustapippuria, 250 g tuorepastaa
-ohje: Kuumenna tilavassa kattilassa 1,5 litraa vettä ja lisää suola. \nKuori ja hienonna sipuli ja valkosipulinkynsi. Kuullota sipuleita öljyssä pari minuttia. Lisää ruokakerma ja anna kiehua muutama minuutti. Mausta sitruunamehulla, suolalla ja pippurilla. \nLisää tuorepasta veteen ja anna kiehua 10 minuuttia. Siivilöi pasta ja kaada takaisin kattilaan. \nLisää lohipalat kastikkeseen ja kuumenna kiehuvaksi. Lisää tilliä kastikkeeseen. Tarjoile kastike tuorepastan kanssa.
+Name: Smoked salmon pasta
+Ingredients: salmon, spaghetti, tomato, onion
+ingredients: 200 g smoked salmon trout, 1 onion, 1 tomato, 1 garlic clove, 1 tbsp oil, 2 dl light cream, 1 tbsp lemon juice, 1/2 tsp salt, 1/2 tsp black pepper, 250 g fresh pasta
+Help: Heat 1.5 liters of water in a spacious boiler and add salt. \nPeel and grind the onion, garlic clove and tomato. Sweat the onions and tomato in oil for a couple of minutes. Add the light cream and let it boil for a few minutes. Season with lemon juice, salt and pepper. \nAdd fresh pasta in water and let it boil for 10 minutes. Strain the pasta and pour it back into the saucepan. \nAdd slices of salmon to the sauce and heat until it starts to boil. Add the dill to the sauce. Serve sauce with fresh pasta.
 
-nimi: Sieni-kinkkupasta
-ainekset: sieni, spagetti, tomaatti
-ainemaarat: 300 g palvikassleria, 200 g tuoreherkkusieniä, 1 sipuli, 1 rkl öljyä, 500 g tomaattimurskaa, suolaa, mustapippuria, timjamia, 50 g parmesaania, 200 g nauhapastaa
-ohje: Hienonna sipuli ja timjami sekä paloittele sienet. Leikkaa kasleri suikaleiksi. Kiehauta sipuli ja kassleri paistokasarissa öljyn kanssa. Sekoita joukkoon tomaattimurska. Mausta seos pippurilla, suolalla ja timjamilla. Anna hautua muutama minuutti. \nKeitä pasta ja sekoita kastikkeen joukkoon. Ripottele pinnalle parmesaanijuusto. 
+Name: Mushroom ham pasta
+Ingredients: mushroom, spaghetti, tomato, onion
+ingredients: 300 g pork neck, 200 g fresh button mushrooms, 1 onion, 1 tbsp oil, 500 g crushed tomatoes, 1 tsp salt, 1 tsp black pepper, thyme, 50 g parmesan, 200 g ribbon pasta
+Help: Mince the onion and thyme and chop the mushrooms. Cut the pork into strips. Boil the onion and pork in a 	sauté pan with oil. Stir in crushed tomatoes. Season the mixture with pepper, salt and thyme. Let it brew for a few minutes. \nBoil the pasta and mix with the sauce. Sprinkle on the surface parmesan cheese.
 
-nimi: Lämmin sienisalaatti
-ainekset: sieni, makaroni, sipuli
-ainemaarat: 200 g tuoreherkkusieniä, 1 sipuli, 2 valkosipulinkynttä, 1 rkl oliiviöljyä, 1 tl oreganoa, 1 tl minttua, 1/2 tl suolaa, jääsalaattia, makaronia, 2 tomaattia
-ohje: Puhdista ja paloittele sienet. Hienonna sipuli ja valkosipuli, kuullota ne öljyssä. Lisää sekaan sienet ja jatka paistamista muutama minuutti. Mausta oreganolla, mintulla ja suolalla. \nTarjoile seos keitetyn makaronin ja salaatinlehtien kanssa. Koristele annos tomaattilohkoilla.
+Name: Warm mushroom salad
+Ingredients: mushroom, macaroni, onion, tomato
+ingredients: 200 g fresh button mushrooms, 1 onion, 2 garlic cloves, 1 tbsp olive oil, 1 tsp oregano, 1 tsp mint, 1/2 tsp salt, iceberg lettuce, macaroni, 2 tomatoes
+Help: Clean and cut the mushrooms. Grind the onion and garlic, sweat them in oil. Add the mushrooms and continue frying for a few minutes. Season with oregano, mint and salt. \nServe the mixture with cooked macaroni and lettuce leaves. Decorate the portion with tomato blocks.
 
-nimi: Carbonara sienipasta
-ainekset: sieni, spagetti, tomaatti
-ainemaarat: 200 g tuoreherkkusieniä, 250 g tagliatellepastaa, vettä, suolaa, 140 g pekonia, 2 valkosipulinkynttä, 2 kanamunaa, 2 dl kasvisrasvasekoitetta, pippuria, 2 tomaattia
-ohje: Suikaloi pekonit ja levitä ne paistokasariin. Viipaloi sienet ja valkosipulinkynnet. \nRuskista pekoni ja lisää pannulle sienet ja valkosipuli. Kypsennä seosta kunnes sienet ovat pehmenneet. \nSekoita munat ja rasvasekoite keskenään. Mausta seos pippurilla. \nSekoita keitetty pasta pekoni-sieniseoksen joukkoon. Lisää munaseos ja sekoita.
+Name: Carbonara mushroom pasta
+Ingredients: mushroom, spaghetti, tomato, onion
+ingredients: 200 g fresh button mushrooms, 250 g tagliatelle pasta, water, salt, 140 g bacon, 2 garlic cloves, 2 chicken eggs, 2 dl vegetable fat blend, pepper, 2 tomatoes
+Help: Slice the bacon and spread it in a sauté pan. Slice the mushrooms and the garlic cloves. \nBrown the bacon and add the mushrooms and garlic to the pan. Cook the mixture until the mushrooms have softened. \nMix the eggs and the fat mixture with each other. Season the mixture with pepper. \nMix the cooked pasta with the bacon-mushroom mixture. Add the egg mixture and blend.
 
-nimi: Peruna-kikherne-tofusalaatti
-ainekset: tofu, peruna, sipuli
-ainemaarat: 5 perunaa, 1 sipuli, 2 valkosipulinkynttä, 1 paprika, 1 omena, 2 dl maustekurkkua, 300 g kikherneitä, 300 g tofua, 1 rkl öljyä, suolaa, pippuria, persiljaa, 1 dl sitruuna-vinaigrette-salaattikastike
-ohje: Kuori, lohko ja keitä perunat vedessä, joka on maustettu suolalla. Hienonna sipuli ja valkosipuli. Sekoita perunat, sipuli, valkosipuli ja salaatinkastike keskenään. Anna marinoitua 10 minuuttia huoneenlämmössä. \nKuutio paprikat, omena ja maustekurkut. Valuta kikherneet ja sekoita ainekset perunaseoksen kanssa. \nKuivaa tofu ja ruskista öljyn kanssa. Mausta suolalla ja pippurilla. Lisää tofut salaatin päälle. Ripottele päälle persiljaa. 
+Name: Potato chickpeas-tofusalad
+Ingredients: tofu, potato, onion, bell pepper
+ingredients: 5 potatoes, 1 onion, 2 garlic cloves, 1 bell pepper, 1 apple, 2 dl pickles, 300 g chickpeas, 300 g tofu, 1 tbsp oil, salt, pepper, parsley, 1 dl lemon vinaigrette sauce
+Help: Peel, block and boil potatoes in water flavored with salt. Chop the onion and garlic. Mix potatoes, onion, garlic and salad dressing together. Let it marinade 10 minutes at room temperature. \nDice the bell peppers, apple and pickles. Dry the chickpeas and mix the ingredients with the potato mixture. \nDry the tofu and brown it with oil. Season with salt and pepper. Add the tofu on top of the salad. Sprinkle parsley on top.
 
-nimi: Nopea kanapasta
-ainekset: kana, makaroni, tomaatti
-ainemaarat: 300 g hunajamarinoitua broilerinfileesuikaleita, 250 g tagliatellepastaa, 1 rkl öljyä, 200 g sipulikuutioita, 200 g maissia, 2 dl ruokakermaa, 100 g mustapippurituorejuustoa, persiljaa
-ohje: Ruskista broilerinsuikaleet ja lisää joukkoon sipulikuutiot ja öljy. Anna hetken aikaa kuullottua. \nLisää seokseen maissi, ruokakerma ja pippurijuusto. Keitä seosta 5 minuuttia. Tarjoile keitetyn makaronin kanssa. Lisää persiljaa annoksien päälle.
+Name: Fast chicken pasta
+Ingredients: chicken, macaroni, tomato, onion
+ingredients: 300 g chicken fillet slices, 250 g tagliatelle pasta, 1 tbsp oil, 2 tomatoes, 200 g onion cubes, 200 g corn, 2 dl light cream, 100 g black pepper cream cheese, parsley
+Help: Brown the chicken strips and add the onion cubes, grinded tomato and oil. Give a moment to sweat. \n Add the corn, light cream and pepper cheese in to the mixture. Cook the mixture for 5 minutes. Serve with boiled macaroni. Add parsley over the portions.
 
-nimi: Currykana
-ainekset: kana, riisi, paprika
-ainemaarat: 450 g hunajamarinoitua broilerinfileesuikaleita, 1 paprika, 1 rkl öljyä, 3 tl currya, 1 banaani, 200 g maissia, 2 dl ruokakermaa, 1 rkl limetinmehua, mustapippuria, jasminriisiä
-ohje: Ruskista broileri öljyssä ja sekoita joukkoon curry. \nViipaloi banaani ja paprika. Lisää banaani, paprika ja maissi broilerin sekaan. Mausta limetinmehulla ja mustapippurilla. Lisää tarvittaessa vettä. \nHauduta miedolla lämmöllä noin 10 minuuttia. Tarjoile keitetyn jasminriisin kera. 
+Name: Chicken bolognese
+Ingredients: spaghetti, chicken, carrot, minced meat, onion
+ingredients: 400 g of chicken minced meat, 1 onion, 1 carrot, 1/2 tbsp oil, 1 tsp salt, 1/2 tsp basil, 1/2 tsp cumin, 390 g garlic tomato crumb, 1 1/2 dl of water, 1 1/2 tbsp tomato purée, 1 tsp balsamic vinegar
+Help: Grind the onion and the peeled carrot into a coarse grater. Heat the oil in a sauté pan and brown minced meat in it. Also sweat onion and carrot. Add salt and spices. \nAdd the crushed tomatoes to the sauté pan. Rinse the can with water and pour the rinse broth into the casserole. Measure the tomato mixture and vinegar. Stew for 10-15 minutes. Serve, for example, with spaghetti and grated cheese.
 
-nimi: Kotkot-kanakeitto
-ainekset: kana, peruna, porkkana
-ainemaarat: 300 g maustamatonta broilerinfileesuikaleita, 6 perunaa, vettä, 1 tl suolaa, 1 tl mustapippuria, 3 porkkanaa, 200 g maissia, 1/2 purjo, 1 tl basilikaa, 1 rkl öljyä, 1 tl paprikajauhetta
-ohje: Pese ja kuori vihannekset. Viipaloi porkkanat ja lohko perunat. Suikaloi halkaistu ja huuhdeltu purjo. \nPane kiehuvaan veteen porkkanat ja perunat. Lisää joukkoon suolaa ja pippuria. Keitä 15-20 minuuttia. Ruskista samalla broileri öljyssä ja mausta paprikajauheella. \nLisää keittoon maissit, purjo ja broilerisuikaleet. Anna kiehua vielä 5 minuuttia. 
+Name: Currychicken
+Ingredients: chicken, rice, bell pepper
+ingredients: 450 g honey marinated chicken fillet, 1 bell pepper, 1 tbsp oil, 3 tsp curry, 1 banana, 200 g corn, 2 dl light cream, 1 tbsp lime juice, black pepper, jasmine rice
+Help: Brown the chicken in oil and mix in curry. \nSlice the banana and bell pepper. Add banana, bell pepper and corn in with the chicken. Season with lime juice and black pepper. Add water if necessary. \nStew at low heat for about 10 minutes. Serve with boiled jasmine rice.
 
-nimi: Porkkanapasta
-ainekset: kana, spagetti, porkkana
-ainemaarat: 300 g hunajamarinoitua broilerinfileesuikaleita, 4 porkkanaa, 1 rkl öljyä, 60 g kuivattuja tomaatteja, 1 dl cashewpähkinöitä, 1 rkl omenaviinietikkaa, vettä, 10 basilikanlehteä, 1/2 dl hienonnettua basilikaa
-ohje: Kuori porkkanat ja leikkaa niistä ohuita suikaleita. Ruskista broileri öljyssä. \nSekoita kulhossa kuivatut tomaatit, cashewpähkinät, omenaviinietikka, 2 rkl vettä sekä basilikanlehdet. Soseuta seos seuvasekoittimella tai monitoimikoneella. \nLämmitä porkkanasuikaleet pannulla öljyssä. Sekoita joukkoon kastike ja broilerit. Ripoittele annoksien päälle tuorebasilikaa.
+Name: Kotkot chicken soup
+Ingredients: chicken, potato, carrot
+ingredients: 300 g chicken fillet slices, 6 potatoes, water, 1 tsp salt, 1 tsp black pepper, 3 carrots, 200 g corn, 1/2 leek, 1 tsp basil, 1 tbsp oil, 1 tsp paprika
+Help: Wash and peel the vegetables. Slice the carrots and block the potatoes. Slice the split and rinsed leek. \nPut the carrots and potatoes in boiling water. Add salt and pepper. Boil for 15-20 minutes. Simultaneously brown the chicken in oil and season with paprika. \nAdd the corn, leek and the chicken slices into the soup. Let it boil for another 5 minutes.
 
-nimi: Broileri-parsakaalisalaatti
-ainekset: kana, makaroni, parsakaali
-ainemaarat: 300 g maustamatonta broilerinfileesuikaleita, 1 tl öljyä, 2 dl salaatinkastiketta, 2 tomaattia, 1 kurkku, rucolaa, jääsalaattia, 400 g parsakaalia
-ohje: Paista broilerifileet öljyn kanssa. Viipaloi valmiit fileet ja mausta salaatinkastikkeella. \nKuutio tomaatit ja suikaloi kurkku. Revi salaatinlehtiä tarjoiluastian pohjalle. Valuta päälle salaatinkastiketta. Nostele päälle tomaattikuutiot ja kurkkusuikaleet. \nHuuhdo ja pilko parsakaali. Keitä parsakaalia noin kolme minuuttia. \nNosta parsakaali salaattipohjan keskelle ja asettele reunoille viipaloitu broileri.
+Name: Chicken broccoli salad
+Ingredients: chicken, macaroni, broccoli, tomato
+ingredients: 300 g chicken fillet slices, 1 tsp oil, 2 dl salad sauce, 2 tomatoes, 1 cucumber, rucola, iceberg lettuce, 400 g broccoli
+Help: Fry broiler fillets with oil. Slice the prepared fillets and season with the sauce. \nDice tomatoes and slice the cucumber. \nLay the lettuce leaves on the bottom of the serving dish. Trickle salad dressing on top. Put tomato cubes and cucumber slices on top. \nRinse and chop broccoli. Cook broccoli for about three minutes. \nLift the broccoli in the middle of the salad base and place the chopped chicken on the edges.
 
 nimi: Paistettu jauheliha-riisi
 ainekset: jauheliha, riisi, sipuli
@@ -446,4 +446,4 @@ ohje: Laita uuni kuumenemaan 200 asteeseen ja voitele uunivuoka. Siivuta kuoritu
 nimi: Lämmin sieni-perunasalaatti
 ainekset: peruna, sieni, tomaatti
 ainemaarat: 80 g parmankinkkua, 4 kpl keitettyä perunaa, 200 g tuoreita herkkusieniä, 12 kpl, kirsikkatomaattia, 1 kpl, rooman- eli sidesalaattia ruukussa, 50 g rucolaa, 1 rkl oliiviöljyä, 1/4 tl suolaa, 1/4 tl mustapippuria \n \nKastike \n2 rkl oliiviöljyä, 2 rkl, tuoretta oreganoa (hienonnettuna), 1 rkl valkoviinietikkaa, 1 rkl siirappia, 1/4 tl suolaa, 1/4 tl mustapippuria 
-
+ohje: Paahda parmankinkkuviipaleet rapeiksi 200-asteisessa uunissa tai keskilämmöllä paistinpannulla noin 5 minuuttia. Nosta viipaleet talouspaperin päälle hetkeksi odottamaan. \nLeikkaa perunat reiluiksi paloiksi ja lohko herkkusienet. Kuumenna oliiviöljy pannulla ja lisää perunat ja sienet. Paista niin, että pinnat hieman ruskistuvat. Lisää aivan lopussa tomaatit, revitty salaatti ja rucola. Mausta kevyesti suolalla ja mustapippurilla. \n Jaa salaatti lautasille tai kulhoihin. Sekoita kastikkeen ainekset keskenään ja pirskottele sieni-perunasalaatille. Tarjoile lämmin sieni-perunasalaatti heti.

@@ -43,13 +43,15 @@ public class SettingsScreen implements Screen {
     Preferences pref;
     Button backBtn;
     String chosenLanguage;
-    final ArrayList<String> options = new ArrayList<String>(Arrays.asList("jauheliha", "peruna", "paprika"));
+    final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
+    final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("onion", "potato", "rice","spaghetti","macaroni"));
+    final ArrayList<String> options;
 
     public SettingsScreen(MainGame g) {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
+        background = new Texture(Gdx.files.internal("reseptiTausta.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -68,6 +70,7 @@ public class SettingsScreen implements Screen {
             onOffText = "ON";
             changeText = "Change";
             chosenLanguage = "English";
+            options = optionsEN;
         } else {
             backText = "TAKAISIN";
             settingsText = "ASETUKSET";
@@ -75,16 +78,17 @@ public class SettingsScreen implements Screen {
             onOffText = "OFF";
             changeText = "Vaihda";
             chosenLanguage = "Suomi";
+            options = optionsFI;
         }
-        /*
-        if (pref.getBoolean("firstTime")) {
+
+        if (!pref.getBoolean("firstTime")) {
             System.out.println("here");
             game.getPrefs().putBoolean("firstTime", true);
             game.getPrefs().putBoolean("jauheliha", true);
             game.getPrefs().putBoolean("peruna", true);
             game.getPrefs().flush();
         }
-        */
+
 
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
@@ -137,29 +141,35 @@ public class SettingsScreen implements Screen {
 
         Table tableCheckBoxes = new Table();
         tableCheckBoxes.defaults().uniform().pad(30);
+        int i = 0;
         for (final String opt : options) {
             final CheckBox cb = new CheckBox(opt, mySkin);
+            cb.pad(-30);
+            System.out.println(opt + ": " + pref.getBoolean(opt));
             cb.getLabel().setFontScale(game.buttonSizeSmall);
-            if(game.getPrefs().getBoolean(opt)){
-                System.out.println("here2");
-                Gdx.graphics.setContinuousRendering(true);
-            }
+            cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
-                    Gdx.graphics.setContinuousRendering(cb.isChecked());
-                    if(game.getPrefs().getBoolean(opt)){
-                        System.out.println("moro");
-                        game.getPrefs().putBoolean(opt, false);
+                    Gdx.graphics.setContinuousRendering(true);
+                    if(pref.getBoolean(opt)){
+                        //System.out.println("moro");
+                        pref.putBoolean(opt, false);
                     } else {
-                        game.getPrefs().putBoolean(opt, true);
+                        pref.putBoolean(opt, true);
                     }
-                    game.getPrefs().flush();
+                    pref.flush();
                     game.goSettingsScreen();
+                    System.out.println("--------");
                 }
             });
             tableCheckBoxes.add(cb);
-            tableCheckBoxes.row();
+            i++;
+            if (i == 3) {
+                tableCheckBoxes.row();
+                i=0;
+            }
+
         }
         tableCheckBoxes.setPosition(1f, (WORLDHEIGHT-6f)*100);
         //tableCheckBoxes.left().pad(30);

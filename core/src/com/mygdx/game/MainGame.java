@@ -41,10 +41,15 @@ public class MainGame extends Game {
 
     public class MyAssetsManager {
         public final AssetManager manager = new AssetManager();
+        public final AssetManager manager2 = new AssetManager();
 
         public void queueAddSkin() {
             SkinLoader.SkinParameter parameter = new SkinLoader.SkinParameter(com.mygdx.game.GameConstants.skinAtlas);
             manager.load(com.mygdx.game.GameConstants.skin, Skin.class, parameter);
+
+            SkinLoader.SkinParameter parameter2 = new SkinLoader.SkinParameter(com.mygdx.game.GameConstants.skinAtlas2);
+            manager2.load(com.mygdx.game.GameConstants.skin2, Skin.class, parameter2);
+
         }
     }
 
@@ -61,25 +66,25 @@ public class MainGame extends Game {
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
-        generator = new FreeTypeFontGenerator(Gdx.files.internal("RobotoCondensed-Regular.ttf"));
+        generator = new FreeTypeFontGenerator(Gdx.files.internal("VarelaRound-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
-        parameter.borderColor = Color.BLACK;
+        //parameter.borderColor = Color.BLACK;
         parameter.color.add(Color.BLACK);
         parameter.borderWidth = 2;
         font = generator.generateFont(parameter);
 
         FreeTypeFontGenerator.FreeTypeFontParameter parameter2 = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter2.size = 45;
-        parameter2.borderColor = Color.BLACK;
-        parameter2.color.add(Color.BLACK);
+        //parameter2.borderColor = Color.BLACK;
+        //parameter2.color.add(Color.BLACK);
         parameter2.borderWidth = 2;
         font2 = generator.generateFont(parameter2);
 
         FreeTypeFontGenerator.FreeTypeFontParameter parameter3 = new FreeTypeFontGenerator.FreeTypeFontParameter();
-        parameter3.size = 25;
-        parameter3.borderColor = Color.BLACK;
-        parameter3.color.add(Color.WHITE);
+        parameter3.size = 32;
+        //parameter3.borderColor = Color.BLACK;
+        //parameter3.color.add(Color.WHITE);
         parameter3.borderWidth = 2;
         recipeFont = generator.generateFont(parameter3);
 

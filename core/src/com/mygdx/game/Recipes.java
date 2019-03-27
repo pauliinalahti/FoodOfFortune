@@ -45,8 +45,11 @@ public class Recipes implements Screen {
     SpriteBatch batch;
     int firstDrawn, secondDrawn, thirdDrawn;
     ArrayList<Recipe> recipes = new ArrayList<Recipe>();
-    FirstReel firstReel = new FirstReel();
-    SecondReel secondReel = new SecondReel();
+    final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
+
+    FirstReel firstReel;
+    SecondReel secondReel;
+
     String firstFood, secondFood;
     GlyphLayout recipestext;
     String recipesTxt;
@@ -55,6 +58,7 @@ public class Recipes implements Screen {
     ArrayList<Recipe> recipeMatches;
     int pad = 30;
     FileHandle file;
+    Preferences pref;
 
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
@@ -71,7 +75,10 @@ public class Recipes implements Screen {
         stage.addActor(back);
         recipesVertical = new ArrayList<String>();
 
-        Preferences pref = game.getPrefs();
+        pref = game.getPrefs();
+        firstReel = new FirstReel(pref);
+        secondReel = new SecondReel(pref);
+
         if(pref.getBoolean("english")) {
             backText = "BACK";
             recipesTxt = "RECIPES";
@@ -98,7 +105,7 @@ public class Recipes implements Screen {
         backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goSlotMachine();
+                game.goDrawnIngredients(firstDrawn,secondDrawn,thirdDrawn);
             }
         });
 
@@ -141,7 +148,7 @@ public class Recipes implements Screen {
             }
             sc.close();
         } else {
-            file = Gdx.files.internal("recipefileENtest.txt");
+            file = Gdx.files.internal("recipefileEN.txt");
             System.out.println(firstFood + secondFood);
 
             String text = file.readString();
@@ -163,7 +170,7 @@ public class Recipes implements Screen {
                     Recipe newRec = new Recipe(recName, (ArrayList<String>) items, recMethod);
                     newRec.addAmount(amount);
                     recipes.add(newRec);
-                    System.out.println(newRec.name + newRec.ingredients + newRec.method + newRec.amount);
+                    //System.out.println(newRec.name + newRec.ingredients + newRec.method + newRec.amount);
                 }
                 else {
                     sc.nextLine();
@@ -177,32 +184,36 @@ public class Recipes implements Screen {
         recipeMatches = new ArrayList<Recipe>();
         for (final Recipe r:recipes) {
             if(r.ingredients.contains(secondFood.toLowerCase()) && r.ingredients.contains(firstFood.toLowerCase())) {
-                recipeMatches.add(r);
-
-                Button recipeBtn = new TextButton(r.name, mySkin, "small");
-                recipeBtn.pad(5);
-                ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
-                recipeBtn.addListener(new ChangeListener() {
-                    @Override
-                    public void changed(ChangeEvent event, Actor actor) {
-                        game.goFoodRecipe(firstDrawn,secondDrawn,thirdDrawn, r);
+                boolean saakoLisata = true;
+                for(String ingr : r.ingredients) {
+                    if(!pref.getBoolean(ingr) && optionsFI.contains(ingr)) {
+                        System.out.println(ingr + " bannattu, " + r.name + " ei saa lisätä!");
+                        saakoLisata = false;
                     }
-                });
-                //table2.defaults().uniform().pad(30);
-                table2.add(recipeBtn);
-                //table2.top().pad(pad);
-                //table2.left().pad(300);
-                table2.row().row();
-                pad += 5;
-                //table2.setDebug(true);
+                }
+                if (saakoLisata) {
+                    recipeMatches.add(r);
+                    System.out.println(r.name + " lisätty");
+                    r.name.replace("ä","a");
+                    r.name.replace("ö","o");
+                    Button recipeBtn = new TextButton(r.name, mySkin, "small");
+                    recipeBtn.pad(5);
+                    ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
+                    recipeBtn.addListener(new ChangeListener() {
+                        @Override
+                        public void changed(ChangeEvent event, Actor actor) {
+                            game.goFoodRecipe(firstDrawn,secondDrawn,thirdDrawn, r);
+                        }
+                    });
+                    table2.add(recipeBtn);
+                    table2.row();
+                    pad += 5;
 
-                table2.setFillParent(true);
-                stage.addActor(table2);
-
-                System.out.println("Lisätty:");
-                System.out.println(r.name+":"+r.ingredients.toString()+":"+r.method);
+                }
             }
         }
+        table2.setFillParent(true);
+        stage.addActor(table2);
 
     }
 
