@@ -1,20 +1,51 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Texture;
-
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class ThirdReel {
+    /*
     Texture image1,image2,image3,image4,image5;
     String name1, name2, name3, name4, name5;
     String name1EN, name2EN, name3EN, name4EN, name5EN;
-    ArrayList<Texture> thirdReelImages;
-    ArrayList<String> thirdReelFoodNames;
-    ArrayList<String> thirdReelFoodNamesEN;
+    ArrayList<String> thirdReelFoodNamesEN;*/
 
+    ArrayList<String> thirdReelFoodNames;
+    ArrayList<Texture> thirdReelImages;
+    HashMap<String, String> map = new HashMap<String, String>();
+
+    public ThirdReel(Preferences pref) {
+        initMap();
+        thirdReelFoodNames = new ArrayList<String>();
+        thirdReelImages = new ArrayList<Texture>();
+        if(!pref.getBoolean("english")) {
+            for(String s : map.values()) {
+                if(pref.getBoolean(s)) {
+                    thirdReelFoodNames.add(s);
+                    thirdReelImages.add(new Texture(s+".png"));
+                }
+            }
+        } else {
+            for(String s : map.keySet()) {
+                if(pref.getBoolean(s)) {
+                    thirdReelFoodNames.add(s);
+                    thirdReelImages.add(new Texture(map.get(s)+".png"));
+                }
+            }
+        }
+    }
+
+    private void initMap() {
+        map.put("tomato", "tomaatti");
+        map.put("onion", "sipuli");
+        map.put("carrot", "porkkana");
+        map.put("broccoli", "parsakaali");
+        map.put("bell pepper", "paprika");
+    }
+
+    /*
     public ThirdReel() {
         thirdReelImages = new ArrayList<Texture>();
         thirdReelFoodNames = new ArrayList<String>();
@@ -55,17 +86,5 @@ public class ThirdReel {
         thirdReelFoodNamesEN.add(name3EN);
         thirdReelFoodNamesEN.add(name4EN);
         thirdReelFoodNamesEN.add(name5EN);
-    }
-
-    public ThirdReel(Preferences pref) {
-        thirdReelFoodNames = new ArrayList<String>();
-        thirdReelImages = new ArrayList<Texture>();
-        ArrayList<String> ings = new ArrayList<String>(Arrays.asList("tomaatti", "sipuli", "porkkana","parsakaali","paprika"));
-        for(String s : ings) {
-            if(pref.getBoolean(s)) {
-                thirdReelFoodNames.add(s);
-                thirdReelImages.add(new Texture(s+".png"));
-            }
-        }
-    }
+    }*/
 }

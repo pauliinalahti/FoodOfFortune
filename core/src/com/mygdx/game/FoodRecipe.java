@@ -58,7 +58,7 @@ public class FoodRecipe implements Screen {
         ingredientsTxt = r.ingredients;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("reseptiTausta.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);

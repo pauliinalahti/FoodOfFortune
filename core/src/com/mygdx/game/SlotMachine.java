@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
@@ -49,6 +50,9 @@ public class SlotMachine implements Screen {
     Button playBtn;
     ImageButton buttonSound;
     Table table2;
+    public Music handleMusic;
+    public Music reelMusic;
+    public Music reelStop;
 
     public ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     private int firstReelTime, secondReelTime, thirdReelTime, i;
@@ -64,12 +68,15 @@ public class SlotMachine implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("slotmachineBackground2.png"));
+        background = new Texture(Gdx.files.internal("FOF_Slot.png"));
         image = new Texture(Gdx.files.internal("banaani.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
+        handleMusic = Gdx.audio.newMusic(Gdx.files.internal("handle.mp3"));
+        reelMusic = Gdx.audio.newMusic(Gdx.files.internal("reel.mp3"));
+        reelStop = Gdx.audio.newMusic(Gdx.files.internal("reelStop.mp3"));
         reelsRectangle = new Rectangle(1.26f,1.155f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
@@ -90,9 +97,9 @@ public class SlotMachine implements Screen {
         System.out.println("toka reel: " + secondReel.secondReelFoodNames.toString());
         System.out.println("kolmas reel: " + thirdReel.thirdReelFoodNames.toString());
 
-        firstReelTime = 5;
-        secondReelTime = 14;
-        thirdReelTime = 20;
+        firstReelTime = 15;
+        secondReelTime = 30;
+        thirdReelTime = 50;
         //firstReel.updateReel(game.getPrefs());
         drawnNumberFirstReel = random(firstReel.firstReelFoodNames.size());
         drawnNumberSecondReel = random(secondReel.secondReelFoodNames.size());
@@ -147,6 +154,7 @@ public class SlotMachine implements Screen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 //playBtn.invalidate();
+                handleMusic.play();
                 table2.removeActor(playBtn);
                 myTexture = new Texture(Gdx.files.internal("handleDown.png"));
                 myTextureRegion = new TextureRegion(myTexture);
@@ -209,6 +217,7 @@ public class SlotMachine implements Screen {
             batch.end();
         }
         if(play) {
+            playEffects(i);
             if (i < firstReelTime) {
                 batch.begin();
                 batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelFoodNames.size())),
@@ -245,14 +254,13 @@ public class SlotMachine implements Screen {
                 batch.end();
             }
 
-
             try {
                 Thread.sleep(60);
             } catch (Exception e) {
             }
+
             if (i == thirdReelTime) {
                 play = false;
-
             }
             i++;
         } else {
@@ -275,6 +283,16 @@ public class SlotMachine implements Screen {
                 game.goDrawnIngredients(drawnNumberFirstReel,drawnNumberSecondReel,
                         drawnNumberThirdReeL);
             }
+        }
+    }
+
+    private void playEffects(int i) {
+        if(i == 1) {
+            reelMusic.play();
+        }
+        else if(i == firstReelTime || i==secondReelTime || i==thirdReelTime) {
+            reelStop.play();
+            reelStop.setLooping(false);
         }
     }
 

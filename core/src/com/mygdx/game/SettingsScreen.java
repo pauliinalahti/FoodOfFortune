@@ -12,6 +12,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -39,25 +40,26 @@ public class SettingsScreen implements Screen {
     String backText;
     String languageText;
     String onOffText;
+    String musicText;
     String changeText;
     Preferences pref;
     Button backBtn;
     String chosenLanguage;
     final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
-    final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("onion", "potato", "rice","spaghetti","macaroni"));
+    final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
     final ArrayList<String> options;
+    //float volume;
 
     public SettingsScreen(MainGame g) {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("reseptiTausta.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
         pref = game.getPrefs();
-
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -70,6 +72,7 @@ public class SettingsScreen implements Screen {
             onOffText = "ON";
             changeText = "Change";
             chosenLanguage = "English";
+            musicText = "Music";
             options = optionsEN;
         } else {
             backText = "TAKAISIN";
@@ -78,17 +81,9 @@ public class SettingsScreen implements Screen {
             onOffText = "OFF";
             changeText = "Vaihda";
             chosenLanguage = "Suomi";
+            musicText = "Äänet";
             options = optionsFI;
         }
-
-        if (!pref.getBoolean("firstTime")) {
-            System.out.println("here");
-            game.getPrefs().putBoolean("firstTime", true);
-            game.getPrefs().putBoolean("jauheliha", true);
-            game.getPrefs().putBoolean("peruna", true);
-            game.getPrefs().flush();
-        }
-
 
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
@@ -113,11 +108,30 @@ public class SettingsScreen implements Screen {
                 if(game.getPrefs().getBoolean("english")) {
                     game.getPrefs().putBoolean("english", false);
                     game.getPrefs().flush();
-                    System.out.println("en");
                 } else {
                     game.getPrefs().putBoolean("english", true);
                     game.getPrefs().flush();
-                    System.out.println("fi");
+                }
+                game.goSettingsScreen();
+            }
+        });
+
+        Button musicBtn = new TextButton(musicText, mySkin, "small");
+        changeTextBtn.pad(15);
+        ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSize);
+        musicBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                if(game.getPrefs().getBoolean("music")) {
+                    game.getPrefs().putBoolean("music", false);
+                    game.getPrefs().flush();
+                    game.backgroundMusic.pause();
+                    System.out.println("music off");
+                } else {
+                    game.getPrefs().putBoolean("music", true);
+                    game.getPrefs().flush();
+                    game.backgroundMusic.play();
+                    System.out.println("music on");
                 }
                 game.goSettingsScreen();
             }
@@ -125,15 +139,22 @@ public class SettingsScreen implements Screen {
 
 
         Table table = new Table();
-        table.defaults().uniform().pad(30);
-        table.add(backBtn);
+        table.defaults().uniform().pad(15);
+        table.add(backBtn).height(150);
+        Label l = new Label("ASETUKSET", mySkin);
+        l.setFontScale(game.buttonSize);
+        table.add(l).expandX();
+        table.add(musicBtn).height(150);
         table.top();
-        table.left();
+        //table.left();
         //table.setDebug(true);
 
         Table table2 = new Table();
-        table2.defaults().uniform().pad(30);
+        table2.defaults().uniform().pad(15);
         table2.add(changeTextBtn);
+        Label lang = new Label(languageText + ": " + chosenLanguage, mySkin);
+        lang.setFontScale(2f);
+        table2.add(lang).width(100);
         table2.setPosition(1f, (WORLDHEIGHT-3.1f)*100);
         //table2.center();
         table2.left().pad(10);
@@ -144,8 +165,8 @@ public class SettingsScreen implements Screen {
         int i = 0;
         for (final String opt : options) {
             final CheckBox cb = new CheckBox(opt, mySkin);
-            cb.pad(-30);
-            System.out.println(opt + ": " + pref.getBoolean(opt));
+            cb.pad(-5);
+            //System.out.println(opt + ": " + pref.getBoolean(opt));
             cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
@@ -153,7 +174,6 @@ public class SettingsScreen implements Screen {
                 public void changed(ChangeEvent event, Actor actor) {
                     Gdx.graphics.setContinuousRendering(true);
                     if(pref.getBoolean(opt)){
-                        //System.out.println("moro");
                         pref.putBoolean(opt, false);
                     } else {
                         pref.putBoolean(opt, true);
@@ -163,7 +183,7 @@ public class SettingsScreen implements Screen {
                     System.out.println("--------");
                 }
             });
-            tableCheckBoxes.add(cb);
+            tableCheckBoxes.add(cb).width(200);
             i++;
             if (i == 3) {
                 tableCheckBoxes.row();
@@ -177,8 +197,8 @@ public class SettingsScreen implements Screen {
         table.setFillParent(true);
         table2.setFillParent(true);
         tableCheckBoxes.setFillParent(true);
-        stage.addActor(table2);
         stage.addActor(table);
+        stage.addActor(table2);
         stage.addActor(tableCheckBoxes);
     }
 
@@ -193,7 +213,7 @@ public class SettingsScreen implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-
+/*
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
 
@@ -211,7 +231,7 @@ public class SettingsScreen implements Screen {
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();
-
+*/
     }
 
     @Override

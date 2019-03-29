@@ -1,23 +1,54 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Texture;
-
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class FirstReel {
+    /*
     Texture image1,image2,image3,image4,image5,image6;
     String name1, name2, name3, name4, name5, name6;
     String name1EN, name2EN, name3EN, name4EN, name5EN, name6EN;
-    ArrayList<Texture> firstReelImages;
-    ArrayList<String> firstReelFoodNames;
     ArrayList<String> firstReelFoodNamesEN;
-    Preferences pref;
+    Preferences pref;*/
+
+    ArrayList<String> firstReelFoodNames;
+    ArrayList<Texture> firstReelImages;
+    HashMap<String, String> map = new HashMap<String, String>();
+
+    public FirstReel(Preferences pref) {
+        initMap();
+        firstReelFoodNames = new ArrayList<String>();
+        firstReelImages = new ArrayList<Texture>();
+        if(!pref.getBoolean("english")) {
+            for(String s : map.values()) {
+                if(pref.getBoolean(s)) {
+                    firstReelFoodNames.add(s);
+                    firstReelImages.add(new Texture(s+".png"));
+                }
+            }
+        } else {
+            for(String s : map.keySet()) {
+                if(pref.getBoolean(s)) {
+                    firstReelFoodNames.add(s);
+                    firstReelImages.add(new Texture(map.get(s) + ".png"));
+                }
+            }
+        }
+    }
+
+    private void initMap() {
+        map.put("minced meat", "jauheliha");
+        map.put("chicken", "kana");
+        map.put("salmon", "lohi");
+        map.put("soy", "soija");
+        map.put("tofu", "tofu");
+        map.put("mushroom", "sieni");
+    }
 
 
-    public FirstReel() {
+    /*public FirstReel() {
         firstReelImages = new ArrayList<Texture>();
         firstReelFoodNames = new ArrayList<String>();
         firstReelFoodNamesEN = new ArrayList<String>();
@@ -64,28 +95,5 @@ public class FirstReel {
         firstReelFoodNamesEN.add(name5EN);
         firstReelFoodNamesEN.add(name6EN);
 
-    }
-
-    public FirstReel(Preferences pref) {
-        firstReelFoodNames = new ArrayList<String>();
-        firstReelImages = new ArrayList<Texture>();
-        ArrayList<String> ings = new ArrayList<String>(Arrays.asList("jauheliha", "kana","lohi","soija","tofu","sieni"));
-        for(String s : ings) {
-            if(pref.getBoolean(s)) {
-                firstReelFoodNames.add(s);
-                firstReelImages.add(new Texture(s+".png"));
-            }
-        }
-        //System.out.println("new fr made: " + firstReelFoodNames.toString());
-    }
-
-
-    /*public int getIndexOf(String s) {
-        for(int i = 0; i<firstReelImages.size(); i++) {
-            if (firstReelImages.get(i).toString().equals(s+".png")) {
-                return i;
-            }
-        }
-        return 0;
     }*/
 }

@@ -21,6 +21,7 @@ public class MainGame extends Game {
     public static float WORLDHEIGHT = 5;
     public static int buttonSize = 3;
     public static float buttonSizeSmall = 1.3f;
+    public static float titleSize = 5;
 
     OrthographicCamera camera;
     OrthographicCamera cameraFont;
@@ -32,7 +33,7 @@ public class MainGame extends Game {
 
     public Viewport screenPort;
     public MyAssetsManager myAssetsManager = new MyAssetsManager();
-    Music backgroundMusic;
+    public Music backgroundMusic;
     private Preferences preferences;
 
     public SpriteBatch getBatch() {
@@ -66,6 +67,9 @@ public class MainGame extends Game {
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
+        if(getPrefs().getBoolean("music"))  {
+            backgroundMusic.play();
+        }
         generator = new FreeTypeFontGenerator(Gdx.files.internal("VarelaRound-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
@@ -131,7 +135,6 @@ public class MainGame extends Game {
     public void render() {
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
-        backgroundMusic.play();
         batch.end();
         super.render();
     }

@@ -46,6 +46,8 @@ public class Recipes implements Screen {
     int firstDrawn, secondDrawn, thirdDrawn;
     ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
+    final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
+    final ArrayList<String> options;
 
     FirstReel firstReel;
     SecondReel secondReel;
@@ -60,6 +62,7 @@ public class Recipes implements Screen {
     FileHandle file;
     Preferences pref;
 
+
     public Recipes(MainGame g, int first, int second, int third){
         game = g;
         batch = game.getBatch();
@@ -68,7 +71,7 @@ public class Recipes implements Screen {
         secondDrawn = second;
         thirdDrawn = third;
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -82,18 +85,19 @@ public class Recipes implements Screen {
         if(pref.getBoolean("english")) {
             backText = "BACK";
             recipesTxt = "RECIPES";
-            firstFood = firstReel.firstReelFoodNamesEN.get(first);
-            secondFood = secondReel.secondReelFoodNamesEN.get(second);
+            options = optionsEN;
+            firstFood = firstReel.firstReelFoodNames.get(first);
+            secondFood = secondReel.secondReelFoodNames.get(second);
         } else {
             backText = "TAKAISIN";
             recipesTxt = "RESEPTIT";
+            options = optionsFI;
             firstFood = firstReel.firstReelFoodNames.get(first);
             secondFood = secondReel.secondReelFoodNames.get(second);
         }
 
         recipestext = new GlyphLayout();
         recipestext.setText(game.font2, recipesTxt);
-
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -148,8 +152,8 @@ public class Recipes implements Screen {
             }
             sc.close();
         } else {
-            file = Gdx.files.internal("recipefileEN.txt");
-            System.out.println(firstFood + secondFood);
+            file = Gdx.files.internal("recipefileEN2.txt");
+            //System.out.println(firstFood + secondFood);
 
             String text = file.readString();
             Scanner sc = new Scanner(text);
@@ -186,7 +190,7 @@ public class Recipes implements Screen {
             if(r.ingredients.contains(secondFood.toLowerCase()) && r.ingredients.contains(firstFood.toLowerCase())) {
                 boolean saakoLisata = true;
                 for(String ingr : r.ingredients) {
-                    if(!pref.getBoolean(ingr) && optionsFI.contains(ingr)) {
+                    if(!pref.getBoolean(ingr) && options.contains(ingr)) {
                         System.out.println(ingr + " bannattu, " + r.name + " ei saa lisätä!");
                         saakoLisata = false;
                     }
@@ -196,7 +200,7 @@ public class Recipes implements Screen {
                     System.out.println(r.name + " lisätty");
                     r.name.replace("ä","a");
                     r.name.replace("ö","o");
-                    Button recipeBtn = new TextButton(r.name, mySkin, "small");
+                    Button recipeBtn = new TextButton(r.name.replace("ä","a"), mySkin, "small");
                     recipeBtn.pad(5);
                     ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
                     recipeBtn.addListener(new ChangeListener() {

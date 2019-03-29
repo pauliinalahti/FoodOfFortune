@@ -42,16 +42,16 @@ public class DrawnIngredients implements Screen {
     Preferences pref;
 
 
-    public DrawnIngredients(MainGame g, int first, int second, int third){
+    public DrawnIngredients(MainGame g, int first, int second, int third) {
 
         game = g;
         batch = game.getBatch();
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
-        reelsRectangle = new Rectangle(1.26f,1.7f,2.1f,2.25f);
+        reelsRectangle = new Rectangle(1.26f, 1.7f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("backgroundBasic.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -61,7 +61,7 @@ public class DrawnIngredients implements Screen {
         secondReel = new SecondReel(pref);
         thirdReel = new ThirdReel(pref);
 
-        if(pref.getBoolean("english")){
+        if (pref.getBoolean("english")) {
             backText = "BACK";
             recipesText = "RECIPES";
             ingrediends = "INGREDIENTS";
@@ -75,15 +75,15 @@ public class DrawnIngredients implements Screen {
         layoutSecond = new GlyphLayout();
         layoutThird = new GlyphLayout();
 
-        if(pref.getBoolean("english")){
-            layoutFirst.setText(game.font, firstReel.firstReelFoodNamesEN.get(firstDrawn));
-            layoutSecond.setText(game.font, secondReel.secondReelFoodNamesEN.get(secondDrawn));
-            layoutThird.setText(game.font, thirdReel.thirdReelFoodNamesEN.get(thirdDrawn));
-        } else {
+        //if(pref.getBoolean("english")){
+        layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
+        layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
+        layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));
+        /*} else {
             layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
             layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
             layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));
-        }
+        }*/
 
         drawnIngrediends = new GlyphLayout();
         drawnIngrediends.setText(game.font2, ingrediends);
@@ -107,7 +107,7 @@ public class DrawnIngredients implements Screen {
         recipesBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                game.goRecipes(firstDrawn,secondDrawn,thirdDrawn);
+                game.goRecipes(firstDrawn, secondDrawn, thirdDrawn);
             }
         });
 
@@ -164,36 +164,21 @@ public class DrawnIngredients implements Screen {
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch,
                 ingrediends,
-                WORLDWIDTH*100/2-drawnIngrediends.width/2,
-                (WORLDHEIGHT-0.5f)*100);
+                WORLDWIDTH * 100 / 2 - drawnIngrediends.width / 2,
+                (WORLDHEIGHT - 0.5f) * 100);
 
-        if(pref.getBoolean("english")) {
-            game.font.draw(batch,
-                    firstReel.firstReelFoodNamesEN.get(firstDrawn),
-                    (reelsRectangle.x * 100) + (reelsRectangle.width / 2 * 100) - layoutFirst.width / 2,
-                    reelsRectangle.y * 100 - 20);
-            game.font.draw(batch,
-                    secondReel.secondReelFoodNamesEN.get(secondDrawn),
-                    (3.6f * 100) + (reelsRectangle.width / 2 * 100) - layoutSecond.width / 2,
-                    reelsRectangle.y * 100 - 20);
-            game.font.draw(batch,
-                    thirdReel.thirdReelFoodNamesEN.get(thirdDrawn),
-                    (5.94f * 100) + (reelsRectangle.width / 2 * 100) - layoutThird.width / 2,
-                    reelsRectangle.y * 100 - 20);
-        } else {
-            game.font.draw(batch,
-                    firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase(),
-                    (reelsRectangle.x * 100) + (reelsRectangle.width / 2 * 100) - layoutFirst.width / 2,
-                    reelsRectangle.y * 100 - 20);
-            game.font.draw(batch,
-                    secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase(),
-                    (3.6f * 100) + (reelsRectangle.width / 2 * 100) - layoutSecond.width / 2,
-                    reelsRectangle.y * 100 - 20);
-            game.font.draw(batch,
-                    thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase(),
-                    (5.94f * 100) + (reelsRectangle.width / 2 * 100) - layoutThird.width / 2,
-                    reelsRectangle.y * 100 - 20);
-        }
+        game.font.draw(batch,
+                firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase(),
+                (reelsRectangle.x * 100) + (reelsRectangle.width / 2 * 100) - layoutFirst.width / 2,
+                reelsRectangle.y * 100 - 20);
+        game.font.draw(batch,
+                secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase(),
+                (3.6f * 100) + (reelsRectangle.width / 2 * 100) - layoutSecond.width / 2,
+                reelsRectangle.y * 100 - 20);
+        game.font.draw(batch,
+                thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase(),
+                (5.94f * 100) + (reelsRectangle.width / 2 * 100) - layoutThird.width / 2,
+                reelsRectangle.y * 100 - 20);
 
         batch.setProjectionMatrix((game.camera.combined));
 

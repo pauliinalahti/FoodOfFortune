@@ -1,13 +1,13 @@
 {
 com.badlogic.gdx.graphics.g2d.BitmapFont: {
 	button: {
-		file: font-button-export.fnt
+		file: amaticBold.fnt
 	}
 	font: {
-		file: font-export.fnt
+		file: amaticBold.fnt
 	}
 	title: {
-		file: font-title-export.fnt
+		file: amaticBold.fnt
 	}
 }
 com.badlogic.gdx.graphics.Color: {
