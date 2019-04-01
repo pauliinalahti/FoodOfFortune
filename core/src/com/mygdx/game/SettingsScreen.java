@@ -234,7 +234,7 @@ public class SettingsScreen implements Screen {
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
 
-        game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
+        game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.3f)*100);
 
         /*game.font.draw(batch, chosenLanguage, 400, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
 

@@ -51,7 +51,7 @@ public class DrawnIngredients implements Screen {
         thirdDrawn = third;
         reelsRectangle = new Rectangle(1.26f, 1.5f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta5.4.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.12.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -124,7 +124,7 @@ public class DrawnIngredients implements Screen {
         Table table = new Table();
         table.defaults().uniform().pad(30);
         table.add(backBtn);
-        table.add(recipesBtn);
+        //table.add(recipesBtn);
         table.top();
         table.left();
 
@@ -165,7 +165,7 @@ public class DrawnIngredients implements Screen {
         game.font2.draw(batch,
                 ingrediends,
                 WORLDWIDTH * 100 / 2 - drawnIngrediends.width / 2,
-                (WORLDHEIGHT - 0.5f) * 100);
+                (WORLDHEIGHT - 0.3f) * 100);
 
         game.font.draw(batch,
                 firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase(),

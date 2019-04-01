@@ -163,7 +163,7 @@ public class CustomReels implements Screen {
         game.font2.draw(batch,
                 ingrediends,
                 WORLDWIDTH * 100 / 2 - customIngrediends.width / 2,
-                (WORLDHEIGHT - 0.5f) * 100);
+                (WORLDHEIGHT - 0.3f) * 100);
         batch.setProjectionMatrix((game.camera.combined));
         batch.end();
     }

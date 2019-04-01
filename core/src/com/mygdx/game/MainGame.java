@@ -69,6 +69,7 @@ public class MainGame extends Game {
         batch = new SpriteBatch();
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
         if(getPrefs().getBoolean("music"))  {
+            backgroundMusic.setLooping(true);
             backgroundMusic.play();
         }
         generator = new FreeTypeFontGenerator(Gdx.files.internal("VarelaRound-Regular.ttf"));

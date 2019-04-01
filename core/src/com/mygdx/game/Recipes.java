@@ -202,7 +202,7 @@ public class Recipes implements Screen {
                     //r.name.replace("ö","o");
                     //Button recipeBtn = new TextButton(r.name.replace("ä","a"), mySkin, "small");
                     Button recipeBtn = new TextButton(r.name, mySkin, "small");
-                    recipeBtn.pad(8);
+                    recipeBtn.pad(15);
                     ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSizeSmall);
                     recipeBtn.addListener(new ChangeListener() {
                         @Override
@@ -242,7 +242,7 @@ public class Recipes implements Screen {
         batch.begin();
         //batch.draw(rect, rect.x, rect.y, rect.width, rect.height);
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font2.draw(batch, recipestext, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.5f)*100);
+        game.font2.draw(batch, recipestext, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.3f)*100);
         float foodY = 1.5f;
         /*for (Recipe r: recipeMatches) {
             game.font2.draw(batch, r.name, (WORLDWIDTH*100/3)-recipestext.width/2, (WORLDHEIGHT-foodY)*100);

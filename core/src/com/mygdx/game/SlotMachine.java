@@ -204,7 +204,7 @@ public class SlotMachine implements Screen {
         Table table3 = new Table();
         table3.defaults().uniform().pad(30);
         table3.add(customBtn);
-        table3.bottom().pad(10);
+        table3.bottom().pad(20);
 
         table.setFillParent(true);
         table2.setFillParent(true);
