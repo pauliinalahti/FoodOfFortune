@@ -167,7 +167,7 @@ public class SlotMachine implements Screen {
         //playBtn.setPosition(200,Gdx.graphics.getHeight()-100);
 
 
-        playBtn.pad(20);
+        playBtn.pad(50,0,110,-20);
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -179,6 +179,7 @@ public class SlotMachine implements Screen {
                 myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
                 playBtn = new ImageButton(myTexRegionDrawable);
                 playBtn.setScale(200);
+                playBtn.pad(50,0,110,-20);
                 table2.add(playBtn);
                 table2.setFillParent(true);
                 startImages = false;
