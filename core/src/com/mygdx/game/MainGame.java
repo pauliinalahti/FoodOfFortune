@@ -20,8 +20,9 @@ public class MainGame extends Game {
     public static float WORLDWIDTH = 10;
     public static float WORLDHEIGHT = 5;
     public static int buttonSize = 3;
-    public static float buttonSizeSmall = 1.3f;
+    public static float buttonSizeSmall = 2f;
     public static float titleSize = 5;
+    public static float buttonSizeBig = 4f;
 
     OrthographicCamera camera;
     OrthographicCamera cameraFont;
@@ -66,7 +67,7 @@ public class MainGame extends Game {
         font2 = new BitmapFont();
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
-        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("background_music3.mp3"));
+        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
         if(getPrefs().getBoolean("music"))  {
             backgroundMusic.play();
         }

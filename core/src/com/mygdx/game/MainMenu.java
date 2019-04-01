@@ -38,7 +38,7 @@ public class MainMenu implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_MainMenu4.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.2.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -60,8 +60,9 @@ public class MainMenu implements Screen {
         }
 
 
-        Button startBtn = new TextButton(playText, mySkin, "small");startBtn.pad(20);
-        startBtn.right().pad(20);
+        Button startBtn = new TextButton(playText, mySkin, "small");
+        startBtn.pad(35);
+        //startBtn.right().pad(20);
         //startBtn.setScale(WORLDWIDTH, WORLDHEIGHT);
         //startBtn.pad(-10f);
         //startBtn.setSize(WORLDWIDTH/7, WORLDHEIGHT/7);
@@ -95,10 +96,10 @@ public class MainMenu implements Screen {
         });
 
         Table table = new Table();
-        table.defaults().uniform().pad(30);
+        table.defaults().uniform().pad(15);
+        table.add(quitBtn);
         table.add(startBtn);
         table.add(settingsBtn);
-        table.add(quitBtn);
         table.bottom().pad(30);
         //table.setDebug(true);
 

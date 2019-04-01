@@ -49,9 +49,9 @@ public class DrawnIngredients implements Screen {
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
-        reelsRectangle = new Rectangle(1.26f, 1.7f, 2.1f, 2.25f);
+        reelsRectangle = new Rectangle(1.26f, 1.5f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.4.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -76,9 +76,9 @@ public class DrawnIngredients implements Screen {
         layoutThird = new GlyphLayout();
 
         //if(pref.getBoolean("english")){
-        layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
-        layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
-        layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));
+        layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase());
+        layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase());
+        layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase());
         /*} else {
             layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
             layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
@@ -154,12 +154,12 @@ public class DrawnIngredients implements Screen {
         batch.begin();
 
         batch.draw(firstReel.firstReelImages.get(firstDrawn),
-                reelsRectangle.x, reelsRectangle.y, reelsRectangle.width,
+                WORLDWIDTH/2- 1.5f*reelsRectangle.width - 0.2f, reelsRectangle.y, reelsRectangle.width,
                 reelsRectangle.height);
         batch.draw(secondReel.secondReelImages.get(secondDrawn),
-                3.6f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+                WORLDWIDTH/2-reelsRectangle.width/2, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
         batch.draw(thirdReel.thirdReelImages.get(thirdDrawn),
-                5.94f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+                WORLDWIDTH/2+reelsRectangle.width/2 + 0.2f, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
 
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch,
@@ -169,15 +169,15 @@ public class DrawnIngredients implements Screen {
 
         game.font.draw(batch,
                 firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase(),
-                (reelsRectangle.x * 100) + (reelsRectangle.width / 2 * 100) - layoutFirst.width / 2,
+                (WORLDWIDTH/2 * 100) - (reelsRectangle.width * 100)-20f - layoutFirst.width / 2,
                 reelsRectangle.y * 100 - 20);
         game.font.draw(batch,
                 secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase(),
-                (3.6f * 100) + (reelsRectangle.width / 2 * 100) - layoutSecond.width / 2,
+                (WORLDWIDTH/2 * 100) - layoutSecond.width / 2,
                 reelsRectangle.y * 100 - 20);
         game.font.draw(batch,
                 thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase(),
-                (5.94f * 100) + (reelsRectangle.width / 2 * 100) - layoutThird.width / 2,
+                (WORLDWIDTH/2 * 100) + (reelsRectangle.width * 100)+20f - layoutThird.width / 2,
                 reelsRectangle.y * 100 - 20);
 
         batch.setProjectionMatrix((game.camera.combined));

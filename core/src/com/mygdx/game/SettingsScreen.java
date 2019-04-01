@@ -54,7 +54,7 @@ public class SettingsScreen implements Screen {
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.7.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -101,7 +101,7 @@ public class SettingsScreen implements Screen {
 
         Button changeTextBtn = new TextButton(changeText, mySkin, "small");
         changeTextBtn.pad(15);
-        ((TextButton) changeTextBtn).getLabel().setFontScale(game.buttonSize);
+        ((TextButton) changeTextBtn).getLabel().setFontScale(game.buttonSizeSmall);
         changeTextBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -117,7 +117,7 @@ public class SettingsScreen implements Screen {
         });
 
         Button musicBtn = new TextButton(musicText, mySkin, "small");
-        changeTextBtn.pad(15);
+        musicBtn.pad(20);
         ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSize);
         musicBtn.addListener(new ChangeListener() {
             @Override
@@ -140,11 +140,11 @@ public class SettingsScreen implements Screen {
 
         Table table = new Table();
         table.defaults().uniform().pad(15);
-        table.add(backBtn).height(150);
+        table.add(backBtn);
         Label l = new Label("ASETUKSET", mySkin);
-        l.setFontScale(game.buttonSize);
+        l.setFontScale(game.buttonSizeBig);
         table.add(l).expandX();
-        table.add(musicBtn).height(150);
+        table.add(musicBtn);
         table.top();
         //table.left();
         //table.setDebug(true);
@@ -152,7 +152,7 @@ public class SettingsScreen implements Screen {
         Table table2 = new Table();
         table2.defaults().uniform().pad(15);
         table2.add(changeTextBtn);
-        Label lang = new Label(languageText + ": " + chosenLanguage, mySkin);
+        Label lang = new Label(languageText  + chosenLanguage, mySkin);
         lang.setFontScale(2f);
         table2.add(lang).width(100);
         table2.setPosition(1f, (WORLDHEIGHT-3.1f)*100);
@@ -165,7 +165,7 @@ public class SettingsScreen implements Screen {
         int i = 0;
         for (final String opt : options) {
             final CheckBox cb = new CheckBox(opt, mySkin);
-            cb.pad(-5);
+            //cb.pad(-5);
             //System.out.println(opt + ": " + pref.getBoolean(opt));
             cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));

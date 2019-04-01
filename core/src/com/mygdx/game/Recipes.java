@@ -71,7 +71,7 @@ public class Recipes implements Screen {
         secondDrawn = second;
         thirdDrawn = third;
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.4.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -152,7 +152,7 @@ public class Recipes implements Screen {
             }
             sc.close();
         } else {
-            file = Gdx.files.internal("recipefileEN2.txt");
+            file = Gdx.files.internal("recipefileEN.txt");
             //System.out.println(firstFood + secondFood);
 
             String text = file.readString();
@@ -198,11 +198,12 @@ public class Recipes implements Screen {
                 if (saakoLisata) {
                     recipeMatches.add(r);
                     System.out.println(r.name + " lisätty");
-                    r.name.replace("ä","a");
-                    r.name.replace("ö","o");
-                    Button recipeBtn = new TextButton(r.name.replace("ä","a"), mySkin, "small");
-                    recipeBtn.pad(5);
-                    ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSize);
+                    //r.name.replace("ä","a");
+                    //r.name.replace("ö","o");
+                    //Button recipeBtn = new TextButton(r.name.replace("ä","a"), mySkin, "small");
+                    Button recipeBtn = new TextButton(r.name, mySkin, "small");
+                    recipeBtn.pad(8);
+                    ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSizeSmall);
                     recipeBtn.addListener(new ChangeListener() {
                         @Override
                         public void changed(ChangeEvent event, Actor actor) {

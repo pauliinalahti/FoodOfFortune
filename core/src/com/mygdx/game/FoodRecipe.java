@@ -58,7 +58,7 @@ public class FoodRecipe implements Screen {
         ingredientsTxt = r.ingredients;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta3.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.8.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -101,7 +101,9 @@ public class FoodRecipe implements Screen {
 
         Label label2 = new Label(amountTxt.replace(",", "\n"), mySkin2);
         label2.setWrap(true);
+        label2.setWidth(300);
         label2.pack();
+        ScrollPane sp2 = new ScrollPane(label2);
 
 
         Label label = new Label(methodTxt.replace("\\n", "\n"), mySkin2);
@@ -112,11 +114,12 @@ public class FoodRecipe implements Screen {
         //table.debug();
         table.defaults().pad(30);
         table.add(backBtn).left().row();
-        table.add(label2).fill();
+        //table.add(label2).fill();
+        table.add(sp2).fill();
         table.add(sp).grow();
         table.top();
         table.left();
-        table.setDebug(true);
+        //table.setDebug(true);
 
         table.setFillParent(true);
         stage.addActor(table);
