@@ -51,6 +51,7 @@ public class SlotMachine implements Screen {
     ThirdReel thirdReel;
     Rectangle reelsRectangle;
     Button playBtn;
+    Button customBtn;
     ImageButton buttonSound;
     Table table2;
     public Music handleMusic;
@@ -66,12 +67,13 @@ public class SlotMachine implements Screen {
 
     String backText;
     String playText;
+    String customText;
 
     public SlotMachine(MainGame g){
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta5.6.png"));
+        background = new Texture(Gdx.files.internal("FOF_Tausta5.9.png"));
         image = new Texture(Gdx.files.internal("banaani.png"));
         back = new Image(background);
         back.setScaling(Scaling.fit);
@@ -88,9 +90,11 @@ public class SlotMachine implements Screen {
         if(pref.getBoolean("english")){
             backText = "BACK";
             playText = "PLAY";
+            customText = "Custom reels";
         } else {
             backText = "TAKAISIN";
             playText = "PELAA";
+            customText = "Muokkaa ruoka-aineksia";
         }
 
         firstReel = new FirstReel(pref);
@@ -135,6 +139,17 @@ public class SlotMachine implements Screen {
                 game.goMainMenu();
             }
         });
+
+        Button customBtn = new TextButton(customText, mySkin, "small");
+        customBtn.pad(20);
+        ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
+        customBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                game.goCustomReels();
+            }
+        });
+
 
         myTexture = new Texture(Gdx.files.internal("handleUp.png"));
         myTextureRegion = new TextureRegion(myTexture);
@@ -186,10 +201,19 @@ public class SlotMachine implements Screen {
         table2.right().pad(15);
         table2.bottom().pad(100);
 
+        Table table3 = new Table();
+        table3.defaults().uniform().pad(30);
+        table3.add(customBtn);
+        table3.bottom().pad(10);
+
         table.setFillParent(true);
-        stage.addActor(table);
         table2.setFillParent(true);
+        table3.setFillParent(true);
+        stage.addActor(table);
         stage.addActor(table2);
+        stage.addActor(table3);
+
+
     }
 
     public int random(int numberOfImages){
