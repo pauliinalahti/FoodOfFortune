@@ -132,6 +132,11 @@ public class MainGame extends Game {
         setScreen(foodRecipe);
     }
 
+    public void goCustomReels(){
+        CustomReels customReels = new CustomReels(this);
+        setScreen(customReels);
+    }
+
     @Override
     public void render() {
         batch.setProjectionMatrix(camera.combined);

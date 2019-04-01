@@ -38,6 +38,7 @@ public class SettingsScreen implements Screen {
     GlyphLayout layoutSettings;
     String settingsText;
     String backText;
+    String customText;
     String languageText;
     String onOffText;
     String musicText;
@@ -45,9 +46,9 @@ public class SettingsScreen implements Screen {
     Preferences pref;
     Button backBtn;
     String chosenLanguage;
-    final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
-    final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
-    final ArrayList<String> options;
+    //final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
+    //final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
+    //final ArrayList<String> options;
     //float volume;
 
     public SettingsScreen(MainGame g) {
@@ -67,22 +68,24 @@ public class SettingsScreen implements Screen {
 
         if(pref.getBoolean("english")){
             backText = "BACK";
+            customText = "Custom food ingredients";
             settingsText = "SETTINGS";
             languageText = "Language: ";
             onOffText = "ON";
-            changeText = "Change";
+            changeText = "Language: EN";
             chosenLanguage = "English";
             musicText = "Music";
-            options = optionsEN;
+            //options = optionsEN;
         } else {
             backText = "TAKAISIN";
+            customText = "Ruoka-aine asetukset";
             settingsText = "ASETUKSET";
             languageText = "Kieli: ";
             onOffText = "OFF";
-            changeText = "Vaihda";
+            changeText = "Kieli: FI";
             chosenLanguage = "Suomi";
             musicText = "Äänet";
-            options = optionsFI;
+            //options = optionsFI;
         }
 
         layoutSettings = new GlyphLayout();
@@ -116,9 +119,19 @@ public class SettingsScreen implements Screen {
             }
         });
 
+        Button customBtn = new TextButton(customText, mySkin, "small");
+        customBtn.pad(20);
+        ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
+        customBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                game.goCustomReels();
+            }
+        });
+
         Button musicBtn = new TextButton(musicText, mySkin, "small");
         musicBtn.pad(20);
-        ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSize);
+        ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSizeSmall);
         musicBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -141,26 +154,30 @@ public class SettingsScreen implements Screen {
         Table table = new Table();
         table.defaults().uniform().pad(15);
         table.add(backBtn);
-        Label l = new Label("ASETUKSET", mySkin);
-        l.setFontScale(game.buttonSizeBig);
-        table.add(l).expandX();
-        table.add(musicBtn);
+        //Label l = new Label("ASETUKSET", mySkin);
+        //l.setFontScale(game.buttonSizeBig);
+        //table.add(l).expandX();
+        table.left();
         table.top();
         //table.left();
         //table.setDebug(true);
 
         Table table2 = new Table();
         table2.defaults().uniform().pad(15);
-        table2.add(changeTextBtn);
-        Label lang = new Label(languageText  + chosenLanguage, mySkin);
-        lang.setFontScale(2f);
-        table2.add(lang).width(100);
+        table2.pad(-5);
+        table2.add(changeTextBtn).row();
+        table2.add(musicBtn).row();
+        table2.add(customBtn);
+        //Label lang = new Label(languageText  + chosenLanguage, mySkin);
+        //lang.setFontScale(2f);
+        //table2.add(lang).width(100);
         table2.setPosition(1f, (WORLDHEIGHT-3.1f)*100);
-        //table2.center();
-        table2.left().pad(10);
+        table2.center();
+        table2.bottom().pad(20);
+        //table2.left().pad(10);
         //table2.top().pad(20);
 
-        Table tableCheckBoxes = new Table();
+        /*Table tableCheckBoxes = new Table();
         tableCheckBoxes.defaults().uniform().pad(30);
         int i = 0;
         for (final String opt : options) {
@@ -190,16 +207,16 @@ public class SettingsScreen implements Screen {
                 i=0;
             }
 
-        }
-        tableCheckBoxes.setPosition(1f, (WORLDHEIGHT-6f)*100);
+        }*/
+        //tableCheckBoxes.setPosition(1f, (WORLDHEIGHT-6f)*100);
         //tableCheckBoxes.left().pad(30);
 
         table.setFillParent(true);
         table2.setFillParent(true);
-        tableCheckBoxes.setFillParent(true);
+        //tableCheckBoxes.setFillParent(true);
         stage.addActor(table);
         stage.addActor(table2);
-        stage.addActor(tableCheckBoxes);
+        //stage.addActor(tableCheckBoxes);
     }
 
     @Override
@@ -213,13 +230,13 @@ public class SettingsScreen implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-/*
+
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
 
         game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.5f)*100);
 
-        game.font.draw(batch, chosenLanguage, 400, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
+        /*game.font.draw(batch, chosenLanguage, 400, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
 
         if(game.getPrefs().getBoolean("english")) {
             game.font.draw(batch, languageText, 230, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
@@ -227,11 +244,11 @@ public class SettingsScreen implements Screen {
         } else {
             game.font.draw(batch, languageText, 230, (WORLDHEIGHT-1f-0.5f)*100, 300, -1, true);
             pref.flush();
-        }
+        }*/
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();
-*/
+
     }
 
     @Override
