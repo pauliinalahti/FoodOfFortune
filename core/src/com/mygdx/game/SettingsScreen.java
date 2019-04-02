@@ -74,7 +74,11 @@ public class SettingsScreen implements Screen {
             onOffText = "ON";
             changeText = "Language: EN";
             chosenLanguage = "English";
-            musicText = "Music";
+            if(pref.getBoolean("music")) {
+                musicText = "Music: ON";
+            } else {
+                musicText = "Music: OFF";
+            }
             //options = optionsEN;
         } else {
             backText = "TAKAISIN";
@@ -84,7 +88,11 @@ public class SettingsScreen implements Screen {
             onOffText = "OFF";
             changeText = "Kieli: FI";
             chosenLanguage = "Suomi";
-            musicText = "Äänet";
+            if(pref.getBoolean("music")) {
+                musicText = "Äänet: ON";
+            } else {
+                musicText = "Äänet: OFF";
+            }
             //options = optionsFI;
         }
 
@@ -174,6 +182,8 @@ public class SettingsScreen implements Screen {
         table2.setPosition(1f, (WORLDHEIGHT-3.1f)*100);
         table2.center();
         table2.bottom().pad(20);
+
+
         //table2.left().pad(10);
         //table2.top().pad(20);
 

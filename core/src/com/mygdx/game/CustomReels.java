@@ -12,6 +12,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -39,9 +40,18 @@ public class CustomReels implements Screen {
     GlyphLayout customIngrediends;
     String ingrediends;
     private Skin mySkin;
-    final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
-    final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
-    final ArrayList<String> options;
+    final ArrayList<String> optionsFI1 = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni"));
+    final ArrayList<String> optionsFI2 = new ArrayList<String>(Arrays.asList("makaroni","peruna","riisi","spagetti"));
+    final ArrayList<String> optionsFI3 = new ArrayList<String>(Arrays.asList("tomaatti","sipuli","porkkana","parsakaali","paprika"));
+    final ArrayList<String> optionsEN1 = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom"));
+    final ArrayList<String> optionsEN2 = new ArrayList<String>(Arrays.asList("macaroni","potato","rice","spaghetti"));
+    final ArrayList<String> optionsEN3 = new ArrayList<String>(Arrays.asList("tomato","onion","carrot","broccoli","bell pepper"));
+    final ArrayList<String> options1;
+    final ArrayList<String> options2;
+    final ArrayList<String> options3;
+    String reelText1;
+    String reelText2;
+    String reelText3;
 
 
     public CustomReels(MainGame g) {
@@ -61,15 +71,25 @@ public class CustomReels implements Screen {
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
         if(pref.getBoolean("english")){
-            options = optionsEN;
+            options1 = optionsEN1;
+            options2 = optionsEN2;
+            options3 = optionsEN3;
             backText = "BACK";
             playText = "PLAY";
             ingrediends = "INGREDIENTS";
+            reelText1 = "1st Reel";
+            reelText2 = "2nd Reel";
+            reelText3 = "3rd Reel";
         } else {
-            options = optionsFI;
+            options1 = optionsFI1;
+            options2 = optionsFI2;
+            options3 = optionsFI3;
             backText = "TAKAISIN";
             playText = "PELAA";
             ingrediends = "AINEKSET";
+            reelText1 = "1. Rulla";
+            reelText2 = "2. Rulla";
+            reelText3 = "3. Rulla";
         }
 
         customIngrediends = new GlyphLayout();
@@ -106,10 +126,33 @@ public class CustomReels implements Screen {
         table2.bottom();
         table2.right();
 
-        Table tableCheckBoxes = new Table();
-        tableCheckBoxes.defaults().uniform().pad(30);
-        int i = 0;
-        for (final String opt : options) {
+        Table bigTable = new Table();
+        bigTable.defaults().uniform().pad(15);
+
+        Table colA = new Table();
+        Table colB = new Table();
+        Table colC = new Table();
+
+        colA.defaults().uniform().pad(15);
+        colA.add(new Label(reelText1,mySkin)).row();
+        for (final String opt : options1) {
+            final CheckBox cb = new CheckBox(opt, mySkin);
+            cb.getLabel().setFontScale(game.buttonSizeSmall);
+            cb.setChecked(pref.getBoolean(opt));
+            cb.addListener(new ChangeListener() {
+                @Override
+                public void changed(ChangeEvent event, Actor actor) {
+                    handleclick(cb, opt, options1);
+                }
+            });
+            colA.add(cb);
+            colA.row();
+        }
+        colB.defaults().uniform().pad(15);
+        colB.add(new Label(reelText2,mySkin));
+        colB.row();
+        //int i = 0;
+        for (final String opt : options2) {
             final CheckBox cb = new CheckBox(opt, mySkin);
             //cb.pad(-5);
             //System.out.println(opt + ": " + pref.getBoolean(opt));
@@ -118,33 +161,78 @@ public class CustomReels implements Screen {
             cb.addListener(new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
-                    Gdx.graphics.setContinuousRendering(true);
-                    if(pref.getBoolean(opt)){
-                        pref.putBoolean(opt, false);
-                    } else {
-                        pref.putBoolean(opt, true);
-                    }
-                    pref.flush();
-                    game.goCustomReels();
-                    System.out.println("--------");
+                    handleclick(cb, opt, options2);
                 }
             });
-            tableCheckBoxes.add(cb).width(200);
-            i++;
-            if (i == 3) {
-                tableCheckBoxes.row();
-                i=0;
-            }
+            colB.add(cb);
+            colB.row();
+        }
+        colC.defaults().uniform().pad(15);
+        colC.add(new Label(reelText3,mySkin));
+        colC.row();
+        for (final String opt : options3) {
+            final CheckBox cb = new CheckBox(opt, mySkin);
+            //cb.pad(-5);
+            //System.out.println(opt + ": " + pref.getBoolean(opt));
+            cb.getLabel().setFontScale(game.buttonSizeSmall);
+            cb.setChecked(pref.getBoolean(opt));
+            cb.addListener(new ChangeListener() {
+                @Override
+                public void changed(ChangeEvent event, Actor actor) {
+                    handleclick(cb, opt, options3);
+                }
+            });
+            colC.add(cb);
+            colC.row();
         }
 
-        tableCheckBoxes.setPosition(1f, (WORLDHEIGHT-6f)*100);
+        //bigTable.setPosition(0, 50);
+        colA.setPosition(-500, (WORLDHEIGHT-6f)*100);
+        colB.setPosition(0, (WORLDHEIGHT-6f)*100);
+        colC.setPosition(500, (WORLDHEIGHT-6f)*120);
 
-        tableCheckBoxes.setFillParent(true);
+        //bigTable.setFillParent(true);
+        colA.setFillParent(true);
+        colB.setFillParent(true);
+        colC.setFillParent(true);
+
         table.setFillParent(true);
         table2.setFillParent(true);
-        stage.addActor(tableCheckBoxes);
+        //stage.addActor(tableCheckBoxes);
+        stage.addActor(colA);
+        stage.addActor(colB);
+        stage.addActor(colC);
+        //stage.addActor(bigTable);
+
         stage.addActor(table);
         stage.addActor(table2);
+    }
+
+    public void handleclick(CheckBox cb, String opt, ArrayList<String> optionList) {
+        boolean checked = cb.isChecked();
+        boolean changed = false;
+        int j = 0;
+        for(String reelOpt : optionList) {
+            if (pref.getBoolean(reelOpt)) {
+                j++;
+            }
+        }
+        if(j>1 || !pref.getBoolean(opt)) {
+            Gdx.graphics.setContinuousRendering(true);
+            if(pref.getBoolean(opt)){
+                pref.putBoolean(opt, false);
+            } else {
+                pref.putBoolean(opt, true);
+            }
+            pref.flush();
+            changed = true;
+
+        }
+        if(!changed) {
+            cb.setChecked(checked);
+        }
+        game.goCustomReels();
+        System.out.println("--------");
     }
 
     @Override
