@@ -77,21 +77,21 @@ public class MainGame extends Game {
         parameter.size = 30;
         //parameter.borderColor = Color.BLACK;
         parameter.color.add(Color.BLACK);
-        parameter.borderWidth = 2;
+        parameter.borderWidth = 3;
         font = generator.generateFont(parameter);
 
         FreeTypeFontGenerator.FreeTypeFontParameter parameter2 = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter2.size = 45;
         //parameter2.borderColor = Color.BLACK;
         //parameter2.color.add(Color.BLACK);
-        parameter2.borderWidth = 2;
+        parameter2.borderWidth = 4;
         font2 = generator.generateFont(parameter2);
 
         FreeTypeFontGenerator.FreeTypeFontParameter parameter3 = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter3.size = 32;
         //parameter3.borderColor = Color.BLACK;
         //parameter3.color.add(Color.WHITE);
-        parameter3.borderWidth = 2;
+        parameter3.borderWidth = 3;
         recipeFont = generator.generateFont(parameter3);
 
         camera = new OrthographicCamera();

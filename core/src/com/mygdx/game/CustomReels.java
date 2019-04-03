@@ -16,7 +16,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.VerticalGroup;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Scaling;
 
 import java.util.ArrayList;
@@ -126,17 +128,27 @@ public class CustomReels implements Screen {
         table2.bottom();
         table2.right();
 
-        Table bigTable = new Table();
-        bigTable.defaults().uniform().pad(15);
 
         Table colA = new Table();
         Table colB = new Table();
         Table colC = new Table();
 
-        colA.defaults().uniform().pad(15);
-        colA.add(new Label(reelText1,mySkin)).row();
+        Table cont = new Table();
+        cont.defaults().pad(10F);
+        cont.setFillParent(true);
+
+        float scale = 2.7f;
+        float scale2 = 2.2f;
+        float cbPad = 15f;
+
+
+        Label lbA = new Label(reelText1,mySkin);
+        lbA.setFontScale(scale);
+        colA.add(lbA).pad(10f).row();
         for (final String opt : options1) {
             final CheckBox cb = new CheckBox(opt, mySkin);
+            cb.pad(cbPad);
+            cb.getLabel().setFontScale(scale2);
             cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
@@ -148,15 +160,13 @@ public class CustomReels implements Screen {
             colA.add(cb);
             colA.row();
         }
-        colB.defaults().uniform().pad(15);
-        colB.add(new Label(reelText2,mySkin));
-        colB.row();
-        //int i = 0;
+        Label lbB = new Label(reelText2,mySkin);
+        lbB.setFontScale(scale);
+        colB.add(lbB).pad(10f).row();
         for (final String opt : options2) {
             final CheckBox cb = new CheckBox(opt, mySkin);
-            //cb.pad(-5);
-            //System.out.println(opt + ": " + pref.getBoolean(opt));
-            cb.getLabel().setFontScale(game.buttonSizeSmall);
+            cb.pad(cbPad);
+            cb.getLabel().setFontScale(scale2);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
                 @Override
@@ -167,13 +177,13 @@ public class CustomReels implements Screen {
             colB.add(cb);
             colB.row();
         }
-        colC.defaults().uniform().pad(15);
-        colC.add(new Label(reelText3,mySkin));
-        colC.row();
+        Label lbC = new Label(reelText3,mySkin);
+        lbC.setFontScale(scale);
+        colC.add(lbC).pad(10f).row();
         for (final String opt : options3) {
             final CheckBox cb = new CheckBox(opt, mySkin);
-            //cb.pad(-5);
-            //System.out.println(opt + ": " + pref.getBoolean(opt));
+            cb.pad(cbPad);
+            cb.getLabel().setFontScale(scale2);
             cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
@@ -186,24 +196,16 @@ public class CustomReels implements Screen {
             colC.row();
         }
 
-        //bigTable.setPosition(0, 50);
-        colA.setPosition(-500, (WORLDHEIGHT-6f)*100);
-        colB.setPosition(0, (WORLDHEIGHT-6f)*100);
-        colC.setPosition(500, (WORLDHEIGHT-6f)*120);
+        cont.setPosition(0,-200);
+        cont.add(colA).align(Align.top).expand();
+        cont.add(colB).align(Align.top).expand();
+        cont.add(colC).align(Align.top).expand();
 
-        //bigTable.setFillParent(true);
-        colA.setFillParent(true);
-        colB.setFillParent(true);
-        colC.setFillParent(true);
+        stage.addActor(cont);
+
 
         table.setFillParent(true);
         table2.setFillParent(true);
-        //stage.addActor(tableCheckBoxes);
-        stage.addActor(colA);
-        stage.addActor(colB);
-        stage.addActor(colC);
-        //stage.addActor(bigTable);
-
         stage.addActor(table);
         stage.addActor(table2);
     }
@@ -251,7 +253,7 @@ public class CustomReels implements Screen {
         game.font2.draw(batch,
                 ingrediends,
                 WORLDWIDTH * 100 / 2 - customIngrediends.width / 2,
-                (WORLDHEIGHT - 0.3f) * 100);
+                (WORLDHEIGHT - 0.5f) * 100);
         batch.setProjectionMatrix((game.camera.combined));
         batch.end();
     }
