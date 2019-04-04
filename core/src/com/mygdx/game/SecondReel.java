@@ -16,6 +16,7 @@ public class SecondReel {
     ArrayList<String> secondReelFoodNames;
     ArrayList<Texture> secondReelImages;
     HashMap<String, String> map = new HashMap<String, String>();
+    HashMap<String, String> map2 = new HashMap<String, String>();
 
     public SecondReel(Preferences pref) {
         initMap();
@@ -45,6 +46,12 @@ public class SecondReel {
         map.put("potato", "peruna");
         map.put("rice", "riisi");
         map.put("spaghetti", "spagetti");
+
+
+        map2.put( "makaroni", "macaroni");
+        map2.put( "peruna", "potato");
+        map2.put( "riisi", "rice");
+        map2.put( "spagetti", "spaghetti");
     }
 
     /*

@@ -54,6 +54,9 @@ public class CustomReels implements Screen {
     String reelText1;
     String reelText2;
     String reelText3;
+    FirstReel reel1;
+    SecondReel reel2;
+    ThirdReel reel3;
 
 
     public CustomReels(MainGame g) {
@@ -67,6 +70,9 @@ public class CustomReels implements Screen {
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
         stage.addActor(back);
+        reel1 = new FirstReel(pref);
+        reel2 = new SecondReel(pref);
+        reel3 = new ThirdReel(pref);
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -154,7 +160,7 @@ public class CustomReels implements Screen {
             cb.addListener(new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
-                    handleclick(cb, opt, options1);
+                    handleclick(cb, opt, options1, 1);
                 }
             });
             colA.add(cb);
@@ -171,7 +177,7 @@ public class CustomReels implements Screen {
             cb.addListener(new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
-                    handleclick(cb, opt, options2);
+                    handleclick(cb, opt, options2, 2);
                 }
             });
             colB.add(cb);
@@ -189,7 +195,7 @@ public class CustomReels implements Screen {
             cb.addListener(new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
-                    handleclick(cb, opt, options3);
+                    handleclick(cb, opt, options3, 3);
                 }
             });
             colC.add(cb);
@@ -203,14 +209,14 @@ public class CustomReels implements Screen {
 
         stage.addActor(cont);
 
-
         table.setFillParent(true);
         table2.setFillParent(true);
         stage.addActor(table);
         stage.addActor(table2);
     }
 
-    public void handleclick(CheckBox cb, String opt, ArrayList<String> optionList) {
+    public void handleclick(CheckBox cb, String opt, ArrayList<String> optionList, int reelNumber) {
+        String translation;
         boolean checked = cb.isChecked();
         boolean changed = false;
         int j = 0;
@@ -221,14 +227,55 @@ public class CustomReels implements Screen {
         }
         if(j>1 || !pref.getBoolean(opt)) {
             Gdx.graphics.setContinuousRendering(true);
-            if(pref.getBoolean(opt)){
-                pref.putBoolean(opt, false);
+            if (pref.getBoolean("english")) {
+                if(pref.getBoolean(opt)){
+                    pref.putBoolean(opt, false);
+                    if (reelNumber == 1) {
+                        translation = reel1.map.get(opt);
+                    } else if(reelNumber == 2) {
+                        translation = reel2.map.get(opt);
+                    } else {
+                        translation = reel3.map.get(opt);
+                    }
+                    pref.putBoolean(translation, false);
+                    //pref.putBoolean();
+                } else {
+                    pref.putBoolean(opt, true);
+                    if (reelNumber == 1) {
+                        translation = reel1.map.get(opt);
+                    } else if(reelNumber == 2) {
+                        translation = reel2.map.get(opt);
+                    } else {
+                        translation = reel3.map.get(opt);
+                    }
+                    pref.putBoolean(translation, true);
+                }
             } else {
-                pref.putBoolean(opt, true);
+                if(pref.getBoolean(opt)){
+                    pref.putBoolean(opt, false);
+                    if (reelNumber == 1) {
+                        translation = reel1.map2.get(opt);
+                    } else if(reelNumber == 2) {
+                        translation = reel2.map2.get(opt);
+                    } else {
+                        translation = reel3.map2.get(opt);
+                    }
+                    pref.putBoolean(translation, false);
+                    //pref.putBoolean();
+                } else {
+                    pref.putBoolean(opt, true);
+                    if (reelNumber == 1) {
+                        translation = reel1.map2.get(opt);
+                    } else if(reelNumber == 2) {
+                        translation = reel2.map2.get(opt);
+                    } else {
+                        translation = reel3.map2.get(opt);
+                    }
+                    pref.putBoolean(translation, true);
+                }
             }
             pref.flush();
             changed = true;
-
         }
         if(!changed) {
             cb.setChecked(checked);
@@ -253,7 +300,7 @@ public class CustomReels implements Screen {
         game.font2.draw(batch,
                 ingrediends,
                 WORLDWIDTH * 100 / 2 - customIngrediends.width / 2,
-                (WORLDHEIGHT - 0.5f) * 100);
+                (WORLDHEIGHT - 0.3f) * 100);
         batch.setProjectionMatrix((game.camera.combined));
         batch.end();
     }

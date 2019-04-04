@@ -16,6 +16,7 @@ public class FirstReel {
     ArrayList<String> firstReelFoodNames;
     ArrayList<Texture> firstReelImages;
     HashMap<String, String> map = new HashMap<String, String>();
+    HashMap<String, String> map2 = new HashMap<String, String>();
 
     public FirstReel(Preferences pref) {
         initMap();
@@ -45,6 +46,14 @@ public class FirstReel {
         map.put("soy", "soija");
         map.put("tofu", "tofu");
         map.put("mushroom", "sieni");
+
+
+        map2.put("jauheliha", "minced meat");
+        map2.put( "kana", "chicken");
+        map2.put( "lohi", "salmon");
+        map2.put( "soija", "soy");
+        map2.put("tofu", "tofu");
+        map2.put( "sieni", "mushroom");
     }
 
 

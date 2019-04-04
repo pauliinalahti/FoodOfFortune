@@ -75,13 +75,16 @@ public class SlotMachine implements Screen {
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.9.png"));
         image = new Texture(Gdx.files.internal("banaani.png"));
-        back = new Image(background);
+        /*back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
-        stage.addActor(back);
-        handleMusic = Gdx.audio.newMusic(Gdx.files.internal("lever3.mp3"));
-        reelMusic = Gdx.audio.newMusic(Gdx.files.internal("reel.mp3"));
-        reelStop = Gdx.audio.newMusic(Gdx.files.internal("reelStop.mp3"));
+        stage.addActor(back);*/
+        //handleMusic = Gdx.audio.newMusic(Gdx.files.internal("lever3.mp3"));
+        handleMusic = Gdx.audio.newMusic(Gdx.files.internal("music/lever3.mp3"));
+        //reelMusic = Gdx.audio.newMusic(Gdx.files.internal("reel.mp3"));
+        reelMusic = Gdx.audio.newMusic(Gdx.files.internal("music/spinning.mp3"));
+        //reelStop = Gdx.audio.newMusic(Gdx.files.internal("reelStop.mp3"));
+        reelStop = Gdx.audio.newMusic(Gdx.files.internal("music/reelStops2.mp3"));
         reelsRectangle = new Rectangle(1.26f,1.5f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
@@ -159,14 +162,6 @@ public class SlotMachine implements Screen {
         playBtn.setSize(2000,2000);
 
 
-
-        //ImageButton playBtn = new ImageButton(mySkin);
-        //((ImageButton) playBtn).getImage().setFillParent(true);
-        //playBtn.getStyle().imageUp = new TextureRegionDrawable(new TextureRegion(new Texture(Gdx.files.internal("handleUp.png"))));
-        //playBtn.getStyle().imageDown = new TextureRegionDrawable(new TextureRegion(new Texture(Gdx.files.internal("handleDown.png"))));
-        //playBtn.setPosition(200,Gdx.graphics.getHeight()-100);
-
-
         playBtn.pad(50,0,110,-20);
         playBtn.addListener(new ChangeListener() {
             @Override
@@ -189,15 +184,15 @@ public class SlotMachine implements Screen {
         });
 
         Table table = new Table();
+        table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(30);
         table.add(backBtn);
-        //table.add(testBtn);
+        table.add(testBtn);
         table.top();
         table.left();
         //table.setDebug(true);
 
         table2 = new Table();
-        //table2.defaults().uniform().pad(30);
         table2.add(playBtn);
         table2.right().pad(15);
         table2.bottom().pad(100);
@@ -237,18 +232,6 @@ public class SlotMachine implements Screen {
         float firstReelx = WORLDWIDTH/2- 1.5f*reelsRectangle.width - 0.2f;
         float secondReelx = WORLDWIDTH/2-reelsRectangle.width/2;
         float thirdReelx = WORLDWIDTH/2+reelsRectangle.width/2 + 0.2f;
-
-        /*if(startImages) {
-            batch.begin();
-            batch.draw(firstReel.firstReelImages.get(0),
-                    firstReelx, reelsRectangle.y, reelsRectangle.width,
-                    reelsRectangle.height);
-            batch.draw(secondReel.secondReelImages.get(0),
-                    secondReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
-            batch.draw(thirdReel.thirdReelImages.get(0),
-                    thirdReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
-            batch.end();
-        }*/
 
         if(play) {
             playEffects(i);
@@ -301,6 +284,7 @@ public class SlotMachine implements Screen {
             }
             i++;
         } else {
+
             batch.begin();
             batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel),
                     firstReelx, reelsRectangle.y, reelsRectangle.width,
@@ -312,6 +296,7 @@ public class SlotMachine implements Screen {
             batch.end();
 
             if(i >= thirdReelTime) {
+                reelMusic.stop();
                 try {
                     Thread.sleep(700);
                 } catch (Exception e) {
@@ -334,8 +319,11 @@ public class SlotMachine implements Screen {
             reelMusic.play();
         }
         else if(i == firstReelTime || i==secondReelTime || i==thirdReelTime) {
-            reelStop.play();
+            //reelMusic.stop();
             reelStop.setLooping(false);
+            reelStop.play();
+        } else if(i == secondReelTime-1 || i==thirdReelTime-1) {
+            reelStop.stop();
         }
     }
 

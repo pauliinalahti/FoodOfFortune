@@ -138,6 +138,11 @@ public class MainGame extends Game {
         setScreen(customReels);
     }
 
+    public void goCredits(){
+        Credits credits = new Credits(this);
+        setScreen(credits);
+    }
+
     @Override
     public void render() {
         batch.setProjectionMatrix(camera.combined);

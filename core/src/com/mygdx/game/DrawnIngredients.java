@@ -3,6 +3,7 @@ package com.mygdx.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
@@ -16,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
@@ -40,6 +42,7 @@ public class DrawnIngredients implements Screen {
     String backText;
     String recipesText;
     Preferences pref;
+    Music ready;
 
 
     public DrawnIngredients(MainGame g, int first, int second, int third) {
@@ -52,14 +55,17 @@ public class DrawnIngredients implements Screen {
         reelsRectangle = new Rectangle(1.26f, 1.5f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.12.png"));
-        back = new Image(background);
+        /*back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
-        stage.addActor(back);
+        stage.addActor(back);*/
         pref = game.getPrefs();
         firstReel = new FirstReel(pref);
         secondReel = new SecondReel(pref);
         thirdReel = new ThirdReel(pref);
+        ready = Gdx.audio.newMusic(Gdx.files.internal("music/lastReelStops.mp3"));
+        ready.play();
+
 
         if (pref.getBoolean("english")) {
             backText = "BACK";
@@ -122,6 +128,7 @@ public class DrawnIngredients implements Screen {
         });
 
         Table table = new Table();
+        table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(30);
         table.add(backBtn);
         //table.add(recipesBtn);

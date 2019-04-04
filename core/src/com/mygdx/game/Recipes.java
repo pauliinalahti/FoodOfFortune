@@ -19,6 +19,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.math.Rectangle;
 
@@ -72,10 +73,6 @@ public class Recipes implements Screen {
         thirdDrawn = third;
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.4.png"));
-        back = new Image(background);
-        back.setScaling(Scaling.fit);
-        back.setFillParent(true);
-        stage.addActor(back);
         recipesVertical = new ArrayList<String>();
 
         pref = game.getPrefs();
@@ -115,6 +112,7 @@ public class Recipes implements Screen {
 
 
         Table table = new Table();
+        table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(30);
         table.add(backBtn);
         table.top();
@@ -130,7 +128,7 @@ public class Recipes implements Screen {
             Scanner sc = new Scanner(text);
             Locale loc = new Locale("fi", "FI");
             sc.useLocale(loc);
-            int pad = 20;
+
             while (sc.hasNextLine()) {
                 if(sc.findInLine("nimi:")!=null) {
                     String recName = sc.nextLine();
@@ -153,13 +151,12 @@ public class Recipes implements Screen {
             sc.close();
         } else {
             file = Gdx.files.internal("recipefileEN.txt");
-            //System.out.println(firstFood + secondFood);
 
             String text = file.readString();
             Scanner sc = new Scanner(text);
             Locale loc = new Locale("fi", "FI");
             sc.useLocale(loc);
-            int pad = 20;
+
             while (sc.hasNextLine()) {
                 if(sc.findInLine("Name:")!=null) {
                     String recName = sc.nextLine();
@@ -198,9 +195,6 @@ public class Recipes implements Screen {
                 if (saakoLisata) {
                     recipeMatches.add(r);
                     System.out.println(r.name + " lisätty");
-                    //r.name.replace("ä","a");
-                    //r.name.replace("ö","o");
-                    //Button recipeBtn = new TextButton(r.name.replace("ä","a"), mySkin, "small");
                     Button recipeBtn = new TextButton(r.name, mySkin, "small");
                     recipeBtn.pad(15);
                     ((TextButton) recipeBtn).getLabel().setFontScale(game.buttonSizeSmall);
@@ -210,10 +204,9 @@ public class Recipes implements Screen {
                             game.goFoodRecipe(firstDrawn,secondDrawn,thirdDrawn, r);
                         }
                     });
-                    table2.add(recipeBtn);
+                    table2.add(recipeBtn).pad(6);
                     table2.row();
                     pad += 5;
-
                 }
             }
         }
@@ -234,20 +227,9 @@ public class Recipes implements Screen {
         stage.act();
         stage.draw();
 
-        /*if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)){
-            FoodRecipe foodRecipe = new FoodRecipe(game, firstDrawn,secondDrawn,thirdDrawn, r);
-            game.setScreen(foodRecipe);
-        }*/
-
         batch.begin();
-        //batch.draw(rect, rect.x, rect.y, rect.width, rect.height);
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch, recipestext, (WORLDWIDTH*100/2)-recipestext.width/2, (WORLDHEIGHT-0.3f)*100);
-        float foodY = 1.5f;
-        /*for (Recipe r: recipeMatches) {
-            game.font2.draw(batch, r.name, (WORLDWIDTH*100/3)-recipestext.width/2, (WORLDHEIGHT-foodY)*100);
-            foodY += 0.5f;
-        }*/
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();

@@ -15,6 +15,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
@@ -39,10 +40,10 @@ public class MainMenu implements Screen {
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.2.png"));
-        back = new Image(background);
+        /*back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
-        stage.addActor(back);
+        stage.addActor(back);*/
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -96,6 +97,7 @@ public class MainMenu implements Screen {
         });
 
         Table table = new Table();
+        table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(15);
         table.add(quitBtn);
         table.add(startBtn);

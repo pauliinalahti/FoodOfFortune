@@ -15,6 +15,7 @@ public class ThirdReel {
     ArrayList<String> thirdReelFoodNames;
     ArrayList<Texture> thirdReelImages;
     HashMap<String, String> map = new HashMap<String, String>();
+    HashMap<String, String> map2 = new HashMap<String, String>();
 
     public ThirdReel(Preferences pref) {
         initMap();
@@ -43,6 +44,13 @@ public class ThirdReel {
         map.put("carrot", "porkkana");
         map.put("broccoli", "parsakaali");
         map.put("bell pepper", "paprika");
+
+
+        map2.put( "tomaatti", "tomato");
+        map2.put( "sipuli", "onion");
+        map2.put( "porkkana", "carrot");
+        map2.put( "parsakaali", "broccoli");
+        map2.put( "paprika", "bell pepper");
     }
 
     /*
