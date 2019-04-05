@@ -8,6 +8,7 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -40,6 +41,21 @@ public class SlotMachine implements Screen {
 
     Texture image;
     Texture myTexture;
+
+    Texture firstReelRoll;
+    Texture secondReelRoll;
+    Texture thirdReelRoll;
+    Animation<TextureRegion> firstReelSheet;
+    Animation<TextureRegion> secondReelSheet;
+    Animation<TextureRegion> thirdReelSheet;
+    private int FRAME_COLS1 = 3;
+    private int FRAME_ROWS1 = 2;
+    private int FRAME_COLS2 = 3;
+    private int FRAME_ROWS2 = 1;
+    private int FRAME_COLS3 = 5;
+    private int FRAME_ROWS3 = 1;
+    TextureRegion [] frames;
+
     TextureRegion myTextureRegion;
     TextureRegionDrawable myTexRegionDrawable;
     private Skin mySkin;
@@ -57,6 +73,7 @@ public class SlotMachine implements Screen {
     public Music handleMusic;
     public Music reelMusic;
     public Music reelStop;
+    Music ready;
 
     public ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     private int firstReelTime, secondReelTime, thirdReelTime, i;
@@ -72,6 +89,9 @@ public class SlotMachine implements Screen {
     public SlotMachine(MainGame g){
         game = g;
         batch = game.getBatch();
+        firstReelRoll = new Texture(Gdx.files.internal("firstReelRoll.png"));
+        secondReelRoll = new Texture(Gdx.files.internal("secondReelSheet.png"));
+        thirdReelRoll = new Texture(Gdx.files.internal("thirdReelSheet.png"));
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.9.png"));
         image = new Texture(Gdx.files.internal("banaani.png"));
@@ -85,6 +105,7 @@ public class SlotMachine implements Screen {
         reelMusic = Gdx.audio.newMusic(Gdx.files.internal("music/spinning.mp3"));
         //reelStop = Gdx.audio.newMusic(Gdx.files.internal("reelStop.mp3"));
         reelStop = Gdx.audio.newMusic(Gdx.files.internal("music/reelStops2.mp3"));
+        ready = Gdx.audio.newMusic(Gdx.files.internal("music/lastReelStops.mp3"));
         reelsRectangle = new Rectangle(1.26f,1.5f,2.1f,2.25f);
         AddRecipes recipeControl = new AddRecipes();
 
@@ -167,7 +188,9 @@ public class SlotMachine implements Screen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 //playBtn.invalidate();
+                if(pref.getBoolean("music")){
                 handleMusic.play();
+                }
                 table2.removeActor(playBtn);
                 myTexture = new Texture(Gdx.files.internal("handleDown.png"));
                 myTextureRegion = new TextureRegion(myTexture);
@@ -209,8 +232,45 @@ public class SlotMachine implements Screen {
         stage.addActor(table2);
         stage.addActor(table3);
 
+        //First reel spritesheet
+        spriteSheet(firstReelRoll, FRAME_COLS1, FRAME_ROWS1);
+        firstReelSheet = new Animation<TextureRegion>(1/10f, frames);
+
+        //Second reel spritesheet
+        spriteSheet(secondReelRoll, FRAME_COLS2, FRAME_ROWS2);
+        secondReelSheet = new Animation<TextureRegion>(1/10f, frames);
+
+        //Third reel spritesheet
+        spriteSheet(thirdReelRoll, FRAME_COLS3, FRAME_ROWS3);
+        thirdReelSheet = new Animation<TextureRegion>(1/10f, frames);
+    }
+    private void spriteSheet(Texture reelRoll, int cols, int rows){
+
+        TextureRegion[][] tmp = TextureRegion.split(reelRoll,
+                reelRoll.getWidth() / cols,
+                reelRoll.getHeight() / rows);
+
+        frames = transformTo1D(tmp, cols, rows);
 
     }
+    private TextureRegion[] transformTo1D( TextureRegion [][] tmp, int cols, int rows) {
+
+        TextureRegion [] frames = new TextureRegion[cols * rows];
+
+        int index = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                frames[index++] = tmp[i][j];
+            }
+        }
+        return frames;
+    }
+
+    private TextureRegion currentFrame1;
+    private TextureRegion currentFrame2;
+    private TextureRegion currentFrame3;
+    private float stateTime = 0.0f;
+
 
     public int random(int numberOfImages){
         Random rand = new Random();
@@ -226,6 +286,12 @@ public class SlotMachine implements Screen {
     public void render(float delta) {
         batch.setProjectionMatrix(game.camera.combined);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        stateTime += Gdx.graphics.getDeltaTime();
+        currentFrame1 = firstReelSheet.getKeyFrame(stateTime, true);
+        currentFrame2 = secondReelSheet.getKeyFrame(stateTime, true);
+        currentFrame3 = thirdReelSheet.getKeyFrame(stateTime, true);
+
         stage.act();
         stage.draw();
 
@@ -234,11 +300,12 @@ public class SlotMachine implements Screen {
         float thirdReelx = WORLDWIDTH/2+reelsRectangle.width/2 + 0.2f;
 
         if(play) {
+            if(pref.getBoolean("music")){
             playEffects(i);
+            }
             if (i < firstReelTime) {
                 batch.begin();
-                batch.draw(firstReel.firstReelImages.get(random(firstReel.firstReelFoodNames.size())),
-                        firstReelx, reelsRectangle.y, reelsRectangle.width,
+                batch.draw(currentFrame1, firstReelx, reelsRectangle.y, reelsRectangle.width,
                         reelsRectangle.height);
                 sleep();
                 batch.end();
@@ -250,8 +317,7 @@ public class SlotMachine implements Screen {
             }
             if (i < secondReelTime) {
                 batch.begin();
-                batch.draw(secondReel.secondReelImages.get(random(secondReel.secondReelFoodNames.size())),
-                        secondReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+                batch.draw(currentFrame2, secondReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 sleep();
                 batch.end();
             } else {
@@ -263,8 +329,7 @@ public class SlotMachine implements Screen {
 
             if (i < thirdReelTime) {
                 batch.begin();
-                batch.draw(thirdReel.thirdReelImages.get(random(thirdReel.thirdReelFoodNames.size())),
-                        thirdReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
+                batch.draw(currentFrame3, thirdReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 sleep();
                 batch.end();
             } else {
@@ -300,6 +365,9 @@ public class SlotMachine implements Screen {
                 try {
                     Thread.sleep(700);
                 } catch (Exception e) {
+                }
+                if(pref.getBoolean("music")){
+                    ready.play();
                 }
                 System.out.println("arvotut numerot: "+drawnNumberFirstReel + drawnNumberSecondReel + drawnNumberThirdReeL);
                 game.goDrawnIngredients(drawnNumberFirstReel,drawnNumberSecondReel,

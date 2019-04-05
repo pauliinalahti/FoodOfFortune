@@ -1,62 +1,62 @@
 Name: Chicken on a bed of rice
 Ingredients: rice, chicken, tomato
-ingredients: 4 dl rice, 5 dl water, 4 chicken fillets, 2 dl tomato puree, 2 tsp aroma salt, 2 tsp curry, 1 tsp black pepper and salt
-Help: Butter the casserole, put the rice, spices and water on the bottom. Put the chickens in the casserole and pour the tomato puree on top. Bake in the oven at 200 degrees for about an hour. \nIf the tomato does not taste you can replace the peeled tomato with cream cheese. You can also have vegetables with the rice!
+ingredients: 4 dl rice, 5 dl water, 4 chicken fillets, 2 dl tomato purée, 2 tsp aroma salt, 2 tsp curry, 1 tsp black pepper and salt
+Help: Grease the casserole, put the rice, spices and water on to the bottom. Put the chickens in the casserole and pour the tomato purée on top. Bake in the oven at 200 degrees for about an hour. \nIf the tomato does not taste anything you can replace the peeled tomato with cream cheese. You can also have vegetables with the rice.
 
-Name: Minced meat beefs
+Name: Minced meat patties
 Ingredients: minced meat, spaghetti, onion, bell pepper, tomato
 ingredients: 400 g minced meat, 1 onion, spaghetti, 2 tbsp butter, 1 bell pepper, 2 tomatoes, lettuce
-Help: Cut the onion and sweat it in the pan. Add the onion to the minced meat and shape four big steaks out of it. Fry butter on a frying pan and then fry the steaks (2-3 minutes / half). Season the steaks with minced meat spice or herb salt. Serve the steaks with spaghetti and salad.
+Help: Cut the onion and sweat it in a pan. Add the onion on to the pan and shape four big patties out of it. Fry butter on a frying pan and then fry the patties (2-3 minutes / half). Season the patties with minced meat spice or herb salt. Serve the patties with spaghetti and salad.
 
 Name: Minced meat risotto
 Ingredients: minced meat, rice, tomato
-ingredients: 400 g of minced meat, 400 g of rice-vegetable mix, 1 leek, 1 tbsp of oil, 2 tomatoes, 2 tbsp of meat stock, 1 tsp of curry, 1 tsp of chili spice.
-Help: Brown the minced meat in a pan and put it in to a bowl. Grind the leek and boil it in oil. \nFinally add the browned minced meat and meat fondie and let it brew for 5-10 minutes. Serve with salad.
+ingredients: 400 g minced meat, 400 g rice-vegetable mix, 1 leek, 1 tbsp oil, 2 tomatoes, 2 tbsp meat fondue, 1 tsp curry, 1 tsp chili spice.
+Help: Brown the minced meat in a pan and put it in to a bowl. Grind the leek and boil it in oil. \nFinally add the browned minced meat and meat fondue and let it brew for 5-10 minutes. Serve with salad.
 
 Name: Chicken risotto
-ingredients: chicken, rice, onion, bell pepper
+Ingredients: chicken, rice, onion, bell pepper
 ingredients: 300 g chicken fillet slices, 1 onion, 2 dl rice, 1 tbsp oil, 1 tsp salt, 1 tsp curry, 5 dl water, 1 chicken broth cube, 200 g pea-corn-bell pepper
 Help: Brown the chicken and season it with salt and curry. Grind the onion and sweat it in a pot, add the rice in to the pot. \nBoil the mixture for 10 minutes. Add the vegetables and chicken and continue cooking for 10 minutes.
 
 Name: Marinated tofu
 Ingredients: tofu, spaghetti, bell pepper, onion
 ingredients: 250 g unflavoured tofu, spaghetti, 1 big bell pepper, 1 garlic clove, 2 tbsp oil, 1 tbsp soy sauce, 1 tbsp balsamic vinegar, salt, sugar, black pepper
-Help: Slice and cube the tofu and grind the garlic. Mix oil, soy sauce, balsamic vinegar, salt, sugar and allspice. Let the tofu marinate in the marinade for two hours. \nDry the tofu pieces on a paper and grill in a hot pan. \nServe fried tofu with fried bell peppers and cooked spaghetti.
+Help: Slice and cube the tofu and grind the garlic. Mix oil, soy sauce, balsamic vinegar, salt, sugar and allspice. Let the tofu marinate in the marinade for two hours. \nDry the tofu pieces on a paper and grill on a hot pan. \nServe fried tofu with fried bell peppers and cooked spaghetti.
 
 Name: Colorful salmon salad
-Ingredients: salmon, macaroni, bell peppers, tomato
-ingredients: 400 g salmon fillet, macaroni, 1 bell pepper, 2 tomatoes, 2 oranges, 3 chicken eggs, 1 tsp of salt, 1 tsp of black pepper, salad, 1 tbsp olive oil
-Help: Remove the fishbones and skin from the salmon. Cut the salmon into thin slices. Spread the slices on a plate and season with salt and pepper. Bake the salmon at 225 degrees for 5 minutes. \nCut half of the other orange and squeeze the juice over the slices of salmon. Peel and slice the remaining oranges as well as tomato and bell pepper. \nBoil and slice the chicken eggs. Cook the pasta. Tear the salad in a bowl and mix in the other ingredients. Sprinkle with olive oil.
+Ingredients: salmon, macaroni, bell pepper, tomato
+ingredients: 400 g salmon fillet, macaroni, 1 bell pepper, 2 tomatoes, 2 oranges, 3 chicken eggs, 1 tsp salt, 1 tsp black pepper, salad, 1 tbsp olive oil
+Help: Remove the fishbones and skin from the salmon. Cut the salmon into thin slices. Spread the slices on a plate and season with salt and pepper. Bake the salmon at 225 degrees for 5 minutes. \nCut half of the other orange and squeeze the juice over the slices of salmon. Peel and slice the remaining oranges as well as tomato and bell pepper. \nBoil and slice the chicken eggs. Cook the pasta. Tear the salad in a bowl and mix in the other ingredients. Sprinkle olive oil on top.
 
 Name: Salmon wok
-Ingredients: salmon, rice, bell pepper
+Ingredients: salmon, rice, bell pepper, soy, pineapple
 ingredients: 300 g salmon trout fillets, rice, 450 g wok vegetables, 1 jar of pineapple slices, 1 bell pepper, 2 tbsp oil, 2 tbsp soy sauce, 1 tsp black pepper, dill
 Help: Brown the salmon fillets on a wok pan and put them on a plate. \nSweat the vegetables and chopped bell peppers in oil. Season the vegetables with soy and pepper and stew for 5 minutes. \nMix the pineapples with the vegetables. Sprinkle dill on the surface of the fish. Serve with rice.
 
-Name: Tomato sage salmon
+Name: Sage-salmon with tomato
 Ingredients: salmon, potato, tomato, onion
 ingredients: 500 g salmon trout fillet, 2 tbsp sage, 3 tomatoes, potatoes, mozzarella package, spring onions
 Help: Put the fish in to a casserole with the skin side down. Spread the sage on the surface of the fillet. \nSlice the tomatoes and mozzarella. Spread the slices over the fish. Cook the mixture for half an hour at 200 degrees. \nSprinkle the chopped spring onion onto the surface. Serve fish with potatoes and salad.
 
 Name: Thaisalmon
-Ingredients: salmon, rice, onion
+Ingredients: salmon, rice, onion, chili, honey
 ingredients: 500 salmon trout fillets, jasmine rice, 1 onion, 1 red chili, 1/2 dl coriander, 1 tbsp oil, cucumber, 1/2 tbsp honey
-Help: Put the fish in to a casserole with the skin side down. \nGrind the onion and chili. Mix onion, chili, coriander, oil and honey. Spread the mixture over the fish and cover the casserole with a foil and let it marinate in the refrigerator for one hour. \nRoast the fish at 200 degrees for about 20 minutes. Serve with chopped cucumber and jasmine rice.
+Help: Put the fish in to a casserole with the skin side down. \nGrind the onion and chili. Mix onion, chili, coriander, oil and honey. Spread the mixture over the fish and cover the casserole with a foil and let it marinate in a refrigerator for one hour. \nRoast the fish at 200 degrees for about 20 minutes. Serve with chopped cucumber and jasmine rice.
 
 Name: Mango salmon pasta
-Ingredients: salmon, spaghetti, broccoli, onion
+Ingredients: salmon, spaghetti, broccoli, onion, mango
 ingredients: 300 g salmon cubes, 300 g tagliatelle paste, 200 g broccoli, 1 onion, 1 tbsp oil, 1 mango, 2 dl light cream, 1 tsp salt, 1 tsp black pepper
 Help: Defrost the salmon cubes in a microwave. Sweat the chopped onion in a pan with oil. Fry the salmon cubes on a pan. Season salmon with salt. \nChop the mango into small cubes. Chop the broccoli into small pieces and fry them on an empty pan with oil for about 4 minutes. Add the cream and mango. Let it boil for about 5 minutes. Finally, add the salmon mixture and let it heat. Serve with pasta.
 
 Name: Smoked salmon pasta
-Ingredients: salmon, spaghetti, tomato, onion
+Ingredients: salmon, spaghetti, tomato, onion, garlic, cream
 ingredients: 200 g smoked salmon trout, 1 onion, 1 tomato, 1 garlic clove, 1 tbsp oil, 2 dl light cream, 1 tbsp lemon juice, 1/2 tsp salt, 1/2 tsp black pepper, 250 g fresh pasta
-Help: Heat 1.5 liters of water in a spacious boiler and add salt. \nPeel and grind the onion, garlic clove and tomato. Sweat the onions and tomato in oil for a couple of minutes. Add the light cream and let it boil for a few minutes. Season with lemon juice, salt and pepper. \nAdd fresh pasta in water and let it boil for 10 minutes. Strain the pasta and pour it back into the saucepan. \nAdd slices of salmon to the sauce and heat until it starts to boil. Add the dill to the sauce. Serve sauce with fresh pasta.
+Help: Heat 1.5 liters of water in a spacious boiler and add salt. \nPeel and grind the onion, garlic clove and tomato. Sweat the onions and tomato in oil for a couple of minutes. Add the light cream and let it boil for a few minutes. Season with lemon juice, salt and pepper. \nAdd fresh pasta in water and let it boil for 10 minutes. Strain the pasta and pour it back into the saucepan. \nAdd slices of salmon in to the sauce and heat until it starts to boil. Add the dill to the sauce. Serve sauce with fresh pasta.
 
 Name: Mushroom ham pasta
 Ingredients: mushroom, spaghetti, tomato, onion
 ingredients: 300 g pork neck, 200 g fresh button mushrooms, 1 onion, 1 tbsp oil, 500 g crushed tomatoes, 1 tsp salt, 1 tsp black pepper, thyme, 50 g parmesan, 200 g ribbon pasta
-Help: Mince the onion and thyme and chop the mushrooms. Cut the pork into strips. Boil the onion and pork in a 	sauté pan with oil. Stir in crushed tomatoes. Season the mixture with pepper, salt and thyme. Let it brew for a few minutes. \nBoil the pasta and mix with the sauce. Sprinkle on the surface parmesan cheese.
+Help: Mince the onion and thyme and chop the mushrooms. Cut the pork into strips. Boil the onion and pork in a 	sauté pan with oil. Stir in crushed tomatoes. Season the mixture with pepper, salt and thyme. Let it brew for a few minutes. \nBoil the pasta and mix with the sauce. Sprinkle parmesan cheese on the surface.
 
 Name: Warm mushroom salad
 Ingredients: mushroom, macaroni, onion, tomato
@@ -64,17 +64,17 @@ ingredients: 200 g fresh button mushrooms, 1 onion, 2 garlic cloves, 1 tbsp oliv
 Help: Clean and cut the mushrooms. Grind the onion and garlic, sweat them in oil. Add the mushrooms and continue frying for a few minutes. Season with oregano, mint and salt. \nServe the mixture with cooked macaroni and lettuce leaves. Decorate the portion with tomato blocks.
 
 Name: Carbonara mushroom pasta
-Ingredients: mushroom, spaghetti, tomato, onion
+Ingredients: mushroom, spaghetti, tomato, onion, bacon, egg
 ingredients: 200 g fresh button mushrooms, 250 g tagliatelle pasta, water, salt, 140 g bacon, 2 garlic cloves, 2 chicken eggs, 2 dl vegetable fat blend, pepper, 2 tomatoes
 Help: Slice the bacon and spread it in a sauté pan. Slice the mushrooms and the garlic cloves. \nBrown the bacon and add the mushrooms and garlic to the pan. Cook the mixture until the mushrooms have softened. \nMix the eggs and the fat mixture with each other. Season the mixture with pepper. \nMix the cooked pasta with the bacon-mushroom mixture. Add the egg mixture and blend.
 
 Name: Potato chickpeas-tofusalad
-Ingredients: tofu, potato, onion, bell pepper
+Ingredients: tofu, potato, onion, bell pepper, apple
 ingredients: 5 potatoes, 1 onion, 2 garlic cloves, 1 bell pepper, 1 apple, 2 dl pickles, 300 g chickpeas, 300 g tofu, 1 tbsp oil, salt, pepper, parsley, 1 dl lemon vinaigrette sauce
 Help: Peel, block and boil potatoes in water flavored with salt. Chop the onion and garlic. Mix potatoes, onion, garlic and salad dressing together. Let it marinade 10 minutes at room temperature. \nDice the bell peppers, apple and pickles. Dry the chickpeas and mix the ingredients with the potato mixture. \nDry the tofu and brown it with oil. Season with salt and pepper. Add the tofu on top of the salad. Sprinkle parsley on top.
 
 Name: Fast chicken pasta
-Ingredients: chicken, macaroni, tomato, onion
+Ingredients: chicken, macaroni, tomato, onion, cream
 ingredients: 300 g chicken fillet slices, 250 g tagliatelle pasta, 1 tbsp oil, 2 tomatoes, 200 g onion cubes, 200 g corn, 2 dl light cream, 100 g black pepper cream cheese, parsley
 Help: Brown the chicken strips and add the onion cubes, grinded tomato and oil. Give a moment to sweat. \n Add the corn, light cream and pepper cheese in to the mixture. Cook the mixture for 5 minutes. Serve with boiled macaroni. Add parsley over the portions.
 
@@ -84,79 +84,79 @@ ingredients: 400 g of chicken minced meat, 1 onion, 1 carrot, 1/2 tbsp oil, 1 ts
 Help: Grind the onion and the peeled carrot into a coarse grater. Heat the oil in a sauté pan and brown minced meat in it. Also sweat onion and carrot. Add salt and spices. \nAdd the crushed tomatoes to the sauté pan. Rinse the can with water and pour the rinse broth into the casserole. Measure the tomato mixture and vinegar. Stew for 10-15 minutes. Serve, for example, with spaghetti and grated cheese.
 
 Name: Currychicken
-Ingredients: chicken, rice, bell pepper
+Ingredients: chicken, rice, bell pepper, cream
 ingredients: 450 g honey marinated chicken fillet, 1 bell pepper, 1 tbsp oil, 3 tsp curry, 1 banana, 200 g corn, 2 dl light cream, 1 tbsp lime juice, black pepper, jasmine rice
 Help: Brown the chicken in oil and mix in curry. \nSlice the banana and bell pepper. Add banana, bell pepper and corn in with the chicken. Season with lime juice and black pepper. Add water if necessary. \nStew at low heat for about 10 minutes. Serve with boiled jasmine rice.
 
-Name: Kotkot chicken soup
+Name: Special chicken soup
 Ingredients: chicken, potato, carrot
 ingredients: 300 g chicken fillet slices, 6 potatoes, water, 1 tsp salt, 1 tsp black pepper, 3 carrots, 200 g corn, 1/2 leek, 1 tsp basil, 1 tbsp oil, 1 tsp paprika
 Help: Wash and peel the vegetables. Slice the carrots and block the potatoes. Slice the split and rinsed leek. \nPut the carrots and potatoes in boiling water. Add salt and pepper. Boil for 15-20 minutes. Simultaneously brown the chicken in oil and season with paprika. \nAdd the corn, leek and the chicken slices into the soup. Let it boil for another 5 minutes.
 
 Name: Chicken broccoli salad
 Ingredients: chicken, macaroni, broccoli, tomato
-ingredients: 300 g chicken fillet slices, 1 tsp oil, 2 dl salad sauce, 2 tomatoes, 1 cucumber, rucola, iceberg lettuce, 400 g broccoli
-Help: Fry broiler fillets with oil. Slice the prepared fillets and season with the sauce. \nDice tomatoes and slice the cucumber. \nLay the lettuce leaves on the bottom of the serving dish. Trickle salad dressing on top. Put tomato cubes and cucumber slices on top. \nRinse and chop broccoli. Cook broccoli for about three minutes. \nLift the broccoli in the middle of the salad base and place the chopped chicken on the edges.
+ingredients: 300 g chicken fillet slices, 1 tsp oil, 2 dl salad dressing, 2 tomatoes, 1 cucumber, rucola, iceberg lettuce, 400 g broccoli
+Help: Fry broiler fillets with oil. Slice the prepared fillets and season with the dressing. \nDice tomatoes and slice the cucumber. \nLay the lettuce leaves on the bottom of the serving dish. Pour salad dressing on top. Put tomato cubes and cucumber slices on top. \nRinse and chop broccoli. Cook broccoli for about three minutes. \nLift the broccoli in the middle of the salad base and place the chopped chicken on the edges.
 
 Name: Fried minced meat & rice
-Ingredients: minced meat, rice, onion
+Ingredients: minced meat, rice, onion, egg, soy
 ingredients: 400 g minced meat, 450 g rice-vegetable mix, 2 tbsp oil, 1/2 tsp salt, 2 chicken eggs, 1 tbsp soy sauce, 2 spring onions
 Help: Fry minced meat in hot wok pan with oil. Season the minced meat with salt and add the rice-vegetable mix on the pan. Fry until the rice-vegetable mixture is ripe. \nBreak the chicken eggs in a bowl, add the soy sauce and whip the structure of the eggs. \nMix the chicken eggs into the rice-miced meat mixture. Fry in hot heat until the eggs have matured. \nSlice the spring onions and add them to the fried mixture.
 
 Name: Tomato meatballs
-Ingredients: minced meat, potato, onion, tomato,
+Ingredients: minced meat, potato, onion, tomato
 ingredients: 450 g minced meat, 100 g tomato soup ingredients, 1/2 dl breadcrumbs, 1.5 dl milk, 1 chicken egg, 1 tsp oregano, 1 tsp basil, 1 onion, potatoes
 Help: Sweat the onion. Mix the tomato soup ingredients, breadcrumbs, milk, egg, onion and spices. Let it swell for 5 minutes. Add minced meat to the mixture. \nShape the dough into dumplings and bake them at 225 degrees for about 15 minutes. Serve dumplings with boiled potatoes.
 
-Name: Carrot & minced beef steaks
-Ingredients: minced meat, potato, carrot
-ingredients: 400 g minced beef, 2 carrots, potatoes, 1 dl milk, 1/2 dl breadcrumbs, 1 chicken egg, 1 tsp raw, 1 tsp salt, black pepper
-Help: Grind the carrots into a fine grater. Mix the milk and breadcrumbs. Let the mixture swell for a moment. \nMix in minced beef, carrots, egg, raw, salt and pepper. \nShape 10 thin steaks from the mixture. Bake steaks at 225 degrees for about 8 minutes. Serve the steaks with potato mash.
+Name: Carrot & minced beef patties
+Ingredients: minced meat, potato, carrot, milk, egg
+ingredients: 400 g minced beef, 2 carrots, potatoes, 1 dl milk, 1/2 dl breadcrumbs, 1 chicken egg, 1 tsp tarragon, 1 tsp salt, black pepper
+Help: Grind the carrots into a fine grater. Mix the milk and breadcrumbs. Let the mixture swell for a moment. \nMix in minced beef, carrots, egg, raw, salt and pepper. \nShape 10 thin patties from the mixture. Bake the patties at 225 degrees for about 8 minutes. Serve the patties with potato mash.
 
 Name: Chicken sauce with carrot
 Ingredients: chicken, macaroni, carrot, onion, tomato
 ingredients: 450 g chicken fillet slices, 3 carrots, 1 onion, 3 tbsp red pesto, 1 tbsp vegetable fat, 1 tbsp oil, 1 tsp thyme, 1 tsp salt, 1 tsp black pepper, 2 tomatoes, 1/2 dl chopped fresh basil
 Help: Peel and cut the carrots into thin slices. Slice the onion and sweat it in pesto sauce. Add the carrots to the mixture and let it stew for 5 minutes under the lid. \nAdd vegetable fat and cook over low heat for about 5 minutes. \nBake the chicken fillets until mature. Season with thyme, salt and pepper. Put the chickens in with the sauce. Dice tomatoes and add them. Serve with cooked pasta.
 
-Name: Carrot-soybean steaks
-Ingredients: soy, potato, carrot, onion
+Name: Carrot-soybean patties
+Ingredients: soy, potato, carrot, onion, egg
 ingredients: 3 dl textured soy protein granules, 500 g carrots, 1/2 dl breadcrumbs, 1 onion, 1/2 dl thyme, 2 chicken eggs, 1 tsp salt, 1 tsp black pepper
-Help: Mix carrot, soy meal and breadcrumbs. Allow the mixture to swell for about 10 minutes. \nGrind onion and thyme. Add it to the carrot mixture. Mix eggs and spices. \nMake 20 steaks of the dough on the baking tray. Bake at 200 degrees for about 15 minutes. Serve the steaks with potato mash.
+Help: Mix carrot, textured soy protein granules and breadcrumbs. Allow the mixture to swell for about 10 minutes. \nGrind onion and thyme. Add it to the carrot mixture. Mix eggs and spices. \nMake 20 patties of the dough and put them on a baking tray. Bake at 200 degrees for about 15 minutes. Serve the steaks with potato mash.
 
 Name: Soy-macaroni casserole
-Ingredients: soy, macaroni, onion, tomato
-ingredients: 2 dl soybean meal, 400 g macaroni, 1 tbsp oil, 1 onion, 2 garlic cloves, 1/2 dl rapeseed oil, 1 dl water, 3 tbsp tomato mash, 1 tsp basil, 1 tsp oregano, 1 tsp salt, 1 tsp black pepper , 7.5 dl oat drink, 2 chicken eggs, 1 tsp basil
-Help: Cook macaroni for 8 minutes in brine. Drain water and add oil. \nPeel and grind the onions and sweat them in oil. Add the textured soy protein granules and stir for a moment. Add 1 dl of water, tomato sauce and spices. \nMix the macaroni and textured soy protein granules in a flat casserole. Mix eggs and spices into the oatmeal. Pour the mixture into the dish. \nAdd the grated cheese on top of the mixture. Bake at 175 degrees for about 30 minutes.
+Ingredients: soy, macaroni, onion, tomato, garlic, rapeseed
+ingredients: 2 dl textured soy protein granules, 400 g macaroni, 1 tbsp oil, 1 onion, 2 garlic cloves, 1/2 dl rapeseed oil, 1 dl water, 3 tbsp tomato mash, 1 tsp basil, 1 tsp oregano, 1 tsp salt, 1 tsp black pepper , 7.5 dl oat drink, 2 chicken eggs, 1 tsp basil
+Help: Cook macaroni for 8 minutes in brine. Drain water and add oil. \nPeel and grind the onions and sweat them in oil. Add the textured soy protein granules and stir for a moment. Add 1 dl of water, tomato sauce and spices. \nMix the macaroni and textured soy protein granules in a flat casserole. Mix eggs and spices into the oatmeal. Pour the mixture into the casserole. \nAdd the grated cheese on top of the mixture. Bake at 175 degrees for about 30 minutes.
 
-Name: Rice salmon salad
-Ingredients: salmon, rice, tomato, onion
-ingredients: 150 g of cold smoked salmon, 450 g of rice and vegetable mix, 1 dl salad dressing, 2 garlic cloves, 2 dl pickles, 1 dl dill, 4 chicken eggs, iceberg lettuce, 3 tomatoes, 1 tbsp capers
+Name: Rice salmon-salad
+Ingredients: salmon, rice, tomato, onion, egg, garlic
+ingredients: 150 g cold smoked salmon, 450 g rice and vegetable mix, 1 dl salad dressing, 2 garlic cloves, 2 dl pickles, 1 dl dill, 4 chicken eggs, iceberg lettuce, 3 tomatoes, 1 tbsp capers
 Help: Heat the rice and vegetable mixture in a pan for about 5 minutes with a drop of salad dressing. \nSeason the mixture with the remaining salad dressing and chopped garlic. Let the mixture to cool. \nIdle the pickles and grind the dill. Stir in with the rice mixture. Let the mixture to marinate in the refrigerator. \nBoil the eggs and block them. Tear the lettuce leaves and pour the rice mixture over the salad. Cut the salmon slices in half and add them in to the mixture. Finally, add the blocked tomatoes, chicken eggs and capers to the mixture.
 
 Name: Salmon trout sauce with pasta
-Ingredients: salmon, spaghetti, onion
+Ingredients: salmon, spaghetti, onion, cream, soy
 ingredients: 300 g marinated salmon trout, 1/2 leek, 2 dl cream, 1 tbsp mustard, 1 tsp soy sauce, 1 dl dill, 1 onion, tagliatelle paste
 Help: Fry fish fillets in a sauté pan. Sweat the onion. Grind the chopped leek and add in to the sauté pan with onion. \nAdd cream and spices. Stew for 5 minutes at low heat. Stir in shredded dill. Serve with pasta.
 
 Name: Mushroom-soy casserole
-Ingredients: potato, soy, onion, tomato
+Ingredients: potato, soy, onion, tomato, garlic, oat, cream
 ingredients: 200 g mushrooms, 10 pieces of sun-dried tomatoes, 2 garlic cloves, 1-2 tsp oil, 1 dl dark textured soy protein granules, 1/2 dl water, 1/2 tsp salt, 1 tsp paprika, 1 tsp dried thyme, black pepper from pepper grinder, 500 g potato-onion mixture, 2 dl oat cream
 Help: Slice the mushrooms. Grind the sun-dried tomatoes and shred the garlic cloves. \nHeat the oil in a pan and add the garlic and mushrooms. Mix for a moment and then add the sun-dried tomatoes and dry soy. Fry for a while and then add water and spices. Continue to fry until the mushrooms get a beautiful color on their surface and no more liquid is coming from them. \nMix the mushroom-soy casserole together with the frosted potato-onion mixture. Pour the oat cream on top and bake for about 45 minutes in the middle of a 200-degree oven.
 
 Name: Mediterranean tofu-potato salad
-Ingredients: potato, tofu, tomato, onion
-ingredients: 4-5 potatoes, 150 g cherry tomatoes, small red onion, 50 g big capers, 4 sun-dried tomatoes, potted basil, 1 package unflavoured tofu, olive oil, 2 garlic cloves, 1/4 tsp paprika, 1 tsp salt, 1 tsp black pepper, 1 tsp lemon juice, 1 tsp balsamico, 1/4 tsp sugar
+Ingredients: potato, tofu, tomato, onion, garlic
+ingredients: 4-5 potatoes, 150 g cherry tomatoes, small red onion, 50 g big capers, 4 sun-dried tomatoes, potted basil, 1 package of unflavoured tofu, olive oil, 2 garlic cloves, 1/4 tsp paprika, 1 tsp salt, 1 tsp black pepper, 1 tsp lemon juice, 1 tsp balsamico, 1/4 tsp sugar
 Help: Wash and cook potatoes. Let them cool, peel and chop into cubes. \Slice cherry tomatoes in half, shred the onion and cut the sun-dried tomatoes smaller. Mix potatoes, tomatoes, onions and capers. \nChop tofu into cubes and grind the garlic. Heat the frying pan and add olive oil. Sweat garlic and paprika for  moment on the pan, then add tofu, salt and black pepper. Fry until the tofu has a beautiful surface. \nAdd tofu. Stir the sauce and pour it into the salad. Add the basil leaves to the salad just before serving.
 
 Name: Mushroom-pea-broccoli pasta
-Ingredients: potato, mushroom, broccoli
+Ingredients: potato, mushroom, broccoli, nut, oat
 ingredients: 1 broccoli, 200 g frozen peas, 200 g button mushrooms, handful of pine nuts, 3 dl oatmeal, 1/2 lemon juice, crushed black pepper, 1/2 vegetable broth cube, 50 g grated parmesan, olive oil
 Help: Boil the pasta until al dente. \nChop broccoli and mushrooms. Fry the mushrooms in a hot frying pan with no oil so that they start to brown, finally add oil and brown for a moment. Move the pan aside. \nRoast pine nuts in a hot pan and move the pan aside. \nPour cream on to the pan and mix it with juice of half a lemon, plenty of black pepper and just under half a vegetable broth cube. Add the broccoli pieces and let them simmer for a few minutes. Broccoli is good to leave a little crispy, so be careful not to cook too much. \nAdd other ingredients, stir and stew for a moment so that the peas defrost. Serve with flat-leaf parsley.
 
 Name: Lush Tofu
-Ingredients: macaroni, tofu, bell pepper, onion
+Ingredients: macaroni, tofu, bell pepper, onion, garlic
 ingredients: 250 g unflavoured tofu, 1 bell pepper, 1 onion, 1 tbsp oil, 2 tsp paprika, 1 tsp garlic powder, 1/4 tsp white pepper, 3/4 tsp salt, 2 dl light cream, 250 g macaroni
-Help: Boil water for cooking macaroni. \nTrickle tofu and cut it into cubes. Wash and dice the bell pepper and grind the onion. \nMix the oil, paprika, garlic powder, white pepper and salt in a pan. Parboil the spice mixture and fry tofu cubes in it, paprika and onion lightly. Add the cream or coconut milk and let it brew for five minutes. \nCook the macaroni according to the package instructions and trickle well. Stir in the sauce and pour into a serving dish.
+Help: Boil water for cooking macaroni. \nDry the tofu and cut it into cubes. Wash and dice the bell pepper and grind the onion. \nMix the oil, paprika, garlic powder, white pepper and salt in a pan. Parboil the spice mixture and fry tofu cubes in it, paprika and onion lightly. Add the cream or coconut milk and let it brew for five minutes. \nCook the macaroni according to the package instructions and trickle well. Stir in the sauce and pour into a serving dish.
 
 Name: Soy-vegetable risotto
 Ingredients: soy, rice, tomato, onion, bell pepper
@@ -164,12 +164,12 @@ ingredients: 150 g textured soy protein granules, 3 dl rice, 7 dl water, 2 onion
 Help: Boil rice with curry in 1/2 broth seasoned water. Boil soy for 10 minutes in water with one broth cube. Add the bell pepper slices, grinded tomatoe and wok vegetables. \nMix the rice and soy into one and season it.
 
 Name: Mushroom risotto from cauliflower rice
-Ingredients: mushroom, rice, onion
-ingredients: 200 g fresh button mushrooms, 500 g cauliflower, 1 onion, 4 garlic cloves, 1 tbsp oil, 5 dl water, 2 chicken cubes, 2 dl whipped cream, 2 dl parmesan, 1/2 tsp black pepper, jasmine, parsley
+Ingredients: mushroom, rice, onion, garlic, cream
+ingredients: 200 g fresh button mushrooms, 500 g cauliflower, 1 onion, 4 garlic cloves, 1 tbsp oil, 5 dl water, 2 chicken broth cubes, 2 dl whipped cream, 2 dl parmesan, 1/2 tsp black pepper, jasmine, parsley
 Help: Cut the cauliflower into small grain. Slice the mushrooms. Peel and grind onions. Fry the mushrooms and put aside. Sweat the onions in oil. \nAdd the cauliflower, water and grinded chicken broth cubes in to the mixture. Boil a few minutes and add cream and parmesan grate. Season with black pepper. Boil until the mixture is thick and runny. \nAdd the mushrooms in to the mixture. Decorate the dose with parsley and serve with rice.
 
 Name: Pasta bolognese
-Ingredients: minced meat, spaghetti, tomato, onion, carrot
+Ingredients: minced meat, spaghetti, tomato, onion, carrot, garlic, chili
 ingredients: 400 g of minced meat, 1 dl onion, 3 garlic cloves, 3 tbsp oil, 1 tsp salt, 400 g crushed tomato, 2 tbsp tomato sauce, 1 carrot, 1 tsp chili powder
 Help: Heat the pan and brown the minced meat and grinded onion. Add the crushed garlic. Season the mixture with salt and pepper. \nAdd crushed tomato and grated carrot. If you want a little kick in the sauce, add a touch of chili or fresh grinded chili. \nStew at low heat for at least 15-20 minutes. Serve with bolognese sauce with cooked spaghetti.
 
@@ -179,27 +179,27 @@ ingredients: 3 dl macaroni, 1 l water, 1 meat broth cube, 1 onion, 1/2 celeriac,
 Help: Boil the macaroni in water seasoned with broth cube. \nPeel and chop onion, celeriac and carrot into small cubes. \nHeat the oil in the pan. Brown minced meat in a hot pan for five minutes. Add onion, celeriac and carrot. Fry for another five minutes. Stir in paprika and tomato purée. \nSieve the macaroni and pour them back into the pot. Mix in the mince meat sauce. Season with salt and pepper.
 
 Name: Salmon soup with milk broth
-Ingredients: salmon, potato, carrot, onion
+Ingredients: salmon, potato, carrot, onion, cream
 ingredients: 6 potatoes, 2 carrots, 1 onion, 1 tsp salt, 8 dl water, 10 pieces of allspice, 1 bay leaf, 400 g salmon fillet, 2 dl cream, 1 dl dill
 Help: Wash, peel and chop potatoes, carrots and onions. Cook the vegetables with allspice and bay leaf in the water almost ripe. \nRemove the skin and fishbones from the salmon filet. Cut the salmon into cubes. \nAdd milk or cream, salt and sliced ​​salmon. Boil on low heat until the fish is mature, about 5 minutes. Add dill and serve soup with rye bread. Roast bread slices if desired.
 
 Name: Macaroni casserole
-Ingredients: macaroni, minced meat, onion
+Ingredients: macaroni, minced meat, onion, egg, milk
 ingredients: 400 g macaroni, 400 g minced beef, 1 onion, 1 tsp salt, 1 tsp black pepper, 1/2 tsp allspice, 2 tsp basil, 2 tsp thyme, 2 eggs, 7 dl light milk, 1 tsp salt, 2 dl grated cheese
 Help: Cook macaroni according to the package instructions, about 8 minutes. Drain macaroni. \nGrind onion. Brown the minced meat and add the onions. Season the mixture with salt, black pepper and allspice, basil and thyme. Pour the minced meat mixture and macaroni into a large greased bowl. \nMix the ingredients of the egg milk with each other and pour the mixture into the bowl. Cook in a 175-degree oven for about 45 minutes. Sprinkle the grated cheese on the surface of the flour in the final stage of ripening.
 
 Name: Soy bolognaise
-Ingredients: soy, spaghetti, paprika, onion, paprika
+Ingredients: soy, spaghetti, bell pepper, onion, rapeseed, garlic, tomato
 ingredients: 2 dl dark textured soy protein granules, 1/2 dl oil, 1 dl water, 2 tbsp soy sauce, 1 onion, 2 garlic cloves, 5 dl chopped bell peppers, 2 tbsp rapeseed oil, 2 tbsp tomato purée, 2 tsp paprika, 1 tsp thyme, 2 tsp sugar, 2 tsp black pepper, 1 tsp salt, 400 g crushed tomato
 Help: Heat the oil in a frying pan and add the textured soy protein granules . Fry for a moment. \nAdd water in a few batches, stirring occasionally. The water is absorbed into the textured soy protein granules and the grout starts to swell. Finally, add the soy sauce. Transfer the crumb to another container and prepare the tomato sauce. \nPeel and grind the onion and the garlic. Peel and chop or grate the vegetables of your choosing. Heat the oil in a frying pan and add the onions, garlic and the vegetables. Sweat while stirring. Add the tomato purée and the spices. Mix a moment in a hot pan. \nFinally, add the crushed tomato. Rinse the jar with water and pour the water into the pan. Allow to stew for 3-5 minutes at low heat. Mix the textured soy protein granules with the sauce. Serve with spaghetti.
 
 Name: Rice chicken pan
-Ingredients: rice, chicken, carrot
+Ingredients: rice, chicken, carrot, cream, pea
 ingredients: 400 g marinated chicken fillet, 3 dl rice, 2 tbsp oil, 1 tsp curry, 5 dl water, 2 carrots, 100 g frozen peas, 1 can french cream, 2 dl light cream, 1 dl grinded parsley, black pepper
 Help: Chop fillets into pieces. \nMix rice, margarin and curry in a large pan or in a sauté pan. Heat while stirring. Add the chicken pieces and fry until the meat surface is lightly browned. \nAdd water and bring to a boil. Put on the lid, lower heat and let boil for 10-15 minutes. Grate the peeled carrot into a rough grater. \nAdd the peas and grated carrot. Continue cooking for another 5 minutes. \nAdd french cream. If necessary, add light cream or water. Heat and add salt. \nAdd the parsley and pepper.
 
 Name: Fried rice with tofu
-Ingredients: rice, tofu, carrot, onion
+Ingredients: rice, tofu, carrot, onion, garlic, pea, soy, ginger
 ingredients: 2 dl long grain rice, 270 g unflavoured tofu, 1 tbsp oil, 1 onion, 2 garlic cloves, 1 carrot, 1 spring onion stem, 1.5 dl peas, 3 tbsp soy sauce, 1 tbsp peanut butter, 1.5 tbsp ginger, 1 garlic clove, 2 tsp cane sugar, sesame seed, Sriracha sauce
 Help: Cook the rice according to the packing instructions. Let it cool, preferably in a refrigerator. \nRemove the tofu from the package and wrap it in a piece of paper towel for a moment. Mix the marinade ingredients with each other. Cube tofu and mix with the marinade. \nPeel and grind the onion and garlic cloves. Peel and cut the carrot into small cubes. Slice the spring onions. \nGet the tofu out of the marinade and save the marinade for later. Fry the tofu in a hot pan with oil. Move the browned tofucubes aside. \nAdd oil on to the hot pan and sweat the onions, garlic, carrots and peas. Let fry for a few minutes. Add the rice and fry until it is hot. Mix rice with tofu and marinade. Sprinkle sesame seeds and thechopped spring onions on top. Also serve with Sriracha sauce.
 
@@ -209,224 +209,224 @@ ingredients: 200 g button mushrooms, 1 small onion, 1 garlic clove, 1 tbsp butte
 Help: Brush and slice the mushrooms. Peel and grind the onion and garlic cloves. Roast the mushrooms in a saucepan until the liquid evaporates. Move the mushrooms aside. Sweat the onions in oil. Add the rice and stir until the rice is translucent. Add some vegetable broth and stir until the liquid is absorbed into the rice. Add more broth in small batches. Continue stewing and adding broth for about 20 minutes until the risotto is almost ripe. In the final stage, add mushrooms, sun-dried tomatoes and rucola salad. Season the risotto with lemon juice and sprinkle parmesan grate on top.
 
 Name: Minced meat potato-casserole
-Ingredients: potato, minced meat, tomato, carrot
+Ingredients: potato, minced meat, tomato, carrot, onion
 ingredients: 400 g low fat minced beef, 1 tbsp oil, 2 carrots, 1 tsp salt, 1 tsp pepper mix, 2 tsp sugar, 400 g crushed tomato, 1 ½ dl water, 1 kg potato-onion mix, 2,5 dl light cream
 Help: Brown the minced meat in a frying pan with oil. Add the grated carrot, heat while stirring. Add the spices, crushed tomato and water. Let boil for 1 - 2 min. Add the light cream. n/Pour potato-onion mixture into a spacious casserole. Mix in the minced meat mixture and drained feta cubes. \nBake in the bottom or middle of the oven at 225 degrees for about 1 hour or until the potatoes are ripe (check the time in the potato bag). Cover the casserole with baking paper if the surface darkens too much. \nServe with fresh salad.
 
 name: Minced meat & bell pepper casserole
 Ingredients: potato, minced meat, bell pepper, onion, cream
-ingredients: 400 g minced beef, 1 kg potato-onion mixture, 2 bell peppers, oil, 2 tsp pizza, 1 1/2 tsp salt, 1/2 tsp black pepper, 4 dl light cream
+ingredients: 400 g minced beef, 1 kg potato-onion mixture, 2 bell peppers, oil, 2 tsp pizza spice, 1 1/2 tsp salt, 1/2 tsp black pepper, 4 dl light cream
 Help: Chop the bell peppers. Heat a splash of oil in the pan and brown the minced beef in it. Add the bell peppers and fry until they are slightly softened. Add the spices. Leave 1/2 teaspoon of salt for the potatoes. \nPour the bag of potato-onion mixture into a flat casserole. Season with salt. Add minced beef-paprika mixture. Pour another bag of potato onion mixture and season with salt. Pour light cream on top. \nBake at 200 degrees, at the bottom of the oven for about 50 minutes.
 
 Name: Salmon with leek
-Ingredients: potato, salmon, bell pepper, french cream, leek
+Ingredients: potato, salmon, bell pepper, cream
 ingredients: 700 g salmon fillet, ¼ tsp salt, 1 small bell pepper, 100 g leek, 200 g french cream, 1 ½ tsp pepper mix, ½ tsp sugar, 1 tsp mustard
 Help: Remove fishbones from the fillet. Wipe the surface with paper towel. Put the fillet as whole or as cut into slices with the skin side down. \nSprinkle some salt slightly on the fish surface. \nSlice the bell pepper and spread them on the fish surface. \nChop the cleaned leek into slices. Season with french cream and pepper mix, sugar and mustard. n/Mix the leek and the french Cream. Spoon the mixture on top of the fish. \nBake on the lower level at 200 degrees for 35 min or until ripe. The baking time depends on the thickness of the fillet. \nRoast pine seeds in a lightly dry, coated pan. Sprinkle on the surface of the fried fish. \nServe with cooked potatoes or mashed potatoes and salad.
 
-nimi: Uunikirjolohi
-ainekset: peruna, lohi, sipuli
-ainemaarat: 1 (580 g) kirjolohifilee (ruodoton (sis. suolaa 1 %)), 2rkl sitruunanmehua, 1/4tl mustapippuria, 1ps (500 g) peruna-sipulisekoitusta (pakaste), 1dl kermaa tai kalalientä, 1/2tl suolaa, 1 nippu tilliä, Koristeeksi sitruunalohkoja, tilliä
-ohje: Mausta kirjolohifilee sitruunanmehulla ja pippurilla. \nKaada voideltuun laakeaan uunivuokaan peruna-sipuliseos ja kerma tai kalaliemi. Mausta suolalla ja ripottele päälle hienonnettua tilliä. \nNosta kalafilee perunapedille nahkapuoli ylöspäin. Peitä vuoka foliolla. Kypsennä 200 asteessa noin 60 minuuttia, kunnes perunat ovat pehmeitä. \nPoista kalasta nahka. Koristele sitruunanlohkoilla ja tillillä.
+Name: Salmon trout baked in the oven
+Ingredients: potato, salmon, onion
+ingredients: 580 g salmon trout fillet without fishbones, 2 tbsp lemon juice, 1/4 tsp black pepper, 500 g potato-onion mixture, 1 dl cream or fish broth, 1/2 tsp salt, 1 bunch of dill,lemon slices for garnishing
+Help: Season the salmon fillet with lemon juice and pepper. \nPour the potato-onion mixture and cream or fish broth into a greased flat oven casserole. Season with salt and sprinkle chopped dill on top. n\Lift the fish fillet onto the potato bowl with the skin side up. Cover the casserole with foil. Cook at 200 degrees for about 60 minutes until the potatoes are soft. \nRemove the fish skin. Decorate with lemon slices and dill.
 
-nimi: Yhden uunivuuan lohiateria
-ainekset: peruna, soija, parsakaali
-ainemaarat: 2 rkl paahdettua seesamiöljyä, 1 tl chili-valkosipulikastiketta, 1 tl soijakastiketta, ¼ tl suolaa, 500 g perunoita kuutioiksi pilkottuna, 2 rkl fariinisokeria, 2 rkl soijakastiketta, 2 rkl sulatettua voita, 1 rkl riisiviinietikkaa, ¼ tl suolaa, 4 kpl lohifilettä, n. 200-250 g parsakaalin kukintoja, 2 kevätsipulia pilkottuna
-ohje: Esilämmitä uuni 225-asteiseksi. Voitele iso uunivuoka. \nSekoita kulhossa perunoiden kastike: seesamiöljy, chili-valkosipulikastike, soijakastike ja suola. Kuori ja pilko perunat ja sekoita kastikkeen joukkoon. Levitä perunat voideltuun uunivuokaan ja paahda uunissa 20 minuuttia. Ota vuoka uunista, sekoita perunoita ja siirrä ne vuoan toiseen laitaan. \nSekoita kulhossa fariinisokeri, soijakastike, voi, riisiviinietikka ja suola.  Ota seosta 2 rkl toiseen kulhoon ja lisää sinne lohifileet. Pyörittele lohifileitä seoksessa. Asettele ne sitten uunivuokaan nahkapuoli vuokaa vasten. Lisää ensimmäiseen kulhoon parsakaalin kukinnot ja sekoita. Lisää myös parsakaalit uunivuokaan. Kaada sekä lohen että parsakaalin kulhoista mahdollisesti pohjalle jääneet kastikkeet uunivuokaan ainesten päälle. \nPaista perunoita, lohta ja parsakaalia uunissa 12-15 minuuttia, kunnes lohi on haluamasi kypsyistä. Viimeistele ruoka pilkotulla kevytsipulilla.
+Name: Salmon meal of one casserole
+Ingredients: potato, soy, broccoli, chili, garlic, onion
+ingredients: 2 tbsp roasted sesame oil, 1 tsp chili-garlic sauce, 1 tsp soy sauce, ¼ tsp salt, 500 g potatoes cut into cubes, 2 tbsp brown sugar, 2 tbsp soy sauce, 2 tbsp melted butter, 1 tbsp rice vinegar, ¼ tsp salt, ¼ tsp salt, 200-250 g of broccoli blooms, 2 chopped spring onions
+Help: Preheat oven to 225 degrees. Grease a large oven dish. \nMix the potatoes with sauce: sesame oil, chili garlic sauce, soy sauce and salt. Peel and chop the potatoes and mix with the sauce. Spread the potatoes in a greased oven dish and bake in the oven for 20 minutes. Take the casserole from the oven, shuffle the potatoes and push them to the other side of the casserole. \nMix a bowl of brown sugar, soy sauce, butter, rice vinegar and salt. Take 2 tablespoons of the mixture to a second bowl and add salmon fillets. Roll the salmon fillets in the mixture. Then place them on the casserole skin side down. Add the broccoli blooms to the first bowl and mix. Also add the broccoli to the casserole. Pour the sauces from the salmon and broccoli dishes on top of the ingredients in the casserole. \nBake the potatoes, salmon and broccoli in the oven for 12-15 minutes until the salmon is ripen enough for your taste. Finish the food with a chopped spring onion.
 
-nimi: Tofu-kasvispyttipannu
-ainekset: peruna, soija, paprika
-ainemaarat: 200 g tofua, 1 rkl yrteillä maustettua rypsiöljyä, 2 tl soijakastiketta, 1 pieni lanttu, 2 naurista, paprika,  200 g vihreitä papuja, 6 pientä keitettyä perunaa, 200 g sieniä (tatteja, suppilovahveroita tai herkkusieniä); jos sienet eivät sovi, lisää tofun määrää, 1 rkl rypsiöljyä, ¼ tl suolaa, ¼–½ tl vastarouhittua mustapippuria, 1 rkl ruohosipulia tai pilkottua sipulinvartta, 1 rkl tuoretta timjamia
-ohje: Kuutioi tofu ja marinoi yrtti-öljyllä ja soijakastikkeella. \nKuori ja pilko juurekset, puhdista ja pilko paprika, pavut ja sienet. \nKuullota öljyssä isohkolla pannulla sienet, juurekset ja muut kasvikset.n/Anna kypsyä melkein valmiiksi, lisää pilkotut perunat, tofu ja mausteet. \nKuumenna sekoitellen ja tarjoa vihreän salaatin kanssa.
+Name: Tofu-vegetable pyttipanna
+Ingredients: potato, soy, bell pepper, rapeseed
+ingredients: 200 g tofu, 1 tbsp rapeseed oil with herbs, 2 tsp soy sauce, 1 tiny loaf, 2 turnip, bell pepper, 200 g green beans, 6 small boiled potatoes, 200 g mushrooms, 1 tbsp rapeseed oil, ¼ tsp salt, ½ tsp black pepper, 1 tbsp chive or chopped onion stalk, 1 tbsp fresh thyme
+Help: Cube tofu and marinade with herb oil and soy sauce. \nCream and chop roots, clean and chop peppers, beans and mushrooms. \nSweat mushrooms, root vegetables and other vegetables in oil in a large pan. n/Let mature almost ready, add chopped potatoes, tofu and spices. \nHeat up while stirring and serve with green salad.
 
-nimi: Riisi-jauheliharatatouille
-ainekset: jauheliha, riisi, paprika
-ainemaarat: 400 g naudan jauhelihaa, 1 sipuli, 1 kesäkurpitsa, 2 paprikaa, 1 tl suolaa, 1/2 tl mustapippuria, 4 dl vettä, 3 dl riisiä, 400 g tomaattimurskaa, 1 tl sokeria, 2 tl yrttiseosta
-ohje: Hienonna sipuli, halkaise kesäkurpitsa pitkittäin ja viipaloi. Viipaloi paprikat. \nRuskista jauheliha ja lisää sipuli kuullottumaan. Mausta suolalla ja pippurilla. Lisää vesi ja riisi. Keitä noin 7 minuuttia. \nSekoita joukkoon kesäkurpitsat, tomaattimurska, yrttiseos ja sokeri. Keitä vielä 10 minuuttia ja lisää paprikat. 
+Name: Rice-minced meat ratatouille
+Ingredients: minced meat, rice, bell pepper, zucchini, tomato, onion
+ingredients: 400 g minced beef, 1 onion, 1 zucchini, 2 bell peppers, 1 tsp salt, 1/2 tsp black pepper, 4 dl water, 3 dl rice, 400 g crushed tomato, 1 tsp sugar, 2 tsp herb mixture
+Help: Grind the onion, cut the zucchini lengthwise and slice. Slice the bell peppers. \nBrown the minced beef and add the onion for sweating. Season with salt and pepper. Add water and rice. Boil for about 7 minutes. \nMix in zucchini, crushed tomato, herb mixture and sugar. Boil for another 10 minutes and add the bell peppers.
 
-nimi: Parsakaali-broileripannu
-ainekset: kana, riisi, parsakaali
-ainemaarat: 300 g pippurimaustettua broilerin fileesuikaleita, 1 rkl öljyä, 400 g parsakaalia, 2 valkosipulinkynttä, 1 rkl inkivääriä, 1 rkl voita, 1 dl vettä, 2 rkl soijakastiketta, riisiä
-ohje: Ruskista broileri rasvan kanssa. Siirrä broilerit sivuun. \nPaloittele parsakaali ja hienonna valkosipuli. \nKuumenna rasva pannulla. Lisää valkosipuli, parsakaali ja inkivääri. Kaada joukkoon vesi. Kypsennä kunnes vesi on haihtunut. \nSekoita joukkoon soija ja broilerit. Tarjoile jasminriisin kera.
+Name: Broccoli-chicken pan
+Ingredients: chicken, rice, broccoli, garlic, ginger, soy
+ingredients: 300 g pepper flavored chicken fillet slices, 1 tbsp oil, 400 g broccoli, 2 garlic cloves, 1 tbsp ginger, 1 tbsp butter, 1 dl water, 2 tbsp soy sauce, rice
+Help: Brown the chicken with butter. Move the chicken aside. \nChop the broccoli and grind the garlic. Heat the oil in the pan. Add garlic, broccoli and ginger. Pour in water. Cook until the water has evaporated. \nMix in soy and chicken. Serve with jasmine rice.
 
-nimi: Kana-parsakaalipasta
-ainekset: kana, spagetti, parsakaali
-ainemaarat: 300 g broilerin fileesuikaleita, 1 parsakaali, 1 dl cashewpähkinöitä, 2 valkosipulinkynttä, 1 tl öljyä, 1 tl suolaa, 1 tl pippuria, 250 g spagettia, 1 tl oliiviöljyä, juustoraastetta
-ohje: Kypsennä broileri ja nosta broileri sivuun. Paahda pähkinät kuumalla ja kuivalla pannulla, kunnes ne ruskistuvat hieman. Huuhtele parsakaali ja leikkaa nuput kahtia. \nHienonna valkosipuli. Levitä parsakaalit ja valkosipuli leivinpaperin päälle pellille ja pirskota oliiviöljyä ja mausta suolalla ja pippurilla. \nKypsennä parsakaaleja 200 asteessa niin kauan että ne ovat pehmenneet. keitä pasta tässä välissä. \nLisää pastan joukkoon parsakaalit, broilerit ja pähkinät. Sekoita ja mausta suolalla ja mustapippurilla. Lisää joukkoon hieman oliiviöljyä. Tarjoile juustoraasteen kera. 
+Name: Chicken-broccoli pasta
+Ingredients: chicken, spaghetti, broccoli, nut, garlic
+ingredients: 300 g chicken fillet slices, 1 broccoli, 1 dl cashew nuts, 2 garlic cloves, 1 tsp oil, 1 tsp salt, 1 tsp pepper, 250 g spaghetti, 1 tsp olive oil, grated cheese
+Help: Cook the chicken and lift the chicken aside. Roast the nuts in a hot and dry pan until they brown slightly. Rinse the broccoli and cut the buds in half. \nGrind the garlic. Spread the broccoli and garlic on the baking sheet and sprinkle with olive oil and season with salt and pepper. \nBake the broccoli at 200 degrees until softened. Meanwhile cook the pasta. \nAdd the broccoli, chicken and nuts to the pasta. Mix and season with salt and black pepper. Add some olive oil. Serve with grated cheese.
 
-nimi: Kuorrutettu lohi
-ainekset: lohi, peruna, parsakaali
-ainemaarat: 500 g kirjolohifileetä, 1 tl mustapippuria, perunoita, 1/2 kalaliemikuutio, 1 dl vettä, 200 g katkarapuja, 3 keltuaista, 1 dl kevyt majoneesia, 1 dl tilliä, 3 valkuaista
-ohje: Ripottele fileen päälle mustapippuria. Voitele kalan kokoinen uunivuoka ja laita filee uunivuokaan nahkapuoli ylöspäin. \nLiuota kalaliemikuutio kuumaan veteen. Kaada kuuma liemi vuokaan. Peitä vuoka foliolla ja kypsennä 200 asteessa 20 minuuttia. \nSulata katkaravut ja valuta vesi pois. Sekoita keltuaisten joukkoon majoneesi, tilli ja mustapippuri. \nVatkaa valkuaiset vaahdoksi. Sekoita vaahto keltuaisseoksen joukkoon. Poista kalasta nahka. Ripottele katkaravut kalan päälle ja peitä pinta munaseoksella. Kypsennä vielä 15 minuuttia. Tarjoile perunoiden ja parsakaalin kera. 
+Name: Glazed salmon
+Ingredients: salmon, potato, broccoli, shrimp, egg
+ingredients: 500 g salmon trout fillet, 1 tsp black pepper, potatoes, 1/2 fish broth cube, 1 dl water, 200 g shrimp, 3 yolks, 1 dl light mayonnaise, 1 dl dill, 3 albumens
+Help: Sprinkle black pepper over the fillet. Grease a casserole for the fish and place the fillet in with the skin side up. \nDissolve the fish broth cube into hot water. Pour the hot broth into the casserole. Cover the casserole with foil and bake at 200 degrees for 20 minutes. \nDefrost the shrimp and drain the water. Mix mayonnaise, dill and black pepper with yolks. \nWhip the albumens into foam. Mix the foam with the yolk mixture. Remove the fish skin. Sprinkle the shrimp on the fish and cover the surface with the egg mixture. Cook for another 15 minutes. Serve with potatoes and broccoli.
 
-nimi: Tofuwokki
-ainekset: tofu, riisi, paprika
-ainemaarat: 250 g maustamatonta tofua, 2 rkl öljyä, 1 pussi wokvihanneksia, 1/2 dl makeaa chilikastiketta, 1 rkl marinadia, 1/4 tl mustapippuria, vettä, 3/4 dl soijakastiketta, 3 valkosipulinkynttä, 3 rkl öljyä, 2 rkl hunajaa
-ohje: Huuhdo tofu ja kuivaa. leikkaa tofu pieniksi kuutioksi ja laita palat astian pohjalle. Sekoita soijakastike, valkosipuli, öljy ja hunaja. Lisää kastike tofun sekaan ja anna seoksen marinoitua tunnin ajan jääkaapissa. \nSiivilöi tofut marinadista ja säästä marinadia 2 rkl. Paista kuutiot kuumassa öljyssä. \nWokkaa vihannekset. Kaada tofut joukkoon. Mausta wokki chilikastikkeella, marinadilla ja pippurilla. Lisää wokkiin hiukan vettä, jos se tuntuu kuivalta. Tarjoile riisin kera. 
+Name: Tofuwok
+Ingredients: tofu, rice, bell pepper, chili, soy, garlic, honey
+ingredients: 250 g unflavoured tofu, 2 tbsp oil, 1 bag of wok vegetables, 1/2 dl sweet chili sauce, 1 tbsp marinade, 1/4 tsp black pepper, water, 3/4 dl soy sauce, 3 garlic cloves, 3 tbsp oil, 2 tbsp honey
+Help: Rinse tofu and dry it. Cut the tofu into small cubes and place the pieces on the bottom of the dish. Mix soy sauce, garlic, oil and honey. Add the sauce to the tofu and let the mixture to marinate for one hour in the refrigerator. \nSieve the tofu from the marinade and save 2 tbsp of the marinade. Fry the cubes in hot oil. \nWok the vegetables. Pour the tofu in. Season the wok with chili sauce, marinade and pepper. Add some water to the woke if it feels dry. Serve with rice.
 
-nimi: Juures-soijarouhepata
-ainekset: soija, peruna, sipuli
-ainemaarat: 60 g soijarouhetta, 300 g porkkanoita, 1 palsternakka, 70 g juuriselleriä, 3 perunaa, 2 sipulia, 2 valkosipulinkynttä, 2 rkl rypsiöljyä, 3 dl vettä, 1 tl suolaa, 1 tl mustapippuria, 3 tl currytahnaa, 500 g tomaattimurskaa
-ohje: Kuori juurekset. Leikkaa porkkanat ja palsternakat viipaleiksi. Kuutio selleri. Leikkaa perunat siivuiksi ja hienonna sipulit. \nKuullota sipulit tilkassa öljyä. Lisää joukkoon juurekset ja kuullota hetki. \nKaada pataan vesi. Mausta suolalla ja pippurilla. Anna kiehua miedolla lämmöllä 10 minuuttia. \nLisää soijarouhe, currytahna ja tomaattimurska. Hauduta noin 5 minuuttia. 
+Name: Root vegetable-soy stew
+Ingredients: soy, potato, onion, carrot, celery, garlic, rapeseed, tomato
+ingredients: 60 g textured soy protein granules, 300 g carrot, 1 parsnip, 70 g root celery, 3 potatoes, 2 onions, 2 garlic cloves, 2 tbsp rapeseed oil, 3 dl water, 1 tsp salt, 1 tsp black pepper, 3 tsp curry paste, 500 g crushed tomato
+Help: Peel root vegetables. Chop the carrots and parsnips into slices. Cube celery. Chop the potatoes into slices and grind the onions. \nSweat the onions in a drop of oil. Add the root vegetables and sweat for a moment. \nPour water into the stew. Season with salt and pepper. Let simmer for 10 minutes on low heat. \nAdd textured soy protein granules, curry and crushed tomato. Simmer for about 5 minutes.
 
-nimi: Soijarouhekastike
-ainekset: soija, spagetti, tomaatti
-ainemaarat: 300 g soijarouhetta, 1 sipuli, 2 valkosipulinkynttä, 1 rkl öljyä, 1 porkkana, 1/2 dl tomaattisosetta, 500 g tomaattimurskaa,  2 dl vettä, 1 tl suolaa, 1 tl mustapippuria, 1 rkl pizzamaustetta, 2 dl kasvisrasvasekoitetta
-ohje: Hienonna sipulit ja raasta porkka. Kuullota sipulit öljyssä. Lisää joukkoon porkkanaraaste ja tomaattisose. \nLisää pannulle tomaattimurska ja soijarouhe. Lisää mausteet ja hauhduta noin 10 minuuttia. \nLisää lopuksi joukkoon rasva ja kuumenna sekoittain, älä anna kiehua. Tarjoile spagetin kera. 
+Name: Textured soy protein granules sauce
+Ingredients: soy, spaghetti, tomato, onion, garlic, carrot
+ingredients: 300 g textured soy protein granules, 1 onion, 2 garlic cloves, 1 tbsp oil, 1 carrot, 1/2 dl tomato mixture, 500 g crushed tomato, 2 dl water, 1 tsp salt, 1 tsp black pepper, 1 tbsp pizza spice, 2 dl vegetable fat blend
+Help: Grind the onions and grate the carrot. Sweat the onions in oil. Add in the carrot and the tomato sauce. \nAdd the crushed tomato and textured soy protein granules on to the pan. Add spices and simmer for about 10 minutes. \nFinally add the vegetable fat and heat while stirring, do not let it boil. Serve with spaghetti. 
 
-nimi: Jauhelihakääryleet
-ainekset: jauheliha, peruna, parsakaali
-ainemaarat: 400 g jauhelihaa, 1.5 dl vettä, 1 dl korppujauhoja, 1 kanamuna, 1.5 dl sipulikuutioita, 1 tl suolaa, 1 tl mustapippuria, 2 dl ruokakermaa, 250 g kuivattuja luumuja, 1 parsakaali
-ohje: Sekoita vesi ja korppujauhot kulhossa. Anna turvota 10 minuuttia. Lisää joukkoon muna, sipulikuutiot, mausteet ja jauheliha. Sekoita taikina. \nMuotoile noin sentin paksuisia suorakaiteita. Asettele kaksi luumua suorakaiteen alkupäähän ja pyörittele taikina rullalle. \nPaista rullat paistokasarissa niin kauan, että kaikki puolet on ruskeita. Lisää kerma rullien päälle ja anna hautoa miedolla lämmöllä kannen alla noin 10 minuuttia. Tarjoile perunoiden ja parsakaalin kera. 
+name: Minced meat wraps
+Ingredients: minced meat, potato, broccoli, egg, onion, cream
+ingredients: 400 g minced meat, 1.5 dl water, 1 dl breadcrumbs, 1 egg, 1.5 dl onion cubes, 1 tsp salt, 1 tsp black pepper, 2 dl light cream, 250 g plums, 1 broccoli
+Help: Mix water and breadcrumbs in a bowl. Let it swell for 10 minutes. Add egg, onion cubes, spices and minced meat. Mix dough. \nMake rectangles of about one centimeter thick. Arrange two plums at the beginning of the rectangle and roll the dough in to a wrap. \nFry the wraps in a sauté pan until all sides are brown. Add the cream on top of the wrap and let it simmer for about 10 minutes under low heat. Serve with potatoes and broccoli.
 
-nimi: Lämmin jauhelihasalaatti
-ainekset: jauheliha, makaroni, paprika
-ainemaarat: 400 g jauhelihaa, 2 rkl öljyä, makaronia, 1 paprika, 2 rkl salaatinkastiketta, 1/2 dl salaattisiemensekoitusta, 300 g vihreitä papuja, 2 kanamunaa, 200 g tomaatteja, 1 tlk kapriksia, salaattia
-ohje: Ruskista jauheliha ja mausta kypsä jauheliha salaatinkastikkeella ja suolalla. Siirrä jauheliha sivuun. \nPaahda siemenet pannulla ja sekoita mukaan jauheliha ja pilkottu paprika. \nKeitä kanamunia noin 7 minuuttia ja halkaiset ne pituussuunnassa. Huuhdo tomaatit ja paloittele ne. \nKokoa salaatti kerroksittain kulhoon. Ensin salaatti, sitten jauhelihaseos,sitten pavut, sitten tomaatti ja viimeisen kaprikset. Tarjoile makaronin kera.
+Name: Warm minced meat salad
+Ingredients: minced meat, macaroni, bell pepper, bean, egg
+ingredients: 400 g minced meat, 2 tbsp oil, macaroni, 1 bell pepper, 2 tbsp salad dressing, 1/2 dl salad seed mixture, 300 g green beans, 2 eggs, 200 g tomatoes, 1 tsp capers, salad
+Help: Brown the minced meat and season the ripe minced meat with salad dressing and salt. Move the minced meat aside. \nRoast the seeds in a pan and mix in minced meat and chopped bell peppers. \nBoil the eggs for about 7 minutes and slice them lengthwise. Rinse the tomatoes and chop them. \nArrange the salad in layers in a bowl. First the salad, then the minced meat mixture, then beans, then tomato and finally capers. Serve with macaroni.
 
-nimi: Värikäs pasta carbonara
-ainekset: jauheliha, spagetti, porkkana
-ainemaarat: 200 g tagliatellepastaa, 400 g jauhelihaa, vettä, suolaa, 1 kesäkurpitsa, 2 porkkanaa, 2 dl ruokakermaa, suolaa, 1 paketti pekonia, mustapippuria, persiljaa, parmesaania
-ohje: Keitä pasta pakkauksen mukaan. \nHalkaise kesäkurpitsa ja kaapaise sisukset kurpitsasta. Leikkaa porkkanat ja kurpitsa lastuiksi kuorimaveitsellä. Ruskista jauheliha. \nLisää kasvislastut pastan keitinveteen noin minuutiksi. \nSilppua pekoni ja paista rapeaksi. Kaada kerma pannulle, lisää mausteet ja keitä 3 minuuttia. Lisää pekoni, jauheliha ja pasta joukkoon. Tarjoile parmesaanin kera. 
+Name: Colorful pasta carbonara
+Ingredients: minced meat, spaghetti, carrot, zucchini, cream, bacon
+ingredients: 200 g tagliatelle pasta, 400 g minced meat, water, salt, 1 zucchini, 2 carrots, 2 dl light cream, salt, 1 pack of bacon, black pepper, parsley, parmesan
+Help: Cook the pasta according to the package. \nSlice the zucchini in half and swipe the insides from the pumpkin. Cut the carrots and pumpkin into chips with a peeling knife. Brown the minced meat. \nAdd the vegetable chips in to the boiling water of pasta for about a minute. \nShred the bacon and fry until crisp. Pour the cream into the pan, add the spices and cook for 3 minutes. Add bacon, minced meat and pasta. Serve with Parmesan.
 
-nimi: Quorn-bolognesekastike
-ainekset: soija, spagetti, porkkana
-ainemaarat: 300 g soijarouhetta, 1 sipuli, 1 porkkana, 100 g juuriselleriä, 2 valkosipulinkynttä, 1 rkl öljyä, 500 g tomaattimurskaa, 2 dl vettä, 1 laakerinlehti, 1 tl suolaa, mustapippuria, 2 tl pizzamaustetta, spagettia
-ohje: Hienonna sipuli, leikkaa porkkana ja selleri pieniksi kuutioksi. Hienonna valkosipuli ja kuullota kasvikset rasvassa. \nLisää soijarouhe, tomaattimurska, vesi ja mausteet paistokasariin. Anna kiehua hiljalleen kannen alla 15 minuuttia. Tarjoile spagetin kera. 
+Name: Quorn bolognese sauce
+Ingredients: soy, spaghetti, carrot, onion, celery, garlic, tomato
+ingredients: 300 g textured soy protein granules, 1 onion, 1 carrot, 100 g root celery, 2 garlic cloves, 1 tbsp oil, 500 g crushed tomato, 2 dl water, 1 bay leaf, 1 tsp salt, black pepper, 2 tsp pizza spice, spaghetti
+Help: Grind the onion, cut the carrot and celery into small cubes. Grind the garlic and sweat the vegetables in oil. \nAdd textured soy protein granules, crushed tomato, water and spices in to the sauté pan. Let to simmer for 15 minutes under cover. Serve with spaghetti.
 
-nimi: Broileri-kasvispasta
-ainekset: kana, spagetti, sipuli
-ainemaarat: 250 g tagliatellepastaa, 1 sipuli, 2 porkkanaa, 300 g varhaiskaalia, 1 valkosipulinkynsi, 2 rkl rypsiöljyä, 300 g maustamatonta broilerinfileesuikaleita, 1 tl suolaa, 2 dl pippurikermaa, tuoretta basilikaa
-ohje: Keitä pasta. Hienonna sipulit, raasta porkkanat ja suikaloi kaali. \nKuullota kasviksia rasvassa muutama minuutti. Ruskista broileri ja mausta suolalla ja lisää ruokakerma. \nSekoita broilereiden joukkoon kasvikset ja pasta. Koristele annos basilikalla. 
+Name: Chicken-vegetable pasta
+Ingredients: chicken, spaghetti, onion, carrot, cabbage, garlic, rapeseed, cream
+ingredients: 250 g tagliatelle pasta, 1 onion, 2 carrots, 300 g cabbage, 1 garlic clove, 2 tbsp rapeseed oil, 300 g unseasoned chicken fillet slices, 1 tsp salt, 2 dl pepper cream, fresh basil
+Help: Cook the pasta. Grind the onions, grate the carrots and slice the cabbage. \nSweat the vegetables in oil for a few minutes. Brown the chicken and season with salt and add the food cream. \nMix the vegetables and pasta with the chicken. Garnish the portion with basil. 
 
-nimi: Mausteinen kanawokki
-ainekset: kana, spagetti, tomaatti
-ainemaarat: 450 g broilerin fileesuikaleita, 200 g tuoreherkkusieniä, 2 rkl öljyä, 1 valkosipulinkynsi, 1 tl inkivääritahnaa, 500 g tomaattimurskaa, 4 dl kookosmaitoa, 1/2 dl chilikastiketta, 3 tl soijakastiketta, 1 tl suolaa, 2 rkl ruskeaa suurustetta
-ohje: Paloittele herkkusienet. Ruskista broilerin fileesuikaleet kuumassa öljyssä. Lisää herkkusienet ja kuullota. Lisää mukaan paloiteltu valkosipuli ja inkivääritahna. \nKaada joukkoon tomaattimurska ja kookosmaito. Keitä muutama minuutti. Lisää chili- ja soijakastike sekä suola. \nSuurusta kastike suuruksella ja anna kiehahtaa, että kastike saostuu. Tarjoile nuudeleiden kera. 
+Name: Spicy chicken wok
+Ingredients: chicken, spaghetti, tomato, mushroom, garlic, ginger, coconut milk, chili, soy
+ingredients: 450 g chicken fillet slices, 200 g fresh button mushrooms, 2 tbsp oil, 1 garlic clove, 1 tsp ginger paste, 500 g crushed tomato, 4 dl coconut milk, 1/2 dl chili sauce, 3 tsp soy sauce, 1 tsp salt, 2 tbsp brown thickening agent
+Help: Chop the mushrooms. Brown the chicken fillets in hot oil. Add mushrooms and sweat them. Add the chopped garlic and ginger paste. \nAdd crushed tomato and coconut milk. Boil for a few minutes. Add chili, soy sauce and salt. \nThicken the sauce with thickening agent and let it boil until the sauce precipitates. Serve with noodles.
 
-nimi: Kana-nuudeliwokki
-ainekset: kana, spagetti, paprika
-ainemaarat: 300 g broilerin fileesuikaleita, 6 dl vettä, 1 paprika, nuudeleita, 1 sipuli, 1 rkl öljyä, 450 g wokvihanneksia, 2 valkosipulinkynttä, 3 rkl soijakastiketta, 1 rkl sitruunamehua, 1,5 rkl sokeria
-ohje: Sekoita hienonnettu sipuli, soijakastike, 1 dl vettä, sitruunamehu ja sokeri keskenään. Keitä ja mausta nuudelit. \nSuikaloi paprika ja hienonna sipuli. Ruskista broilerisuikaleet öljyssä. Kuullota paprika ja sipuli. \nPaista wokvihannkset öljyssä. Kun vihannekset on lämmenneet, lisää broilerit, paprikat ja sipulit. Sekoita joukkoon nuudelit ja valmistettu kastike.
+Name: Chicken noodle wok
+Ingredients: chicken, spaghetti, bell pepper, noodle, onion, garlic, soy
+ingredients: 300 g chicken fillet slices, 6 dl water, 1 bell pepper, noodles, 1 onion, 1 tbsp oil, 450 g wok veggies, 2 garlic cloves, 3 tbsp soy sauce, 1 tbsp lemon juice, 1,5 tbsp sugar
+Help: Mix the chopped onion, soy sauce, 1 dl of water, lemon juice and sugar. Cook and season noodles. \nShred the bell pepper and grind the onion. Brown the chicken fillets in oil. Sweat the bell pepper and onion. \nFry the wok vegetables in oil. When the vegetables are warm, add chicken, bell peppers and onions. Add the noodles and the sauce. Stir.
 
-nimi: Sienitäytteiset paprikat
-ainekset: peruna, sieni, paprika, sipuli
-ainemaarat: 2 isoa paprikaa, 200 g kanttarelleja/herkkusieniä, 1 sipuli, 1 rkl voita, 2 rkl korppujauhoja, 2 dl kermaa, 1/2 tl suolaa, 1/4 tl pippuria, 2 rkl kirveliä, emmentaljuustoa
-ohje: Hienonna sipuli ja paloittele sienet. Kiehauta sienet pannulla. Lisää pannulle rasva ja sipuli. Ripottele joukkoon jauhot. Lisää kermaa vähitellen koko ajan sekoittaen. \nMausta muhennos suolalla, pippurilla ja kirvelillä. Anna hautua 5 minuuttia. \nHalkaiset paprikat pitkittäin ja poista siemenet. Nosta puolikkaat paprikat lakeaan vuokaan ja kypsennä mikrossa 5 minuuttia. \nJaa sienimuhennos paprikoihin ja ripottele pinnalle emmentaljuusto ja anna olla mikrolla vielä 4 minuuttia. Tarjoile perunoiden kera.
+Name: Mushroom filled bell peppers
+Ingredients: potato, mushroom, bell pepper, onion, cream
+ingredients: 2 big bell peppers, 200 g chanterelles/mushrooms, 1 onion, 1 tbsp butter, 2 tbsp breadcrumbs, 2 dl cream, 1/2 tsp salt, 1/4 tsp pepper, 2 tbsp chervil, emmental cheese
+Help: Grind the onion and chop the mushrooms. Boil the mushrooms on a pan. Add butter and onion on to the pan. Sprinkle in flour. Gradually add cream while stirring. \nSeason the stew with salt, pepper and chervil. Let stew for 5 minutes. \nSlice the bell peppers lengthwise and remove the seeds. Put the bell pepper slices in a bowl and cook in microwave for 5 minutes. \nMix the mushroom chowder with the bell peppers and sprinkle the emmental cheese on the surface and let it cook in the microwave for a further 4 minutes. Serve with potatoes.
 
-nimi: Sieni-kasviswokki
-ainekset: Sieni, makaroni, porkkana, sipuli
-ainemaarat: 200 g tuoreherkkusieniä, 1 sipuli,  2 porkkanaa, makaronia, 1/2 purjo, 2 valkosipulinkynttä, 300 g kiinankaalia, 3 rkl öljyä, 1 tl suolaa, 200 g maissia, 1.5 dl vettä, 1 rkl soijakastiketta, 1 tl perunajauhoa, 1/2 dl meiramia, mustapippuria
-ohje: Viipaloi sienet. Halkaise ja viipaloi sipuli. Kuori porkkanat ja leikkaa ne ohuiksi viipaleiksi. Viipaloi purjo. Hienonna valkosipilut ja suikaloi kiinankaali. \nKuumenna sienet pannulla kunnes neste irtoaa. Lisää rasva ja sipuli. Paista kunnen sipulip pehmenee. Mausta suolalla ja pippurilla. \nKuumenna rasva paistokasarissa ja lisää porkkanaviipaleet. Lisää maissi, purjo, valkosipuli ja kiinankaali. \nYhdistä sipulit ja sienet kasvisten joukkoon. Lisää pannulle kylmä vesi, soijakastike ja perunajauhot. Kuumenna kastike sekoittaen, kunnes se sakenee. \nMausta lopuksi meiramilla, suolalla ja pippurilla. Tarjoile makaronin kera. 
+Name: Mushroom-vegetable wok
+Ingredients: mushroom, macaroni, carrot, onion, garlic, soy
+ingredients: 200 g fresh button mushrooms, 1 onion, 2 carrots, macaroni, 1/2 leek, 2 garlic cloves, 300 g chinese cabbage, 3 tbsp oil, 1 tsp salt, 200 g corn, 1.5 dl water, 1 tbsp soy sauce, 1 tsp potato flour, 1/2 dl marjoram, black pepper
+Help: Slice the mushrooms. Cut in half and slice the onion. Peel the carrots and cut them into thin slices. Slice the leek. Grind the garlic and slice the chinese cabbage. \nHeat the mushrooms in a pan until the liquid comes off. Add oil and the onion. Fry until the onion softens. Season with salt and pepper. \nHeat the oil in the sauté pan and add the carrot slices. Add corn, leek, garlic and chinese cabbage. \nCombine the onions and mushrooms with the vegetables. Add cold water to the pan, soy sauce and potato flour. Heat the sauce with stirring until it thickens. \nFinally finish with marjoram, salt and pepper. Serve with macaroni.
 
-nimi: Karri kanan perunalaatikko
-ainekset: kana, peruna, tomaatti, sipuli
-ainemaarat: 300 g broilerin fileesuikaleita, 2 rkl öljyä, 2 tl currya, 500 g peruna-sipulisekoitusta, 1 tl oreganoa, 1 tl mustapippuria, 1 tl suolaa, 2 dl ruokakermaa, 1 dl maitoa, 2 kanamunaa, 2 tomaattia
-ohje: Kuumenna öljy paistokasarissa. Lisää curry. Sekoita ja lisää broilerit. Siirrä valmiit broilerit sivuun. \nKaada voideltuun vuokaan puolet peruna-sipulisekoituksesta ja kaikki broilerit. Ripottele pinnalle oregano, mustapippuri ja suola. Lisää loput peruna-sipulisekoituksesta. \nSekoita keskenään ruokakerma, maito ja munat. Kaada seos vuokaan. Ripottele päälle hienonnettu tomaatti. Kypsennä vuokaa 200 asteessa noin 50 minuuttia. 
+Name: Curry chicken potato casserole
+Ingredients: chicken, potato, tomato, onion, cream, egg, milk
+ingredients: 300 g chicken fillet slices, 2 tbsp oil, 2 tsp curry, 500 g potato-onion mix, 1 tsp oregano, 1 tsp black pepper, 1 tsp salt, 2 dl light cream, 1 dl milk, 2 eggs, 2 tomatoes
+Help: Heat oil on a sauté pan. Add curry. Mix and add the chicken fillets. Move the finished chicken fillets aside. \nPour half of the potato-onion mixture and all the chicken fillets in a buttered dish. Sprinkle on top oregano, black pepper and salt. Add the rest of the potato onion mixture. \nMix together light cream, milk and eggs. Pour the mixture into the dish. Sprinkle the grinded tomato on top. Bake the dish at 200 degrees for about 50 minutes.
 
-nimi: Lohi-makaronilaatikko
-ainekset: lohi, makaroni, sipuli
-ainemaarat: 300 g tummaa makaronia, 300 g kirjolohisuikaleita, 1 sipuli, 1/2 rkl öljyä, 2 rkl kapriksia, 1 dl tilliä, 1 tl suolaa, 1 tl timjamia, 1 tl mustapippuria, 6 dl kevytmaitoa, 2 kanamunaa, emmentaljuustoa
-ohje: Keitä makaronit ja kaada ne uunivuokaan. Kuullota hienonnettu sipuli rasvassa. Lisää sipuli ja kaprikset vuokaan. Mausta tillillä, suolalla, timjamilla ja mustapippurilla. \nPaloittele kalasuikaleita ja lisää ne makaronien joukkoon. \nSekoita maito ja kanamunat. Lisää munamaitoseos vuokaan. Paista vuokaa 175 asteessa 45 minuuttia. Ripottele halutessasi juustoraastessa kypsymisen puolessa välissä.
+Name: Salmon-macaroni casserole
+Ingredients: salmon, macaroni, onion, egg, milk
+ingredients: 300 g macaroni, 300 g salmon trout fillets, 1 onion, 1/2 tbsp oil, 2 tbsp capers, 1 dl dill, 1 tsp salt, 1 tsp thyme, 1 tsp black pepper, 6 dl reduced-fat milk, 2 eggs, emmental cheese
+Help: Cook the macaroni and pour it into the casserole. Sweat the grinded onion in fat. Add the onion and capers into the casserole. Season with dill, salt, thyme and black pepper. \nChop the fish fillets and add them in with the macaroni. \nMix milk and eggs. Add the egg-milk mixture in to the casserole. Bake at 175 degrees for 45 minutes. If you wish, sprinkle cheese grate after halfway through of baking.
 
-nimi: Jauhelihapihvit salsalla
-ainekset: jauheliha, riisi, parsakaali, tomaatti, sipuli
-ainemaarat: 500 g parsakaalia, 500 g jauhelihaa, riisiä, 2 paprikaa, 2 punasipulia, 6 tomaattia, 1/2 dl korppujauhoja, 1 dl maitoa, 1 tl suolaa, 2 tl mustapippuria, 4 rkl öljyä, 2 rkl balsamiviinietikkaa, 2 dl vettä, 4 rkl tomaattipyrettä
-ohje: Keitä riisit. Hienonna punasipuli, paprika ja tomaatti. Freesaa kasvikset pannulla. \nLisää tomaattipyre, öljy ja vesi. Mausta suolalla ja mustapippurilla. Anna kiehua muutama minuutti. Kaada salsa kulhoon. \nSekoita jauheliha, korppujauho, maito, suola ja mustapippuri. Muotoile noin 8 pihviä ja paista ne öljyssä. \nJaa parsakaali pieniin paloihin ja keitä ne pehmeiksi. 
+Name: Meat patties with salsa
+Ingredients: minced meat, rice, broccoli, tomato, onion
+ingredients: 500 g broccoli, 500 g minced meat, rice, 2 bell peppers, 2 red onions, 6 tomatoes, 1/2 dl breadcrumbs, 1 dl milk, 1 tsp salt, 2 tsp black pepper, 4 tbsp oil, 2 tbsp balsamic vinegar, 2 dl water , 4 tbsp tomato purée
+Help: Cook the rice. Chop the red onion, bell pepper and tomato. Fry vegetables in pan. \nAdd tomato purée, oil and water. Season with salt and black pepper. Let it boil for a few minutes. Pour salsa into a bowl. \nMix the minced meat, breadcrumbs, milk, salt and black pepper. Shape 8 patties and fry them in oil. \nCut the broccoli into small pieces and cook them soft. Serve meat patties with broccoli.
 
-nimi: Broileri-makaronilaatikko
-ainekset: kana, makaroni, paprika, sipuli
-ainemaarat: 400 g tummaa makaronia, 6 dl vettä, 2 tl suolaa, 450 g broilerin fileesuikaleita, 2 rkl öljyä, 1 sipuli, 1 paprika, 3 dl maitojauhetta, 1 tl suolaa, 2 tl pizzamaustetta, 1 tl mustapippuria, juustoraastetta
-ohje: Keitä makaronit. Ruskista broileri. Hienonna sipuli ja paprika. Kuullota sipuli rasvassa. Kaada puolet makaroneista voideltuun uunivuokaan ja lisää päälle broilerit, sipuli, paprikat ja loput makaronit. \nSekoita maitojauhe, vesi, suola, pizzamauste ja mustapippuri. Lisää seos vuokaan. Paista vuokaan 175 asteessa 55 minuuttia. Lisää puolessa välin paistoa juustoraastetta annoksen päälle.
+Name: Chicken macaroni casserole
+Ingredients: chicken, macaroni, bell pepper, onion, grated cheese, milk
+ingredients: 400 g macaroni, 6 dl water, 2 tsp salt, 450 g chicken fillet, 2 tbsp oil, 1 onion, 1 bell pepper, 3 dl milk powder, 1 tsp salt, 2 tsp pizza spice, 1 tsp black pepper, grated cheese
+Help: Cook macaroni and brown the chicken fillets. Chop the onion and bell pepper. Sweat the onion in oil. Pour half of the macaroni into a greased casserole and add the chicken, onion, bell peppers and the rest of the macaroni. \nMix milk powder, water, salt, pizza spice and black pepper. Add the mixture to the casserole. Bake at 175 degrees for 35 minutes. Add the grated cheese over the casserole and put it into the oven for another 20 minutes.
 
-nimi: Lohi nuudeliwokki
-ainekset: lohi, makaroni, tomaatti, sipuli
-ainemaarat: 400 g lohisuikaleita, nuudeleita, 1 rkl öljyä, 1 sipuli, 1 valkosipulinkynsi, 250 g kasvissuikaleita, 3 tl tuoretta inkivääriä, 1 rkl soijakastiketta, 1 dl suolapähkinöitä, 2 dl juustoraastetta, limemehua
-ohje: Kypsennä nuudelit. Kuumenna öljy wokkipannussa ja lisää kalasuikaleet ja anna niiden ruskistua kevyesti. Ripottele suola. \nLisää hienonnettu sipuli, kasvissuikaleet, inkivääri ja pippuri. Paista 3 minuuttia. Lisää ruokakerma ja soijakastike. Anna hautua hetkisen ajan. \nSekoita joukkoon nuudelit ja pähkinät. Ripottele annoksen pinnalle juustoraastetta ja limemehua. 
+Name: Mother's salmonpasta
+Ingredients: spaghtetti, salmon, bell pepper, onion, carrot, cream
+ingredients: 1 onion, 1 carrot, 1 pickle, 1 tbsp capers, 2 tbsp parsley, 100 g sour cream, 1 dl mayonnaise, 1 tsp mustard, 1 tsp black pepper, 1 bell pepper, 150 g spaghetti, 400 g smoked salmon
+Help: Prepare remoulade sauce. Peel and chop the onion. Grate carrot, diced cucumber and chop capers and parsley. Mix the ingredients together and put the prepared sauce in the refrigerator to marinade. \nPlace the spaghetti in boiling water and cook according to the instructions on the package. \nChop bell peppers. Mix pasta, peppers and salmon. Serve remoulade sauce as an additive. 
 
-nimi: Soija-kaalilaatikko
-ainekset: soija, riisi, sipuli, paprika
-ainemaarat: 3 dl soijarouhettam 1000 g kaalia, 1 dl puuroriisiä, 2 sipulia, 1 paprika, 2 kpl kasvisliemikuutioita, 3 rkl öljyä, 2 dl ruokakermaa, 2 rkl siirappia, 1 rkl meiramia
-ohje: Suikaloi kaali. Laita kaali ja riisit suureen kattilaan ja lisää vettä niin paljon, että kaali peittyy. Lisää kasvisliemikuutio ja keitä 20 minuuttia. \nHienonna sipuli ja paprika ja kuullota ne rasvassa. Lisää soijarouhe sekaan ja paista hetki. Kauho pannulle 5 dl riisikaalilientä koko ajan sekoittaen. Soija on valmista, kun se on turvonnut. \nSekoita kaaliriisiseokseen soijarouhe, kerma ja mausteet. Kaada seos voideltuun vuokaan. Paista 175 asteessa 1.5 tuntia.
+Name: Spaghetti and soy sauce
+Ingredients: spaghtetti, soy, onion, tomato, bell pepper
+ingredients: 500 g spaghetti, water, 2 onions, 3 garlic cloves, 1 vegetable broth cube, 1.5 dl soy(dark), 2 tbsp soy sauce, 800 g crushed tomatoes, 1 tsp salt, 1 tsp pepper, 1 tsp chili, mustard
+Help: Boil about 3 liters of water in a large saucepan. \nAdd salt to the boiling water. \nWhen the water boils, place the spaghetti in a saucepan and let boil over medium heat for about 10 minutes. \nChop onions and garlics. Place butter on a large frying pan and saute the onions and garlic. Mix the soy meal and let it roast for a moment. \nAdd water and vegetable broth cube. Mix evenly until the soy meal has absorbed most of the liquid. \nAdd soy sauce and spices to your taste and mix.
 
-nimi: Arkinen soijarouherisotto
-ainekset: soija, riisi, porkkana, paprika, sipuli
-ainemaarat: 3 dl soijarouhetta, 3 dl basmatiriisiä, 400 g vihanneksia, (porkkana paprika sipuli) 
-ohje: Keitä riisiä 6 dl vettä ohjeen mukaan, samoin soijarouhe 6 dl vettä ja 5 min. Lisää soijarouheen keitinveteen reilusti mausteita: pippuria, jauhelihamausteseosta, kasvisliemikuuto, basilikaa, valkosipulia sekä loraus soijakastiketta ja/tai suolaa. Pakastevihannekset voit lisätä joukkoon keittämisen lopuksi. \nRiisin kanssa voi samalla keittää esim pilkotut porkkanat. Sipuli ja kesäkurpitsa kannattaa paistaa ensin öljyssä. Sitten vain sekoitetaan kaikki yhteen ja sörsseli on valmista!
+Name: Mushroom hash
+Ingredients: potato, mushroom, onion, rapeseed
+ingredients: 10 potatoes, 200 g mushrooms, 2 onions, 1 parsnip, 1 fennel, 2 tbsp rapeseed oil, 1 tsp salt, 1 tsp crushed black pepper
+Help: Peel and cube potatoes. Clean and chop the mushrooms. Put the mushrooms on a dry and hot pan and allow to fry. \nPeel and chop the onions. Peel and chop the parsnip and cut the fennel into thin slices. Add oil and vegetables on to the pan. Let it roast until the parsnip matures slightly. Add the potato, spice with salt and black pepper. Serve the warm mushroom hash with fresh salad.
 
-nimi: Valkosipuli-seesami-chililinssit
-ainekset: riisi, soija, parsakaali, porkkana
-ainemaarat: 1 pkt esiketettyjä linssejä, 3 kpl valkosipulinkynttä, 1 kpl porkkana, 2 nippua parsakaalta, 1 tl chilihiutaleita, 1 tl inkivääriä, öljyä, 1 tl seesamiöljyä, 1.5 rkl soijaa, 1/2 sitruunan mehu, ituja, tuoreita yrttejä, riisiä/nuudeleita
-ohje: Silppua valkosipuli, porkkana, inkivääri ja parsakaali. Laita riisi tai nuudelit keittymään. \nLisää hieman ruokaöljyä pannulle ja lämmitä se keskilämmölle. Lisää valkosipuli, porkkana, parsakaali, chilihiutaleet ja inkivääri. Valuta linssit ja lisää ne pannulle. \nLisää pannulle seesamiöljy, soija, sitruunamehu ja mustapippuri. Sekoita ja paista miedolla lämmöllä noin 10 minuuttia. \nAnnostele valmis riisi kulhoon, lisää linssi-kasvissekoitus. Koristele iduilla ja tuoreilla yrteillä. Voit halutessasi lisätä annokseen vielä maun mukaan soijaa ja sitruunamehua.
+Name: Minced meat with spaghetti
+Ingredients: spaghetti, minced meat, bell pepper, onion, soy
+ingredients: 1 onion, 1 garlic, 1 bell pepper, 2 tbsp olive oil, 400 g minced meat, 400 g crushed tomatoes, 1 tsp sugar, 1 tbsp soy sauce, 1 tsp oregano, 400 g spaghetti
+Help: Peel and chop the onion and garlic. Wash and split the bell pepper, remove the seeds and cube it. \nPreheat the oil in a pan. Saute onions and bell peppers. Add the minced meat and brown it. Add the crushed tomato and spices. Stew the sauce under the lid for about 15 minutes. Cook the pasta according to the package instructions. Serve with the minced meat sauce.
 
-nimi: Broilerigratiini
-ainekset: peruna, kana, parsakaali
-ainemaarat: 300 g kukkakaalia, 300 g parsakaalia, 400 g broilerinsuikaleita, 1 prk sipulituorejuustoa, 2 dl kuohukermaa, voita, suolaa, currya, mustapippuria, 1-2 dl juustoraastetta
-ohje: Paista pannulla broilerinsuikaleet. Mausta. Laita kaalit ja broilerinsuikaleet vuokaan. \nSekoita kerma ja greme ja kaada vuokaan kaalijen ja broilerin päälle. Tarkista maku. \nJuustoraastetta päälle ja uuniin 200 astetta noin 40 min.
+Name: Soy and peas pasta
+Ingredients: macaroni, soy, carrot, onion, chili
+ingredients: 1 dl textured soy protein granules, 3 carrots, 1 onion, 50 g celery, 2 tbsp tomato purée, 6 garlic cloves, 1 dl olive oil, 1 tsp peas, 3 dl water, 1 dried chili, parsley, 500 g pasta
+Help: Cube carrots, onions and celery. Slice the garlics. Fry vegetables and chili in oil (approx. 0.5 dl) in a saucepan for 8-10 minutes. \nAdd textured soy protein granules and tomato purée and let the flavors be absorbed in for a moment. Slowly add water while letting the liquid evaporate slightly, totaling about 3 dl. Stew for 10 minutes. \nCook pasta, and save a little of the boiling water. Add the boiling water and soy-chickpea sauce. Add olive oil if needed. Serve with parmesan cheese.
 
-nimi: Broileripyttipannu
-ainekset: peruna, kana, paprika, porkkana, sipuli
-ainemaarat: 3 kpl kypsää broilerinleikettä, 7 kpl keitettyä perunaa, 2 kpl porkkanaa, 1 kpl sipuli, 1 kpl paprika, 2 rkl öljyä, suolaa, rouhittua mustapippuria, 2 rkl hienonnettua ruohosipulia
-ohje: Paloittele broilerinleikkeet ja perunat. Kuori ja paloittele porkkanat. Kuori ja hienonna sipuli. Halkaise paprika ja poista kanta ja siemenet. Paloittele paprika. Kuullota sipulia ja porkkanoita öljyssä pannulla noin 3 minuuttia kunnes porkkanat pehmenevät. \nLisää pannulle perunat, broilerit ja paprikat ja lisää lämpöä. Kääntele aineksia 5 minuuttia kunnes perunat saavat väriä. Mausta suolalla, pippurilla ja ruohosipulilla.
+Name: Oatmeal broccoli-mushroom pasta
+Ingredients: spaghetti, mushroom, broccoli, onion, oat, cream
+ingredients: 1 onion, 1 garlic, 200 g mushrooms, 150 g broccoli, 2 dl onion-oatmeal cream, 1 tbsp corn starch, 2 tbsp fresh basil, 1 tsp black pepper, 1 tsp salt, 100 g spaghetti, olive oil, rucola
+Help: Peel and chop the onions into small pieces. Saute the onions in a saucepan with oil. Cut the mushrooms and broccoli. Add in the broccoli pieces with the onions and add some water to brew the broccoli. When the water has evaporated, add the mushrooms and cook. Cook the spaghetti in another saucepan and strain. \nWhen the mushrooms are fried enough, add the cream and corn starch and mix well. Heat until the mixture thickens slightly. \nAdd fresh basil sauce and add the rest of the spices. Add the cooked spaghetti in to the sauce and stir. Serve spaghetti with rucola, for example, and grind some black pepper from the mill.
 
-nimi: Kanaa, fenkolia ja perunoita uunissa
-ainekset: peruna, kana, sipuli
-ainemaarat: 8 broilerinkoipea, 10-15 perunaa, 1 iso fenkoli, 1 iso sipuli, 5 rosmariinin oksaa, oliiviöljyä, suolaa, mustapippuria
-ohje: Lämmitä uuni 200 asteeseen. Pese perunat ja puolita ne, älä kuori. Jos perunat ovat isoja, voit lohkoa ne useampaankin osaan. Kuori sipuli, puolita ja lohko pitkittäin reiluhkoiksi viipaleiksi. Pilko samalla tavalla myös fenkoli. Riivi kolme rosmariinin oksaa ja hienonna lehdet, kaksi oksaa voit laittaa sekaan kokonaisina. \nLado isoon uunivuokaan sekaisin koivet, perunat, fenkoli, sipuli ja rosmariini. Pirskota päälle anteliaasti oliiviöljyä ja rouhi päälle suolaa ja mustapippuria. Sekoita kunnolla, jotta kaikki ainekset maustuvat kauttaaltaan. Paista uunissa tunti - puolitoista, kääntele kerran tai kaksi välillä.
+Name: Creamy pasta
+Ingredients: spaghetti, tofu, onion, tomato, bell pepper, broccoli, soy
+ingredients: 1 onion, 2 tsp samba oelek, 2 tsp ginger paste, 2 tsp garlic paste, 1 tsp soy sauce, 4 tomatoes, 2 dl spinach, 1 bell pepper, cauliflower, broccoli, 1 avocado, 400 g spaghetti
+Help: Put water to boil for rice or pasta soup. Chop onion, avocado and all vegetables. \nCook pasta or rice as instructed. Crumb the tofu and add it to the pan with the onion and heat. \nAdd spices and oatmeal to tofu and onion. Add the chopped vegetables and avocado to the tofu. If you chose rice as an additive, combine all the ingredients into risotto. Dish out the pasta on plates and top with sauce.
 
-nimi: Paahdettu tofu-tomaattipasta
-ainekset: makaroni, tofu, tomaatti
-ainemaarat: 300 g tofua, 500 g kirsikkatomaatteja, merisuolahiutaleita, valkosipulia, chilimaustetta, mustapippuria, oliiviöljyä, pastaa
-ohje: Laita uuni kuumenemaan 200C. Huuhtele kirsikkatomaatit ja laita ne leivinpaperin päälle uuninpellille. Valuta päälle oliiviöljyä ja mausteita maun mukaan (laita valkosipulia useampi rouhaisu). \nKuutioi kuivattu (marinoitu) tofu ja laita tomaattien sekaan uuninpellille. Sekoittele niin, että öljy sekä mausteet tarttuvat tomaatteihin ja tofukuutioihin. Laita uuniin paahtumaan noin 15-20 minuutiksi. Voit halutessasi paahtoajan puolessa välissä käännellä tofuja, jotta ne saavat kauniin värin pintaan joka puolelle. Kun tomaatit ovat uunissa, keitä haluamasi pasta. \nKokoa annokset: pastaa alle, päälle kirsikkatomaatteja ja tofua, sekä tuoretta silputtua basilikaa, oliiveja ja purista vielä sitruunan mehua. Kruunaa annos (vegaanisella) parmesaanilla. \nTarjoiluun lisäksi tuoretta silputtua basilikaa, mustia oliiveja, sitruunan mehua ja vegaanista parmesaania.
+Name: Tomato-soy sauce
+Ingredients: macaroni, soy, tomato, onion, carrot, garlic
+ingredients: 1.5 dl textured soy protein granules, 2 dl water, 1 onion, 3 garlics, 1 carrot, 2 tbsp olive oil, 400 g crushed tomatoes, 2 tbsp soy sauce, 1 tbsp balsamic vinegar, 1 tsp oregano, 1 tsp thyme, 1 tbsp sugar, 1 tsp salt, 1 tsp black pepper
+Help: Put textured soy protein granules in a bowl and pour hot water on top. Mix. \nChop the onion and garlics. Peel and grate carrot. \nHeat the oil in a pot and heat the vegetables until the onion is soft. Add the soy and stir for a moment. \nAdd tomato crumb, soy sauce, vinegar, oregano, thyme, sugar, salt and pepper. Let slowly bubble under the lid for half an hour. Check the taste. \nServe the sauce with wholegrain pasta or boiled potatoes.
 
-nimi: Tofumakaronilaatikko
-ainekset: makaroni, tofu, porkkana, sipuli, paprika
-ainemaarat: 400 g makaronia, 1 dl härkäpapurouhetta, 1 kasvisliemikuutio, 1 iso sipuli, 1 rkl öljyä, 200 g kylmäsavutofua, 1 iso porkkana, 200 g vihreitä papuja, 1/2 punainen paprika, Liemi:, 5 dl kauramaitoa, 3/4 dl kikhernejauhoja, 2 tl paprikajauhetta, 2 tl valkosipuijauhetta, 1 tl mustapippuria, suolaa
-ohje: Jos käytät kylmäsavutofua, laita se ensiksi paperiin ja painon esim paistinpannun alle että neste imeytyy pois. Kuutioi tofu tämän jälkeen. \nLaita makaroni ja härkäpapurouhe keittymään kasvisliemikuution kanssa paketin ohjeen mukaan. \nPilko sipuli pieneksi ja kuullota öljyssä. Lisää sekaan tofukuutiot ja paista kunnes tofu saa pintaa. Kuori ja kuutioi porkkana. Lisää pannulle kuutioiti porkkana, vihreät pavut ja kuutioit paprika ja paista hetki. \nSekoita liemen ainekset keskenään. \nSekoita kypsiin makaroneihin ja härkäpapurouheeseen tofukasvissekoitus. Kaada liemi päälle. Paista 200 asteisessa uunissa noin 40-50 minuuttia.
+Name: Tofu-macaroni casserole
+Ingredients: macaroni, tofu, carrot, onion, bell pepper
+ingredients: 400 g macaroni, 1 dl fava bean kibble, 1 vegetable broth cube, 1 onion, 1 tbsp olive oil, 200 g smoked tofu, 1 carrot, 200 g green beans, 1 red bell pepper, 5 dl oat milk, 2 tsp paprika, 2 tsp black pepper, 1 tsp salt
+Help: If you are using cold smoked tofu, first put it on paper towel and under the weight of a frying pan for example, so that the liquid is absorbed. Dice the tofu after that. \nAdd macaroni and beans to cook with the vegetable broth according to the package instructions. \nChop the onion to a small size and fry in oil. Add tofu and mix until tofu gets brownish. Peel and dice the carrot. Add the cubed carrot, green beans and diced beel pepper to the pan and fry for a moment. Mix the ingredients. Mix tofu cubes with mature macaroni and fava bean kibble. Bake in a 200 degree oven for about 40-50 minutes.
 
-nimi: Tofu-kasvispasta
-ainekset: makaroni, tofu, parsakaali, sipuli, valkosipuli, chili
-ainemaarat: 400 g kiinteää tofua, 1 kpl sipulia, 1 kpl valkosipulinkynttä, 500 g parsakaalia, 1 kpl chiliä, 50 g auringonkukansiemeniä, 250 g täysjyväpastaa, 1 rkl rypsiöljyä
-ohje: Valmista pasta pakkauksen ohjeen mukaan. Silppua sillä välin sipulit ja paista niitä öljyssä muutama minuutti. \nLisää pieneksi kuutioitu tofu ja jatka paistamista kunnes tofu saa rapean pinnan. Lisää pannulle pieneksi leikattu parsakaali ja jatka paistamista vielä 5 minuutin ajan. \nSekoita tofu-parsakaaliseos valmiiseen pastaan ja mausta suolalla ja pippurilla. Tarjoile raikkaan salaatin kanssa.
+Name: Tofu-vegetable pasta
+Ingredients: macaroni, tofu, broccoli, onion, chili
+ingredients: 400 g tofu, 1 onion, 1 garlic clove, 500 g broccoli, 1 chili, 50 g sunflower seeds, 250 g pasta, 1 tbsp rapeseed oil
+Help: Prepare the pasta according to the package instructions. In the meantime, chop the onions and fry them in oil for a few minutes. \nAdd diced tofu and continue frying until the tofu gets a crispy surface. Add the sliced broccoli into the pan and continue baking for another 5 minutes. Mix the tofu and broccoli with the pasta and season with salt and pepper. Serve with fresh salad.
 
-nimi: Helppo kermainen pasta
-ainekset: spagetti, tofu, sipuli, tomaatti, paprika, kukkakaali, parsakaali
-ainemaarat: 300 g marinoitua tofua, 2 dl kaurakermaa, 1 iso sipuli, 1-2 tl sambal oelekia, 1-2 tl inkivääritahnaa, 1-2 tl valkosipulitahnaa, 1 tl soijakastiketta, mustapippuria, 3-6 tomaattia, 2 kourallista pinaattia, 2 lehtikaalin lehteä, 1 paprika, kukkakaalia, parsakaalia, 1 avocado, täysjyväspagettia
-ohje: Laita vettä kiehumaan riisin tai pastan keittoa varten. Pilko veden kiehumista odotellessa sipuli, avocado ja kaikki vihannekset. \nKeitä pastaa tai riisiä ohjeen mukaisesti (itse suosittelen vähentämään pastan ohjeen mukaisesta keittoajasta 2-3 min, koska al dente). Murusta tofu ja lisää se sipulin kanssa pannulle. Kuumenna (lieden 3-4 riittää). \nLisää mausteet tai maustetahnat sekä kaurakerma tofun ja sipulin sekaan. Kuumenna (lieden 3-4 riittää). Lisää pilkotut vihannekset ja avocado tofukastikkeen sekaan. (Itse jätän vihannekset raaoiksi ja annan niiden vain vähän lämmetä, että ruuan suutuntuma on normaalin lämmin. Tämä siksi, että niiden ravintoaineet eivät kuumentaessa karkaisi.) \n Jos valitsit riisin lisukkeeksi, yhdistä kaikki ainekset risotoksi. Pastan voi annostella valmiiksi lautasille ja kaataa kastiketta päälle tai yhdistää kaikki ainekset kattilassa. Annoksen päälle voi lorauttaa vielä 1 tl oliiviöljyä.
+Name: Chicken with fennel and potatoes
+Ingredients: chicken, potato, onion
+ingredients: 8 chicken breasts, 10 potatoes, 1 fennel, 1 big onion, 5 rosemary branches, olive oil, salt, black pepper
+Help: Heat the oven to 200 degrees. Wash the potatoes and split them, do not peel. If the potatoes are large, you can split them into several parts. \nPeel the onion, cut in half and block lengthwise into thin slices. Similarly, chop the fennel. Grate three rosemary branches and chop theleaves, you can add two branches in as whole. \nPut chickens, potatoes, fennel, onion and rosemary in to a large pan. Sprinkle olive oil and season with salt and black pepper. \nMix well. Bake in the oven for an hour or one and a half, turn once or twice.
+ 
+Name: Roasted tofu-tomato pasta
+Ingredients: macaroni, tofu, tomato, onion, garlic, chili
+ingredients: 300 g tofu, 500 g tomatoes, sea salt, 2 garlic, chili, black pepper, olive oil, pasta, lemon juice
+Help: Heat the oven to 200 degrees. Wash tomatoes and slice them and place them on baking paper on an baking tray. Sprinkle on top olive oil and spices until you are satisfied with the taste. \nDice the dried tofu and add on to the baking tray with tomatoes. Mix so that the oil and spices stick to the surface of tomatoes and tofu cubes. Put in the oven for about 15-20 minutes. \nWhile the tomatoes are in the oven, cook pasta. \nMake the portions: pasta, topped with tomatoes and tofu, and freshly chopped basil, olives and squeeze the lemon juice
+ 
+Name: Chicken gratin
+Ingredients: potato, chicken, broccoli
+ingredients: 300 g cauliflower, 300 g broccoli, 400 g chicken strips, 2 dl fresh onion cheese, 2 dl whipped cream, butter, salt, curry, black pepper, 2 dl grated cheese 
+Help: Bake chicken strips in a pan and spice them with salt, black pepper and curry. Put the cauliflowers, broccoli and chicken strips in the casserole. Mix the cream and cream cheese and pour it over the cauliflowers, broccoli and the chicken. Check the taste. Cook in the oven at 200 degrees for about 40 min.
 
-nimi: Tomaatti-soijakastike
-ainekset: makaroni, soija, tomaatti, sipuli, valkosipuli, porkkana
-ainemaarat: 1 1/2 dl soijarouhetta, 2 dl vettä, 1 sipuli, 3 valkosipulinkynttä, 1 porkkana, 2 rkl öljyä, 400 g tomaattimurskaa, 2 rkl soijakastiketta, 1 rkl balsamiviinietikkaa, 1 tl oreganoa, 1 tl timjamia, 1 rkl sokeria, 1 tl suolaa, 1/2 tl rouhittua mustapippuria
-ohje: Mittaa kulhoon soijarouhe ja kaada päälle kuuma vesi. Sekoita. \nKuori ja silppua sipuli ja valkosipulinkynnet. Kuori ja raasta porkkana. \nKuumenna kattilassa öljy ja kuullota kasviksia, kunnes sipuli on pehmeää. Lisää soijarouhe ja kääntele hetki. \nLisää tomaattimurska, soijakastike, viinietikka, oregano, timjami, sokeri, suola ja pippuri. Anna poreilla hiljakseen kannen alla puolen tunnin ajan. Tarkista maku. \nNauti kastiketta täysjyväpastan tai vaihteeksi vaikka keitettyjen perunoiden kanssa.
-
-nimi: Soija-kikhernepasta
-ainekset: makaroni, soija, porkkana, sipuli
-ainemaarat: 1 dl tummaa soijarouhetta, 3 porkkanaa, 1 keltasipuli, 50 g selleriä, 2 rkl tomaattipyreetä, 6 valkosipulinkynttä, 1 dl oliiviöljyä, 1 tlk kikherneitä, 3 dl vettä, 1 kuivattu chili, nippu rosmariinia, nippu lehtipersiljaa, 500 g pastaa
-ohje: Kuutioi porkkanat, sipuli ja selleri aivan pieneksi. Siivuta valkosipulinkynnet. Kuullota kasviksia ja silputtua rosmariinia sekä chiliä öljyssä (n. 0,5 dl ) padassa tai kattilassa 8-10 minuuttia. \nSurvaise kasviksia rouheasti sauvasekoittimella niin että tekstuuri säilyy – emme halua vauvanmössöä. Lisää soijarouhe sekä tomaattipyree ja anna makujen imeytyä hetki. Lisää vettä pikkuhiljaa antaen nesteen hieman haihtua, yhteensä n. 3 dl. Hauduta 10 minuuttia. Lisää lopuksi lehtipersiljasilppu. \nKeitä pasta, ja säästä tilkka keitinvettä. Sekoita keitinvesi ja soija-kikhernekastike joukkoon. Lisää oliiviöljyä tarvittaessa. Tarjoile parmesanjuuston kera.
-
-nimi: Kaurakermainen parsakaali-sienipasta
-ainekset: spagetti, sieni, parsakaali, valkosipuli
-ainemaarat: 1 sipuli, 1 valkosipulinkynsi, 200 g ruskeita herkkusieniä, 150 g parsakaalia, 1 prk sipuli-kauraruokakermaa, 1 rkl maissitärkkelystä, 2 rkl tuoretta basilikaa, 1 tl mustapippuria, ripaus yrttisuolaa, 80 g täysjyväspagettia, öljyä, rucolaa tarjoiluun
-ohje: Kuori ja pilko sipulit pieneksi. Kuullota sipuleja kasarissa öljyssä. Paloittele sienet ja parsakaali. Lisää parsakaalin palat sipulien sekaan ja laita sekaan hieman vettä, että parsakaalit hyörystyvät. Kun vesi on haihtunut, lisää sekaan sienet ja kypsennä. Keitä spagetti toisessa kattilassa kypsäksi ja siivilöi. \nKun sienet ovat paistuneet tarpeeksi, lisää sekaan ruokakerma ja maissitärkkelys ja sekoita hyvin. Lämmitä kunnes seos sakenee hieman. Revi tuore basilika kastikkeen sekaan ja lisää loput mausteet. Lisää keitetty spagetti kastikkeen sekaan ja sekoita. Tarjoile spagetti esimerkiksi rucolan kanssa ja jauha päälle vielä hieman mustapippuria myllystä.
-
-nimi: Sienipyttipannu
-ainekset: peruna, sieni, sipuli
-ainemaarat: 10 dl keitettyä keskikokoista perunaa, 200 g kantarelleja tai suppilovahveroita, 2 sipulia varsineen, 1 palsternakka, 1 fenkoli, 2 rkl rypsiöljyä, ripaus suolaa ja rouhittua mustapippuria
-ohje: Kuori ja lohko perunat. Puhdista ja paloittele sienet. Nosta sienet kuivalle ja kuumalle pannulle ja anna hautua, kunnes suurin osa nesteestä on haihtunut. \nKuori ja hienonna sipulit. Kuori ja paloittele palsternakka ja leikkaa fenkoli ohuiksi viipaleiksi. Lisää sienten joukkoon öljy ja kasvikset. Anna paistua, kunnes palsternakka kypsyy hieman. Lisää peruna, mausta suolalla ja mustapippurilla. Tarjoile lämmin sieni-perunapannu raikkaan salaatin kanssa.
-
-nimi: Jauhelihaspagetti
-ainekset: spagetti, jauheliha, paprika, sipuli, soija
-ainemaarat: 1 kpl Sipuli, 1 kpl Valkosipulinkynsi, 1 kpl Paprika, 2 rkl Öljyä, 400 g Jauhelihaa, 1 kpl (400 g) tomaattimurskaa, 1 tl Sokeria, 1 rkl Soijakastiketta, 1 tl Kuivattua oreganoa, 400g spagettia
-ohje: Kuori ja silppua sipuli ja valkosipulinkynsi. Huuhtele ja halkaise paprika, poista siemenet ja kuutioi paprika.Kuumenna öljy pannussa. Kuullota siinä sipulit ja paprika. Lisää jauheliha ja ruskista se. Lisää tomaattimurska ja mausteet. Hauduta kastiketta kannen alla noin 15 minuuttia.Keitä pasta pakkauksen ohjeen mukaan. Tarjoa jauhelihakastikkeen kanssa.
-
-nimi: Hanna-Marian lohipasta
-ainekset: spagetti, lohi, paprika, sipuli, porkkana
-ainemaarat: 1 salottisipuli, 1 pieni porkkana, 1 pieni maustekurkku, 1 rkl kapriksia, 2 rkl persiljaa, 100 g kermaviiliä, 1 dl majoneesia, ½ tl sinappia, mustapippuria, 1 paprika, 150 g täysjyväspagettia, 400 g lämminsavulohta 
-ohje: Valmista remouladekastike. Kuori ja hienonna salottisipuli. Raasta porkkana, kuutioi maustekurkku ja silppua kaprikset ja persilja. Sekoita ainekset keskenään ja laita valmis kastike jääkaappiin maustumaan. \nLaita spagetti kiehuvaan veteen ja keitä pakkauksen ohjeen mukaan. \nPilko paprika. Kokoa annos pastasta, paprikasta ja lohesta. Tarjoa remouladekastiketta lisukkeena. Voit ostaa kastikkeen myös valmiina. Silloin sitä tarvitaan 3 dl.
-
-nimi: Spagetti ja soijakastike
-ainekset: spagetti, soija, sipuli, tomaatti, paprika
-ainemaarat: 1 kg spagettia, 3 l vettä, 2 kpl sipulia, 3 valkosipulikynttä, 1 kpl kasvisliemikuutio, 1,5 dl soijarouhetta (tummaa), 3 dl vettä, 2 rkl soijakastiketta, 2 prk tomaattimurskaa (800 g), nippu tuoretta basilikaa, suolaa, pippuria, paprikajauhetta, chilirouhetta, sinappia 
-ohje: Spagetit \nKiehauta n. 3 litraa vettä isossa kattilassa. \nLisää ripaus suolaa keitinveteen. \nKun vesi kiehuu, laita spagetit kattilaan ja anna kiehua keskilämmöllä noin 10 min. \nKun spagetit ovat tarpeeksi pehmeitä makuusi, kaada koko kattilan sisältö siivilään ja huuhtele spagetit haalealla vedellä. Kaada spagetit takaisin kattilaan. \n \nKastike \nHienonna sipulit, valkosipulin kynnet ja basilika. \nLaita isolle paistinpannulle rasvaa ja kuullota sipulit ja valkosipulit sekä freesaa basilika. \nSekoita joukkoon soijarouhe ja anna paahtua hetki. \nLisää vesi ja kasvisliemikuutio. Sekoittele tasaisesti kunnes soijarouhe on imenyt suurimman osan nesteestä ja turvonnut. \nLisää soijakastike ja mausteet makusi mukaan ja sekoittele.\nLisää tomaattimurska, sekoita ja anna kiehahtaa.
+Name: Chicken hash
+Ingredients: potato, chicken, bell pepper, carrot, onion
+ingredients: 3 cooked chicken cuts, 7 boiled potatoes, 2 carrots, 1 onion, 1 bell pepper, 2 tbsp olive oil, 1 tsp salt, 1 tsp black pepper, 2 tbsp chives
+Help: Slice chicken cuts and boiled potatoes. Peel and chop the carrots and onion. Cut the bell pepper. \nSaute the onion and carrots with oil in the pan for about 3 minutes until the carrots soften. \nAdd the potatoes, broilers and bell peppers to the pan and add some heat. Cook ingredients for 5 minutes until the potatoes gets some colour. Spice with salt, pepper and chives.
+ 
+Name: Textured soy protein granules risotto
+Ingredients: soy, rice, carrot, bell pepper, onion
+ingredients: 3 dl textured soy protein granules, 3 dl rice, 400 g vegetables(carrot, bell pepper, onion)
+Help: Boil rice in 6 dl of water according to the instructions, as well as soy protein in 6 dl of water. Add a lot of spices to the soya protein soup: black pepper, vege stock cube, basil, garlic, and soy sauce and / or salt. Frozen vegetables can be added to the end of cooking. Then just mix everything together.
+ 
+Name: Garlic-sesame-chili lenses
+Ingredients: rice, soy, broccoli, carrot
+ingredients: 2 dl pre-cooked lenses, 3 garlic, 1 carrot, 200 g broccoli, 1 tsp chili, 1 tsp ginger oil, 1 tsp sesame oil, 1.5 tbsp textured soy protein granules, 1 dl lemon juice, fresh herbs, noodles
+Help: Chop the garlic, carrot, ginger and broccoli. Boil noodles. \nAdd some cooking oil to the pan and heat it to medium heat. Add garlic, carrot, broccoli, chili flakes and ginger. Drain the lenses and add them to the pan. \nAdd sesame oil, soy protein, lemon juice and black pepper to the pan. Stir and bake at low heat for about 10 minutes. Decorate with fresh herbs. You can add soy and lemon juice to your dose if you want.
+ 
+Name: Salmon noodle wok
+Ingredients: salmon, macaroni, tomato, onion, soy
+ingredients: 400 g salmon, noodles, 1 tbsp olive oil, 1 onion, 1 garlic, 250 g vegetable spices, 3 tsp fresh ginger, 1 tsp soy saucem 1 dl salt peanuts, 2 dl cheese, lemon juice 
+Help: Cook noodles. Heat the oil in a wok pan and add the fish slices and let them brown slightly. Add the salt. \nAdd chopped onion, vegetable spices, ginger and pepper. Bake for 3 minutes. Add the cream and soy sauce. Let the brew for a moment. Mix with noodles and nuts. Sprinkle the grated cheese and lime juice on the top of the dose.
+ 
+Name: Texture soy protein granules and cabbage cassarole
+Ingredients: soy, rice, onion
+ingredients: 3 dl textured soy protein granules, 1 kg cabbage, 1 dl rice, 2 onions, 1 bell pepper, 2 vege stock cube, 3 tbsp olive oil, 2 dl cream, 2 tbsp syrup, 1 tbsp marjoram  
+Help: Slice the cabbage. Put the cabbage and the rice in a large saucepan and add the water so much that the cabbage is covered. Add the vege cubes and cook for 20 minutes. \nChop the onion and bell pepper in oil. Add the soy protein and cook for a moment. Scoop the pan with 5 dl rice rice stirring all the time. Soy is ready when it is swollen. Mix soy meal, cream and spices into the rice mixture. Pour the mixture into the buttered dish. Bake at 175 degrees for 1.5 hours.
 
 Name: Tomato tofu sauce
 Ingredients: spaghetti, tofu, tomato, soy, onion
@@ -448,147 +448,147 @@ Ingredients: potato, mushroom, tomato
 ingredients: 80 g of parma ham, 4 boiled potatoes, 200 g button mushrooms, 12 cherry tomatoes, 1 salad pack, 50 g rucola, 1 tbsp olive oil, 1/4 tsp salt, 1/4 tsp black pepper \nSauce: \n2 tbsp olive oil, fresh oregano (chopped), 1 tbsp wine vinegar, 1 tbsp syrup, 1/4 tsp salt, 1/4 tsp black pepper
 Help: Roast the parma ham slices in a 200-degree oven or in the pan with medium heat for about 5 minutes. Put the slices on the paper for a moment to wait. \nCut the potatoes into medium slices and cut up the mushrooms. Heat the olive oil in pan and add the potatoes and mushrooms. Fry until they become slightly brown. At the very end, add tomatoes, torn salad and rucola. Season lightly with salt and black pepper. \nPut the salad on plates or bowls. Mix the ingredients of the sauce and sprinkle it on top of the mushroom potato salad. Serve warm mushroom potato salad immediately.
 
-nimi: Mausteinen jauheliha ja riisi
-ainekset: jauheliha, riisi, porkkana
-ainemaarat: 400 g jauhelihaa, 3 valkosipulinkynttä, 1/2 purjosipuli, 1 pieni kesäkurpitsa, 3 porkkanaa, Kastike:, 1 dl sweetchili-kastiketta, 3 rkl soijakastiketta, 1 rkl seesamiöljyä, 1/2 rkl raastettua inkivääriä, Tarjoiluun:, riisiä
-ohje: Halkaise purjo pituussuunnassa ja huuhtele huolella. Suikaloi ohueksi. Raasta kuoritut porkkanat ja kuutioi kesäkurpitsa pieneksi palaksi. \nRuskista jauheliha ja lisää kuutioitu kesäkurpitsa, purjo, porkkana ja hienonnettu valkosipuli. \nMausta suolalla ja pippurilla. Jatka kuullottamista kunnes kasvikset ovat rapean kypsät. \nSekoita seesamiöljy, sweetchili, soijakastike ja raastettu inkivääri. Kaada jauhelihaseokseen ja anna hautua hetken. \n Tarjoile keitetyn riisin kanssa.
+Name: Spicy minced meat and rice
+Ingredients: minced meat, rice, carrot
+ingredients: 400 g minced meat, 3 garlic cloves, 1/2 leek, 1 small zucchini, 3 carrots,, Sauce:, 1 dl sweetchili sauce, 3 tbsp soy sauce, 1 tbsp sesame oil, 1/2 tbsp grated ginger,, rice
+Help: Cut the leek lengthwise and rinse thoroughly. Cut into thin slices. Grate peeled carrots and dice the zucchini into a small pieces. \n Brown minced meat and add diced zucchini, leek, carrot and chopped garlic. \nSeason with salt and pepper. Continue sweating until the vegetables are crispy. \nMix sesame oil, sweetchili sauce, soy sauce and grated ginger. Pour it into the minced meat mix and let it simmer for a while. \nServe with cooked rice.
 
-nimi: Teriyakilohta ja paistettua riisiä
-ainekset: riisi, lohi, porkkana, sipuli
-ainemaarat: 600 g kirjolohifileetä, 2 rkl teriyakikastiketta, 1 sipuli, 2 porkkanaa, 2 rkl öljyä, 150 g sokeriherneitä, 1 rkl raastettua inkivääriä, 8 dl keitettyä riisiä, 2 rkl soijakastiketta, 2 rkl osterikastiketta, tuoretta korianteria
-ohje: Poista lohesta nahka ja paloittele lohi. Laita lohikuutiot kulhoon ja kääntele joukkoon teriyakikastike. Anna maustua. \nKuori ja suikaloi sipuli. Kuori ja suikaloi porkkanat. \nKuumenna öljy pannulla. Lisää sipulit ja porkkanat sekä sokeriherneet ja inkivääri. Paista koko ajan käännellen muutaman minuutin ajan. \nSekoita riisi haarukan avulla irtonaiseksi. Lisää riisi pannulle ja jatka paistamista, kunnes se ruskistuu. Lisää mausteet ja kääntele sekaisin. Kuumenna vielä. \nPaista lohipalat pannulla tilkassa öljyä nopeasti kypsiksi. Tarjoa paistetun riisin kanssa. Viimeistele korianterilla.
+Name: Teriyaki salmon and fried rice
+Ingredients: rice, salmon, carrot, onion
+ingredients: 600 g salmon trout fillet, 2 tbsp teriyaki sauce, 1 onion, 2 carrots, 2 tbsp oil, 150 g sugar peas, 1 tbsp grated ginger, 8 dl boiled rice, 2 tbsp soy sauce, 2 tbsp oyster sauce, fresh coriander
+Help: Remove the skin and cut the salmon. Put the salmon cubes in bowl and mix with teriyaki sauce. \nPeel and slice the onion. Peel and slice the carrots. \nHeat the oil in the pan. Add the onions and carrots as well as sugar peas and ginger. Fry and fold for a few minutes. \nMix the rice with the fork. Add the rice in the pan and continue frying until it browns. Add the spices and mix. Continue frying for a while. \nPlace the salmon slices in the pan with a drop of oil to ripe quickly. Serve with fried rice. Finish with coriander.
 
-nimi: Kermainen Aura-lohi
-ainekset: lohi, riisi, parsakaali, porkkana, juusto, kerma
-ainemaarat: 1 kg kirjolohifileetä paloiteltuna, 1 tl suolaa, 1 tl sitruunapippuria, 0.5 tl valkopippuria, 400 g parsakaalia, 200 g porkkanoita, 50 g voita, 2 rkl siirappia, 1.5 rkl soijakastiketta, 80 g aurajuustoa, 2 dl laktoositonta kermaa
-ohje: Mausta kalanpalat suolalla ja pippureilla ja levitä ne voidellun uunivuoan pohjalle. Pilko vihannekset pieniksi paloiksi ja hauduta voissa pannulla. \nAnnavoin imeytyä vihanneksiin ja mausta ne siirapilla ja soijalla. Levitä ne kalan päälle. Ripottele päälle murennettu Aura-juusto. \nKaada vuokaan kerma. Kypsennä 200 asteessa n. 30 min. Tarjoa riisin kera.
+Name: Creamy blue cheese salmon
+Ingredients: salmon, rice, broccoli, carrot, cheese, cream
+ingredients: 1 kg cut salmon trout fillet, 1 tsp salt, 1 tsp lemon pepper, 0.5 tsp white pepper, 400 g broccoli, 200 g carrots, 50 g butter, 2 tbsp syrup, 1.5 tbsp soy sauce, 80 g blue cheese, 2 dl lactose-free light cream
+Help: Season the fish with salt and pepper, and spread them on the bottom of the greased oven bowl. Chop the vegetables into small pieces and simmer in a pan with butter. \nLet butter absorb into vegetables and season them with syrup and soy. Spread mix over the fish. Sprinkle crushed blue cheese on top. \nPour the cream into bowl. Cook at 200 degrees for 30 minutes. Serve with rice.
 
-nimi: Chilitofu riisin kera
-ainekset: riisi, tofu, tomaatti, purjo, paprika, valkosipuli, chili, ohra
-ainemaarat: 2 purjoa, 1 paprika, 250 g kirsikkatomaatteja, 150 g sokeriherneitä, 2 rkl öljyä, 3 dl kasvislientä, 1 rkl maissitärkkelystä, 3 rkl soijakastiketta, 2 tl seesamiöljyä, 1 valkosipulinkynsi, 1 cm tuoretta inkivääriä, 1/2-2rkl chilitahnaa, 300 g tofua, sitruunamehua, kourallinen korianteria, 4 dl riisiä, 1 dl ohrasuurimoita
-ohje: Keitä ohrasuurimot paketin ohjeen mukaan. \nPuhdista paprika ja purjo. Leikkaa ne paloiksi. Huuhtele ja puolita kirsikkatomaatit. Huuhtele herneet. \nKuullota purjoa ja paprikaa öljyssä kuumalla pannulla. Sekoita jatkuvasti. Lisää kasvisliemi. \nSekoita maissitärkkelys soijakastikkeeseen ja kaada seos vihannesten päälle. Sekoita. \nLisää tomaatit ja herneet. Anna porista pari minuuttia. Vähennä lämpöä ja mausta seesamiöljyllä, hienonnetulla valkosipulilla ja raastetulla inkiväärillä. Lisää chilitahnaa maun mukaan. \nLeikkaa tofu paloiksi. Sekoita varovasti kastikkeen joukkoon ravistamalla pannua kevyesti. Anna kiehua pari minuuttia. \nMausta soijakastikkeella. Lisää halutessasi sitruunamehu. \nTarjoile vadilta riisin kera.
+Name: Chilitofu with rice
+Ingredients: rice, tofu, tomato, leek, bell pepper, garlic, chili, barley
+ingredients: 2 leeks, 1 bell pepper, 250 g cherry tomatoes, 150 g sugar peas, 2 tbsp oil, 3 dl vegetable broth, 1 tbsp corn starch, 3 tbsp soy sauce, 2 tsp sesame oil, 1 garlic clove, 1 cm fresh ginger, 1/2-2 tbsp chili paste, 300 g tofu, lemon juice, handful of coriander, 4 dl rice, 1 dl barley beans
+Help: Boil barley according to the package instructions. \nClean the bell pepper and leek and cut them into pieces. Rinse and cut the cherry tomatoes. Rinse the peas. \nSweat the leek and bell pepper in oil in hot pan. Remember to stir. Add the vegetable broth. \nMix the corn starch into soy sauce and pour the mixture on the vegetables. Mix. \nAdd tomatoes and peas. Let it boil a couple of minutes. Reduce heat and season with sesame oil, chopped garlic and grated ginger. Add chili sauce. \nCut the tofu into pieces. Add tofu into the sauce by stirring gently. Let it boil for a couple of minutes. \nSeason with soy sauce. Add lemon juice if desired. \nServe with rice.
 
-nimi: Tofua ja parsakaalia maapähkinäkastikkeessa
-ainekset: tofu, riisi, parsakaali, valkosipuli, pähkinä
-ainemaarat: 250-300 g kiinteää tofua, 2 valkosipulin kynttä, 300 g parsakaalia, öljyä, 4 rkl maapähkinävoita, 1 rkl limemehua, 1 tl srirachaa, 2 rkl soijakastiketta, 1 tl agavesiirappia, suolaa, 0.5 dl vettä, ituja, riisiä
-ohje: Kuutioi tofu, pilko parsakaali pieniksi nupuiksi ja hienonna valkosipuli. \nKuumenna öljy paistinpannulla, lisää valkosipuli ja kuullota hetki. Lisää kuutioitu tofu ja paista, kunnes tofupalat ovat saaneet kevyesti väriä. Lisää parsakaalinuput pannulle tofun sekaan. Paista, kunnes parsakaalit ovat pehmenneet hiukan (saavat jäädä rapeiksi). \nSillä aikaa, kun tofut ja parsakaalit paistuvat, valmista kastike. Sekoita yhteen maapähkinävoi, limenmehu, Sriracha, soijakastike, agavesiirappi, suola ja vesi. Pyörittele kastike tofun ja parsakaalin kanssa sekaisin ja kuumenna noin minuutin ajan. \nTarjoile nuudelien tai riisin kanssa. Koristele iduilla ja limeviipaleilla.
+Name: Tofu and broccoli in peanut sauce
+Ingredients: tofu, rice, broccoli, garlic, peanut, syrup
+ingredients: 250-300 g solid tofu, 2 cloves of garlic, 300 g broccoli, oil, 4 tbsp peanut butter, 1 tbsp lime juice, 1 tsp sriracha, 2 tbsp soy sauce, 1 tsp agave syrup, salt, 0.5 dl water, sprouts, rice
+Help: Cube tofu, cut broccoli into small pieces and chop garlic. \nHeat the oil in a frying pan, add the garlic and sweat for a moment. Add the cubed tofu and fry until the tofu cubes are lightly colored. Add the broccoli to the pan with tofu. Fry until the broccoli has softened slightly (or became crispy). \nMeanwhile prepare the sauce. Mix peanut butter, lime juice, sriracha, soy sauce, agave syrup, salt and water. Add the sauce with tofu and broccoli and stir for about a minute. \nServe with noodles or rice. Garnish with sprouts and lime slices.
 
-nimi: Tofu-rapu kippo
-ainekset: tofu, riisi, paprika, sipuli, valkosipuli, rapu
-ainemaarat: 2 dl sushi riisiä, 1 paketti tofua, 2 sipulia, 4 valkosipulinkynttä, 1/2 paprika, 3 cm inkivääriä, 200 g ravunpyrstöjä, suolaa, pippuria, sitruunaa, 1 dl maissijauhoja, 0.5 dl vehnäjauhoja, öljyä, seesamiöljyä, 1 rkl kalakastiketta, 2 rkl hoisin kastiketta, 2 rkl soijakastiketta, 0.2 dl olutta
-ohje: Pilko sipulit ja paprika karkeaksi kuutioksi ja murskaa valkosipuli. Hienonna inkivääri ja laita se sipulin sekä valkosipulin kanssa kulhoon. Huuhtele riisiä kolme tai neljä kertaa, jotta ylimääräinen tärkkelys katoaa. \nLaita kattilaan riisi (2dl) ja 3 dl vettä. Odota että seos kiehahtaa ja laita kansi tiivisti päälle, laita levy ykköselle. Odota 15-20 min raottamatta kantta. \nAvaa tofupaketti ja kuivaa tofu talouspaperilla. Kuutioi tofu melko kookkaiksi kuutioksi ja levitä päälle suolaa. Odota hetki ja pyyhi tofun pinnasta suola ja neste. Tofusta tulee sitä parempaa, mitä paremmin siitä saa kosteuden pyyhittyä pois. \nLaita tofu astiaan ja kaada päälle maissijauho. Pyörittele tofukuutioita maissijauhoissa. Lisää joukkoon myös suolaa ja pippuria. Laita uuteen astiaan noin 0,5 dl vehnäjauhoja ja kaada sekaan hieman olutta. Sekoita seosta. Seoksen tulis olla juoksevaa, mutta samalla hieman kohmeista. \nKuumenna pannu ja paahda tofukuutioita, kunnes ne ovat saaneet kauniin ruskean paistopinnan. Ole kärsivällinen. Ota tofut pois pannulta ja laita tilalle sipuli, valkosipuli, paprika ja inkivääri pannulle ja lisää kaikki mausteet. \nKun kasvikset alkavat olemaan valmiita, lisää tofut kasvisten sekaan. Kuumenna toisessa pannussa öljyä. Kun öljy on kuumentunut ota ravut ja kasta ne jauho/olut seoksessa ja friteeraa pannulla. \nKaada valmiin riisin sekaan hieman japanilaista riisietikkaa. Kokoa annos, laita pohjalle riisi, sen päälle kasvikset ja tofu ja niiden päälle friteeratut ravut. \nNauti!
+Name: Tofu-prawn cup
+Ingredients: tofu, rice, bell pepper, onion, garlic, prawns, ginger, corn, wheat, beer, fish
+ingredients: 2 dl sushi rice, 1 pack of tofu, 2 onions, 4 garlic cloves, 1/2 bell pepper, 3 cm ginger, 200 g prawns, salt, pepper, lemon, 1 dl corn flour, 0.5 dl wheat flour, oil, sesame oil, 1 tbsp fish sauce, 2 tbsp hoisin sauce, 2 tbsp soy sauce, 0.2 dl beer
+Help: Chop the onions and bell pepper and crush the garlic. Grind the ginger and put it in a bowl with onion and garlic. Rinse the rice three times to remove excess starch. \nPlace rice (2dl) and 3 dl of water in the saucepan. Wait for the mixture to boil and put on the lid. Put the heat on minimum level. Wait 15-20 minutes. \nOpen the tofu package and dry the tofu with paper towel. Dice tofu into large cubes and sprinkle salt on top. Wait a moment and wipe the surfaces of the tofu. Tofu gets the better, the more you wipe off the moisture. \nPlace the tofu in bowl and pour over the corn flour. Mix the tofu cubes in corn flour. Add salt and pepper. Put 0.5 dl wheat flour into another bowl with some beer. Mix the mixture. The mixture should be fluid, but somewhat cumbersome. \nHeat the pan and roast the tofu cubes until they have a beautiful brown surface. Remember to be patient. Take the tofu off the pan and replace with onion, garlic, bell pepper and ginger along with the all spices. \nWhen the vegetables are ready, add the tofu with them. Heat the oil in another pan. When the oil is hot take the prawns and dip them into the flour/beer mixture and fry them in the pan. \nApply a bit Japanese rice vinegar into the boiled rice. Assemble the dish, put the rice on the bottom, the vegetables and the tofu on top, and the fried prawns on them. \nEnjoy!
 
-nimi: Linssipihvit ja sienikastike
-ainekset: riisi, sieni, porkkana, linssi, sipuli
-ainemaarat: 2 tlk punaisia linssejä, 2 porkkanaa, 2 rkl maissitärkkelystä, 3/4 tl suolaa, 1/2 tl tuoretta inkivääriä raastettuna, 1/2 tl keltaista currytahnaa, Kastike:, 1 l suppilovahveroita, 1 pieni sipuli, 1/2 rkl öljyä, 4 dl kaura kasvisrasvasekoitetta, 1 dl vettä, 1 1/2 rkl soijakastiketta
-ohje: Kuori ja raasta porkkanat karkeaksi raasteeksi. Ota sivuun 1 dl valutettuja, huuhdeltuja linssejä ja soseuta loput tasaiseksi. \nSekoita soseutetut ja kokonaiset linssit, porkkanaraaste, maissitärkkelys, suola, inkivääri ja currytahna kulhossa tasaiseksi taikinaksi. Taputtele taikina pienehköiksi pihveiksi. \nPaista pihvejä pannulla miedolla lämmöllä öljyssä molemmin puolin 5-7 minuuttia, kunnes ne ovat kauniin rapeapintaisia. \nLeikkaa sienistä kannat, harjaa pinnat puhtaaksi ja halkaise sienet. Kuori ja hienonna sipuli. \nPaista kuumalla pannulla sienistä pois kaikki kosteus. Lisää öljyä ja hienonnettu sipuli. Paista, kunnes sipulikuutiot ovat läpikuultavia. \nLisää kaurakerma, vesi ja soijakastike. Anna kiehahtaa ja hauduta muutama minuutti. Tarjoa pihvit keitetyn riisin ja suppilovahverokastikkeen kanssa.
+Name: Lentil patty and mushroom sauce
+Ingredients: rice, mushroom, carrot, lentil, onion, corn, ginger, soy, oat
+ingredients: 2 cans of red lentils, 2 carrots, 2 tbsp corn starch, 3/4 tsp salt, 1/2 tsp grated ginger, 1/2 tsp yellow curry paste,Sauce:, 1 l funnel chanterelles, 1 onion, 1/2 tbsp oil, 4 dl vegetable oil, 1 dl water, 1 1/2 tbsp soy sauce
+Help: Peel and grate the carrots. Take aside 1 dl of drained, rinsed lentils and mash the rest into fine paste. \nMix mashed lentils, whole lenses, carrot grate, corn starch, salt, ginger and curry paste in a bowl into a smooth dough. Pat the dough into small patties. \nRoast the patties with low heat in oil on both sides for 5-7 minutes until they look nice and crispy. \nCut the foot of the mushroom, brush the surfaces clean and split them. Peel and chop the onion. \nFry off the moisture from the mushrooms in hot pan. Add oil and chopped onion and sweat them. \nAdd oat cream, water and soy sauce. Let it boil and simmer for a few minutes. Serve patties with cooked rice and funnel chanterelle sauce.
 
-nimi: Paprika herkkusienillä
-ainekset: riisi, sieni, paprika
-ainemaarat: 4 paprikaa, 200 g herkkusieniä, purjoa, 1 rkl öljyä, hunajaa, 200 g parsakaalia,  2 dl tummaa riisiä, 1 tl suolaa, 1 tl mustapippuria, 1 tl kuminaa, 1/2 tl chilirouhetta
-ohje: Halkaise paprikat ja poista siemenet. Viipaloi puhdistetut herkkusienet ja silppoa purjo. \nKuumenna öljy ja hunaja pannussa ja paista sieniviipaleet ruskeiksi. Lisää parsakaalit, riisi ja mausteet pannuun. Jatka kypsentämistä 4-5 minuuttia. \nJaa täyte paprikoihin. Paista paprikoita uunissa noin 25 minuuttia. 
+Name: Bell pepper with mushrooms
+Ingredients: rice, mushroom, bell pepper, leek, honey, chili
+ingredients: 4 bell peppers, 200 g button mushrooms, leek, 1 tbsp oil, honey, 200 g broccoli, 2 dl rice, 1 tsp salt, 1 tsp black pepper, 1 tsp cumin, 1/2 tsp chili powder
+Help: Cut the bell peppers and remove the seeds. Slice the cleaned mushrooms and chop the leek. \nHeat the oil and honey in pan and fry the mushrooms. Add broccoli, rice and spices to the pan. Continue frying for 4-5 minutes. \nPut the filling in the bell peppers. Bake the peppers in the oven for 25 minutes.
 
-nimi: Pekoni-kanapasta
-ainekset: makaroni, kana, sipuli, paprika
-ainemaarat: 200 g pekonia, 450 g broilerin fileesuikaleita, suolaa, mustapippuria, 1 sipuli, 1 paprika, 1 prk ranskankermaa, 1 dl persiljaa
-ohje: Keitä makaronit. Suikaloi ja kuutio pekonit. Ruskista pekoni ja broilerit rasvassa. Mausta suolalla ja pippurilla. \nKuutio sipuli ja paprika. Lisää ne pannulle pehmenemään. Lisää joukkoon kerma. Ohenna kastike pastan keitinliemellä. Viimeistele annokset persiljalla. 
+Name: Bacon-chicken pasta
+Ingredients: macaroni, chicken, onion, bell pepper, cream
+ingredients: 200 g bacon, 450 g chicken fillet, salt, black pepper, 1 onion, 1 bell pepper, 200 g french cream, 1 dl parsley
+Help: Cook the macaroni. Slice and cube the bacon. Brown bacon and chicken fillets in oil. Season with salt and pepper. \nCube onion and bell pepper. Add them on the pan to soften. Add the cream. Dilute the sauce with the pasta broth. Finish the dishes with parsley.
 
-nimi: Lohimakaronikeitto
-ainekset: makaroni, lohi, sipuli, porkkana
-ainemaarat: 500 g lohifileetä, makatonia, 1 sipuli, 2 porkkanaa, 2 lehtisellerin varttam 1 rkl öljyä, 2 laakerinlehteä, 1 tl suolaa, 9 dl vettä, 2 rkl sitruunamehua, 1 dl tilliä
-ohje: Irrota lohesta nahka, ruodot ja paloittele se. Kuori kasvikset, hienonna sipuli, viipaloi porkkanat ja selleri. \nKuullota kasvikset ja laakerinlehtiä rasvassa kattilassa noin 5 minuuttia. Lisää suola ja vesi. Keitä kunnes kasvikset ovat lähes kypsiä. \nLisää makaronit ja lohenpalat ja jatka kypsentämistä kunnes makaronit ovat kypsiä. Mausta sitruunamehulla ja tillillä keitto.  
+Name: Salmon macaroni soup
+Ingredients: macaroni, salmon, onion, carrot
+ingredients: 500 g salmon fillet, macaroni, 1 onion, 2 carrots, 2 celery stalks, 1 tbsp oil, 2 bay leaves, 1 tsp salt, 9 dl water, 2 tbsp lemon juice, 1 dl dill
+Help: Remove the skin and fishbones from the salmon and cut it. Peel the vegetables, chop the onion, slice the carrots and celery. \nSweat vegetables and bay leaves in grease in a saucepan for 5 minutes. Add salt and water. Cook until the vegetables are almost ripe. \nAdd macaroni and salmon pieces, and continue cooking until the macaroni is done. Season the soup with the lemon juice and dill.
 
-nimi: Maustelohi
-ainekset: spagetti, lohi, porkkana, sipuli
-ainemaarat: 300 g kirjolohifileepaloja, 1 porkkana, 1 punasipuli,  5 dl vettä, 1 dl sokeria, 1/2 dl väkiviinaetikkaa, 1/2 dl omenaviinietikka, 1 tl suolaa, 1 laakerinlehti, 8 mustapippuria, spagettia
-ohje: Kuori porkkana ja sipuli. Leikkaa porkkana lanteiksi ja sipuli lohkoiksi. \nKiehauta vesi, sokeri, etikat ja suola. Lisää mausteet ja vihannekset ja anna kiehua 5 minuuttia. Nosta kalanpalat liemeet ja siirrä kattila pois liedeltä. Peitä kannella ja anna kalojen kypsyä jäähtyvässä vedessä noin 20 minuuttia. \nNosta kalat pois liemestä. Kaada jäähtynyt liemi takaisin kalapaloille ja anna maustua jääkaapissa yön yli. \nTarjoa maustelohi kylmänä. Koristele annos sipulilla ja porkkanoilla ja tarjoile spagetin kera. 
+Name: Spiced salmon
+Ingredients: spaghetti, salmon, carrot, onion
+ingredients: 300 g salmon trout pieces, 1 carrot, 1 red onion, 5 dl water, 1 dl sugar, 1/2 dl vinegar, 1/2 dl apple vinegar, 1 tsp salt, 1 bay leaf, 8 black peppers, spaghetti
+Help: Peel the carrot and onion. Cut the carrot into slices and chop the onion. \nBoil water with sugar, vinegar and salt. Add the spices and vegetables, and let it boil for 5 minutes. Put the fish pieces into the broth and move the saucepan off the stove. Cover the pan with lid and let the fish mature in the water for 20 minutes. \nPick the fish out of the broth. Pour the cooled broth back with the fish and let it season in the refrigerator overnight. \nSpiced salmon is served cold. Finish the dish with onions and carrots, and serve with spaghetti.
 
-nimi: Tomaattinen jauhelihavuoka
-ainekset: makaroni, jauheliha, tomaatti, sipuli
-ainemaarat: 500 g makaronia, 400 g nauta-sikajauhelihaa, 1 dl sipulikuutioita, 1 tl suolaa, 1 tl mustapippuria, 5 dl vettä, 3 tomaattia, 2 tl oreganoa, 150 g emmentaljuustoraastetta
-ohje: Voitele iso uunivuoka. Levitä pohjalle keitetyt makaronit. Ruskista jauheliha ja lisää sipulikuutiot mukaan kuunnottumaan. Mausta liha suolalla ja mustapippurilla. Lisää vuokaan. \nLisää pannuun 5 dl vettä ja kieuhauta se. Lisää pannun huuhdeliemi vuokaan. Rouhi päälle mustapippuria. \nKypsennä vuokaa 200 asteessa 35 minuuttia. Lisää puolessa välin kypsennystä juustoraaste vuoan päälle. 
+name: Tomato minced meat casserole
+Ingredients: macaroni, minced meat, tomato, onion, cheese
+ingredients: 500 g macaroni, 400 g minced meat, 1 dl chopped onion, 1 tsp salt, 1 tsp black pepper, 5 dl water, 3 tomatoes, 2 tsp oregano, 150 g grated emmental
+Help: Grease a large oven dish and spread the cooked macaroni on the bottom. Brown the minced meat and add the chopped onion with it to sweat. Spice up the meat with salt and black pepper. Add the mix into the casserole. \nBoil 5 dl of water in saucepan. Add the rinse broth into the pan. Grind black pepper on top. \nBake the casserole in oven at 200 degrees for 20 minutes. After that, add grated cheese on top and put it back into the oven for 15 minutes.
 
-nimi: Kinkku-sienipasta
-ainekset: makaroni, sieni, sipuli, paprika
-ainemaarat: 500 g makaronia, 200 g palvikinkkua, 1 paprika, 1 sipuli, 150 g herkkusieniä, 2 rkl oliiviöljyä, 2 rkl vehnäjauhoja, 1 tl mustapippuria, 4 dl maitoa, suolaa, 1/2 dl emmentalraastetta
-ohje: Keitä makaronit. Suikaloi kinkku ja hienonna paprika sekä sipuli. Puhdista ja viipaloi sienet. \nLisää paistinpannulle öljy, kinkku, paprika, sipuli ja herkkusienet. Paista 5 minuuttia. \nLisää jauhot ja mustapippuri. Paista vielä minuutti. Pienennä lämpöä ja lisää maito koko ajan sekoittaen. Lisää tarvittaessa suolaa. Tarjoile makaronin kera.
+Name: Ham-mushroom pasta
+Ingredients: macaroni, mushroom, onion, bell pepper, wheat, cheese
+ingredients: 500 g macaroni, 200 g smoked ham, 1 bell pepper, 1 onion, 150 g button mushrooms, 2 tbsp olive oil, 2 tbsp wheat flour, 1 tsp black pepper, 4 dl milk, salt, 1/2 dl grated emmental
+Help: Cook macaroni. Slice ham and chop bell pepper and onion. Clean and slice the mushrooms. \nAdd oil, ham, bell pepper, onion and mushrooms to the frying pan. Fry for 5 minutes. \nAdd flour and black pepper. Fry for another minute. Reduce heat and add milk while stirring. Add salt if necessary. Serve with macaroni.
 
-nimi: Sieni-herne-parsakaalipasta
-ainekset: makaroni, sieni, parsakaali
-ainemaarat: 300 g makaronia, 1 parsakaali, 200 g pakasteherneitä, 200 g herkkusieniä, 1/2 dl pinjansiemeneniä, 3 dl kaurakermaa, 1/2 dl sitruunan mehu, mustapippuria, 1 kasvisliemikuutiota, 50 g parmesaaniraastetta
-ohje: Keitä makaronit. Pilko parsakaali ja sienet. Paista sieniä kuumalla paistinpannulla ilman öljyä. Lisää lopuksi öljyä ja ruskista hetki. Siirrä sivuun. \nPaahda kuumalla pannulla hetki pinjansiemeniä ja siirrä nekin sivuun. \nKaada kerma pannuun ja sekoita siihen sitruunan mehu, mustapippuria ja kasvisliemikuutioita. Lisää parsakaalin palat ja anna keittyä miedolla lämmöllä pari minuuttia. \nLisää muut ainekset, sekoita ja hauduta hetki niin että herneet turpoavat. Tarjoile makaronin kera. 
+Name: Mushroom-pea-broccoli pasta
+Ingredients: macaroni, mushroom, broccoli, pea, cream, cheese
+ingredients: 300 g macaroni, 1 broccoli, 200 g frozen peas, 200 g button mushrooms, 1/2 dl pine nuts, 3 dl oat cream, 1/2 dl lemon juice, black pepper, 1 vegetable broth cube, 50 g grated parmesan
+Help: Cook macaroni. Chop broccoli and mushrooms. Fry mushrooms in a hot frying pan without oil. When thay are ready, add oil and brown for a moment. Move the mushrooms aside. \nRoast pine nuts in a hot pan and take them aside. \nPour the cream into the pan and mix in the lemon juice, black pepper and vegetable broth cube. Add the broccoli pieces and let them simmer for a few minutes. \nAdd the other ingredients, stir and let them simmer for a moment so that the peas swell. Serve with macaroni.
 
-nimi: Sieni-tomaattipasta
-ainekset: makaroni, sieni, tomaatti, sipuli
-ainemaarat: 300 g makaronia, 150 g herkkusieniä, 2 sipulia, 2 valkosipulinkynttä, 10 kpl kirsikkatomaatteja, 1/2 dl oliiviöljyä, 1 tuorechili, 1 rkl balsamiviinietikkaa, 1 tl suolaa, 1 tl mustapippuria, 1 dl tuoretta basilikaa
-ohje: Keitä makaronit. Leikkaa sienet kuutioiksi. Silppoa sipulit ja puolita tomaatit. \nKuumenna öljy paistokasarissa. Lisää sipulit, chili ja kuumenna hetki. Lisää sienet ja paista sekoitellen viitisen minuuttia. \nLisää balsamiviinietikka ja tomaatit. Mausta suolalla ja pippurilla. Kuumenna pari minuuttia. \nAnnoste sieni-tomaattipasta syville lautasille. Ripottele annoksien päälle tuorebasilikaa. 
+Name: Mushroom-tomato pasta
+Ingredients: macaroni, mushroom, tomato, onion, chili
+ingredients: 300 g macaroni, 150 g button mushrooms, 2 onions, 2 garlic cloves, 10 cherry tomatoes, 1/2 dl olive oil, 1 fresh chili, 1 tbsp balsamic vinegar, 1 tsp salt, 1 tsp black pepper, 1 dl fresh basil
+Help: Cook macaroni. Cut the mushrooms into cubes. Chop the onions and half of the tomatoes. \nHeat the oil in the sauté pan. Add the onions, chili and heat for a moment. Add the mushrooms and fry for five minutes while stirring. \nAdd balsamic vinegar and tomatoes. Season with salt and pepper. Heat for a few minutes. \nDish out the macaroni along with the sauce on deep plates. Put fresh basil over the portions.
 
-nimi: Tofukastike
-ainekset: makaroni, tofu, sipuli, paprika
-ainemaarat: 300 g makaronia, 1 pkt marinoitua tofua, 2.5 dl sipulista kaurakermaa, 150 g herkkusieniä, 1 paprika, 1 sipuli, 1 tl suolaa, 1 tl mustapippuria, ruohosipulia
-ohje: Keitä makaronit. Kuivaa tofun pinta. Kuutioi tofu. Paahda tofua kuumalla kuivalla pannulla, niin että se saa väriä pintaan. Vähennä lämpöä ja lisää öljy ja paista noin 7 minuuttia. \nLisää pilkotut sienet, paprika ja sipuli. Kuullota pari minuuttia. \nKaada kaurakermaa joukkoon ja kiehauta 3 minuuttia. Lisää tarvittaessa suolaa ja pippuria. Viimeistele annos ruohosipulilla. 
+Name: Tofusauce
+Ingredients: macaroni, tofu, onion, bell pepper, cream
+ingredients: 300 g macaroni, 1 pack of tofu, 2.5 dl oatmeal, 150 g mushrooms, 1 bell pepper, 1 onion, 1 tsp salt, 1 tsp black pepper, chive
+Help: Cook macaroni. Dry the surface of the tofu and dice it. Roast the tofu in a hot dry pan so that it gets a bit brown on the surface. Reduce heat, add oil and fry for 7 minutes. \nAdd chopped mushrooms, bell peppers and onions. Sweat few minutes. \nPour the oatmeal into the pan and boil for 3 minutes. Add salt and pepper if necessary. Finish the portion with chive.
 
-nimi: Soija-kasviskastike
-ainekset: makaroni, soija, paprika, porkkana, sipuli, tomaatti
-ainemaarat: 300 g makaronia, 2 rkl oliiviöljyä, 2 tl jauhettua korianteria, 1 tl chiliä, 2 tl juustokuminaa, 1 punasipuli, 2 valkosipulinkynttä, 2 dl soijarouhetta, 1 paprika, 1 porkkana, suolaa, 2 rkl tomaattipyrettä, 2 dl kookoskermaa, 1/2 dl basilikaa
-ohje: Keitä makaronit. Lämmitä korianteri, chili ja juustokumina öljyssä. Lisää hienonnetut sipulit ja kuullota. Sekoita joukkoon soijarouhe, hienonnettu paprika ja porkkana. Kuullota kunnes kasvikset ovat lämmenneet. \nLisää suola ja tomaattipyre ja kuullota kolme minuuttia. Sekoita kerma joukkoon ja hauduta miedolla lämmöllä viisi minuuttia. Tarjoile makaronin kera. 
+Name: Soy-vegetable sauce
+Ingredients: macaroni, soy, bell pepper, carrot, onion, tomato, chili, cheese, cream
+ingredients: 300 g macaroni, 2 tbsp olive oil, 2 tsp coriander, 1 tsp chili, 2 tsp cheese cumin, 1 red onion, 2 garlic cloves, 2 dl soy protein granules, 1 bell pepper, 1 carrot, salt, 2 tbsp tomato purée, 2 dl coconut cream, 1/2 dl basil
+Help: Cook macaroni. Heat coriander, chili and cheese cumin in oil. Add the chopped onions and sweat them. Mix in soy granules, chopped bell pepper and carrot. Sweat until the vegetables are warmed up. \nAdd salt and tomato purée and let it sauté for three minutes. Stir in the cream and simmer for five minutes on low heat. Serve with macaroni.
 
-nimi: Kasvismakaronilaatikko
-ainekset: makaroni, soija, sipuli, porkkana, parsakaali
-ainemaarat: 4 dl makaronia, 1.5 l vettä, 1 tl suolaa, 2 sipulia, 200 g porkkanaa, 100 g selleriä, 150 g parsakaalia, 150 g kukkakaalia, 1 dl soijarouhetta, 1 dl aurinkokuivattuja tomaatteja,  1 maustekurkki, 150 g kauratuorejuustoa, 1 tl mustapippuria, 1 tl suolaa, 1 tl paprikajauhetta, 8 dl kauramaitoa, 1 rkl rypsiöljyä
-ohje: Lisää vesi kattilaan ja keitä makaronit. Keittämisen aikana suikaloi sipulit, porkkanat ja selleri. Valuta aurinkokuivattujen tomaattien öljyä pannille ja paista kasvikset siinä. \nLisää pannulle sipulit ja juurekset. Leikkaa kaalit pieniksi palpoiksi ja lisää ne pannulle sekä soijarouhe. Pilko aurinkokuivatut tomaatit ja maustekurkku sekä lisää ne pannulle. Sekoita hetki ja lisää kauratuorejuusto ja mausta seos mieleiseksi.  \nKaada puolet makaroneista öljyttyyn uunivuokaan. Jaa paistettu kasvisseos makaronien päälle ja lisää loput makaronit. \nLisää kauramaito uunivuokaan. Kypsennä 200-asteessa 45 minuuttia. 
+Name: Veggie macaroni casserole
+Ingredients: macaroni, soy, onion, carrot, broccoli, celery, cauliflower, rapeseed, oat
+ingredients: 4 dl macaroni, 1.5 l water, 1 tsp salt, 2 onions, 200 g carrots, 100 g celery, 150 g broccoli, 150 g cauliflower, 1 dl soy protein granules, 1 dl sun-dried tomatoes, 1 pickle, 150 g oat cream cheese, 1 tsp black pepper, 1 tsp salt, 1 tsp paprika, 8 dl oat milk, 1 tbsp rapeseed oil
+Help: Add water to the saucepan and cook the macaroni. While cooking, slice the onions, carrots and celery. Drain the oil of sun-dried tomatoes into the pan and fry the vegetables in it. \nAdd onions and roots to the pan. Cut the cauliflower and broccoli into small pieces and add them to the pan along with soy granules. Chop the sun-dried tomatoes and pickle, and add them to the pan. Stir for a moment, add the oat cream cheese and flavor the mixture to your liking. \nPour half of the macaroni into greased casserole. Spread the roasted vegetable sauce over the macaroni and add the rest of the macaroni. \nPour the oat milk on the casserole. Cook at 200 degrees for 45 minutes.
 
-nimi: Lohipasta
-ainekset: makaroni, lohi, parsakaali, sipuli 
-ainemaarat: 300 g makaronia, 1 sipuli, 1 rkl juoksevaa rasvaa, 200 g parsakaalia, 500 g kirjolohifileetä, 1 tl sitruunapippuria, 2.5 dl ruokakermaa, suolaa
-ohje: Keitä makaronit. Kuullota hienonnettu sipuli rasvassa. Kiehauta parsakaalin nuput suolalla maustetussa pienessä vesimäärässä. \nPoista lohesta ruodot ja nahka. Leikkaa suikaleiksi. Lisää sipulin joukkoon parsakaalit, lohisuikaleet, sitruunapippuri ja ruokakerma. Kuumenna kiehuvaksi. \nYhdistä kastike keitetyn makaronin joukkoon.
+Name: Salmon special
+Ingredients: macaroni, salmon, broccoli, onion, cream
+ingredients: 300 g macaroni, 1 onion, 1 tbsp oil, 200 g broccoli, 500 g salmon trout, 1 tsp lemon pepper, 2.5 dl cream, salt
+Help: Cook macaroni. Sweat the chopped onion in oil. Boil the broccoli pieces in a small amount of salt-flavored water. \nRemove fishbones and skin from salmon. Cut salmon into strips. Add broccoli, salmon strips, lemon pepper and light cream with the onion. Heat until cream starts to boil. \nMix the sauce with cooked macaroni.
 
-nimi: Tofu-currykastike
-ainekset: spagetti, tofu, porkkana, sipuli
-ainemaarat: 250 g tagliatellepastaa, 250 g tofua, 2 sipulia, 2 porkkanaa, 150 g varsiselleriä, 3 rkl rypsiöljyä, 4 dl kaurakermavalmistetta, 1 tl currya, 1 kpl kasvisliemikuutioita, 1 tl mustapippuria
-ohje: Keitä pasta. Valuta ja kuutio tofu. Silppua sipulit, viipaloi porkkanat ja varsiselleri. Paista tofukuutiot öljyssä ruskeiksi. \nKuullota sipulit öljyssä ja lisää muut kasvikset. Kääntele joukkoon valitsemasi kerma ja anna kiehua muutama minuutti. \nMausta curryllä ja pippurilla. Lisää tofukuutiot kastikkeeseen. Tarjoile spagetin kera. 
+Name: Tofu-currysauce
+Ingredients: spaghetti, tofu, carrot, onion, celery
+ingredients: 250 g tagliatelle paste, 250 g tofu, 2 onions, 2 carrots, 150 g celery, 3 tbs butter, 4 dl oatmeal cream, 1 tsp olive oil, 1 rsp black pepper, 1 tl curry, 1 vegan broth cube
+Help: Cook pasta. Drain and cube tofu. Chop the onions, slice the carrots and celerys. Bake the tofu in oil. Saute the onions in oil and add the other vegetables. Turn your cream into action and let it boil for a few minutes. \nSpice with curry and pepper. Add the tofucubes to the sauce. Serve with spaghetti. 
 
-nimi: Vegaaninen kesäkeitto savutofulla
-ainekset: peruna, tofu, porkkana
-ainemaarat: 1 paketti savutofua, 4-5 keskikokoista perunaa, 2 porkkanaa, pieni kukkakaali, 1 dl herneitä, n. 7 dl vettä, kasvisliemikuutio, ripaus valkopippuria, suolaa, 4 dl kaurakermaa, 2 kevätsipulin vartta, tuoreita yrttejä oman maun mukaan, esim. tilliä, ruohosipulia ja/tai persiljaa
-ohje: Pese hyvin (ja kuori tarvittaessa) perunat ja porkkanat. Pilko pieniksi suupalan kokoisiksi paloiksi. Irrota kukkakaalista nuput. Kuutioi tofu. \nLaita vihannekset kattilaan ja lisää vettä niin, että vihannekset juuri ja juuri peittyvät (itselläni meni aika tarkalleen 7 dl vettä). Mausta kasvisliemikuutiolla ja valkopippurilla. Keitä vihannekset kypsiksi. \nSekoita lopuksi joukkoon kaurakerma ja tofukuutiot. Lisää suolaa oman maun mukaan. Ota kattila pois levyltä ja lisää silputut kevätsipulin varret ja haluamasi tuoreet yrtit.
+Name: Vegan soup with smoke tofu
+Ingredients: potato, tofu, carrot, pea, oat, onion
+ingredients: 300 g tofu, 5 potatoes, 2 carrots, small cauliflower, 1 dl peas, 7 dl water, 1 vegan stock cube, 1 tsp salt, 1 tsp black pepper, 4 dl oatmeal cream, 2 onions, parsley
+Help: Wash the potatoes and carrots well. Chop potatoes and carrots to small snack-sized pieces. Remove the cauliflower's head. Cube tofu. \nPlace the vegetables in a saucepan and add the water so that the vegetables just cover. Spice with vege stock cube and white pepper. Cook the vegetables. Finally, mix the oatmeal cream and the tofucubes. Add salt to your taste. Take the kettle off the plate and add shredded spring onion stalks and the desired fresh herbs.
 
-nimi: Pyttipannu vegaaninen
-ainekset: peruna, tofu, parsakaali, paprika
-ainemaarat: Pari keitettyä perunaa, N. 120 g Tofua (esim. Jalotofu), Puolikas parsakaali, Suolaa, Paprikajauhetta, Mustapippuria, Öljyä paistamiseen 
-ohje: Pilko perunat ja tofu, käytä parsakaalista nuput. Laita pannu levylle kuumenemaan -> lisää öljyä. Lisää pannulle ensin perunat ja tofu, sitten mausteet. Paistele hetki ja lisää parsakaali. Ruoka on valmis kun kypsyysaste on mieleisesi! Helppoa ja hyvää!
+Name: Vegan hash
+Ingredients: potato, tofu, broccoli, bell pepper
+ingredients: 2 potatoes, 120 g tofu, 1/2 broccoli, 1 tsp salt, 1 tsp sweet pepper sauce, black pepper, 1 tbs butter
+Help: Chop potatoes, tofu and broccoli. Put the pan on the plate to heat -> add oil. Add the potatoes and tofu to the pan, then spices. Take a moment and add broccoli. The food is ready when the degree of ripeness is right for you!  
 
-nimi: Paistettua tofua yrttikastikkeessa
-ainekset: peruna, tofu, paprika, porkkana, sipuli
-ainemaarat: 600 g kiinteää tofua, 8 perunaa, 2 porkkanaa, 1 keltainen paprika, 1 punainen paprika, 100 g sokeriherneitä, 1 punasipuli \n \nYrttikastike \n4 dl kermaviiliä, ½ rkl silputtua ruohosipulia, ½ rkl silputtua persiljaa, ½ tl silputtua basilikaa, 2 tl sitruunamehua, suolaa ja pippuria, voita ja oliiviöljyä paistamiseen
-ohje: Yrttikastike: Silppua ruohosipuli, basilika ja persilja. Sekoita yrttisilppu kermaviiliin ja mausta sitruunamehulla, suolalla ja pippurilla. Pidä kastike kylmässä tarjoiluun asti. \nKuori ja kuutioi perunat ja anna niiden olla kylmässä vedessä hetken. Kuori ja viipaloi porkkanat. Suikaloi paprika. Kuori ja lohko sipuli. \nPaista perunakuutiot voissa. Kiehauta porkkanat ja sokeriherneet. Kuullota sipuli oliiviöljyssä. Lisää porkkanat ja sokeriherneet sekä paprika ja kuullota hetken. Lisää vielä perunat vihannesten joukkoon. Viipaloi ja paista tofu. Tarjoile vihannesten ja kastikkeen kanssa.
+Name: Fried tofu in herb sauce
+Ingredients: potato, tofu, bell pepper, carrot, onion
+ingredients: 600 g tofu, 8 potatoes, 2 carrots, 1 yellow bell pepper, 1 red bell pepper, 100 g pea, 1 red onion, 2 tsp lemon juice, 4 dl sour cream, salt, pepper, butter, olive oil, basil, parsley
+Help: Herb sauce: Chop the basil and parsley. Mix the herb slice with sour cream and spice with lemon juice, salt and pepper. Keep the sauce in the cold until serving. \nShell and dice the potatoes and let them be in cold water for a moment. Peel and slice the carrots. Slice the sweet peppers. Slice onion. \nCook potato cubes in butter. Boil carrots and peas. Saute the onion in olive oil. Add the carrots and peas, and the sweet peppers and bake for a moment Stir potatoes and vegetables. Slice and fry tofu. Serve with vegetables and sauce.
 
-nimi: Parsakaali-savutofupasta
-ainekset: spagetti, soija, parsakaali, tofu
-ainemaarat: Täysjyväspagettia, 1 parsakaali, 1 paketti kylmäsavustettua tofua (Jalotofu), Kiinalaista soijakastiketta,  Makeaa chilikastiketta
-ohje: Laita tofu n. 10 minuutiksi painon alle ”kyynelehtimään”. Höyrytä parsakaali suolavedessä al denteksi. Keitä spagetti pakkauksen ohjeen mukaan. Pilko tofu kuutioiksi. Kuumenna tilkka rypsiöljyä paistinpannulla – ripsota pari vesipisaraa pannulle, öljy on sopivan kuumaa, kun vesi alkaa kiehua. Paista tofukuutiot kuumalla pannulla rapeiksi, välillä käännellen. \nPalastele parsakaali haarukkapaloiksi. Kaada spagetin keitinvesi pois. Mausta spagetti kattilassa soija- ja chilikastikkeella ja sekoita hyvin. Jaa spagetti lautasille ja ripottele päälle parsakaalit ja tofukuutiot. 
+Name: Chicken-broccoli casserole
+Ingredients: chicken, broccoli, onion, mushroom, soy, cream
+ingredients: 400 g honey marinated chicken fllet, 300 g broccoli, 1 onion, 200 g mushrooms, 1 tbsp butter, 3 dl water, 1 vegetable broth cube, 1 tsp soy sauce, 1 tsp black pepper, 1 tsp dried thyme, 1 dl light cream
+Help: Clean off the extra marinade from the broilers and put the chickens in a butter greased casserole. Cut the broccoli into suitable pieces and cook them for a couple of minutes in a boiled salted water. \nCurly and chop the onion, clean and slice the mushrooms. Cook onions and mushrooms in a frying pan. Sprinkle with wheat flour and pour water. Mix the vegetable broth into a smooth and crumble dish. Add other spices. Allow to simmer for five minutes at low heat and taste with cream. \nPour the mushroom sauce into the dish and cook in a 200 degree oven for about 30 minutes. In addition, offer rice.
 
-nimi: Helppo herkkusienipasta ja tomaattihakkelus
-ainekset: spagetti, sieni, paprika, sipuli, tomaatti
-ainemaarat: 1rs (200 g) viipaloituja herkkusieniä (tuore), 1 (200 g) purjo, 1rkl oliiviöljyä, 1/2dl vettä, 1rs (180 g) Italian yrtit tuorejuustoa, 1/2tl mustapippuria, 1/2tl suolaa, 250g fettuccine tuorepastaa, Päälle ruohosipulia, Tomaattihakkelus, 3 tomaattia, 1 keltainen tai vihreä paprika, 4 (n. 50 g) aurinkokuivattua tomaattia, ruohosipulia 
-ohje: Valmista ensin tomaattihakkelus. Leikkaa tomaatit, paprika ja aurinkokuivatut tomaatit pieniksi kuutioiksi. Sekoita ainekset keskenään. Lisää joukkoon hienonnettua ruohosipulia ja anna maustua tarjoiluun saakka. \nHalkaise, huuhdo ja hienonna purjo. Kuumenna öljy paistokasarissa ja ruskista siinä herkkusienet kevyesti. Vähennä lämpöä ja lisää hienonnettu purjo ja vesi. Anna hautua kannen alla hetken ajan, jotta purjo pehmenee. \nMausta pippurilla ja suolalla ja lisää joukkoon tuorejuusto. Sekoittele, kunnes tuorejuusto sulaa. Kuumenna seos, mutta älä keitä. Siirrä kastike pois liedeltä ja jätä kansi päälle. \nKeitä tuorepasta pakkauksen ohjeen mukaan. Sekoita kastike kahdella lastalla kuuman, valutetun pastan joukkoon. Kaada pasta tarjoiluastiaan. Koristele ruohosipulilla. Tarjoa tomaattihakkeluksen kanssa.
+Name: Mushroom and minced meat sauce
+Ingredients: minced meat, onion, carrot, mushroom, tomato, spaghetti, garlic
+ingredients: 400 g minced meat, 1 onion, 4 garlics, 2 carrots, 2 celerys, 3 tbsp butter, 3 tbsp mushrooms, 3 tbsp tomatosauce, 2 dl white wine, 400 g tagliatelle paste
+Help: Chop the onions, dice the carrots and celerys. Saute them in the saute pan for 10 minutes. \nAdd the minced meat and brown it. \nSpice with dried mushroom juice, tomatosauce and pepper mixture. Bake 5 minutes. \nAdd tomato crush and wine. Let cook for one hour with mild heat. Serve with pasta.
 
-nimi: Parsakaali-paprika makaronilaatikko
-ainekset: parsakaali, paprika, tomaatti, makaroni, sipuli, maito, kananmuna, valkosipuli
-ainemaarat: 1 parsakaali, 1 paprika, 1 rasia kirsikkatomaatteja, 400 g jauhelihaa, 8 dl makaronia, 2 sipulia, 1 l maitoa, 4 kananmunaa, grillimaustetta, valkosipulia, paprikamaustetta, suolaa
-ohje: Pilko parsakaali pienemmiksi palasiksi ja höyrytä niitä kattilassa n. 20 min, jotta ne pehmenevät hieman. Keitä makaroni ohjeen mukaisesti kattilassa, voit keittää niitä samalla kun höyrytät parsakaalia. Pilko paprika pienemmäksi. \nPaista sipuli pannulla ja jauheliha sen sekaan, sekä mausta ne esim grillimausteella, paprikamausteella ja valkosipulilla. Kun jauheliha on paistunut ja maustettu, sekoita se valmiiden makaronien parsakaalin sekä muiden vihannesten kanssa kanssa. \nValmista munamaito sekoittamalla litra maitoa sekä 4 kananmunaa. Mausta vielä suolalla ja mieleisilläsi mausteilla. \nRipottele päälle juustoraastetta tai juustoviipaleita. Makaronilaatikko valmistuu uunissa 200 asteessa n. tunnin. Koko komeuden päälle voit laittaa chiliketsuppia, jolloin makuelämyksesi on valmis!
+Name: Broccoli-sweet-pepper macaroni casserole
+Ingredients: broccoli, bell pepper, tomato, macaroni, onion, minced meat
+ingredients: 1 broccoli, 1 paprika, 200 g tomatoes, 400 g minced meat, 8 dl macaronis, 2 onions, 10 dl milk, 4 eggs, barbecue sausace, 1 tsp salt, 1 tsp paprika
+Help: Chop the broccoli into smaller pieces and steam them in the saucepan for about 20 minutes to soften slightly. Cook the macaroni. Chop sweet peppers smaller. \nCook the onion and minced meat in saucepan, and spice them with barbecue, paprika and garlic. When the minced meat is ready and spiced, mix it with the macaroni, broccoli and other vegetables. \nPrepare the egg milk by mixing a liter of milk and 4 eggs. Spice with salt and your favorite spices. \nAdd grated cheese or cheese slices. Cook the macaroni cassarole at 200 degrees for about an hour. 
 
-nimi: Parsakaali-pastapaistos tofulla
-ainekset: sipuli, valkosipuli, tomaatti, parsakaali, spagetti, tofu
-ainemaarat: 1 sipuli, 1 valkosipulinkynsi, oliiviöljyä, 1 tl balsamicoa, 500 g tomaattimurskaa, 2 dl vettä, 1 yrttiliemikuutio, 2 rkl tomaattipyreetä, 1 tl siirappia, 2 tl kuivattua oreganoa, 2 tl kuivattua basilikaa, suolaa, mustapippuria, 1 pieni parsakaali, 3 dl täysjyväfarfallea, 1 pkt tofua, 6 aurinkokuivattua tomaattia
-ohje: Silppua sipuli ja valkosipulinkynsi ja kuullota öljyssä kunnes ne ovat hieman pehmenneet. Lisää loraus balsamicoa. Lisää joukkoon tomaattimurska, vesi, tomaattipyree, mausteet ja siirappi. Anna hautua noin 15 minuuttia. \nKiehauta sillä välin pasta suolatussa vedessä al denteksi, älä kypsennä täysin kypsäksi! Pilko parsakaali sopivankokoisiksi suupaloiksi ja lisää ne tomaattikastikkeen joukkoon ja anna hautua noin 5 minuuttia. \nPilko tofu ja aurinkokuivatut tomaatit ja lisää ne sekä melkein kypsä pasta tomaattikastikkeen joukkoon. Kaada seos uuniastiaan ja paista 175 asteen lämmössä uunissa noin 20 minuuttia. Paistoksen kannattaa antaa vielä paistamisen jälkeen vetäytyä vielä noin 10 minuuttia. Nauti!
+Name: Broccolipaste wiht tofu
+Ingredients: broccoli, onion, tomato, spaghetti, tofu
+ingredients: 1 onion, 1 garlic, olive oil, 1 tsp balsamico, 500 g crushed tomatoes, 2 dl water, 1 vegetable broth cube, 2 tbsp tomato sauce, 1 tsp syrup, 2 tsp oregano, 2 tsp basil, 1 tsp salt, 1 tsp black pepper, 1 broccoli, 3 dl spaghetti, 250 g tofu, 100 g small tomatoes
+Help: Chop the onion and garlic and heat them in oil until they are slightly softened. Add balsamico. Add tomato crumbs, water, tomato sauce, spices and syrup. Allow to brew for about 15 minutes. \nIn the meantime, boil the pasta in salted water. Chop the broccoli into snacks of appropriate size and add them to the tomato sauce and let it brew for about 5 minutes. \nChop the tofu and sun-dried tomatoes and add them as well as almost ready pasta to tomato sauce. Pour the mixture into the oven and bake at 175 ° C for about 20 minutes. 
 
-nimi: Sieni-jauhelihakastike
-ainekset: jauheliha, sipuli, valkosipuli, porkkana, selleri, sieni, tomaatti
-ainemaarat: 400 g jauhelihaa, 1 sipuli, 4 valkosipuli, 2 porkkana, 2 sellerin vartta, 3 rkl öljyä, 3 rkl kuivattuja suppilovahveroita hienonnettuna, 3 rkl tomaattipyreetä, 1 rkl pizzamausteseosta, 400 ml purkki tomaattimurskaa, 2 dl valko- tai punaviiniä, 400 g tagliatellepastaa
-ohje: Hienonna sipulit, kuutioi porkkana ja sellerin varret. Kuullota niitä kasarissa 10 minuuttia. \nLisää jauheliha ja ruskista se. \nMausta paistos kuivatulla sienirouheella, tomaattipyreellä ja yrttimausteseoksella. Paista tovi. \nLisää tomaattimurska ja viini. Anna kiehua tunti miedolla lämmöllä. Tarjoile pastan kanssa.
+Name: Broccoli and smoked tofu paste
+Ingredients: spaghetti, soy, broccoli, tofu, chili
+ingredients: spaghetti, 1 broccoli, 250 g tofu, soy sauce, sweet chili sauce
+Help: Dry the tofu of water. Steam broccoli. Cook the spaghetti according to the package instructions. Chop tofu into cubes. Heat small amount of oil in a frying pan - sprinkle a few drops of water on the pan, the oil is hot when the water starts to boil. Bake the tofu cubes in a hot pan to crisp. \nSlice the broccoli. Pour spaghetti off the water. Season the spaghetti in a saucepan with soy and chili sauce and mix well. Share spaghetti on plates and serve with broccoli and tofu.
 
-nimi: Broileri-parsakaalivuoka
-ainekset: kana, parsakaali, sipuli, sieni, kerma
-ainemaarat: 500 g hunajamarinoituja broilerin fileepihvejä, 300 g parsakaalia, Kuorrutus:, 1 sipuli, 200 g herkkusieniä, 1 rkl öljyä, 2 rkl, 3 dl vettä, 1 kasvisliemikuutio, 1 tl soijakastiketta, 1/4 tl mustapippuria, ripaus valkopippuria, 1/2 tl kuivattua timjamia, 1 dl kermaa
-ohje: Pyyhi broilereista ylimääräinen marinadi pois ja pane pihvit voideltuun uunivuokaan. \nLeikkaa parsakaalit sopiviksi paloiksi ja kiehauta niitä pari minuuttia kattilassa suolalla maustetussa vedessä. Valuta ja levitä vuokaan broileripihvien päälle. \nKuori ja silppua sipuli, puhdista ja viipaloi herkkusienet. Paista sipuli ja sienet öljyssä paistinpannussa. Ripottele päälle vehnäjauhot ja kaada joukkoon vesi. Sekoita tasaiseksi ja murustele joukkoon kasvisliemikuutio. Lisää muut mausteet. Anna hautua miedolla lämmöllä viitisen minuuttia ja pyöristä maku kermalla. \nKaada herkkusienikuorrutus vuokaan ja kypsennä sitä 200-asteisessa uunissa noin 30 minuuttia. Tarjoa lisäksi riisiä.
+Name: Easy mushroompasta and tomatosauce
+Ingredients: spaghetti, mushroom, bell pepper, onion, tomato
+ingredients: 200 g mushrooms, 1 leek, 1 tbsp olive oil, 2 dl water, 200 g cream cheese, 1 tsp black pepper, 1 tsp salt, 250 g fettucine paste, 3 tomatoes, 1 bell pepper, 100 g sun-dried tomatoes
+Help: First prepare tomato chopping. Cut tomatoes, paprika and sun-dried tomatoes into small cubes. Mix the ingredients together. \nSplit the leek and chop the leek. Heat the oil in a frying pan and lightly grease the mushrooms. Reduce heat and add chopped leek and water. Allow to brew under cover for a moment to soften the leek. \nSpice with pepper and salt and add cream cheese. Mix until the cream cheese melts. Heat the mixture, but don't cook. Move the sauce off the stove and leave the lid on. \nCook fresh pasta according to the packing instructions. Mix the sauce with drained paste. Serve the pasta into a serving pan. Decorate with chives. Offer with tomato chop

@@ -42,7 +42,7 @@ public class DrawnIngredients implements Screen {
     String backText;
     String recipesText;
     Preferences pref;
-    Music ready;
+
 
 
     public DrawnIngredients(MainGame g, int first, int second, int third) {
@@ -63,8 +63,7 @@ public class DrawnIngredients implements Screen {
         firstReel = new FirstReel(pref);
         secondReel = new SecondReel(pref);
         thirdReel = new ThirdReel(pref);
-        ready = Gdx.audio.newMusic(Gdx.files.internal("music/lastReelStops.mp3"));
-        ready.play();
+
 
 
         if (pref.getBoolean("english")) {

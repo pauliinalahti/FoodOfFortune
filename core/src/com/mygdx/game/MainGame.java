@@ -35,6 +35,7 @@ public class MainGame extends Game {
     public Viewport screenPort;
     public MyAssetsManager myAssetsManager = new MyAssetsManager();
     public Music backgroundMusic;
+    public Music click;
     private Preferences preferences;
 
     public SpriteBatch getBatch() {
@@ -67,6 +68,7 @@ public class MainGame extends Game {
         font2 = new BitmapFont();
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
+        click = Gdx.audio.newMusic(Gdx.files.internal("music/click.mp3"));
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
         if(getPrefs().getBoolean("music"))  {
             backgroundMusic.setLooping(true);
@@ -104,41 +106,50 @@ public class MainGame extends Game {
     }
 
     public void goMainMenu() {
+        playClick();
         MainMenu mainMenu = new MainMenu(this);
         setScreen(mainMenu);
     }
 
+
     public void goSlotMachine() {
+        playClick();
         SlotMachine slotMachine = new SlotMachine(this);
         setScreen(slotMachine);
     }
 
     public void goSettingsScreen() {
+        playClick();
         SettingsScreen settingsScreen = new SettingsScreen(this);
         setScreen(settingsScreen);
     }
 
     public void goDrawnIngredients(int first, int second, int third){
+        playClick();
         DrawnIngredients drawnIngredients = new DrawnIngredients(this, first, second, third);
         setScreen(drawnIngredients);
     }
 
     public void goRecipes(int first, int second, int third){
+        playClick();
         Recipes recipes = new Recipes(this, first, second, third);
         setScreen(recipes);
     }
 
     public void goFoodRecipe(int first, int second, int third, Recipe r){
+        playClick();
         FoodRecipe foodRecipe = new FoodRecipe(this, first, second, third, r);
         setScreen(foodRecipe);
     }
 
     public void goCustomReels(){
+        playClick();
         CustomReels customReels = new CustomReels(this);
         setScreen(customReels);
     }
 
     public void goCredits(){
+        playClick();
         Credits credits = new Credits(this);
         setScreen(credits);
     }
@@ -156,5 +167,11 @@ public class MainGame extends Game {
         batch.dispose();
         super.dispose();
         backgroundMusic.dispose();
+    }
+
+    private void playClick() {
+        if(preferences.getBoolean("music")) {
+            click.play();
+        }
     }
 }
