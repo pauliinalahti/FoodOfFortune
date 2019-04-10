@@ -15,6 +15,13 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.badlogic.gdx.Preferences;
 
+/**
+ *
+ *
+ * @author Pauliina Lahti, Joona Neuvonen
+ * @version 2018.0925
+ */
+
 public class MainGame extends Game {
     public static SpriteBatch batch;
     public static float WORLDWIDTH = 10;
@@ -169,6 +176,9 @@ public class MainGame extends Game {
         backgroundMusic.dispose();
     }
 
+    /**
+     * playClick method plays gamesounds when player clicks the play button
+     */
     private void playClick() {
         if(preferences.getBoolean("music")) {
             click.play();

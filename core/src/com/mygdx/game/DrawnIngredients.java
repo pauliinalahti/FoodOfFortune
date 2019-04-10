@@ -23,14 +23,23 @@ import com.badlogic.gdx.utils.Scaling;
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
+/**
+ * DrawnIngredients class handles drawn ingredients and it's screen
+ * It implements screen
+ *
+ * @author      Pauliina lahti, Joona Neuvonen
+ * @version     2019.4
+ */
 public class DrawnIngredients implements Screen {
 
+    /** Create Maingame object game*/
     MainGame game;
+
+    /** Create background for this screen*/
     Texture background;
 
     private Skin mySkin;
     private Stage stage;
-    Image back;
     SpriteBatch batch;
     FirstReel firstReel;
     SecondReel secondReel;

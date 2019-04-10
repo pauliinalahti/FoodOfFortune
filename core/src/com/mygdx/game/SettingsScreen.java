@@ -10,33 +10,44 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
-import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.badlogic.gdx.utils.Scaling;
-
-import java.awt.Checkbox;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
+/**
+ * SettingScreen class contains all necessaries for building our game's
+ * settings screen. SettingScreen implement Screen
+ *
+ * @author      Pauliina Lahti, Joona Neuvonen
+ * @version     2019.4
+ */
+
 public class SettingsScreen implements Screen {
 
+    /** Create Maingame object game */
     MainGame game;
+
+    /** Create Spritebatch */
     SpriteBatch batch;
+
+    /** Setting's background*/
     Texture background;
 
+    /** Setting's used skin */
     private Skin mySkin;
+
+    /** Settings's used stage */
     private Stage stage;
-    Image back;
+
+    /** Layoutsettings for settings */
     GlyphLayout layoutSettings;
+
+    /** Strings below are buttons texts*/
     String settingsText;
     String backText;
     String customText;
@@ -45,25 +56,39 @@ public class SettingsScreen implements Screen {
     String musicText;
     String changeText;
     String creditsText;
-    Preferences pref;
-    Button backBtn;
     String chosenLanguage;
-    //final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
-    //final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
-    //final ArrayList<String> options;
-    //float volume;
 
+    /** Pref tells what language is on */
+    Preferences pref;
+
+    /** Create backbutton */
+    Button backBtn;
+
+    /**
+     * SettingScreen's constructor
+     *
+     * @param g is MainGame object
+     */
     public SettingsScreen(MainGame g) {
         game = g;
+
+        /** Creating batch from MainGame's class */
         batch = game.getBatch();
+
+        /** Create new stage */
         stage = new Stage(game.screenPort);
+
+        /** Set texture to background */
         background = new Texture(Gdx.files.internal("FOF_Tausta5.7.png"));
+
+        /** get preference's value from game object*/
         pref = game.getPrefs();
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
+        /** If preference's key is english, then button text are is english */
         if(pref.getBoolean("english")){
             backText = "BACK";
             customText = "Custom food ingredients";
@@ -73,12 +98,14 @@ public class SettingsScreen implements Screen {
             onOffText = "ON";
             changeText = "Language: EN";
             chosenLanguage = "English";
+
+            /** If music on is selected, then text: "on", else "off" */
             if(pref.getBoolean("music")) {
                 musicText = "Music: ON";
             } else {
                 musicText = "Music: OFF";
             }
-            //options = optionsEN;
+        /** If langugage is finnish, then button texts are in finnish */
         } else {
             backText = "TAKAISIN";
             customText = "Ruoka-aine asetukset";
@@ -95,26 +122,44 @@ public class SettingsScreen implements Screen {
             }
         }
 
+        /** Create new Glyphlayout to handle setting's text*/
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
 
+        /** Create back button */
         backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
+
+            /**
+             * change method change screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press back button, it chance screen to main menu */
                 game.goMainMenu();
             }
         });
 
-
+        /** Create languagebutton button */
         Button languageBtn = new TextButton(changeText, mySkin, "small");
         languageBtn.pad(15);
         ((TextButton) languageBtn).getLabel().setFontScale(game.buttonSizeSmall);
         languageBtn.addListener(new ChangeListener() {
+
+            /**
+             * change method change screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press language button, it chance language */
                 if(game.getPrefs().getBoolean("english")) {
                     game.getPrefs().putBoolean("english", false);
                     game.getPrefs().flush();
@@ -122,34 +167,61 @@ public class SettingsScreen implements Screen {
                     game.getPrefs().putBoolean("english", true);
                     game.getPrefs().flush();
                 }
+                /** It cahnge to setting screen, depends on what language is on */
                 game.goSettingsScreen();
             }
         });
 
+        /** Create custombutton */
         Button customBtn = new TextButton(customText, mySkin, "small");
         customBtn.pad(20);
         ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
         customBtn.addListener(new ChangeListener() {
+
+            /**
+             * change method change screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press custom reels button, it change to customreels screen */
                 game.goCustomReels();
             }
         });
 
+        /** Create credits button */
         Button creditsBtn = new TextButton(creditsText, mySkin, "small");
         creditsBtn.pad(20);
         ((TextButton) creditsBtn).getLabel().setFontScale(game.buttonSizeSmall);
         creditsBtn.addListener(new ChangeListener() {
+
+            /**
+             * changed method change the screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press credits button, it change to credits screen */
                 game.goCredits();
             }
         });
 
+        /** Create music button */
         Button musicBtn = new TextButton(musicText, mySkin, "small");
         musicBtn.pad(20);
         ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSizeSmall);
         musicBtn.addListener(new ChangeListener() {
+
+            /**
+             * changed method change the screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if(game.getPrefs().getBoolean("music")) {
@@ -163,22 +235,18 @@ public class SettingsScreen implements Screen {
                     game.backgroundMusic.play();
                     System.out.println("music on");
                 }
+                /** Go to settings screen depends on is music on or off*/
                 game.goSettingsScreen();
             }
         });
 
-
+        /** Create nyt table, which makes possible to show buttons in screen */
         Table table = new Table();
         table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(15);
         table.add(backBtn);
-        //Label l = new Label("ASETUKSET", mySkin);
-        //l.setFontScale(game.buttonSizeBig);
-        //table.add(l).expandX();
         table.left();
         table.top();
-        //table.setDebug(true);
-
         Table table2 = new Table();
         table2.defaults().uniform().pad(15);
         table2.pad(-5);
@@ -190,67 +258,44 @@ public class SettingsScreen implements Screen {
         table2.center();
         table2.bottom().pad(20);
 
-        /*Table tableCheckBoxes = new Table();
-        tableCheckBoxes.defaults().uniform().pad(30);
-        int i = 0;
-        for (final String opt : options) {
-            final CheckBox cb = new CheckBox(opt, mySkin);
-            //cb.pad(-5);
-            //System.out.println(opt + ": " + pref.getBoolean(opt));
-            cb.getLabel().setFontScale(game.buttonSizeSmall);
-            cb.setChecked(pref.getBoolean(opt));
-            cb.addListener(new ChangeListener() {
-                @Override
-                public void changed(ChangeEvent event, Actor actor) {
-                    Gdx.graphics.setContinuousRendering(true);
-                    if(pref.getBoolean(opt)){
-                        pref.putBoolean(opt, false);
-                    } else {
-                        pref.putBoolean(opt, true);
-                    }
-                    pref.flush();
-                    game.goSettingsScreen();
-                    System.out.println("--------");
-                }
-            });
-            tableCheckBoxes.add(cb).width(200);
-            i++;
-            if (i == 3) {
-                tableCheckBoxes.row();
-                i=0;
-            }
-
-        }*/
-
         table.setFillParent(true);
         table2.setFillParent(true);
-        //tableCheckBoxes.setFillParent(true);
         stage.addActor(table);
         stage.addActor(table2);
     }
 
+    /**
+     * show method handles stage
+     *
+     */
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
     }
 
+    /**
+     * render method renders the screen
+     *
+     * @param delta tells delta time
+     */
     @Override
     public void render(float delta) {
-
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
-
         game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.3f)*100);
-
         batch.setProjectionMatrix((game.camera.combined));
-
         batch.end();
-
     }
+
+    /**
+     * resize method update screen size
+     *
+     * @param width tells new screen's width
+     * @param height tells new screen's height
+     */
 
     @Override
     public void resize(int width, int height) {
@@ -258,20 +303,20 @@ public class SettingsScreen implements Screen {
     }
 
     @Override
-    public void pause() {
-
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
     public void hide() {
         Gdx.input.setInputProcessor(null);
     }
 
+    /**
+     * Dispose method dispose background image and stages
+     * when player close the game
+     */
     @Override
     public void dispose() {
         background.dispose();
