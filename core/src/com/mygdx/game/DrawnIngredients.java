@@ -38,22 +38,47 @@ public class DrawnIngredients implements Screen {
     /** Create background for this screen*/
     Texture background;
 
+    /** Create Skin for this screen*/
     private Skin mySkin;
+
+    /** Create new stage */
     private Stage stage;
+
+    /** Create spritebatch*/
     SpriteBatch batch;
+
+    /** Create firstreel's reel object */
     FirstReel firstReel;
+
+    /** Create secondreel's reel object */
     SecondReel secondReel;
+
+    /** Create thirdreel's reel object */
     ThirdReel thirdReel;
+
+    /** These int tells what are drawn ingredients numbers in reels */
     int firstDrawn, secondDrawn, thirdDrawn;
+
+    /** Create rectagle, helps to draw ingredients to screen*/
     Rectangle reelsRectangle;
+
+    /** Create glyphlayouts to handle different layouts*/
     GlyphLayout layoutFirst, layoutSecond, layoutThird, drawnIngrediends;
-    String ingrediends;
-    String backText;
-    String recipesText;
+
+    /** Create button's text */
+    String ingrediends, backText, recipesText;
+
+    /** Preferences to handle selected languages and food choices*/
     Preferences pref;
 
-
-
+    /**
+     * DrawnIngredients's constructor
+     *
+     * @param g is MainGame object
+     * @param first is first drawn ingredient's number
+     * @param second is second drawn ingredient's number
+     * @param third is third drawn ingredient's number
+     */
     public DrawnIngredients(MainGame g, int first, int second, int third) {
 
         game = g;
@@ -64,27 +89,27 @@ public class DrawnIngredients implements Screen {
         reelsRectangle = new Rectangle(1.26f, 1.5f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.12.png"));
-        /*back = new Image(background);
-        back.setScaling(Scaling.fit);
-        back.setFillParent(true);
-        stage.addActor(back);*/
+
         pref = game.getPrefs();
         firstReel = new FirstReel(pref);
         secondReel = new SecondReel(pref);
         thirdReel = new ThirdReel(pref);
 
 
-
+        /** If preference language key is english, then buttons's text are in english */
         if (pref.getBoolean("english")) {
             backText = "BACK";
             recipesText = "RECIPES";
             ingrediends = "INGREDIENTS";
+
+        /** Else used language is finnish */
         } else {
             backText = "TAKAISIN";
             recipesText = "RESEPTIT";
             ingrediends = "ARVOTUT AINEKSET";
         }
 
+        /** Create three glyphlauot to handle three different layouts*/
         layoutFirst = new GlyphLayout();
         layoutSecond = new GlyphLayout();
         layoutThird = new GlyphLayout();
@@ -160,6 +185,11 @@ public class DrawnIngredients implements Screen {
         Gdx.input.setInputProcessor(stage);
     }
 
+    /**
+     * render method renders the screen
+     *
+     * @param delta tells delta time
+     */
     @Override
     public void render(float delta) {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -196,30 +226,35 @@ public class DrawnIngredients implements Screen {
                 reelsRectangle.y * 100 - 20);
 
         batch.setProjectionMatrix((game.camera.combined));
-
         batch.end();
     }
 
+    /**
+     * resize method update screen size
+     *
+     * @param width tells new screen's width
+     * @param height tells new screen's height
+     */
     @Override
     public void resize(int width, int height) {
         game.screenPort.update(width, height, true);
     }
 
     @Override
-    public void pause() {
-
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
     public void hide() {
         Gdx.input.setInputProcessor(null);
     }
 
+    /**
+     * Dispose method dispose background image and stages
+     * when player close the game
+     */
     @Override
     public void dispose() {
         background.dispose();
