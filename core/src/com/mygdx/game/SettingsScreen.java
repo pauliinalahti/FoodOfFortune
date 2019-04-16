@@ -13,8 +13,16 @@ import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.Scaling;
+import com.badlogic.gdx.utils.viewport.ScreenViewport;
+
+import java.awt.Checkbox;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
@@ -57,6 +65,7 @@ public class SettingsScreen implements Screen {
     String changeText;
     String creditsText;
     String chosenLanguage;
+    String moreTxt;
 
     /** Pref tells what language is on */
     Preferences pref;
@@ -64,19 +73,24 @@ public class SettingsScreen implements Screen {
     /** Create backbutton */
     Button backBtn;
 
+    Table screenTable;
+
     /**
      * SettingScreen's constructor
      *
      * @param g is MainGame object
      */
     public SettingsScreen(MainGame g) {
+        stage = new Stage(new ScreenViewport());
+        Gdx.input.setInputProcessor(stage);
+
         game = g;
 
         /** Creating batch from MainGame's class */
         batch = game.getBatch();
 
         /** Create new stage */
-        stage = new Stage(game.screenPort);
+        //stage = new Stage(game.screenPort);
 
         /** Set texture to background */
         background = new Texture(Gdx.files.internal("FOF_Tausta5.7.png"));
@@ -98,6 +112,7 @@ public class SettingsScreen implements Screen {
             onOffText = "ON";
             changeText = "Language: EN";
             chosenLanguage = "English";
+            moreTxt = "FAQ";
 
             /** If music on is selected, then text: "on", else "off" */
             if(pref.getBoolean("music")) {
@@ -115,20 +130,27 @@ public class SettingsScreen implements Screen {
             onOffText = "OFF";
             changeText = "Kieli: FI";
             chosenLanguage = "Suomi";
+            moreTxt = "Tietoa meistä";
             if(pref.getBoolean("music")) {
                 musicText = "Äänet: ON";
             } else {
                 musicText = "Äänet: OFF";
             }
         }
+        screenTable = new Table();
+        //screenTable.setFillParent(true);
+        screenTable.setBackground(new TextureRegionDrawable(background));
+        //screenTable.top().left();
+        //screenTable.pad(Value.percentHeight(0.1f, screenTable),Value.percentWidth(0.1f,screenTable), Value.percentHeight(0.1f, screenTable),Value.percentWidth(0.1f,screenTable));
 
         /** Create new Glyphlayout to handle setting's text*/
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
 
         /** Create back button */
-        backBtn = new TextButton(backText, mySkin, "small");
-        backBtn.pad(20);
+        Button backBtn = new TextButton(backText, mySkin, "small");
+        //backBtn.pad(20);
+        backBtn.setTransform(true);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
 
@@ -147,7 +169,8 @@ public class SettingsScreen implements Screen {
 
         /** Create languagebutton button */
         Button languageBtn = new TextButton(changeText, mySkin, "small");
-        languageBtn.pad(15);
+        //languageBtn.pad(15);
+        languageBtn.setTransform(true);
         ((TextButton) languageBtn).getLabel().setFontScale(game.buttonSizeSmall);
         languageBtn.addListener(new ChangeListener() {
 
@@ -174,7 +197,8 @@ public class SettingsScreen implements Screen {
 
         /** Create custombutton */
         Button customBtn = new TextButton(customText, mySkin, "small");
-        customBtn.pad(20);
+        //customBtn.pad(20);
+        customBtn.setTransform(true);
         ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
         customBtn.addListener(new ChangeListener() {
 
@@ -193,7 +217,8 @@ public class SettingsScreen implements Screen {
 
         /** Create credits button */
         Button creditsBtn = new TextButton(creditsText, mySkin, "small");
-        creditsBtn.pad(20);
+        //creditsBtn.pad(20);
+        creditsBtn.setTransform(true);
         ((TextButton) creditsBtn).getLabel().setFontScale(game.buttonSizeSmall);
         creditsBtn.addListener(new ChangeListener() {
 
@@ -212,7 +237,8 @@ public class SettingsScreen implements Screen {
 
         /** Create music button */
         Button musicBtn = new TextButton(musicText, mySkin, "small");
-        musicBtn.pad(20);
+        //musicBtn.pad(20);
+        musicBtn.setTransform(true);
         ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSizeSmall);
         musicBtn.addListener(new ChangeListener() {
 
@@ -240,13 +266,41 @@ public class SettingsScreen implements Screen {
             }
         });
 
+
+        Button moreBtn = new TextButton(moreTxt, mySkin, "small");
+        //musicBtn.pad(20);
+        moreBtn.setTransform(true);
+        ((TextButton) moreBtn).getLabel().setFontScale(game.buttonSizeSmall);
+        moreBtn.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                Gdx.net.openURI("http://18tiko2E.projects.tamk.fi/fof.html");
+            }
+        });
+
+        screenTable.defaults().pad(game.screenW/150);
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable)).row();
+        screenTable.add(languageBtn).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add(musicBtn).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add(customBtn).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add(creditsBtn).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.11f, screenTable)).row();
+        screenTable.add(moreBtn).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.11f, screenTable)).row();
+        screenTable.bottom().pad(Value.percentHeight(0.05f, screenTable));
+
         /** Create nyt table, which makes possible to show buttons in screen */
+        /*
         Table table = new Table();
+        table.setFillParent(true);
         table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(15);
         table.add(backBtn);
+        //Label l = new Label("ASETUKSET", mySkin);
+        //l.setFontScale(game.buttonSizeBig);
+        //table.add(l).expandX();
         table.left();
         table.top();
+        table.setDebug(true);*/
+        /*
         Table table2 = new Table();
         table2.defaults().uniform().pad(15);
         table2.pad(-5);
@@ -256,12 +310,46 @@ public class SettingsScreen implements Screen {
         table2.add(creditsBtn);
         table2.setPosition(1f, (WORLDHEIGHT-3.1f)*100);
         table2.center();
-        table2.bottom().pad(20);
+        table2.bottom().pad(20);*/
 
-        table.setFillParent(true);
-        table2.setFillParent(true);
-        stage.addActor(table);
-        stage.addActor(table2);
+        /*Table tableCheckBoxes = new Table();
+        tableCheckBoxes.defaults().uniform().pad(30);
+        int i = 0;
+        for (final String opt : options) {
+            final CheckBox cb = new CheckBox(opt, mySkin);
+            //cb.pad(-5);
+            //System.out.println(opt + ": " + pref.getBoolean(opt));
+            cb.getLabel().setFontScale(game.buttonSizeSmall);
+            cb.setChecked(pref.getBoolean(opt));
+            cb.addListener(new ChangeListener() {
+                @Override
+                public void changed(ChangeEvent event, Actor actor) {
+                    Gdx.graphics.setContinuousRendering(true);
+                    if(pref.getBoolean(opt)){
+                        pref.putBoolean(opt, false);
+                    } else {
+                        pref.putBoolean(opt, true);
+                    }
+                    pref.flush();
+                    game.goSettingsScreen();
+                    System.out.println("--------");
+                }
+            });
+            tableCheckBoxes.add(cb).width(200);
+            i++;
+            if (i == 3) {
+                tableCheckBoxes.row();
+                i=0;
+            }
+
+        }*/
+
+
+        screenTable.setFillParent(true);
+        stage.addActor(screenTable);
+        //tableCheckBoxes.setFillParent(true);
+        //stage.addActor(table);
+        //stage.addActor(table2);
     }
 
     /**
@@ -280,13 +368,18 @@ public class SettingsScreen implements Screen {
      */
     @Override
     public void render(float delta) {
+
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
-        game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.3f)*100);
+
+        game.font2.draw(batch, settingsText, WORLDWIDTH * 100 / 2 - layoutSettings.width / 2, (WORLDHEIGHT - 0.3f) * 100);
+
         batch.setProjectionMatrix((game.camera.combined));
+
         batch.end();
     }
 

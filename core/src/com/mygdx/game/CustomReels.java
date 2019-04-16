@@ -16,6 +16,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.ui.VerticalGroup;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Align;
@@ -57,6 +58,7 @@ public class CustomReels implements Screen {
     FirstReel reel1;
     SecondReel reel2;
     ThirdReel reel3;
+    Table screenTable;
 
 
     public CustomReels(MainGame g) {
@@ -73,6 +75,7 @@ public class CustomReels implements Screen {
         reel1 = new FirstReel(pref);
         reel2 = new SecondReel(pref);
         reel3 = new ThirdReel(pref);
+
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -100,11 +103,14 @@ public class CustomReels implements Screen {
             reelText3 = "3. Rulla";
         }
 
+        screenTable = new Table();
+
         customIngrediends = new GlyphLayout();
         customIngrediends.setText(game.font2, ingrediends);
 
         backBtn = new TextButton(backText, mySkin, "small");
-        backBtn.pad(20);
+        //backBtn.pad(20);
+        backBtn.setTransform(true);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
             @Override
@@ -113,7 +119,8 @@ public class CustomReels implements Screen {
             }
         });
         playBtn = new TextButton(playText, mySkin, "small");
-        playBtn.pad(20);
+        // playBtn.pad(20);
+        backBtn.setTransform(true);
         ((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
         playBtn.addListener(new ChangeListener() {
             @Override
@@ -122,6 +129,9 @@ public class CustomReels implements Screen {
             }
         });
 
+        //screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable)).row();
+        //screenTable.add(playBtn).bottom().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable)).row();
+        /*
         Table table = new Table();
         table.defaults().uniform().pad(15);
         table.add(backBtn);
@@ -132,7 +142,7 @@ public class CustomReels implements Screen {
         table2.defaults().uniform().pad(15);
         table2.add(playBtn);
         table2.bottom();
-        table2.right();
+        table2.right();*/
 
 
         Table colA = new Table();
@@ -146,16 +156,31 @@ public class CustomReels implements Screen {
         float scale = 2.7f;
         float scale2 = 2.2f;
         float cbPad = 15f;
-
-
+        //cont.top().align(Align.top);
+        /*
+        for(int i = 0; i<4; i++) {
+            CheckBox cb1 = new CheckBox(options1.get(i), mySkin);
+            CheckBox cb2 = new CheckBox(options1.get(i), mySkin);;
+            CheckBox cb3 = new CheckBox(options1.get(i), mySkin);;
+            if(i<4) {
+                cb1 = new CheckBox(options1.get(i), mySkin);
+                cb2 = new CheckBox(options2.get(i), mySkin);
+                cb3 = new CheckBox(options3.get(i), mySkin);
+            }
+            cont.add(cb1);
+            cont.add(cb2);
+            cont.add(cb3).row();
+        }
+        */
+        /*
         Label lbA = new Label(reelText1,mySkin);
         lbA.setFontScale(scale);
-        colA.add(lbA).pad(10f).row();
+        colA.add(lbA);*/
         for (final String opt : options1) {
             final CheckBox cb = new CheckBox(opt, mySkin);
+            //cb.setTransform(true);
             cb.pad(cbPad);
             cb.getLabel().setFontScale(scale2);
-            cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
                 @Override
@@ -163,16 +188,20 @@ public class CustomReels implements Screen {
                     handleclick(cb, opt, options1, 1);
                 }
             });
-            colA.add(cb);
-            colA.row();
+            colA.add(cb).size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.1f, cont)).row();
+            //colA.add(cb).row();
+            //colA.row();
         }
+        /*
         Label lbB = new Label(reelText2,mySkin);
         lbB.setFontScale(scale);
-        colB.add(lbB).pad(10f).row();
+        colB.add(lbB);*/
         for (final String opt : options2) {
             final CheckBox cb = new CheckBox(opt, mySkin);
-            cb.pad(cbPad);
+            //cb.pad(cbPad);
             cb.getLabel().setFontScale(scale2);
+            //cb.setTransform(true);
+            //cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
                 @Override
@@ -180,17 +209,19 @@ public class CustomReels implements Screen {
                     handleclick(cb, opt, options2, 2);
                 }
             });
-            colB.add(cb);
-            colB.row();
+            colB.add(cb).size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.1f, cont)).row();
+            //colB.add(cb).row();
         }
+        /*
         Label lbC = new Label(reelText3,mySkin);
         lbC.setFontScale(scale);
-        colC.add(lbC).pad(10f).row();
+        colC.add(lbC);*/
         for (final String opt : options3) {
             final CheckBox cb = new CheckBox(opt, mySkin);
-            cb.pad(cbPad);
+            //cb.pad(cbPad);
+            //cb.setTransform(true);
             cb.getLabel().setFontScale(scale2);
-            cb.getLabel().setFontScale(game.buttonSizeSmall);
+            //cb.getLabel().setFontScale(game.buttonSizeSmall);
             cb.setChecked(pref.getBoolean(opt));
             cb.addListener(new ChangeListener() {
                 @Override
@@ -198,21 +229,31 @@ public class CustomReels implements Screen {
                     handleclick(cb, opt, options3, 3);
                 }
             });
-            colC.add(cb);
-            colC.row();
+            colC.add(cb).size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.1f, cont)).row();
+            //colC.add(cb).row();
+            //colC.row();
         }
 
-        cont.setPosition(0,-200);
-        cont.add(colA).align(Align.top).expand();
-        cont.add(colB).align(Align.top).expand();
-        cont.add(colC).align(Align.top).expand();
 
+        //cont.setPosition(0,-200);
+
+        colA.setTransform(true);
+        colB.setTransform(true);
+        colC.setTransform(true);
+        cont.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, cont), Value.percentHeight(0.15f, cont)).row();
+        cont.add(colA).align(Align.top).expand().size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.40f, cont));
+        cont.add(colB).align(Align.top).expand().size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.40f, cont));
+        cont.add(colC).align(Align.top).expand().size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.40f, cont)).row();
+        cont.add();
+        cont.add(playBtn).expand().center().size(Value.percentWidth(0.2f, cont), Value.percentHeight(0.15f, cont));
+
+        //stage.addActor(screenTable);
         stage.addActor(cont);
-
+        /*
         table.setFillParent(true);
         table2.setFillParent(true);
         stage.addActor(table);
-        stage.addActor(table2);
+        stage.addActor(table2);*/
     }
 
     public void handleclick(CheckBox cb, String opt, ArrayList<String> optionList, int reelNumber) {
