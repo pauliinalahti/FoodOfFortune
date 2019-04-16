@@ -42,7 +42,6 @@ public class MainGame extends Game {
     OrthographicCamera camera;
     OrthographicCamera cameraFont;
 
-
     public BitmapFont font;
     public BitmapFont font2;
     public BitmapFont recipeFont;
@@ -112,12 +111,19 @@ public class MainGame extends Game {
         font2 = new BitmapFont();
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
+        /*click = Gdx.audio.newMusic(Gdx.files.internal("music/click.mp3"));
+        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
+        if(getPrefs().getBoolean("music"))  {
+            backgroundMusic.setLooping(true);
+            backgroundMusic.play();
+        }*/
         generator = new FreeTypeFontGenerator(Gdx.files.internal("VarelaRound-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
         parameter.color.add(Color.BLACK);
         parameter.borderWidth = 3;
         font = generator.generateFont(parameter);
+
         FreeTypeFontGenerator.FreeTypeFontParameter parameter2 = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter2.size = 45;
         parameter2.borderWidth = 4;
@@ -267,7 +273,7 @@ public class MainGame extends Game {
     }
 
     /**
-     * Plays the click-sound if music in preferences is on.
+     * playClick method plays gamesounds when player clicks the play button
      */
     private void playClick() {
         if(preferences.getBoolean("music")) {

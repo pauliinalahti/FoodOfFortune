@@ -10,9 +10,6 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
-import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -30,16 +27,35 @@ import java.util.Arrays;
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
+/**
+ * SettingScreen class contains all necessaries for building our game's
+ * settings screen. SettingScreen implement Screen
+ *
+ * @author      Pauliina Lahti, Joona Neuvonen
+ * @version     2019.4
+ */
+
 public class SettingsScreen implements Screen {
 
+    /** Create Maingame object game */
     MainGame game;
+
+    /** Create Spritebatch */
     SpriteBatch batch;
+
+    /** Setting's background*/
     Texture background;
 
+    /** Setting's used skin */
     private Skin mySkin;
+
+    /** Settings's used stage */
     private Stage stage;
-    Image back;
+
+    /** Layoutsettings for settings */
     GlyphLayout layoutSettings;
+
+    /** Strings below are buttons texts*/
     String settingsText;
     String backText;
     String customText;
@@ -48,26 +64,45 @@ public class SettingsScreen implements Screen {
     String musicText;
     String changeText;
     String creditsText;
-    Preferences pref;
     String chosenLanguage;
     String moreTxt;
+
+    /** Pref tells what language is on */
+    Preferences pref;
+
+    /** Create backbutton */
+    Button backBtn;
+
     Table screenTable;
 
-
+    /**
+     * SettingScreen's constructor
+     *
+     * @param g is MainGame object
+     */
     public SettingsScreen(MainGame g) {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
         game = g;
+
+        /** Creating batch from MainGame's class */
         batch = game.getBatch();
+
+        /** Create new stage */
         //stage = new Stage(game.screenPort);
+
+        /** Set texture to background */
         background = new Texture(Gdx.files.internal("FOF_Tausta5.7.png"));
+
+        /** get preference's value from game object*/
         pref = game.getPrefs();
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
+        /** If preference's key is english, then button text are is english */
         if(pref.getBoolean("english")){
             backText = "BACK";
             customText = "Custom food ingredients";
@@ -78,12 +113,14 @@ public class SettingsScreen implements Screen {
             changeText = "Language: EN";
             chosenLanguage = "English";
             moreTxt = "FAQ";
+
+            /** If music on is selected, then text: "on", else "off" */
             if(pref.getBoolean("music")) {
                 musicText = "Music: ON";
             } else {
                 musicText = "Music: OFF";
             }
-            //options = optionsEN;
+        /** If langugage is finnish, then button texts are in finnish */
         } else {
             backText = "TAKAISIN";
             customText = "Ruoka-aine asetukset";
@@ -106,28 +143,46 @@ public class SettingsScreen implements Screen {
         //screenTable.top().left();
         //screenTable.pad(Value.percentHeight(0.1f, screenTable),Value.percentWidth(0.1f,screenTable), Value.percentHeight(0.1f, screenTable),Value.percentWidth(0.1f,screenTable));
 
+        /** Create new Glyphlayout to handle setting's text*/
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
 
+        /** Create back button */
         Button backBtn = new TextButton(backText, mySkin, "small");
         //backBtn.pad(20);
         backBtn.setTransform(true);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
+
+            /**
+             * change method change screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press back button, it chance screen to main menu */
                 game.goMainMenu();
             }
         });
 
-
+        /** Create languagebutton button */
         Button languageBtn = new TextButton(changeText, mySkin, "small");
         //languageBtn.pad(15);
         languageBtn.setTransform(true);
         ((TextButton) languageBtn).getLabel().setFontScale(game.buttonSizeSmall);
         languageBtn.addListener(new ChangeListener() {
+
+            /**
+             * change method change screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press language button, it chance language */
                 if(game.getPrefs().getBoolean("english")) {
                     game.getPrefs().putBoolean("english", false);
                     game.getPrefs().flush();
@@ -135,37 +190,64 @@ public class SettingsScreen implements Screen {
                     game.getPrefs().putBoolean("english", true);
                     game.getPrefs().flush();
                 }
+                /** It cahnge to setting screen, depends on what language is on */
                 game.goSettingsScreen();
             }
         });
 
+        /** Create custombutton */
         Button customBtn = new TextButton(customText, mySkin, "small");
         //customBtn.pad(20);
         customBtn.setTransform(true);
         ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
         customBtn.addListener(new ChangeListener() {
+
+            /**
+             * change method change screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press custom reels button, it change to customreels screen */
                 game.goCustomReels();
             }
         });
 
+        /** Create credits button */
         Button creditsBtn = new TextButton(creditsText, mySkin, "small");
         //creditsBtn.pad(20);
         creditsBtn.setTransform(true);
         ((TextButton) creditsBtn).getLabel().setFontScale(game.buttonSizeSmall);
         creditsBtn.addListener(new ChangeListener() {
+
+            /**
+             * changed method change the screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                /** If player press credits button, it change to credits screen */
                 game.goCredits();
             }
         });
 
+        /** Create music button */
         Button musicBtn = new TextButton(musicText, mySkin, "small");
         //musicBtn.pad(20);
         musicBtn.setTransform(true);
         ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSizeSmall);
         musicBtn.addListener(new ChangeListener() {
+
+            /**
+             * changed method change the screen
+             *
+             * @param event
+             * @param actor
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 if(game.getPrefs().getBoolean("music")) {
@@ -179,9 +261,11 @@ public class SettingsScreen implements Screen {
                     game.backgroundMusic.play();
                     System.out.println("music on");
                 }
+                /** Go to settings screen depends on is music on or off*/
                 game.goSettingsScreen();
             }
         });
+
 
         Button moreBtn = new TextButton(moreTxt, mySkin, "small");
         //musicBtn.pad(20);
@@ -203,7 +287,7 @@ public class SettingsScreen implements Screen {
         screenTable.add(moreBtn).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.11f, screenTable)).row();
         screenTable.bottom().pad(Value.percentHeight(0.05f, screenTable));
 
-
+        /** Create nyt table, which makes possible to show buttons in screen */
         /*
         Table table = new Table();
         table.setFillParent(true);
@@ -268,11 +352,20 @@ public class SettingsScreen implements Screen {
         //stage.addActor(table2);
     }
 
+    /**
+     * show method handles stage
+     *
+     */
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
     }
 
+    /**
+     * render method renders the screen
+     *
+     * @param delta tells delta time
+     */
     @Override
     public void render(float delta) {
 
@@ -283,13 +376,19 @@ public class SettingsScreen implements Screen {
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
 
-        game.font2.draw(batch, settingsText, WORLDWIDTH*100/2-layoutSettings.width/2, (WORLDHEIGHT-0.3f)*100);
+        game.font2.draw(batch, settingsText, WORLDWIDTH * 100 / 2 - layoutSettings.width / 2, (WORLDHEIGHT - 0.3f) * 100);
 
         batch.setProjectionMatrix((game.camera.combined));
 
         batch.end();
-
     }
+
+    /**
+     * resize method update screen size
+     *
+     * @param width tells new screen's width
+     * @param height tells new screen's height
+     */
 
     @Override
     public void resize(int width, int height) {
@@ -297,20 +396,20 @@ public class SettingsScreen implements Screen {
     }
 
     @Override
-    public void pause() {
-
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
     public void hide() {
         Gdx.input.setInputProcessor(null);
     }
 
+    /**
+     * Dispose method dispose background image and stages
+     * when player close the game
+     */
     @Override
     public void dispose() {
         background.dispose();

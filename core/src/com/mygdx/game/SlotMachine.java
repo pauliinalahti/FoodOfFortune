@@ -107,7 +107,7 @@ public class SlotMachine implements Screen {
         reelStop = Gdx.audio.newMusic(Gdx.files.internal("music/reelStops2.mp3"));
         ready = Gdx.audio.newMusic(Gdx.files.internal("music/lastReelStops.mp3"));
         reelsRectangle = new Rectangle(1.26f,1.5f,2.1f,2.25f);
-        AddRecipes recipeControl = new AddRecipes();
+        /**AddRecipes recipeControl = new AddRecipes();*/
 
 
         pref = game.getPrefs();
@@ -137,7 +137,7 @@ public class SlotMachine implements Screen {
         drawnNumberThirdReeL = random(thirdReel.thirdReelFoodNames.size());
         i = 0;
 
-        recipes = recipeControl.AddAllRecipes(recipes);
+        /**recipes = recipeControl.AddAllRecipes(recipes);*/
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();

@@ -5,33 +5,49 @@ import com.badlogic.gdx.graphics.Texture;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * SecondReel class creates second reel to our slot game
+ * It includes all variables what second slot reel needs
+ *
+ * @author      Pauliina Lahti, Joona Neuvonen
+ * @version     2019.4
+ */
+
 public class SecondReel {
+    /** Second reel's ingredients names. */
+    ArrayList<String> secondReelFoodNames = new ArrayList<String>();
 
-    /*
-    Texture image1,image2,image3,image4;
-    String name1, name2, name3, name4;
-    String name1EN, name2EN, name3EN, name4EN;
-    ArrayList<String> secondReelFoodNamesEN;*/
+    /** Second reel's ingredients images. */
+    ArrayList<Texture> secondReelImages = new ArrayList<Texture>();
 
-    ArrayList<String> secondReelFoodNames;
-    ArrayList<Texture> secondReelImages;
+    /** Hashmap for english-finnish translations. */
     HashMap<String, String> map = new HashMap<String, String>();
+
+    /** Hashmap for finnish-english translations. */
     HashMap<String, String> map2 = new HashMap<String, String>();
 
+
+    /**
+     * SecondReel's constructor
+     *
+     * @param pref remenber players language choises
+     */
     public SecondReel(Preferences pref) {
         initMap();
-        secondReelFoodNames = new ArrayList<String>();
-        secondReelImages = new ArrayList<Texture>();
+
+        /** This if sentence checks languages and player's selections in setup
+         and add food ingredienst to second reel. */
         if(!pref.getBoolean("english")) {
-            //ArrayList<String> ings = new ArrayList<String>(Arrays.asList("makaroni", "peruna","riisi","spagetti"));
             for(String s : map.values()) {
                 if(pref.getBoolean(s)) {
                     secondReelFoodNames.add(s);
                     secondReelImages.add(new Texture(s+".png"));
                 }
             }
+
+            /** This else sentence checks languages and player's selections in setup
+             and add food ingredienst to second reel. */
         } else {
-            //ArrayList<String> ings = new ArrayList<String>(Arrays.asList("macaroni", "potato","rice","spaghetti"));
             for(String s : map.keySet()) {
                 if(pref.getBoolean(s)) {
                     secondReelFoodNames.add(s);
@@ -41,6 +57,10 @@ public class SecondReel {
         }
     }
 
+    /**
+     * initMap method put values to second reel's hashmaps
+     * Finnish and english versions
+     */
     private void initMap() {
         map.put("macaroni", "makaroni");
         map.put("potato", "peruna");
@@ -54,41 +74,5 @@ public class SecondReel {
         map2.put( "spagetti", "spaghetti");
     }
 
-    /*
-    public SecondReel() {
-        secondReelImages = new ArrayList<Texture>();
-        secondReelFoodNames = new ArrayList<String>();
-        secondReelFoodNamesEN = new ArrayList<String>();
-
-        image1 = new Texture(Gdx.files.internal("makaroni.png"));
-        image2 = new Texture(Gdx.files.internal("peruna.png"));
-        image3 = new Texture(Gdx.files.internal("riisi.png"));
-        image4 = new Texture(Gdx.files.internal("spagetti.png"));
-
-        secondReelImages.add(image1);
-        secondReelImages.add(image2);
-        secondReelImages.add(image3);
-        secondReelImages.add(image4);
-
-        name1 ="Makaroni";
-        name2 ="Peruna";
-        name3 = "Riisi";
-        name4 = "Spagetti";
-
-        secondReelFoodNames.add(name1);
-        secondReelFoodNames.add(name2);
-        secondReelFoodNames.add(name3);
-        secondReelFoodNames.add(name4);
-
-        name1EN ="Macaroni";
-        name2EN ="Potato";
-        name3EN = "Rice";
-        name4EN = "Spaghetti";
-
-        secondReelFoodNamesEN.add(name1EN);
-        secondReelFoodNamesEN.add(name2EN);
-        secondReelFoodNamesEN.add(name3EN);
-        secondReelFoodNamesEN.add(name4EN);
-    }*/
 }
 
