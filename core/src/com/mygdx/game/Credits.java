@@ -15,8 +15,10 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.badlogic.gdx.utils.Align;
 
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
@@ -45,9 +47,11 @@ public class Credits implements Screen {
 
     /** Create new stage */
     private Stage stage;
+    Table screenTable;
 
     /** Create four GlyphLayout to handle developers names in the screen */
-    GlyphLayout layoutCredits, layoutTommi, layoutKristian, layoutPauliina, layoutJoona;
+    //GlyphLayout layoutCredits, layoutTommi, layoutKristian, layoutPauliina, layoutJoona;
+    GlyphLayout layoutCredits;
 
     /** Create button's text */
     String creditsText, backText;
@@ -91,6 +95,10 @@ public class Credits implements Screen {
             backText = "TAKAISIN";
             creditsText = "TEKIJÄT";
         }
+        /** Create new Table and adds the background */
+        screenTable = new Table();
+        screenTable.setFillParent(true);
+        screenTable.setBackground(new TextureRegionDrawable(background));
 
         /** Create new GlyphLayout and defines used font and text */
         layoutCredits = new GlyphLayout();
@@ -120,33 +128,26 @@ public class Credits implements Screen {
         Label pauliinaL = new Label(pauliina, mySkin);
         Label joonaN = new Label(joona, mySkin);
 
-        /** Defines font size*/
+        /** Defines font sizes and alignments */
         tommiM.setFontScale(2);
+        tommiM.setAlignment(Align.center);
         kristianL.setFontScale(2);
+        kristianL.setAlignment(Align.center);
         pauliinaL.setFontScale(2);
+        pauliinaL.setAlignment(Align.center);
         joonaN.setFontScale(2);
+        joonaN.setAlignment(Align.center);
 
-        /** Create table which allows to show background in the screen */
-        Table table = new Table();
-        table.setBackground(new TextureRegionDrawable(background));
-        table.defaults().uniform().pad(15);
-        table.add(backBtn).row();
-        table.left();
-        table.top();
 
-        /** Create table which allows to show person's names and logo in the screen */
-        Table table2 = new Table();
-        table2.defaults().uniform().pad(15);
-        table2.addActor(new Image(logo));
-        table2.add(tommiM).row();
-        table2.add(kristianL).row();
-        table2.add(pauliinaL).row();
-        table2.add(joonaN);
+        /** Adds team logo and team members to table and scales them */
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.10f, screenTable)).row();
+        screenTable.add(new Image(logo)).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.4f, screenTable)).row();
+        screenTable.add(tommiM).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add(kristianL).expand().size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add(pauliinaL).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add(joonaN).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable));
+        stage.addActor(screenTable);
 
-        table.setFillParent(true);
-        table2.setFillParent(true);
-        stage.addActor(table);
-        stage.addActor(table2);
     }
 
     @Override

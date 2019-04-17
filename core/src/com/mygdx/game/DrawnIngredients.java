@@ -16,6 +16,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
@@ -70,6 +71,7 @@ public class DrawnIngredients implements Screen {
 
     /** Preferences to handle selected languages and food choices*/
     Preferences pref;
+    Table screenTable;
 
     /**
      * DrawnIngredients's constructor
@@ -141,6 +143,9 @@ public class DrawnIngredients implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
+        screenTable = new Table();
+        screenTable.setBackground(new TextureRegionDrawable(background));
+
         Button recipesBtn = new TextButton(recipesText, mySkin, "small");
         recipesBtn.pad(20);
         ((TextButton) recipesBtn).getLabel().setFontScale(game.buttonSize);
@@ -161,7 +166,11 @@ public class DrawnIngredients implements Screen {
             }
         });
 
-        Table table = new Table();
+        screenTable.defaults().pad(game.screenW/150);
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.10f, screenTable)).row();
+        screenTable.add(recipesBtn).expand().center().bottom().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable));
+
+        /*Table table = new Table();
         table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(30);
         table.add(backBtn);
@@ -178,7 +187,10 @@ public class DrawnIngredients implements Screen {
         table.setFillParent(true);
         table2.setFillParent(true);
         stage.addActor(table);
-        stage.addActor(table2);
+        stage.addActor(table2);*/
+
+        screenTable.setFillParent(true);
+        stage.addActor(screenTable);
     }
 
     @Override

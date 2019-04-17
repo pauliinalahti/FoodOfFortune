@@ -345,4 +345,3 @@ public class SettingsScreen implements Screen {
 
     }
 }
-

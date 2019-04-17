@@ -180,7 +180,8 @@ public class CustomReels implements Screen {
             }
         });
         playBtn = new TextButton(playText, mySkin, "small");
-        backBtn.setTransform(true);
+        // playBtn.pad(20);
+        //backBtn.setTransform(true);
         ((TextButton) playBtn).getLabel().setFontScale(game.buttonSize);
         playBtn.addListener(new ChangeListener() {
             /**
@@ -277,7 +278,7 @@ public class CustomReels implements Screen {
         colA.setTransform(true);
         colB.setTransform(true);
         colC.setTransform(true);
-        cont.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, cont), Value.percentHeight(0.15f, cont)).row();
+        cont.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, cont), Value.percentHeight(0.10f, cont)).row();
         cont.add(colA).align(Align.top).expand().size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.40f, cont));
         cont.add(colB).align(Align.top).expand().size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.40f, cont));
         cont.add(colC).align(Align.top).expand().size(Value.percentWidth(0.3f, cont), Value.percentHeight(0.40f, cont)).row();

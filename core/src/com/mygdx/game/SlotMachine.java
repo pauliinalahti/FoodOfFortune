@@ -23,6 +23,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
@@ -31,6 +32,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
+import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
 public class SlotMachine implements Screen {
@@ -39,7 +41,6 @@ public class SlotMachine implements Screen {
     SpriteBatch batch;
     Texture background;
 
-    Texture image;
     Texture myTexture;
 
     Texture firstReelRoll;
@@ -70,6 +71,7 @@ public class SlotMachine implements Screen {
     Button customBtn;
     ImageButton buttonSound;
     Table table2;
+    Table screenTable;
     public Music handleMusic;
     public Music reelMusic;
     public Music reelStop;
@@ -94,7 +96,6 @@ public class SlotMachine implements Screen {
         thirdReelRoll = new Texture(Gdx.files.internal("thirdReelSheet.png"));
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.9.png"));
-        image = new Texture(Gdx.files.internal("banaani.png"));
         /*back = new Image(background);
         back.setScaling(Scaling.fit);
         back.setFillParent(true);
@@ -154,7 +155,10 @@ public class SlotMachine implements Screen {
             }
         });*/
 
-        Button backBtn = new TextButton(backText, mySkin, "small");
+        screenTable = new Table();
+        screenTable.setBackground(new TextureRegionDrawable(background));
+
+        final Button backBtn = new TextButton(backText, mySkin, "small");
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
@@ -164,7 +168,7 @@ public class SlotMachine implements Screen {
             }
         });
 
-        Button customBtn = new TextButton(customText, mySkin, "small");
+        customBtn = new TextButton(customText, mySkin, "small");
         customBtn.pad(20);
         ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
         customBtn.addListener(new ChangeListener() {
@@ -180,10 +184,12 @@ public class SlotMachine implements Screen {
         myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
         playBtn = new ImageButton(myTexRegionDrawable);
         //playBtn.getImage().setFillParent(true);
-        playBtn.setSize(2000,2000);
+        //playBtn.setSize(WORLDWIDTH/15,WORLDHEIGHT/8);
 
 
-        playBtn.pad(50,0,110,-20);
+
+        //playBtn.pad(50,0,110,-20);
+        playBtn.pad(0,200,0,-50);
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -191,22 +197,42 @@ public class SlotMachine implements Screen {
                 if(pref.getBoolean("music")){
                 handleMusic.play();
                 }
-                table2.removeActor(playBtn);
+                //table2.removeActor(playBtn);
+                screenTable.removeActor(playBtn);
+                screenTable.removeActor(customBtn);
+                screenTable.removeActor(backBtn);
+                screenTable.clearChildren();
+                //screenTable = new Table();
+                //screenTable.setBackground(new TextureRegionDrawable(background));
                 myTexture = new Texture(Gdx.files.internal("handleDown.png"));
                 myTextureRegion = new TextureRegion(myTexture);
                 myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
                 playBtn = new ImageButton(myTexRegionDrawable);
-                playBtn.setScale(200);
-                playBtn.pad(50,0,110,-20);
-                table2.add(playBtn);
-                table2.setFillParent(true);
+                //playBtn.setScale(200);
+                playBtn.pad(0,200,0,-50);
+                //table2.add(playBtn);
+                //table2.setFillParent(true);
+                screenTable.defaults().pad(game.screenW/150);
+                screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
+                screenTable.add(playBtn).expand().center().right().size(Value.percentHeight(0.5f, screenTable));
+                screenTable.add().pad(game.screenW/100).row();
+                screenTable.add(customBtn).expand().center().bottom().size(Value.percentWidth(0.4f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+                screenTable.add().pad(game.screenW/100);
+                //screenTable.setFillParent(true);
                 startImages = false;
                 play = true;
                 i = 0;
             }
         });
 
-        Table table = new Table();
+        screenTable.defaults().pad(game.screenW/150);
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.10f, screenTable)).row();
+        screenTable.add(playBtn).expand().center().right().size(Value.percentHeight(0.5f, screenTable));
+        screenTable.add().pad(game.screenW/100).row();
+        screenTable.add(customBtn).expand().center().bottom().size(Value.percentWidth(0.4f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
+        screenTable.add().pad(game.screenW/100);
+
+        /*Table table = new Table();
         table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(30);
         table.add(backBtn);
@@ -230,7 +256,11 @@ public class SlotMachine implements Screen {
         table3.setFillParent(true);
         stage.addActor(table);
         stage.addActor(table2);
-        stage.addActor(table3);
+        stage.addActor(table3);*/
+
+        screenTable.setFillParent(true);
+        stage.addActor(screenTable);
+        //screenTable.setDebug(true);
 
         //First reel spritesheet
         spriteSheet(firstReelRoll, FRAME_COLS1, FRAME_ROWS1);
