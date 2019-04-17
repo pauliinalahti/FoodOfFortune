@@ -25,20 +25,28 @@ import static com.mygdx.game.MainGame.WORLDWIDTH;
  * Credits class introduce game development team
  * It implements screen
  *
- * @author      Pauliina lahti, Joona Neuvonen
+ * @author      Pauliina Lahti, Joona Neuvonen
  * @version     2019.4
  */
 
 public class Credits implements Screen {
+
+    /** Create new Maingame object game to handle Maingame class variables */
     MainGame game;
+
+    /** Create SpriteBatch batch*/
     SpriteBatch batch;
 
     /** Background's and logo's images */
     Texture background, logo;
 
+    /** Create new Skin ton handle Screen's skin*/
     private Skin mySkin;
+
+    /** Create new stage */
     private Stage stage;
 
+    /** Create four GlyphLayout to handle developers names in the screen */
     GlyphLayout layoutCredits, layoutTommi, layoutKristian, layoutPauliina, layoutJoona;
 
     /** Create button's text */
@@ -62,6 +70,8 @@ public class Credits implements Screen {
      * @param g is MainGame object
      */
     public Credits(MainGame g){
+
+        /** Initializing the variables */
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
@@ -91,12 +101,11 @@ public class Credits implements Screen {
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
-
             /**
-             * changed method change screen
+             * changed Method change screen when player press buttons
              *
-             * @param event
-             * @param actor
+             * @param event enable that actor can do defined moves
+             * @param actor do the defined moves
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -156,7 +165,10 @@ public class Credits implements Screen {
         stage.act();
         stage.draw();
         batch.begin();
+
+        /** Set camera combined */
         batch.setProjectionMatrix(game.cameraFont.combined);
+
         game.font2.draw(batch, creditsText, WORLDWIDTH*100/2-layoutCredits.width/2, (WORLDHEIGHT-0.3f)*100);
         batch.setProjectionMatrix((game.camera.combined));
         batch.end();
@@ -180,6 +192,15 @@ public class Credits implements Screen {
     @Override
     public void hide() {}
 
+    /**
+     * Dispose method dispose background image, game object, stage, spriteBatch
+     * when player close the game
+     */
     @Override
-    public void dispose() {}
+    public void dispose() {
+        //game.dispose();
+        background.dispose();
+        //logo.dispose();
+        //stage.dispose();
+    }
 }

@@ -3,7 +3,7 @@ package com.mygdx.game;
 /**
  * GameConstanst class contains used skins
  *
- * @author      Pauliina lahti, Joona Neuvonen
+ * @author      Pauliina Lahti, Joona Neuvonen
  * @version     2019.4
  */
 

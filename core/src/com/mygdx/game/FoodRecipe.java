@@ -15,6 +15,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
@@ -42,6 +43,9 @@ public class FoodRecipe implements Screen {
 
     /** Create screen's background */
     Texture background;
+
+    /** Create table for screen elements */
+    Table screenTable;
 
     /** These ints tells what ingredients are drawn from the different reels */
     int firstDrawn, secondDrawn, thirdDrawn;
@@ -84,6 +88,7 @@ public class FoodRecipe implements Screen {
      */
     public FoodRecipe(MainGame g, int first, int second, int third, Recipe r) {
 
+        /** Initializing the variables */
         game = g;
         recipe = r;
         recipeNameTxt = r.name;
@@ -96,6 +101,7 @@ public class FoodRecipe implements Screen {
         /** Set image to background texture */
         background = new Texture(Gdx.files.internal("FOF_Tausta5.8.png"));
 
+        /** Indexes of drawn ingredients */
         firstDrawn = first;
         secondDrawn = second;
         thirdDrawn = third;
@@ -108,6 +114,11 @@ public class FoodRecipe implements Screen {
         game.myAssetsManager.manager2.finishLoading();
         mySkin = game.myAssetsManager.manager.get(skin);
         mySkin2 = game.myAssetsManager.manager2.get(skin2);
+
+        /** Create new Table and adds the background */
+        screenTable = new Table();
+        screenTable.setFillParent(true);
+        screenTable.setBackground(new TextureRegionDrawable(background));
 
         /** Create new GlyphLayout to handle recipe's name */
         layoutRecipeName = new GlyphLayout();
@@ -123,7 +134,7 @@ public class FoodRecipe implements Screen {
 
         /** Get preferences from game object */
         Preferences pref = game.getPrefs();
-        /** If language is english, then button text are in english, else in finnist*/
+        /** If language is english, then button text are in english, else in finnish*/
         if(pref.getBoolean("english")){
             backTxt = "BACK";
             leftCol = "INGREDIENTS";
@@ -141,10 +152,10 @@ public class FoodRecipe implements Screen {
         backBtn.addListener(new ChangeListener() {
 
             /**
-             * changed method change screen
+             * changed Method change screen when player press buttons
              *
-             * @param event
-             * @param actor
+             * @param event enable that actor can do defined moves
+             * @param actor do the defined moves
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -153,40 +164,41 @@ public class FoodRecipe implements Screen {
             }
         });
 
+        /** Create scrollpane for ingredients*/
         Label label2 = new Label(amountTxt.replaceFirst(" ", "").replace(", ", "\n"), mySkin2);
         label2.setAlignment(Align.top, Align.left);
         label2.setWrap(true);
         label2.pack();
         ScrollPane sp2 = new ScrollPane(label2);
 
-
+        /** Create scrollpane for method*/
         Label label = new Label(methodTxt.replaceFirst(" ","").replace("\\n", "\n"), mySkin2);
         label.setAlignment(Align.top, Align.left);
         label.setWrap(true);
         label.pack();
         ScrollPane sp = new ScrollPane(label);
 
-        /** Create new table, it makes possible to show recipe in the screen*/
-        Table table = new Table();
-        table.setBackground(new TextureRegionDrawable(background));
-        table.defaults().pad(30);
-        table.add(backBtn).left().row();
+        /** Adding background, back button, list of ingredients and method to table */
+        screenTable.setBackground(new TextureRegionDrawable(background));
+        screenTable.add(backBtn).left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable)).row();
+        screenTable.defaults().pad(30);
         Label leftLb = new Label(leftCol,mySkin);
         Label rightLb = new Label(rightCol,mySkin);
         leftLb.setFontScale(scale);
         rightLb.setFontScale(scale);
-        table.add(leftLb);
-        table.add(rightLb).row();
-        table.add(sp2).top().width(450);
-        table.add(sp).grow();
-        table.top();
-        table.setFillParent(true);
-        stage.addActor(table);
+        screenTable.add(leftLb);
+        screenTable.add(rightLb).row();
+        screenTable.add(sp2).top().width(450);
+        screenTable.add(sp).grow();
+        screenTable.top();
+
+        /** Adding table to stage */
+        screenTable.setFillParent(true);
+        stage.addActor(screenTable);
     }
 
     /**
      * show method shows the stage
-     *
      */
     @Override
     public void show() {
@@ -205,7 +217,7 @@ public class FoodRecipe implements Screen {
         stage.draw();
         batch.begin();
 
-        /** Put camera combined */
+        /** Set camera combined */
         batch.setProjectionMatrix(game.cameraFont.combined);
 
         /** Shows food recipe's name in uppercase*/
@@ -241,13 +253,17 @@ public class FoodRecipe implements Screen {
     }
 
     /**
-     * Dispose method dispose background image and stages
+     * Dispose method dispose background image, stage, game object and SpriteBatch
      * when player close the game
      */
     @Override
     public void dispose() {
         background.dispose();
-        stage.dispose();
+        //stage.dispose();
+        //game.dispose();
+        batch.dispose();
     }
 }
+
+
 

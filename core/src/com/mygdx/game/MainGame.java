@@ -158,7 +158,7 @@ public class MainGame extends Game {
         screenPort = new ScreenViewport();
 
         //this.setScreen(new MainMenu(this));
-        //sleep(1000);
+
         this.setScreen(new StartScreen(this));
     }
 
@@ -281,3 +281,4 @@ public class MainGame extends Game {
         }
     }
 }
+

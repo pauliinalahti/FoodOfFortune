@@ -27,7 +27,7 @@ import static com.mygdx.game.MainGame.WORLDWIDTH;
  * DrawnIngredients class handles drawn ingredients and it's screen
  * It implements screen
  *
- * @author      Pauliina lahti, Joona Neuvonen
+ * @author      Pauliina Lahti, Joona Neuvonen
  * @version     2019.4
  */
 public class DrawnIngredients implements Screen {
@@ -81,6 +81,7 @@ public class DrawnIngredients implements Screen {
      */
     public DrawnIngredients(MainGame g, int first, int second, int third) {
 
+        /** Initializing the variables */
         game = g;
         batch = game.getBatch();
         firstDrawn = first;
@@ -252,12 +253,14 @@ public class DrawnIngredients implements Screen {
     }
 
     /**
-     * Dispose method dispose background image and stages
+     * Dispose method dispose background image, stage, game object and SpriteBatch
      * when player close the game
      */
     @Override
     public void dispose() {
         background.dispose();
-        stage.dispose();
+        //stage.dispose();
+        //game.dispose();
+        //batch.dispose();
     }
 }
