@@ -152,10 +152,10 @@ public class FoodRecipe implements Screen {
         backBtn.addListener(new ChangeListener() {
 
             /**
-             * changed Method change screen when player press buttons
+             * changed method change screen
              *
-             * @param event enable that actor can do defined moves
-             * @param actor do the defined moves
+             * @param event
+             * @param actor
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -180,7 +180,7 @@ public class FoodRecipe implements Screen {
 
         /** Adding background, back button, list of ingredients and method to table */
         screenTable.setBackground(new TextureRegionDrawable(background));
-        screenTable.add(backBtn).left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable)).row();
+        screenTable.add(backBtn).left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
         screenTable.defaults().pad(30);
         Label leftLb = new Label(leftCol,mySkin);
         Label rightLb = new Label(rightCol,mySkin);
@@ -199,6 +199,7 @@ public class FoodRecipe implements Screen {
 
     /**
      * show method shows the stage
+     *
      */
     @Override
     public void show() {
@@ -217,7 +218,7 @@ public class FoodRecipe implements Screen {
         stage.draw();
         batch.begin();
 
-        /** Set camera combined */
+        /** Put camera combined */
         batch.setProjectionMatrix(game.cameraFont.combined);
 
         /** Shows food recipe's name in uppercase*/
@@ -253,17 +254,13 @@ public class FoodRecipe implements Screen {
     }
 
     /**
-     * Dispose method dispose background image, stage, game object and SpriteBatch
+     * Dispose method dispose background image and stages
      * when player close the game
      */
     @Override
     public void dispose() {
         background.dispose();
-        //stage.dispose();
-        //game.dispose();
-        batch.dispose();
+        stage.dispose();
     }
 }
-
-
 

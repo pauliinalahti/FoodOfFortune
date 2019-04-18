@@ -3,7 +3,6 @@ package com.mygdx.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
@@ -12,15 +11,12 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.badlogic.gdx.utils.Scaling;
-
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
@@ -91,7 +87,7 @@ public class DrawnIngredients implements Screen {
         thirdDrawn = third;
         reelsRectangle = new Rectangle(1.26f, 1.5f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta5.12.png"));
+        background = new Texture(Gdx.files.internal("FOF_preSpin4.png"));
 
         pref = game.getPrefs();
         firstReel = new FirstReel(pref);
@@ -117,27 +113,12 @@ public class DrawnIngredients implements Screen {
         layoutSecond = new GlyphLayout();
         layoutThird = new GlyphLayout();
 
-        //if(pref.getBoolean("english")){
         layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase());
         layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase());
         layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase());
-        /*} else {
-            layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
-            layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
-            layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));
-        }*/
 
         drawnIngrediends = new GlyphLayout();
         drawnIngrediends.setText(game.font2, ingrediends);
-
-        /*layoutFirst = new GlyphLayout();
-        layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
-
-        layoutSecond = new GlyphLayout();
-        layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
-
-        layoutThird = new GlyphLayout();
-        layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));*/
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
@@ -166,29 +147,9 @@ public class DrawnIngredients implements Screen {
             }
         });
 
-        screenTable.defaults().pad(game.screenW/150);
-        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.10f, screenTable)).row();
-        screenTable.add(recipesBtn).expand().center().bottom().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable));
-
-        /*Table table = new Table();
-        table.setBackground(new TextureRegionDrawable(background));
-        table.defaults().uniform().pad(30);
-        table.add(backBtn);
-        //table.add(recipesBtn);
-        table.top();
-        table.left();
-
-        Table table2 = new Table();
-        table2.defaults().uniform().pad(30);
-        table2.add(recipesBtn);
-        table2.bottom().pad(20);
-        //table.setDebug(true);
-
-        table.setFillParent(true);
-        table2.setFillParent(true);
-        stage.addActor(table);
-        stage.addActor(table2);*/
-
+        // Adds buttons on table and the table on stage
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
+        screenTable.add(recipesBtn).expand().center().bottom().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable));
         screenTable.setFillParent(true);
         stage.addActor(screenTable);
     }

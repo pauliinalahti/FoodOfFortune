@@ -10,17 +10,14 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.badlogic.gdx.Preferences;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * MainGame changes the screen and has information used by other classes.
@@ -111,12 +108,7 @@ public class MainGame extends Game {
         font2 = new BitmapFont();
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
-        /*click = Gdx.audio.newMusic(Gdx.files.internal("music/click.mp3"));
-        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
-        if(getPrefs().getBoolean("music"))  {
-            backgroundMusic.setLooping(true);
-            backgroundMusic.play();
-        }*/
+
         generator = new FreeTypeFontGenerator(Gdx.files.internal("VarelaRound-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
@@ -158,31 +150,24 @@ public class MainGame extends Game {
         screenPort = new ScreenViewport();
 
         //this.setScreen(new MainMenu(this));
-
         this.setScreen(new StartScreen(this));
     }
 
+    /**
+     * Initializes default preferences if the game is started for the first time.
+     */
     private void initPrefs() {
-        //map = preferences.get();
         if (Gdx.app.getPreferences("My Preferences").get().isEmpty()) {
             preferences = Gdx.app.getPreferences("My Preferences");
             preferences.putBoolean("done", true);
-            //ArrayList<String> aineetFI = rcps.optionsFI;
-            //ArrayList<String> aineetEN = rcps.optionsEN;
             for (String a : optionsFI) {
                 preferences.putBoolean(a, true);
             }
             for (String a : optionsEN) {
                 preferences.putBoolean(a, true);
             }
+            preferences.putBoolean("music", true);
             preferences.flush();
-        }
-    }
-
-    private void sleep(int i) {
-        try {
-            Thread.sleep(i);
-        } catch (Exception e) {
         }
     }
 
@@ -258,8 +243,9 @@ public class MainGame extends Game {
      */
     public void goCredits(){
         playClick();
-        Credits credits = new Credits(this);
-        setScreen(credits);
+        //Credits credits = new Credits(this);
+        Rules rules = new Rules(this);
+        setScreen(rules);
     }
 
     /**

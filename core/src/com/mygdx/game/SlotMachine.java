@@ -1,24 +1,18 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
-import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -26,23 +20,14 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.badlogic.gdx.utils.Scaling;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
-
-import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
-
 public class SlotMachine implements Screen {
 
     MainGame game;
     SpriteBatch batch;
     Texture background;
-
     Texture myTexture;
-
     Texture firstReelRoll;
     Texture secondReelRoll;
     Texture thirdReelRoll;
@@ -56,12 +41,10 @@ public class SlotMachine implements Screen {
     private int FRAME_COLS3 = 5;
     private int FRAME_ROWS3 = 1;
     TextureRegion [] frames;
-
     TextureRegion myTextureRegion;
     TextureRegionDrawable myTexRegionDrawable;
     private Skin mySkin;
     private Stage stage;
-    Image back;
 
     FirstReel firstReel;
     SecondReel secondReel;
@@ -69,15 +52,12 @@ public class SlotMachine implements Screen {
     Rectangle reelsRectangle;
     Button playBtn;
     Button customBtn;
-    ImageButton buttonSound;
-    Table table2;
     Table screenTable;
     public Music handleMusic;
     public Music reelMusic;
     public Music reelStop;
     Music ready;
 
-    public ArrayList<Recipe> recipes = new ArrayList<Recipe>();
     private int firstReelTime, secondReelTime, thirdReelTime, i;
     private int drawnNumberFirstReel, drawnNumberSecondReel, drawnNumberThirdReeL;
     boolean play = false;
@@ -95,21 +75,12 @@ public class SlotMachine implements Screen {
         secondReelRoll = new Texture(Gdx.files.internal("secondReelSheet.png"));
         thirdReelRoll = new Texture(Gdx.files.internal("thirdReelSheet.png"));
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta5.9.png"));
-        /*back = new Image(background);
-        back.setScaling(Scaling.fit);
-        back.setFillParent(true);
-        stage.addActor(back);*/
-        //handleMusic = Gdx.audio.newMusic(Gdx.files.internal("lever3.mp3"));
+        background = new Texture(Gdx.files.internal("FOF_preSpin2.png"));
         handleMusic = Gdx.audio.newMusic(Gdx.files.internal("music/lever3.mp3"));
-        //reelMusic = Gdx.audio.newMusic(Gdx.files.internal("reel.mp3"));
         reelMusic = Gdx.audio.newMusic(Gdx.files.internal("music/spinning.mp3"));
-        //reelStop = Gdx.audio.newMusic(Gdx.files.internal("reelStop.mp3"));
         reelStop = Gdx.audio.newMusic(Gdx.files.internal("music/reelStops2.mp3"));
         ready = Gdx.audio.newMusic(Gdx.files.internal("music/lastReelStops.mp3"));
         reelsRectangle = new Rectangle(1.26f,1.5f,2.1f,2.25f);
-        /**AddRecipes recipeControl = new AddRecipes();*/
-
 
         pref = game.getPrefs();
         if(pref.getBoolean("english")){
@@ -132,20 +103,17 @@ public class SlotMachine implements Screen {
         firstReelTime = 15;
         secondReelTime = 30;
         thirdReelTime = 50;
-        //firstReel.updateReel(game.getPrefs());
         drawnNumberFirstReel = random(firstReel.firstReelFoodNames.size());
         drawnNumberSecondReel = random(secondReel.secondReelFoodNames.size());
         drawnNumberThirdReeL = random(thirdReel.thirdReelFoodNames.size());
         i = 0;
 
-        /**recipes = recipeControl.AddAllRecipes(recipes);*/
-
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        //testbutton
-        /*Button testBtn = new TextButton("TEST", mySkin, "small");
+        //Button for testing
+        Button testBtn = new TextButton("TEST", mySkin, "small");
         testBtn.pad(20);
         ((TextButton) testBtn).getLabel().setFontScale(game.buttonSize);
         testBtn.addListener(new ChangeListener() {
@@ -153,7 +121,7 @@ public class SlotMachine implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 game.goDrawnIngredients(0,0,0);
             }
-        });*/
+        });
 
         screenTable = new Table();
         screenTable.setBackground(new TextureRegionDrawable(background));
@@ -178,89 +146,45 @@ public class SlotMachine implements Screen {
             }
         });
 
-
         myTexture = new Texture(Gdx.files.internal("handleUp.png"));
         myTextureRegion = new TextureRegion(myTexture);
         myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
+
         playBtn = new ImageButton(myTexRegionDrawable);
-        //playBtn.getImage().setFillParent(true);
-        //playBtn.setSize(WORLDWIDTH/15,WORLDHEIGHT/8);
-
-
-
-        //playBtn.pad(50,0,110,-20);
         playBtn.pad(0,200,0,-50);
         playBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                //playBtn.invalidate();
                 if(pref.getBoolean("music")){
                 handleMusic.play();
                 }
-                //table2.removeActor(playBtn);
                 screenTable.removeActor(playBtn);
                 screenTable.removeActor(customBtn);
                 screenTable.removeActor(backBtn);
                 screenTable.clearChildren();
-                //screenTable = new Table();
-                //screenTable.setBackground(new TextureRegionDrawable(background));
                 myTexture = new Texture(Gdx.files.internal("handleDown.png"));
                 myTextureRegion = new TextureRegion(myTexture);
                 myTexRegionDrawable = new TextureRegionDrawable(myTextureRegion);
                 playBtn = new ImageButton(myTexRegionDrawable);
-                //playBtn.setScale(200);
                 playBtn.pad(0,200,0,-50);
-                //table2.add(playBtn);
-                //table2.setFillParent(true);
-                screenTable.defaults().pad(game.screenW/150);
                 screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
                 screenTable.add(playBtn).expand().center().right().size(Value.percentHeight(0.5f, screenTable));
                 screenTable.add().pad(game.screenW/100).row();
                 screenTable.add(customBtn).expand().center().bottom().size(Value.percentWidth(0.4f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
                 screenTable.add().pad(game.screenW/100);
-                //screenTable.setFillParent(true);
                 startImages = false;
                 play = true;
                 i = 0;
             }
         });
 
-        screenTable.defaults().pad(game.screenW/150);
-        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.10f, screenTable)).row();
+        screenTable.add(backBtn).left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
         screenTable.add(playBtn).expand().center().right().size(Value.percentHeight(0.5f, screenTable));
         screenTable.add().pad(game.screenW/100).row();
         screenTable.add(customBtn).expand().center().bottom().size(Value.percentWidth(0.4f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
         screenTable.add().pad(game.screenW/100);
-
-        /*Table table = new Table();
-        table.setBackground(new TextureRegionDrawable(background));
-        table.defaults().uniform().pad(30);
-        table.add(backBtn);
-        //table.add(testBtn);
-        table.top();
-        table.left();
-        //table.setDebug(true);
-
-        table2 = new Table();
-        table2.add(playBtn);
-        table2.right().pad(15);
-        table2.bottom().pad(100);
-
-        Table table3 = new Table();
-        table3.defaults().uniform().pad(30);
-        table3.add(customBtn);
-        table3.bottom().pad(20);
-
-        table.setFillParent(true);
-        table2.setFillParent(true);
-        table3.setFillParent(true);
-        stage.addActor(table);
-        stage.addActor(table2);
-        stage.addActor(table3);*/
-
         screenTable.setFillParent(true);
         stage.addActor(screenTable);
-        //screenTable.setDebug(true);
 
         //First reel spritesheet
         spriteSheet(firstReelRoll, FRAME_COLS1, FRAME_ROWS1);
@@ -274,19 +198,16 @@ public class SlotMachine implements Screen {
         spriteSheet(thirdReelRoll, FRAME_COLS3, FRAME_ROWS3);
         thirdReelSheet = new Animation<TextureRegion>(1/10f, frames);
     }
-    private void spriteSheet(Texture reelRoll, int cols, int rows){
 
+    private void spriteSheet(Texture reelRoll, int cols, int rows){
         TextureRegion[][] tmp = TextureRegion.split(reelRoll,
                 reelRoll.getWidth() / cols,
                 reelRoll.getHeight() / rows);
-
         frames = transformTo1D(tmp, cols, rows);
-
     }
+
     private TextureRegion[] transformTo1D( TextureRegion [][] tmp, int cols, int rows) {
-
         TextureRegion [] frames = new TextureRegion[cols * rows];
-
         int index = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -301,12 +222,12 @@ public class SlotMachine implements Screen {
     private TextureRegion currentFrame3;
     private float stateTime = 0.0f;
 
-
     public int random(int numberOfImages){
         Random rand = new Random();
         int n = rand.nextInt(numberOfImages);
         return n;
     }
+
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
@@ -368,18 +289,15 @@ public class SlotMachine implements Screen {
                         reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
                 batch.end();
             }
-
             try {
                 Thread.sleep(60);
             } catch (Exception e) {
             }
-
             if (i == thirdReelTime) {
                 play = false;
             }
             i++;
         } else {
-
             batch.begin();
             batch.draw(firstReel.firstReelImages.get(drawnNumberFirstReel),
                     firstReelx, reelsRectangle.y, reelsRectangle.width,
@@ -389,7 +307,6 @@ public class SlotMachine implements Screen {
             batch.draw(thirdReel.thirdReelImages.get(drawnNumberThirdReeL),
                     thirdReelx, reelsRectangle.y, reelsRectangle.width, reelsRectangle.height);
             batch.end();
-
             if(i >= thirdReelTime) {
                 reelMusic.stop();
                 try {
@@ -405,6 +322,7 @@ public class SlotMachine implements Screen {
             }
         }
     }
+
     private void sleep(){
         try {
             Thread.sleep(5);
@@ -417,7 +335,6 @@ public class SlotMachine implements Screen {
             reelMusic.play();
         }
         else if(i == firstReelTime || i==secondReelTime || i==thirdReelTime) {
-            //reelMusic.stop();
             reelStop.setLooping(false);
             reelStop.play();
         } else if(i == secondReelTime-1 || i==thirdReelTime-1) {
@@ -432,12 +349,10 @@ public class SlotMachine implements Screen {
 
     @Override
     public void pause() {
-
     }
 
     @Override
     public void resume() {
-
     }
 
     @Override

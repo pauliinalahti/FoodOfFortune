@@ -19,15 +19,13 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
  * MainMenu class contains all necessaries for building our game's
  * main menu screen. Mainmenu implement Screen
  *
- * @author      Pauliina Lahti, Joona Neuvonen
+ * @author      Pauliina lahti, Joona Neuvonen
  * @version     2019.4
  */
+
 public class MainMenu implements Screen {
 
-    /** Create MainGame object game to handle maingame's variables*/
     MainGame game;
-
-    /** Create new SpriteBatch*/
     SpriteBatch batch;
 
     /** Main menu's background*/
@@ -49,10 +47,13 @@ public class MainMenu implements Screen {
      */
     public MainMenu(MainGame g) {
 
-        /** Initializing the variables */
         game = g;
+
+        /** Creating batch from MainGame's class */
         batch = game.getBatch();
+
         stage = new Stage(game.screenPort);
+
         background = new Texture(Gdx.files.internal("FOF_Tausta5.2.png"));
 
         game.myAssetsManager.queueAddSkin();
@@ -82,10 +83,10 @@ public class MainMenu implements Screen {
         startBtn.addListener(new ChangeListener() {
 
             /**
-             * changed method chance the screen
+             * changed method chance screen
              *
-             * @param event enable that actor can do defined moves
-             * @param actor do the defined moves
+             * @param event
+             * @param actor
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -101,14 +102,14 @@ public class MainMenu implements Screen {
         settingsBtn.addListener(new ChangeListener() {
 
             /**
-             * changed method chance the screen
+             * changed method chance screen
              *
-             * @param event enable that actor can do defined moves
-             * @param actor do the defined moves
+             * @param event
+             * @param actor
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press settings, it goes to settings screen */
+                /** If player press settinfs, it goes to settings screen */
                 game.goSettingsScreen();
             }
         });
@@ -120,10 +121,10 @@ public class MainMenu implements Screen {
         quitBtn.addListener(new ChangeListener() {
 
             /**
-             * changed method chance the screen
+             * changed method chance screen
              *
-             * @param event enable that actor can do defined moves
-             * @param actor do the defined moves
+             * @param event
+             * @param actor
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -141,6 +142,7 @@ public class MainMenu implements Screen {
         table.add(startBtn);
         table.add(settingsBtn);
         table.bottom().pad(30);
+
         table.setFillParent(true);
         stage.addActor(table);
 
@@ -158,9 +160,11 @@ public class MainMenu implements Screen {
      */
     @Override
     public void render(float delta) {
+
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
         batch.begin();
         batch.end();
     }
@@ -188,15 +192,12 @@ public class MainMenu implements Screen {
     }
 
     /**
-     * Dispose method dispose background image, game object, stage, spriteBatch
+     * Dispose method dispose background image and stages
      * when player close the game
      */
     @Override
     public void dispose() {
         background.dispose();
-        //stage.dispose();
-        //batch.dispose();
-        //game.dispose();
-
+        stage.dispose();
     }
 }

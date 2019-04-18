@@ -29,7 +29,7 @@ public class ThirdReel {
     /**
      * Thirdreel's constructor
      *
-     * @param pref remenber player's language choises
+     * @param pref remenber players language choises
      */
     public ThirdReel(Preferences pref) {
         initMap();
