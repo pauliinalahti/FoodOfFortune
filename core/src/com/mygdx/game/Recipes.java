@@ -139,7 +139,7 @@ public class Recipes implements Screen {
                     String recName = sc.nextLine();
                     sc.findInLine("ainekset:");
                     String str = sc.nextLine();
-                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[,?.@]+")));
                     sc.findInLine("ainemaarat:");
                     String amount = sc.nextLine();
                     sc.findInLine("ohje:");
@@ -164,7 +164,7 @@ public class Recipes implements Screen {
                     String recName = sc.nextLine();
                     sc.findInLine("Ingredients:");
                     String str = sc.nextLine();
-                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[, ?.@]+")));
+                    ArrayList<String> items = new  ArrayList<String>(Arrays.asList(str.split("[,?.@]+")));
                     sc.findInLine("ingredients:");
                     String amount = sc.nextLine();
                     sc.findInLine("Help:");
@@ -181,7 +181,7 @@ public class Recipes implements Screen {
         }
         recipeMatches = new ArrayList<Recipe>();
         for (final Recipe r:recipes) {
-            if(r.ingredients.contains(secondFood.toLowerCase()) && r.ingredients.contains(firstFood.toLowerCase())) {
+            if(r.ingredients.contains(" "+secondFood.toLowerCase()) && r.ingredients.contains(" "+firstFood.toLowerCase())) {
                 boolean canBeAdded = true;
                 for(String ingr : r.ingredients) {
                     if(!pref.getBoolean(ingr) && options.contains(ingr)) {

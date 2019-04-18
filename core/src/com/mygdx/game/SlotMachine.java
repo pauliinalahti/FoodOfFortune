@@ -132,6 +132,7 @@ public class SlotMachine implements Screen {
         backBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                reelMusic.stop();
                 game.goMainMenu();
             }
         });
@@ -142,6 +143,7 @@ public class SlotMachine implements Screen {
         customBtn.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                reelMusic.stop();
                 game.goCustomReels();
             }
         });
