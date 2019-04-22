@@ -10,55 +10,75 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.badlogic.gdx.Preferences;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * MainGame changes the screen and has information used by other classes.
- * @author Pauliina Lahti
+ *
+ * @author Pauliina Lahti, Joona Neuvonen
+ *
  * @version 8.4.2019
  */
 public class MainGame extends Game {
 
+    // Create SpriteBatch
     public static SpriteBatch batch;
+
+    // Create floats to handle camera
     public static float WORLDWIDTH = 10;
     public static float WORLDHEIGHT = 5;
+
+    // Int to handle buttonsize
     public static int buttonSize = 2;
     public static float buttonSizeSmall = 1.5f;
+
     public static float titleSize = 5;
     public static float buttonSizeBig = 4f;
+
+    // Create ArrayList to handle finnish and english ingredients
     final ArrayList<String> optionsFI = new ArrayList<String>(Arrays.asList("jauheliha", "kana", "lohi","soija","tofu","sieni","makaroni","peruna","riisi","spagetti","tomaatti","sipuli","porkkana","parsakaali","paprika"));
     final ArrayList<String> optionsEN = new ArrayList<String>(Arrays.asList("minced meat", "chicken", "salmon","soy","tofu","mushroom","macaroni","potato","rice","spaghetti","tomato","onion","carrot","broccoli","bell pepper"));
 
+    // Cameras to handle screen showing
     OrthographicCamera camera;
     OrthographicCamera cameraFont;
 
+    // BitmapFonts to handle fonts in this screen
     public BitmapFont font;
     public BitmapFont font2;
     public BitmapFont recipeFont;
     FreeTypeFontGenerator generator;
 
+    // Create Table
     public Table deviceScreen;
+
+    // Create Viewport
     public Viewport screenPort;
     public MyAssetsManager myAssetsManager = new MyAssetsManager();
+
+    // Create Music for game's backgroundmusic
     public Music backgroundMusic;
+
+    // Music for some effetc
     public Music click;
 
+    // Preference to handle player choices
     private Preferences preferences;
+
+    // Scaling ints
     public int screenW;
     public int screenH;
 
     /**
-     * Return the batch.
+     * SpriteBatch method return Spritebatch
+     * @return batch.
      */
     public SpriteBatch getBatch() {
         return batch;
@@ -96,27 +116,19 @@ public class MainGame extends Game {
      */
     @Override
     public void create() {
+
+        // Initializing variables
         deviceScreen = new Table();
         deviceScreen.setSize(Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-        //WORLDHEIGHT = Gdx.graphics.getHeight();
-        //WORLDWIDTH = Gdx.graphics.getWidth();
         WORLDWIDTH = 10;
         WORLDHEIGHT = 5;
         deviceScreen.defaults().uniform().pad(Value.percentHeight(0.1f, deviceScreen),Value.percentWidth(0.1f,deviceScreen), Value.percentHeight(0.1f, deviceScreen),Value.percentWidth(0.1f,deviceScreen));
 
-        /**
-         * Creates fonts named font, font2 ja recipefont, and changes their properties.
-         */
         font = new BitmapFont();
         font2 = new BitmapFont();
         recipeFont = new BitmapFont();
         batch = new SpriteBatch();
-        /*click = Gdx.audio.newMusic(Gdx.files.internal("music/click.mp3"));
-        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
-        if(getPrefs().getBoolean("music"))  {
-            backgroundMusic.setLooping(true);
-            backgroundMusic.play();
-        }*/
+
         generator = new FreeTypeFontGenerator(Gdx.files.internal("VarelaRound-Regular.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 30;
@@ -133,9 +145,6 @@ public class MainGame extends Game {
         parameter3.borderWidth = 3;
         recipeFont = generator.generateFont(parameter3);
 
-        /**
-         * Creates game camera and sets its position.
-         */
         camera = new OrthographicCamera();
         cameraFont = new OrthographicCamera();
         camera.setToOrtho(false,WORLDWIDTH,WORLDHEIGHT);
@@ -144,49 +153,37 @@ public class MainGame extends Game {
         screenW = Gdx.graphics.getWidth();
         screenH = Gdx.graphics.getHeight();
 
-        /**
-         * Click and background musics are declared.
-         */
+        // Click and background musics are declared
         click = Gdx.audio.newMusic(Gdx.files.internal("music/click.mp3"));
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Sunshine_Samba.mp3"));
 
         initPrefs();
 
-        /**
-         * Changes the game screen to start screen.
-         */
         screenPort = new ScreenViewport();
-
-        //this.setScreen(new MainMenu(this));
-
         this.setScreen(new StartScreen(this));
     }
 
+    /**
+     * initPrefs() method
+     * Initializes default preferences if the game is started for the first time.
+     */
     private void initPrefs() {
-        //map = preferences.get();
         if (Gdx.app.getPreferences("My Preferences").get().isEmpty()) {
             preferences = Gdx.app.getPreferences("My Preferences");
             preferences.putBoolean("done", true);
-            //ArrayList<String> aineetFI = rcps.optionsFI;
-            //ArrayList<String> aineetEN = rcps.optionsEN;
             for (String a : optionsFI) {
                 preferences.putBoolean(a, true);
             }
             for (String a : optionsEN) {
                 preferences.putBoolean(a, true);
             }
+            preferences.putBoolean("music", true);
             preferences.flush();
         }
     }
 
-    private void sleep(int i) {
-        try {
-            Thread.sleep(i);
-        } catch (Exception e) {
-        }
-    }
-
     /**
+     * goMainMenu method handle music playing
      * Plays the click-sound and background music, and sets the game screen to MainMenu.
      */
     public void goMainMenu() {
@@ -200,6 +197,7 @@ public class MainGame extends Game {
     }
 
     /**
+     * goSlotMachine method
      * Plays the click-sound and sets the game screen to SlotMachine.
      */
     public void goSlotMachine() {
@@ -209,6 +207,7 @@ public class MainGame extends Game {
     }
 
     /**
+     * gosettingsScreen method change screen
      * Plays the click-sound and sets the game screen to SettingScreen.
      */
     public void goSettingsScreen() {
@@ -218,7 +217,11 @@ public class MainGame extends Game {
     }
 
     /**
-     * Plays the click-sound and sets the game screen to DrawnIngredients.
+     * goDrawnIngredients method handle ingredients
+     *
+     * @param first is drawn ingredient in first reel
+     * @param second is drawn ingredient in second reel
+     * @param third is drawn ingredient in third reel
      */
     public void goDrawnIngredients(int first, int second, int third){
         playClick();
@@ -227,7 +230,11 @@ public class MainGame extends Game {
     }
 
     /**
-     * Plays the click-sound and sets the game screen to Recipes.
+     * goRecipes method change screen to recipe screen
+     *
+     * @param first is drawn ingredient in first reel
+     * @param second is drawn ingredient in second reel
+     * @param third is drawn ingredient in third reel
      */
     public void goRecipes(int first, int second, int third){
         playClick();
@@ -236,7 +243,11 @@ public class MainGame extends Game {
     }
 
     /**
-     * Plays the click-sound and sets the game screen to FoodRecipe.
+     * goFoodRecipe method change screen
+     *
+     * @param first is drawn ingredient in first reel
+     * @param second is drawn ingredient in second reel
+     * @param third is drawn ingredient in third reel
      */
     public void goFoodRecipe(int first, int second, int third, Recipe r){
         playClick();
@@ -245,7 +256,7 @@ public class MainGame extends Game {
     }
 
     /**
-     * Plays the click-sound and sets the game screen to CustomReels.
+     * goCustomReels method change screen to customreels screen
      */
     public void goCustomReels(){
         playClick();
@@ -254,16 +265,16 @@ public class MainGame extends Game {
     }
 
     /**
-     * Plays the click-sound and sets the game screen to Credits.
+     * goCredits method change screen to credits screen
      */
     public void goCredits(){
         playClick();
-        Credits credits = new Credits(this);
-        setScreen(credits);
+        Rules rules = new Rules(this);
+        setScreen(rules);
     }
 
     /**
-     * Disposes the resources when the game is terminated.
+     * Dispose method dispose resources when the game is terminated.
      */
     @Override
     public void dispose() {
@@ -281,4 +292,5 @@ public class MainGame extends Game {
         }
     }
 }
+
 

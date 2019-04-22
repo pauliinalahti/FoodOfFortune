@@ -9,15 +9,15 @@ package com.mygdx.game;
 
 public class GameConstants {
 
-    /** One of used skins*/
+    // One of used skins
     public static final String skin = "rainbow-ui.json";
 
-    /* One of used skinatlas* */
+    // One of used skinatlas
     public static final String skinAtlas = "rainbow-ui.atlas";
 
-    /** One of used skins*/
+    // One of used skins
     public static final String skin2 = "Holo-light-hdpi.json";
 
-    /** One of used skinatlas */
+    // One of used skinatlas
     public static final String skinAtlas2 = "Holo-light-hdpi.atlas";
 }

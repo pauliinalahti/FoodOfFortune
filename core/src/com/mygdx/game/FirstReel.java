@@ -14,16 +14,16 @@ import java.util.HashMap;
  */
 
 public class FirstReel {
-    /** Second reel's ingredients names. */
+    // Second reel's ingredients names.
     ArrayList<String> firstReelFoodNames = new ArrayList<String>();
 
-    /** Second reel's ingredients images. */
+    // Second reel's ingredients images.
     ArrayList<Texture> firstReelImages = new ArrayList<Texture>();
 
-    /** Hashmap for english-finnish translations. */
+    // Hashmap for english-finnish translations.
     HashMap<String, String> map = new HashMap<String, String>();
 
-    /** Hashmap for english-finnish translations. */
+    // Hashmap for english-finnish translations.
     HashMap<String, String> map2 = new HashMap<String, String>();
 
 
@@ -35,8 +35,8 @@ public class FirstReel {
     public FirstReel(Preferences pref) {
         initMap();
 
-        /** This if sentence checks languages and player's selections in setup
-         and add food ingredienst to first reel. */
+        // This if sentence checks languages and player's selections in setup
+         // and add food ingredienst to first reel.
         if(!pref.getBoolean("english")) {
             for(String s : map.values()) {
                 if(pref.getBoolean(s)) {
@@ -44,8 +44,8 @@ public class FirstReel {
                     firstReelImages.add(new Texture(s+".png"));
                 }
             }
-            /** This else sentence checks languages and player's selections in setup
-             and add food ingredienst to first reel. */
+            // This else sentence checks languages and player's selections in setup
+             // and add food ingredienst to first reel.
         } else {
             for(String s : map.keySet()) {
                 if(pref.getBoolean(s)) {

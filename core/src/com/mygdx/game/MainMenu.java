@@ -19,27 +19,28 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
  * MainMenu class contains all necessaries for building our game's
  * main menu screen. Mainmenu implement Screen
  *
- * @author      Pauliina Lahti, Joona Neuvonen
+ * @author      Pauliina lahti, Joona Neuvonen
  * @version     2019.4
  */
+
 public class MainMenu implements Screen {
 
-    /** Create MainGame object game to handle maingame's variables*/
+    // Create MainGame object
     MainGame game;
 
-    /** Create new SpriteBatch*/
+    // Create SpriteBatch
     SpriteBatch batch;
 
-    /** Main menu's background*/
+    // Main menu's background
     Texture background;
 
-    /** Main menu's used skin */
+    // Main menu's used skin
     private Skin mySkin;
 
-    /** Main menu's used stage */
+    // Main menu's used stage
     private Stage stage;
 
-    /** These Strings are mainmenus button's texts*/
+    // These Strings are mainmenus button's texts
     String playText, settingsText, quitText;
 
     /**
@@ -49,66 +50,62 @@ public class MainMenu implements Screen {
      */
     public MainMenu(MainGame g) {
 
-        /** Initializing the variables */
+        // Initializing variables
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
         background = new Texture(Gdx.files.internal("FOF_Tausta5.2.png"));
-
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
-
-        /** MainGame's language selection, defines what button texts are used*/
         Preferences pref = game.getPrefs();
 
-        /** If preference is english, then button text are in english*/
+        // If preference is english, then button text are in english
         if(pref.getBoolean("english")){
             settingsText = "SETTINGS";
             playText = "PLAY";
             quitText = "QUIT";
 
-            /** If preference is something else than english, then button text in finnish*/
+            // If preference is something else than english, then button text in finnish
         } else {
             settingsText = "ASETUKSET";
             playText = "PELAA";
             quitText = "LOPETA";
         }
 
-        /** Create start button*/
+        // Create start button
         Button startBtn = new TextButton(playText, mySkin, "small");
         startBtn.pad(30);
         ((TextButton) startBtn).getLabel().setFontScale(game.buttonSize);
         startBtn.addListener(new ChangeListener() {
 
             /**
-             * changed method chance the screen
+             * changed Method change third reels ingredients choices
              *
              * @param event enable that actor can do defined moves
              * @param actor do the defined moves
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press start, it goes to slot machine screen */
+                // If player press start, it goes to slot machine screen
                 game.goSlotMachine();
             }
         });
 
-        /** Create settings button */
+        // Create settings button
         Button settingsBtn = new TextButton(settingsText, mySkin, "small");
         settingsBtn.pad(30);
         ((TextButton) settingsBtn).getLabel().setFontScale(game.buttonSize);
         settingsBtn.addListener(new ChangeListener() {
-
             /**
-             * changed method chance the screen
+             * changed Method change third reels ingredients choices
              *
              * @param event enable that actor can do defined moves
              * @param actor do the defined moves
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press settings, it goes to settings screen */
+                // If player press settinfs, it goes to settings screen
                 game.goSettingsScreen();
             }
         });
@@ -118,22 +115,21 @@ public class MainMenu implements Screen {
         quitBtn.pad(30);
         ((TextButton) quitBtn).getLabel().setFontScale(game.buttonSize);
         quitBtn.addListener(new ChangeListener() {
-
             /**
-             * changed method chance the screen
+             * changed Method change third reels ingredients choices
              *
              * @param event enable that actor can do defined moves
              * @param actor do the defined moves
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press quit, it close the game*/
+                // If player press quit, it close the game
                 Gdx.app.exit();
                 System.exit(-1);
             }
         });
 
-        /** Creating table, which make possible to add buttons to screen*/
+        // Creating table, which make possible to add buttons to screen
         Table table = new Table();
         table.setBackground(new TextureRegionDrawable(background));
         table.defaults().uniform().pad(15);
@@ -145,7 +141,9 @@ public class MainMenu implements Screen {
         stage.addActor(table);
 
     }
-
+    /**
+     * show method handle stage handling
+     */
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
@@ -188,15 +186,15 @@ public class MainMenu implements Screen {
     }
 
     /**
-     * Dispose method dispose background image, game object, stage, spriteBatch
+     * Dispose method dispose background image, stages, game object and batch
      * when player close the game
      */
     @Override
     public void dispose() {
         background.dispose();
-        //stage.dispose();
-        //batch.dispose();
-        //game.dispose();
-
+        stage.dispose();
+        game.dispose();
+        batch.dispose();
     }
 }
+

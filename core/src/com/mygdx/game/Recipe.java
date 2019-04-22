@@ -9,16 +9,16 @@ import java.util.ArrayList;
  */
 public class Recipe {
 
-    /** Food ingredients list */
+    // Food ingredients list
     ArrayList<String> ingredients;
 
-    /** Food recipe's name*/
+    // Food recipe's name
     String name;
 
-    /** Food recipe's text */
+    // Food recipe's text
     String method;
 
-    /** Amount tells what ingredients one recipe needs*/
+    // Amount tells what ingredients one recipe needs
     String amount;
 
     /**
@@ -44,4 +44,6 @@ public class Recipe {
         this.amount = am;
     }
 }
+
+
 

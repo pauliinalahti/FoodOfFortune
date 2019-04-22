@@ -15,48 +15,46 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-
+import com.badlogic.gdx.utils.Align;
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
 /**
- * Credits class introduce game development team
+ * Rules class introduce game's rules in own screen
  * It implements screen
  *
- * @author      Pauliina Lahti, Joona Neuvonen
+ * @author      Pauliina lahti, Joona Neuvonen
  * @version     2019.4
  */
 
-public class Credits implements Screen {
+public class Rules implements Screen {
 
-    // Create new Maingame object game to handle Maingame class variables
+    // Create MainGame object to handle maingame variables
     MainGame game;
 
-    // Create SpriteBatch batch
+    // Create SpriteBatch
     SpriteBatch batch;
 
     // Background's and logo's images
     Texture background, logo;
 
-    // Create new Skin ton handle Screen's skin
+    // Create Skin to handle screen skin
     private Skin mySkin;
 
-    // Create new stage
+    // Create stage to handle screen objects
     private Stage stage;
 
-    // Create four GlyphLayout to handle developers names in the screen
-    GlyphLayout layoutCredits, layoutTommi, layoutKristian, layoutPauliina, layoutJoona;
+    // New ScreenTable
+    Table screenTable;
+
+    // Create new GlyphLayout handle texts scaling
+    GlyphLayout layoutCredits;
 
     // Create button's text
-    String creditsText, backText;
-
-    // These four strings tells developer's names
-    String tommi = "Tommi Mäkeläinen";
-    String kristian = "Kristian Levola";
-    String pauliina = "Pauliina Lahti";
-    String joona = "Joona Neuvonen";
+    String creditsText, backText, rulesTxt;
 
     // Preference defines current language
     Preferences pref;
@@ -69,9 +67,9 @@ public class Credits implements Screen {
      *
      * @param g is MainGame object
      */
-    public Credits(MainGame g){
+    public Rules(MainGame g){
 
-        // Initializing the variables
+        //Initializing variables
         game = g;
         batch = game.getBatch();
         stage = new Stage(game.screenPort);
@@ -82,15 +80,22 @@ public class Credits implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        // If preference language is english, then button's text are in english
+        // If preference language is english, rules
         if(pref.getBoolean("english")){
             backText = "BACK";
-            creditsText = "CREDITS";
+            creditsText = "HOW TO PLAY";
+            rulesTxt = "Choose which ingredients are available\nin Custom food ingredients.\n\n In Slotmachine the game draws ingredients and presents you \nthe recipes regarding the first two wheels.\n \n Roll, cook and enjoy!";
             // If preference language isn't english, then button's text are in finnish
         } else {
             backText = "TAKAISIN";
-            creditsText = "TEKIJÄT";
+            creditsText = "KUINKA PELATA";
+            rulesTxt = "Valitse ruoka-aines asetuksista pois ne ainekset,\njoita resepteissä ei sallita.\n\n Pelinäkymässä arvotaan ruoka-ainekset,\nja näytetään reseptejä käyttäjän suositusten \n sekä kahden ensimmäisen rullan perusteella.\n\n Pelaa, kokkaa ja nauti!";
         }
+
+        // Create new Table and adds the background
+        screenTable = new Table();
+        screenTable.setFillParent(true);
+        screenTable.setBackground(new TextureRegionDrawable(background));
 
         // Create new GlyphLayout and defines used font and text
         layoutCredits = new GlyphLayout();
@@ -101,8 +106,10 @@ public class Credits implements Screen {
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
+
             /**
-             * changed Method change screen when player press buttons
+             * changed Method change screen
+             * The new screen depends on what choices player have done
              *
              * @param event enable that actor can do defined moves
              * @param actor do the defined moves
@@ -114,41 +121,27 @@ public class Credits implements Screen {
             }
         });
 
-        // Create four labels for every person
-        Label tommiM = new Label(tommi, mySkin);
-        Label kristianL = new Label(kristian, mySkin);
-        Label pauliinaL = new Label(pauliina, mySkin);
-        Label joonaN = new Label(joona, mySkin);
+        // Create label for rules
+        Label rules = new Label(rulesTxt, mySkin);
 
-        // Defines font size
-        tommiM.setFontScale(2);
-        kristianL.setFontScale(2);
-        pauliinaL.setFontScale(2);
-        joonaN.setFontScale(2);
+        // Defines font sizes and alignments
+        rules.setFontScale(2);
+        rules.setAlignment(Align.center);
 
-        // Create table which allows to show background in the screen
-        Table table = new Table();
-        table.setBackground(new TextureRegionDrawable(background));
-        table.defaults().uniform().pad(15);
-        table.add(backBtn).row();
-        table.left();
-        table.top();
+        // Adds the buttons and rules on table, and puts the table on stage
+        screenTable.add(backBtn).top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
+        screenTable.add(rules).center().expand().row();
+        stage.addActor(screenTable);
 
-        // Create table which allows to show person's names and logo in the screen
-        Table table2 = new Table();
-        table2.defaults().uniform().pad(15);
-        table2.addActor(new Image(logo));
-        table2.add(tommiM).row();
-        table2.add(kristianL).row();
-        table2.add(pauliinaL).row();
-        table2.add(joonaN);
-
-        table.setFillParent(true);
-        table2.setFillParent(true);
-        stage.addActor(table);
-        stage.addActor(table2);
+        Table logoTable = new Table();
+        logoTable.setFillParent(true);
+        logoTable.add(new Image(logo)).expand().bottom().right().size(Value.percentWidth(0.25f, screenTable), Value.percentHeight(0.25f, screenTable)).row();
+        stage.addActor(logoTable);
     }
 
+    /**
+     * show method handle stage handling
+     */
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
@@ -190,15 +183,16 @@ public class Credits implements Screen {
     public void hide() {}
 
     /**
-     * Dispose method dispose background image, game object, stage, spriteBatch
-     * when player close the game
+     * dispose method dispose mySkin, batch, backgrounds and stage.
      */
     @Override
     public void dispose() {
-        game.dispose();
         background.dispose();
         logo.dispose();
-        stage.dispose();
+        game.dispose();
         batch.dispose();
+        mySkin.dispose();
+        stage.dispose();
     }
 }
+

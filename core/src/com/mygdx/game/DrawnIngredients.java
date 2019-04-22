@@ -3,7 +3,6 @@ package com.mygdx.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
@@ -12,14 +11,12 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.badlogic.gdx.utils.Scaling;
-
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
@@ -32,44 +29,47 @@ import static com.mygdx.game.MainGame.WORLDWIDTH;
  */
 public class DrawnIngredients implements Screen {
 
-    /** Create Maingame object game*/
+    // Create Maingame object game
     MainGame game;
 
-    /** Create background for this screen*/
+    // Create background for this screen
     Texture background;
 
-    /** Create Skin for this screen*/
+    // Create Skin for this screen
     private Skin mySkin;
 
-    /** Create new stage */
+    // Create new stage
     private Stage stage;
 
-    /** Create spritebatch*/
+    // Create spritebatch
     SpriteBatch batch;
 
-    /** Create firstreel's reel object */
+    // Create firstreel's reel object
     FirstReel firstReel;
 
-    /** Create secondreel's reel object */
+    // Create secondreel's reel object
     SecondReel secondReel;
 
-    /** Create thirdreel's reel object */
+    // Create thirdreel's reel object
     ThirdReel thirdReel;
 
-    /** These int tells what are drawn ingredients numbers in reels */
+    // These int tells what are drawn ingredients numbers in reels
     int firstDrawn, secondDrawn, thirdDrawn;
 
-    /** Create rectagle, helps to draw ingredients to screen*/
+    // Create rectagle, helps to draw ingredients to screen
     Rectangle reelsRectangle;
 
-    /** Create glyphlayouts to handle different layouts*/
+    // Create glyphlayouts to handle different layouts
     GlyphLayout layoutFirst, layoutSecond, layoutThird, drawnIngrediends;
 
-    /** Create button's text */
+    // Create button's text
     String ingrediends, backText, recipesText;
 
-    /** Preferences to handle selected languages and food choices*/
+    // Preferences to handle selected languages and food choices
     Preferences pref;
+
+    // Create new Table
+    Table screenTable;
 
     /**
      * DrawnIngredients's constructor
@@ -81,7 +81,7 @@ public class DrawnIngredients implements Screen {
      */
     public DrawnIngredients(MainGame g, int first, int second, int third) {
 
-        /** Initializing the variables */
+        // Initializing the variables
         game = g;
         batch = game.getBatch();
         firstDrawn = first;
@@ -89,7 +89,7 @@ public class DrawnIngredients implements Screen {
         thirdDrawn = third;
         reelsRectangle = new Rectangle(1.26f, 1.5f, 2.1f, 2.25f);
         stage = new Stage(game.screenPort);
-        background = new Texture(Gdx.files.internal("FOF_Tausta5.12.png"));
+        background = new Texture(Gdx.files.internal("FOF_preSpin4.png"));
 
         pref = game.getPrefs();
         firstReel = new FirstReel(pref);
@@ -97,54 +97,48 @@ public class DrawnIngredients implements Screen {
         thirdReel = new ThirdReel(pref);
 
 
-        /** If preference language key is english, then buttons's text are in english */
+        // If preference language key is english, then buttons's text are in english
         if (pref.getBoolean("english")) {
             backText = "BACK";
             recipesText = "RECIPES";
             ingrediends = "INGREDIENTS";
 
-        /** Else used language is finnish */
+            // Else used language is finnish
         } else {
             backText = "TAKAISIN";
             recipesText = "RESEPTIT";
             ingrediends = "ARVOTUT AINEKSET";
         }
 
-        /** Create three glyphlauot to handle three different layouts*/
+        // Create three glyphlauot to handle three different layouts
         layoutFirst = new GlyphLayout();
         layoutSecond = new GlyphLayout();
         layoutThird = new GlyphLayout();
 
-        //if(pref.getBoolean("english")){
         layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn).toUpperCase());
         layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn).toUpperCase());
         layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn).toUpperCase());
-        /*} else {
-            layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
-            layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
-            layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));
-        }*/
 
         drawnIngrediends = new GlyphLayout();
         drawnIngrediends.setText(game.font2, ingrediends);
-
-        /*layoutFirst = new GlyphLayout();
-        layoutFirst.setText(game.font, firstReel.firstReelFoodNames.get(firstDrawn));
-
-        layoutSecond = new GlyphLayout();
-        layoutSecond.setText(game.font, secondReel.secondReelFoodNames.get(secondDrawn));
-
-        layoutThird = new GlyphLayout();
-        layoutThird.setText(game.font, thirdReel.thirdReelFoodNames.get(thirdDrawn));*/
 
         game.myAssetsManager.queueAddSkin();
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
+        screenTable = new Table();
+        screenTable.setBackground(new TextureRegionDrawable(background));
+
         Button recipesBtn = new TextButton(recipesText, mySkin, "small");
         recipesBtn.pad(20);
         ((TextButton) recipesBtn).getLabel().setFontScale(game.buttonSize);
         recipesBtn.addListener(new ChangeListener() {
+            /**
+             * changed Method change third reels ingredients choices
+             *
+             * @param event enable that actor can do defined moves
+             * @param actor do the defined moves
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 game.goRecipes(firstDrawn, secondDrawn, thirdDrawn);
@@ -155,32 +149,28 @@ public class DrawnIngredients implements Screen {
         backBtn.pad(20);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
         backBtn.addListener(new ChangeListener() {
+            /**
+             * changed Method change third reels ingredients choices
+             *
+             * @param event enable that actor can do defined moves
+             * @param actor do the defined moves
+             */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 game.goSlotMachine();
             }
         });
 
-        Table table = new Table();
-        table.setBackground(new TextureRegionDrawable(background));
-        table.defaults().uniform().pad(30);
-        table.add(backBtn);
-        //table.add(recipesBtn);
-        table.top();
-        table.left();
-
-        Table table2 = new Table();
-        table2.defaults().uniform().pad(30);
-        table2.add(recipesBtn);
-        table2.bottom().pad(20);
-        //table.setDebug(true);
-
-        table.setFillParent(true);
-        table2.setFillParent(true);
-        stage.addActor(table);
-        stage.addActor(table2);
+        // Adds buttons on table and the table on stage
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
+        screenTable.add(recipesBtn).expand().center().bottom().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable));
+        screenTable.setFillParent(true);
+        stage.addActor(screenTable);
     }
 
+    /**
+     * show method handle stage handling
+     */
     @Override
     public void show() {
         Gdx.input.setInputProcessor(stage);
@@ -196,7 +186,6 @@ public class DrawnIngredients implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
-
         batch.begin();
 
         batch.draw(firstReel.firstReelImages.get(firstDrawn),
@@ -259,8 +248,8 @@ public class DrawnIngredients implements Screen {
     @Override
     public void dispose() {
         background.dispose();
-        //stage.dispose();
-        //game.dispose();
-        //batch.dispose();
+        stage.dispose();
+        game.dispose();
+        batch.dispose();
     }
 }

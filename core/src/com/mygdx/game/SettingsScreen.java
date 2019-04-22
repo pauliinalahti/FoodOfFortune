@@ -17,7 +17,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-
 import static com.mygdx.game.MainGame.WORLDHEIGHT;
 import static com.mygdx.game.MainGame.WORLDWIDTH;
 
@@ -31,25 +30,25 @@ import static com.mygdx.game.MainGame.WORLDWIDTH;
 
 public class SettingsScreen implements Screen {
 
-    /** Create Maingame object game */
+    // Create Maingame object game
     MainGame game;
 
-    /** Create Spritebatch */
+    // Create Spritebatch
     SpriteBatch batch;
 
-    /** Setting's background*/
+    // Setting's background
     Texture background;
 
-    /** Setting's used skin */
+    // Setting's used skin
     private Skin mySkin;
 
-    /** Settings's used stage */
+    // Settings's used stage
     private Stage stage;
 
-    /** Layoutsettings for settings */
+    // Layoutsettings for settings
     GlyphLayout layoutSettings;
 
-    /** Strings below are buttons texts*/
+    // Strings below are buttons texts
     String settingsText;
     String backText;
     String customText;
@@ -60,14 +59,12 @@ public class SettingsScreen implements Screen {
     String creditsText;
     String chosenLanguage;
     String moreTxt;
+    String webPage;
 
-    /** Pref tells what language is on */
+    // Pref tells what language is on
     Preferences pref;
 
-    /** Create backbutton */
-    Button backBtn;
-
-    /** Create table */
+    // Create table
     Table screenTable;
 
     /**
@@ -76,6 +73,7 @@ public class SettingsScreen implements Screen {
      * @param g is MainGame object
      */
     public SettingsScreen(MainGame g) {
+        // Initializing variables
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
         game = g;
@@ -87,51 +85,52 @@ public class SettingsScreen implements Screen {
         game.myAssetsManager.manager.finishLoading();
         mySkin = game.myAssetsManager.manager.get(GameConstants.skin);
 
-        /** If preference's key is english, then button text are in english */
+        // If preference's key is english, then button text are is english
         if(pref.getBoolean("english")){
             backText = "BACK";
             customText = "Custom food ingredients";
             settingsText = "SETTINGS";
             languageText = "Language: ";
-            creditsText = "Credits";
+            creditsText = "How to play";
             onOffText = "ON";
             changeText = "Language: EN";
             chosenLanguage = "English";
-            moreTxt = "FAQ";
-
-            /** If music on is selected, then text: "on", else "off" */
+            moreTxt = "About us";
+            webPage = "http://18tiko2E.projects.tamk.fi/indexEN.html";
+            // If music on is selected, then text: "on", else "off"
             if(pref.getBoolean("music")) {
                 musicText = "Music: ON";
             } else {
                 musicText = "Music: OFF";
             }
-            /** If langugage is finnish, then button texts are in finnish */
+            // If langugage is finnish, then button texts are in finnish
         } else {
             backText = "TAKAISIN";
             customText = "Ruoka-aine asetukset";
             settingsText = "ASETUKSET";
             languageText = "Kieli: ";
-            creditsText = "Tekijät";
+            creditsText = "Kuinka pelata";
             onOffText = "OFF";
             changeText = "Kieli: FI";
             chosenLanguage = "Suomi";
             moreTxt = "Tietoa meistä";
+            webPage = "http://18tiko2E.projects.tamk.fi";
             if(pref.getBoolean("music")) {
                 musicText = "Äänet: ON";
             } else {
                 musicText = "Äänet: OFF";
             }
         }
-        /** Create table for buttons and adds background*/
+        // Create table for buttons and adds background
         screenTable = new Table();
         screenTable.setFillParent(true);
         screenTable.setBackground(new TextureRegionDrawable(background));
 
-        /** Create new Glyphlayout to handle setting's text*/
+        // Create new Glyphlayout to handle setting's text
         layoutSettings = new GlyphLayout();
         layoutSettings.setText(game.font2, settingsText);
 
-        /** Create back button */
+        // Create back button
         Button backBtn = new TextButton(backText, mySkin, "small");
         backBtn.setTransform(true);
         ((TextButton) backBtn).getLabel().setFontScale(game.buttonSize);
@@ -145,12 +144,12 @@ public class SettingsScreen implements Screen {
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press back button, it chance screen to main menu */
+                // If player press back button, it chance screen to main menu
                 game.goMainMenu();
             }
         });
 
-        /** Create languagebutton button */
+        // Create languagebutton button
         Button languageBtn = new TextButton(changeText, mySkin, "small");
         languageBtn.setTransform(true);
         ((TextButton) languageBtn).getLabel().setFontScale(game.buttonSizeSmall);
@@ -164,7 +163,7 @@ public class SettingsScreen implements Screen {
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press language button, it chance language */
+                // If player press language button, it chance language
                 if(game.getPrefs().getBoolean("english")) {
                     game.getPrefs().putBoolean("english", false);
                     game.getPrefs().flush();
@@ -172,12 +171,12 @@ public class SettingsScreen implements Screen {
                     game.getPrefs().putBoolean("english", true);
                     game.getPrefs().flush();
                 }
-                /** It change to settings screen, depends on what language is on */
+                // It change to setting screen, depends on what language is on
                 game.goSettingsScreen();
             }
         });
 
-        /** Create custombutton */
+        // Create custombutton
         Button customBtn = new TextButton(customText, mySkin, "small");
         customBtn.setTransform(true);
         ((TextButton) customBtn).getLabel().setFontScale(game.buttonSizeSmall);
@@ -191,14 +190,13 @@ public class SettingsScreen implements Screen {
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press custom reels button, it change to customreels screen */
+                // If player press custom reels button, it change to customreels screen
                 game.goCustomReels();
             }
         });
 
-        /** Create credits button */
+        // Create credits button
         Button creditsBtn = new TextButton(creditsText, mySkin, "small");
-        //creditsBtn.pad(20);
         creditsBtn.setTransform(true);
         ((TextButton) creditsBtn).getLabel().setFontScale(game.buttonSizeSmall);
         creditsBtn.addListener(new ChangeListener() {
@@ -211,14 +209,13 @@ public class SettingsScreen implements Screen {
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If player press credits button, it change to credits screen */
+                // If player press credits button, it change to credits screen
                 game.goCredits();
             }
         });
 
-        /** Create music button */
+        // Create music button
         Button musicBtn = new TextButton(musicText, mySkin, "small");
-        //musicBtn.pad(20);
         musicBtn.setTransform(true);
         ((TextButton) musicBtn).getLabel().setFontScale(game.buttonSizeSmall);
         musicBtn.addListener(new ChangeListener() {
@@ -242,12 +239,12 @@ public class SettingsScreen implements Screen {
                     game.backgroundMusic.play();
                     System.out.println("music on");
                 }
-                /** Go to settings screen depends on is music on or off*/
+                // Go to settings screen depends on is music on or off
                 game.goSettingsScreen();
             }
         });
 
-
+        // Creates button for the game website
         Button moreBtn = new TextButton(moreTxt, mySkin, "small");
         moreBtn.setTransform(true);
         ((TextButton) moreBtn).getLabel().setFontScale(game.buttonSizeSmall);
@@ -260,20 +257,14 @@ public class SettingsScreen implements Screen {
              */
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                /** If preference language is english, then clicking website button
-                 * leads to our english website */
-                if(game.getPrefs().getBoolean("english")) {
-                    Gdx.net.openURI("http://18tiko2E.projects.tamk.fi/indexEN.html");
-                    /** If preference language is finnish, then clicking website button
-                     * leads to our finnish website */
-                } else {
-                    Gdx.net.openURI("http://18tiko2E.projects.tamk.fi/index.html");
-                }
-
+                // If player press button, it goes to game's website
+                Gdx.net.openURI(webPage);
             }
         });
+
+        // Adds all created buttons on table
         int div = 150;
-        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.15f, screenTable)).row();
+        screenTable.add(backBtn).expand().top().left().size(Value.percentWidth(0.2f, screenTable), Value.percentHeight(0.13f, screenTable)).row();
         screenTable.add(languageBtn).pad(game.screenW/div).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
         screenTable.add(musicBtn).pad(game.screenW/div).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
         screenTable.add(customBtn).pad(game.screenW/div).size(Value.percentWidth(0.45f, screenTable), Value.percentHeight(0.1f, screenTable)).row();
@@ -285,6 +276,7 @@ public class SettingsScreen implements Screen {
 
     /**
      * show method handles stage
+     *
      */
     @Override
     public void show() {
@@ -298,10 +290,10 @@ public class SettingsScreen implements Screen {
      */
     @Override
     public void render(float delta) {
-
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act();
         stage.draw();
+
         batch.begin();
         batch.setProjectionMatrix(game.cameraFont.combined);
         game.font2.draw(batch, settingsText, WORLDWIDTH * 100 / 2 - layoutSettings.width / 2, (WORLDHEIGHT - 0.3f) * 100);
@@ -333,16 +325,17 @@ public class SettingsScreen implements Screen {
     }
 
     /**
-     * Dispose method dispose background image, stage, game object and mySkin
-     * when player close the game
+     * Dispose method dispose background image, game object, stage, batch
+     * and Myskin when player close the game
      */
     @Override
     public void dispose() {
         background.dispose();
-        //stage.dispose();
-        //game.dispose();
-        //mySkin.dispose();
-
+        stage.dispose();
+        game.dispose();
+        batch.dispose();
+        mySkin.dispose();
     }
 }
+
 
